@@ -191,6 +191,10 @@ var META = {
 };
 var ILABEL = { poblacion:"Población", pib:"PIB", inflacion:"Inflación (IPC)", desempleo:"Desempleo", idh:"IDH", moneda:"Moneda", region:"Región", renta_pc:"Renta per cápita", alfabetizacion:"Alfabetización", seguridad_social:"Seguridad social (% PIB)", titulados:"Titulados superiores", defensa_usd:"Gasto en defensa", defensa_pct:"Defensa (% PIB)", personal:"Personal militar", aviones:"Aviones", barcos:"Barcos", tanques:"Tanques", menores:"Menores (0-14)", adolescentes:"Adolescentes (15-24)", adultos:"Adultos (25-64)", mayores:"Mayores (65+)", edad_mediana:"Edad mediana", net_mig:"Saldo migratorio (‰)", migrant_pct:"Inmigrantes (% pobl.)" };
 var INV = { inflacion:1, desempleo:1 };
+var RISK = { idh_veryhigh:0.8, idh_high:0.7, idh_medium:0.55, inf_alta:6, inf_media:3, de_alta:10, de_media:6,
+  visita:{ idh:[0.55,0.7,0.8], puntos_idh:[3,2,1], inf:[6,3], puntos_inf:[2,1], de:[10,6], puntos_de:[2,1], baja:2, media:4 } };
+var ALERT_CFG = { window_days:30, minmagnitude:3, lat_pad:4, lon_pad:6, limit:6, show:5 };
+var ZOOM = [25, 10, 2];
 function fmt(v, ind){
   if (v == null) return "—";
   if (ind === "inflacion" || ind === "desempleo" || ind === "defensa_pct") return Number(v).toFixed(1) + "%";
@@ -205,8 +209,11 @@ function fmt(v, ind){
   if (ind === "migrant_pct") return Number(v).toFixed(1) + "%";
   return String(v);
 }
-var map = L.map('map').setView([25, 10], 2);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution:'© OSM © CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
+var map = null;
+function initMap(){
+  map = L.map('map').setView([ZOOM[0], ZOOM[1]], ZOOM[2]);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution:'© OSM © CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
+}
 
 function gv(c, k){ var i = c.indicators || {}; return (i[k] && i[k].value != null) ? i[k].value : null; }
 var ALL = {}; var ALL_LOADED = false;
@@ -219,7 +226,7 @@ function ensureAll(cb){
 }
 function resumenIA(c){
   var idh = gv(c,'idh');
-  var idhLab = idh == null ? "—" : (idh >= 0.8 ? "muy alto" : idh >= 0.7 ? "alto" : idh >= 0.55 ? "medio" : "bajo");
+  var idhLab = idh == null ? "—" : (idh >= RISK.idh_veryhigh ? "muy alto" : idh >= RISK.idh_high ? "alto" : idh >= RISK.idh_medium ? "medio" : "bajo");
   return [
     "<b>Población:</b> " + fmt(gv(c,'poblacion'),'poblacion') + " · <b>renta per cápita:</b> " + fmt(gv(c,'renta_pc'),'renta_pc') + " · <b>edad mediana</b> " + (gv(c,'edad_mediana')==null?'—':gv(c,'edad_mediana')+' años') + ".",
     "<b>Economía:</b> PIB " + fmt(gv(c,'pib'),'pib') + " · inflación " + fmt(gv(c,'inflacion'),'inflacion') + " · desempleo " + fmt(gv(c,'desempleo'),'desempleo') + ".",
@@ -233,23 +240,23 @@ function resumenIA(c){
 function riesgo(c){
   var out = [];
   var inf = gv(c,'inflacion'), de = gv(c,'desempleo');
-  if (inf != null && inf > 6) out.push(['Inflación alta','alta']); else if (inf != null && inf > 3) out.push(['Inflación moderada','media']);
-  if (de != null && de > 10) out.push(['Desempleo alto','alta']); else if (de != null && de > 6) out.push(['Desempleo moderado','media']);
+  if (inf != null && inf > RISK.inf_alta) out.push(['Inflación alta','alta']); else if (inf != null && inf > RISK.inf_media) out.push(['Inflación moderada','media']);
+  if (de != null && de > RISK.de_alta) out.push(['Desempleo alto','alta']); else if (de != null && de > RISK.de_media) out.push(['Desempleo moderado','media']);
   if (out.length === 0) out.push(['Estabilidad económica relativa','baja']);
   return out;
 }
 function riesgoVisita(c){
   var s = 1;
   var idh = gv(c,'idh'), inf = gv(c,'inflacion'), de = gv(c,'desempleo');
-  if (idh != null) { if (idh < 0.55) s += 3; else if (idh < 0.7) s += 2; else if (idh < 0.8) s += 1; }
-  if (inf != null) { if (inf > 6) s += 2; else if (inf > 3) s += 1; }
-  if (de != null) { if (de > 10) s += 2; else if (de > 6) s += 1; }
-  var nivel = s <= 2 ? ['baja','Baja · 👍'] : s <= 4 ? ['media','Media · ⚠️'] : ['alta','Alta · 🔴'];
+  if (idh != null) { if (idh < RISK.visita.idh[0]) s += RISK.visita.puntos_idh[0]; else if (idh < RISK.visita.idh[1]) s += RISK.visita.puntos_idh[1]; else if (idh < RISK.visita.idh[2]) s += RISK.visita.puntos_idh[2]; }
+  if (inf != null) { if (inf > RISK.visita.inf[0]) s += RISK.visita.puntos_inf[0]; else if (inf > RISK.visita.inf[1]) s += RISK.visita.puntos_inf[1]; }
+  if (de != null) { if (de > RISK.visita.de[0]) s += RISK.visita.puntos_de[0]; else if (de > RISK.visita.de[1]) s += RISK.visita.puntos_de[1]; }
+  var nivel = s <= RISK.visita.baja ? ['baja','Baja · 👍'] : s <= RISK.visita.media ? ['media','Media · ⚠️'] : ['alta','Alta · 🔴'];
   var consejos = [];
-  if (inf != null && inf > 6) consejos.push('Inflación elevada: prevé precios al alza y presupuesto flexible.');
-  if (de != null && de > 10) consejos.push('Desempleo alto: precaución con estafas laborales y «ofertas» sospechosas.');
-  if (idh != null && idh < 0.7) consejos.push('IDH medio/bajo: revisa cobertura sanitaria, agua potable y seguridad local.');
-  if (idh != null && idh < 0.55) consejos.push('Entorno con fragilidad institucional: registra tu presencia en la embajada/consulado.');
+  if (inf != null && inf > RISK.visita.inf[0]) consejos.push('Inflación elevada: prevé precios al alza y presupuesto flexible.');
+  if (de != null && de > RISK.visita.de[0]) consejos.push('Desempleo alto: precaución con estafas laborales y «ofertas» sospechosas.');
+  if (idh != null && idh < RISK.visita.idh[1]) consejos.push('IDH medio/bajo: revisa cobertura sanitaria, agua potable y seguridad local.');
+  if (idh != null && idh < RISK.visita.idh[0]) consejos.push('Entorno con fragilidad institucional: registra tu presencia en la embajada/consulado.');
   if (!consejos.length) consejos.push('Clima económico estable. Aplica precauciones habituales de viaje.');
   return '<div class="risk"><span class="'+nivel[0]+'">Riesgo visita: '+nivel[1]+'</span></div>' +
          '<ul style="margin:8px 0 0;padding-left:18px;color:#94a3b8;font-size:.8em;line-height:1.6;">'+consejos.map(function(x){ return '<li>'+x+'</li>'; }).join('')+'</ul>';
@@ -353,12 +360,12 @@ function loadNews(cc){
 }
 function loadAlerts(lat, lon){
   var el = document.getElementById('alerts');
-  var box = 'minlat='+(lat-4)+'&maxlat='+(lat+4)+'&minlon='+(lon-6)+'&maxlon='+(lon+6);
-  var dd = new Date(); dd.setDate(dd.getDate() - 30);
+  var box = 'minlat='+(lat-ALERT_CFG.lat_pad)+'&maxlat='+(lat+ALERT_CFG.lat_pad)+'&minlon='+(lon-ALERT_CFG.lon_pad)+'&maxlon='+(lon+ALERT_CFG.lon_pad);
+  var dd = new Date(); dd.setDate(dd.getDate() - ALERT_CFG.window_days);
   var start = dd.toISOString().slice(0,10);
-  fetch('https://www.seismicportal.eu/fdsnws/event/1/query?format=json&minmagnitude=3&starttime='+start+'&'+box+'&limit=6', { mode:'cors' })
+  fetch('https://www.seismicportal.eu/fdsnws/event/1/query?format=json&minmagnitude='+ALERT_CFG.minmagnitude+'&starttime='+start+'&'+box+'&limit='+ALERT_CFG.limit, { mode:'cors' })
     .then(r=>r.ok?r.json():Promise.reject()).then(function(res){
-      var ev = (res.features||[]).slice(0,5);
+      var ev = (res.features||[]).slice(0,ALERT_CFG.show);
       el.innerHTML = ev.length ? ev.map(function(f){
         var p=f.properties||{}; return '<div class="alerta">🌐 <b>M'+p.mag+'</b> · '+(p.flynn_region||'')+'<br><span style="color:#64748b;font-size:.72em;">'+ (p.time||'').replace('T',' ').slice(0,16)+' UTC</span></div>';
       }).join('') : 'Sin terremotos ≥M3 en los últimos 30 días en la zona.';
@@ -551,12 +558,28 @@ function load(){
     });
   });
 }
-load();
+function applyConfig(cfg){
+  if (!cfg || !cfg.frontend) return;
+  var f = cfg.frontend;
+  if (f.meta) META = f.meta;
+  if (f.labels) ILABEL = f.labels;
+  if (f.topics_label) TOPLAB = f.topics_label;
+  if (f.heat) HEAT = f.heat;
+  if (f.cmp) CMP = f.cmp;
+  if (f.rank) RANK_OPTS = f.rank;
+  if (f.zoom) ZOOM = f.zoom;
+  if (f.risk) RISK = f.risk;
+  if (f.alerts) ALERT_CFG = f.alerts;
+}
 function handleDeepLink(){
   var m = (location.search||'').match(/[?&]c=([a-z]{2})/i);
   if (m && META[m[1].toLowerCase()]) { closeWelcome(); loadCountry(m[1].toLowerCase()); }
 }
-handleDeepLink();
+function boot(){
+  fetch('/api/config').then(r=>r.json()).then(applyConfig).catch(function(){})
+    .then(function(){ initMap(); load(); handleDeepLink(); });
+}
+boot();
 </script>
 </body>
 </html>

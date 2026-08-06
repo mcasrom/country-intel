@@ -7,45 +7,34 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
-from src.config import JSON_DIR, BASE_DIR
+from src.config import JSON_DIR, BASE_DIR, CFG
 
-app = FastAPI(title="Country Intelligence", version="0.3.0")
+app = FastAPI(title="Country Intelligence", version="0.7.0")
 
 TRAVEL_DIR = BASE_DIR / "data" / "travel"
 NEWS_DIR = BASE_DIR / "data" / "news"
-TRAVEL_TTL = 24 * 3600
-NEWS_TTL = 3600
-NEWS_QUERY = {
-    "es": "España OR Spain", "fr": "Francia OR France", "de": "Alemania OR Germany",
-    "it": "Italia OR Italy", "gb": "Reino Unido OR United Kingdom", "us": "United States OR USA",
-    "cn": "China", "br": "Brasil OR Brazil", "in": "India", "mx": "México OR Mexico",
-    "ma": "Marruecos OR Morocco", "dz": "Argelia OR Algeria", "eg": "Egipto OR Egypt",
-    "pt": "Portugal", "au": "Australia",
-}
-TRAVEL_SLUGS = {
-    "es": "spain", "fr": "france", "de": "germany", "it": "italy",
-    "gb": None, "us": "usa", "cn": "china", "br": "brazil", "in": "india",
-    "mx": "mexico", "ma": "morocco", "dz": "algeria", "eg": "egypt", "pt": "portugal",
-    "au": "australia",
-}
-FCDO_URL = "https://www.gov.uk/api/content/foreign-travel-advice/{slug}"
-
 TRENDS_FILE = BASE_DIR / "data" / "trends.json"
 TRENDING_DIR = BASE_DIR / "data" / "trending"
-TRENDING_TTL = 6 * 3600
-TOPICS = ["hoteles", "precios", "trabajo", "vacaciones", "vuelos", "comida", "seguridad", "alquiler"]
+
+TRAVEL_TTL = CFG.get("ttl", {}).get("travel", 86400)
+NEWS_TTL = CFG.get("ttl", {}).get("news", 3600)
+TRENDING_TTL = CFG.get("ttl", {}).get("trending", 21600)
+SLEEP_TRENDING = CFG.get("sleep_trending", 0.3)
+TOPICS = CFG.get("topics", ["hoteles", "precios", "trabajo", "vacaciones", "vuelos", "comida", "seguridad", "alquiler"])
+FCDO_PARTS = CFG.get("fcdo_parts", ["summary", "safety-and-security", "terrorism", "natural-disasters", "entry-requirements", "health"])
+LIMITS = CFG.get("limits", {"news_max": 6, "body_part": 600, "alerts_body": 900})
+NAMES = CFG.get("names", {})
+TRAVEL_SLUGS = CFG.get("travel_slugs", {})
+NEWS_QUERY = CFG.get("news_query", {})
+
+FCDO_URL = "https://www.gov.uk/api/content/foreign-travel-advice/{slug}"
 AC_URL = "https://suggestqueries.google.com/complete/search?client=firefox&hl=es&q={q}"
-NAMES = {
-    "es": "España", "fr": "Francia", "de": "Alemania", "it": "Italia", "gb": "Reino Unido",
-    "us": "Estados Unidos", "cn": "China", "br": "Brasil", "in": "India", "mx": "México",
-    "ma": "Marruecos", "dz": "Argelia", "eg": "Egipto", "pt": "Portugal", "au": "Australia",
-}
 
 
-def _clean(html: str, limit: int = 600):
+def _clean(html: str, limit: int = LIMITS.get("body_part", 600)):
     text = re.sub(r"<[^>]+>", " ", html or "")
     text = re.sub(r"\s+", " ", text).strip()
     return text[:limit]
@@ -54,7 +43,7 @@ def _clean(html: str, limit: int = 600):
 def _fetch_fcdo(slug: str):
     req = urllib.request.Request(
         FCDO_URL.format(slug=slug),
-        headers={"User-Agent": "country-intel/0.2 (research)"},
+        headers={"User-Agent": "country-intel/0.7 (research)"},
     )
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.loads(r.read().decode("utf-8"))
@@ -63,6 +52,11 @@ def _fetch_fcdo(slug: str):
 @app.get("/health")
 def health():
     return {"ok": True, "service": "country-intel"}
+
+
+@app.get("/api/config")
+def api_config():
+    return CFG
 
 
 @app.get("/api/countries")
@@ -91,14 +85,13 @@ def travel(code: str):
     try:
         data = _fetch_fcdo(slug)
         alerts = [
-            {"title": a.get("title", ""), "type": a.get("type", ""), "body": a.get("body", "")[:900]}
+            {"title": a.get("title", ""), "type": a.get("type", ""), "body": _clean(a.get("body", ""), LIMITS.get("alerts_body", 900))}
             for a in (data.get("details", {}).get("alerts", []) or [])
         ]
-        key_parts = ["summary", "safety-and-security", "terrorism", "natural-disasters", "entry-requirements", "health"]
         parts = []
         for pt in (data.get("details", {}).get("parts", []) or []):
             slug_pt = (pt.get("slug") or "").lower()
-            if slug_pt in key_parts or slug_pt.startswith("summary"):
+            if slug_pt in FCDO_PARTS or slug_pt.startswith("summary"):
                 parts.append({"title": pt.get("title", ""), "slug": slug_pt, "body": _clean(pt.get("body") or "")})
         out = {
             "country": code.lower(),
@@ -117,9 +110,9 @@ def travel(code: str):
 
 
 def _gdelt(q: str):
-    url = "https://api.gdeltproject.org/api/v2/doc/doc?query=" + urllib.parse.quote(q) + "&mode=artlist&format=json&maxrecords=6&sort=updateddesc"
+    url = "https://api.gdeltproject.org/api/v2/doc/doc?query=" + urllib.parse.quote(q) + "&mode=artlist&format=json&maxrecords=" + str(LIMITS.get("news_max", 6)) + "&sort=updateddesc"
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "country-intel/0.3 (research)"})
+        req = urllib.request.Request(url, headers={"User-Agent": "country-intel/0.7 (research)"})
         with urllib.request.urlopen(req, timeout=15) as r:
             d = json.loads(r.read().decode("utf-8"))
             return [{"title": a.get("title", ""), "url": a.get("url", "")} for a in d.get("articles", [])]
@@ -136,7 +129,7 @@ def _gnews_rss(q: str):
             items = []
             for it in root.iter("item"):
                 items.append({"title": it.findtext("title") or "", "url": it.findtext("link") or ""})
-                if len(items) >= 6:
+                if len(items) >= LIMITS.get("news_max", 6):
                     break
             return items
     except Exception:
@@ -194,7 +187,7 @@ def trending_all():
         fresh = cache.exists() and (time.time() - cache.stat().st_mtime) < TRENDING_TTL
         if not fresh:
             _refresh_trending(cc)
-            time.sleep(0.3)
+            time.sleep(SLEEP_TRENDING)
     countries = {}
     for cc in sorted(NAMES):
         try:
@@ -311,7 +304,6 @@ def pais(code: str):
     cc = code.lower()
     if cc not in NAMES:
         raise HTTPException(404, "Pais no encontrado")
-    from fastapi.responses import HTMLResponse
     return HTMLResponse(_seo_page(cc))
 
 
@@ -320,7 +312,6 @@ def sitemap():
     urls = ["https://country.viajeinteligencia.com/"]
     urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in sorted(NAMES)]
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
-    from fastapi.responses import Response
     return Response(content=f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 {body}
@@ -329,7 +320,6 @@ def sitemap():
 
 @app.get("/robots.txt")
 def robots():
-    from fastapi.responses import Response
     return Response(content="User-agent: *\nAllow: /\nSitemap: https://country.viajeinteligencia.com/sitemap.xml", media_type="text/plain")
 
 

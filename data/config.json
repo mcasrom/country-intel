@@ -1,0 +1,68 @@
+{
+  "port": 8710,
+  "ttl": { "travel": 86400, "news": 3600, "trending": 21600 },
+  "sleep_trending": 0.3,
+  "topics": ["hoteles", "precios", "trabajo", "vacaciones", "vuelos", "comida", "seguridad", "alquiler"],
+  "fcdo_parts": ["summary", "safety-and-security", "terrorism", "natural-disasters", "entry-requirements", "health"],
+  "limits": { "news_max": 6, "body_part": 600, "alerts_body": 900 },
+  "names": {
+    "es": "España", "fr": "Francia", "de": "Alemania", "it": "Italia", "gb": "Reino Unido",
+    "us": "Estados Unidos", "cn": "China", "br": "Brasil", "in": "India", "mx": "México",
+    "ma": "Marruecos", "dz": "Argelia", "eg": "Egipto", "pt": "Portugal", "au": "Australia"
+  },
+  "travel_slugs": {
+    "es": "spain", "fr": "france", "de": "germany", "it": "italy", "gb": null,
+    "us": "usa", "cn": "china", "br": "brazil", "in": "india", "mx": "mexico",
+    "ma": "morocco", "dz": "algeria", "eg": "egypt", "pt": "portugal", "au": "australia"
+  },
+  "news_query": {
+    "es": "España OR Spain", "fr": "Francia OR France", "de": "Alemania OR Germany",
+    "it": "Italia OR Italy", "gb": "Reino Unido OR United Kingdom", "us": "United States OR USA",
+    "cn": "China", "br": "Brasil OR Brazil", "in": "India", "mx": "México OR Mexico",
+    "ma": "Marruecos OR Morocco", "dz": "Argelia OR Algeria", "eg": "Egipto OR Egypt",
+    "pt": "Portugal", "au": "Australia"
+  },
+  "frontend": {
+    "zoom": [25, 10, 2],
+    "alerts": { "window_days": 30, "minmagnitude": 3, "lat_pad": 4, "lon_pad": 6, "limit": 6, "show": 5 },
+    "risk": {
+      "idh_veryhigh": 0.8, "idh_high": 0.7, "idh_medium": 0.55,
+      "inf_alta": 6, "inf_media": 3, "de_alta": 10, "de_media": 6,
+      "visita": {
+        "idh": [0.55, 0.7, 0.8], "puntos_idh": [3, 2, 1],
+        "inf": [6, 3], "puntos_inf": [2, 1],
+        "de": [10, 6], "puntos_de": [2, 1],
+        "baja": 2, "media": 4
+      }
+    },
+    "meta": {
+      "es": ["España", "🇪🇸", 40.4, -3.7], "fr": ["Francia", "🇫🇷", 48.8, 2.3], "de": ["Alemania", "🇩🇪", 52.5, 13.4],
+      "it": ["Italia", "🇮🇹", 41.9, 12.5], "gb": ["Reino Unido", "🇬🇧", 51.5, -0.1], "us": ["EE.UU.", "🇺🇸", 39.8, -98.6],
+      "cn": ["China", "🇨🇳", 35.9, 104.2], "br": ["Brasil", "🇧🇷", -14.2, -51.9], "in": ["India", "🇮🇳", 20.6, 79.0],
+      "mx": ["México", "🇲🇽", 23.6, -102.5], "ma": ["Marruecos", "🇲🇦", 31.8, -7.1], "dz": ["Argelia", "🇩🇿", 28.0, 1.7],
+      "eg": ["Egipto", "🇪🇬", 26.8, 30.8], "pt": ["Portugal", "🇵🇹", 39.4, -8.2], "au": ["Australia", "🇦🇺", -25.3, 133.8]
+    },
+    "labels": {
+      "poblacion": "Población", "pib": "PIB", "inflacion": "Inflación (IPC)", "desempleo": "Desempleo",
+      "idh": "IDH", "moneda": "Moneda", "region": "Región", "renta_pc": "Renta per cápita",
+      "alfabetizacion": "Alfabetización", "seguridad_social": "Seguridad social (% PIB)", "titulados": "Titulados superiores",
+      "defensa_usd": "Gasto en defensa", "defensa_pct": "Defensa (% PIB)", "personal": "Personal militar",
+      "aviones": "Aviones", "barcos": "Barcos", "tanques": "Tanques",
+      "menores": "Menores (0-14)", "adolescentes": "Adolescentes (15-24)", "adultos": "Adultos (25-64)",
+      "mayores": "Mayores (65+)", "edad_mediana": "Edad mediana", "net_mig": "Saldo migratorio (‰)", "migrant_pct": "Inmigrantes (% pobl.)"
+    },
+    "topics_label": {
+      "hoteles": "🏨 Hoteles", "precios": "💰 Precios", "trabajo": "💼 Trabajo", "vacaciones": "🌴 Vacaciones",
+      "vuelos": "✈️ Vuelos", "comida": "🍽️ Comida", "seguridad": "🛡️ Seguridad", "alquiler": "🏠 Alquiler"
+    },
+    "heat": [
+      ["renta_pc", "Renta pc"], ["pib", "PIB"], ["poblacion", "Población"], ["idh", "IDH"], ["alfabetizacion", "Alfabetización"],
+      ["titulados", "Titulados sup."], ["edad_mediana", "Edad mediana"], ["menores", "Menores 0-14"], ["adolescentes", "Adolescentes"],
+      ["inflacion", "Inflación"], ["desempleo", "Desempleo"], ["net_mig", "Saldo migratorio"], ["migrant_pct", "Inmigrantes %"],
+      ["defensa_usd", "Gasto defensa"], ["defensa_pct", "Defensa % PIB"], ["personal", "Personal militar"],
+      ["aviones", "Aviones"], ["barcos", "Barcos"], ["tanques", "Tanques"]
+    ],
+    "cmp": ["poblacion", "renta_pc", "pib", "inflacion", "desempleo", "idh", "alfabetizacion", "titulados", "seguridad_social", "net_mig", "migrant_pct", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores"],
+    "rank": ["poblacion", "renta_pc", "pib", "inflacion", "desempleo", "idh", "alfabetizacion", "titulados", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores", "net_mig", "migrant_pct"]
+  }
+}
