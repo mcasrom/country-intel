@@ -16,7 +16,12 @@
   "personal": 133000,
   "aviones": 532,
   "barcos": 123,
-  "tanques": 327
+  "tanques": 327,
+  "menores": 13.4,
+  "adolescentes": 9.7,
+  "adultos": 56.8,
+  "mayores": 20.1,
+  "edad_mediana": 45
  },
  "fr": {
   "poblacion": 68720337,
@@ -35,7 +40,12 @@
   "personal": 205000,
   "aviones": 972,
   "barcos": 87,
-  "tanques": 222
+  "tanques": 222,
+  "menores": 17.7,
+  "adolescentes": 11.7,
+  "adultos": 55.1,
+  "mayores": 15.5,
+  "edad_mediana": 42
  },
  "de": {
   "poblacion": 83491249,
@@ -54,7 +64,12 @@
   "personal": 183000,
   "aviones": 597,
   "barcos": 64,
-  "tanques": 266
+  "tanques": 266,
+  "menores": 13.8,
+  "adolescentes": 10.0,
+  "adultos": 59.6,
+  "mayores": 16.6,
+  "edad_mediana": 47
  },
  "it": {
   "poblacion": 58915656,
@@ -73,7 +88,12 @@
   "personal": 161000,
   "aviones": 747,
   "barcos": 66,
-  "tanques": 197
+  "tanques": 197,
+  "menores": 13.4,
+  "adolescentes": 9.9,
+  "adultos": 57.4,
+  "mayores": 19.3,
+  "edad_mediana": 46
  },
  "gb": {
   "poblacion": 69487000,
@@ -92,7 +112,12 @@
   "personal": 138000,
   "aviones": 688,
   "barcos": 54,
-  "tanques": 213
+  "tanques": 213,
+  "menores": 17.4,
+  "adolescentes": 11.8,
+  "adultos": 55.4,
+  "mayores": 15.4,
+  "edad_mediana": 40
  },
  "us": {
   "poblacion": 341784857,
@@ -111,7 +136,12 @@
   "personal": 1400000,
   "aviones": 13093,
   "barcos": 470,
-  "tanques": 4640
+  "tanques": 4640,
+  "menores": 17.9,
+  "adolescentes": 12.4,
+  "adultos": 55.2,
+  "mayores": 14.5,
+  "edad_mediana": 38
  },
  "cn": {
   "poblacion": 1406585000,
@@ -130,7 +160,12 @@
   "personal": 2000000,
   "aviones": 3283,
   "barcos": 547,
-  "tanques": 4950
+  "tanques": 4950,
+  "menores": 16.2,
+  "adolescentes": 12.5,
+  "adultos": 61.5,
+  "mayores": 9.8,
+  "edad_mediana": 39
  },
  "br": {
   "poblacion": 212812405,
@@ -149,7 +184,12 @@
   "personal": 360000,
   "aviones": 685,
   "barcos": 100,
-  "tanques": 469
+  "tanques": 469,
+  "menores": 19.4,
+  "adolescentes": 14.3,
+  "adultos": 54.5,
+  "mayores": 11.8,
+  "edad_mediana": 34
  },
  "in": {
   "poblacion": 1463865525,
@@ -168,7 +208,12 @@
   "personal": 1450000,
   "aviones": 2120,
   "barcos": 205,
-  "tanques": 4614
+  "tanques": 4614,
+  "menores": 24.6,
+  "adolescentes": 17.1,
+  "adultos": 51.8,
+  "mayores": 6.5,
+  "edad_mediana": 28
  },
  "mx": {
   "poblacion": 131946900,
@@ -187,7 +232,12 @@
   "personal": 236000,
   "aviones": 373,
   "barcos": 78,
-  "tanques": 0
+  "tanques": 0,
+  "menores": 22.5,
+  "adolescentes": 16.7,
+  "adultos": 52.8,
+  "mayores": 8.0,
+  "edad_mediana": 30
  },
  "ma": {
   "poblacion": 37840000,
@@ -206,7 +256,12 @@
   "personal": 195000,
   "aviones": 228,
   "barcos": 121,
-  "tanques": 581
+  "tanques": 581,
+  "menores": 26.1,
+  "adolescentes": 16.9,
+  "adultos": 50.5,
+  "mayores": 6.5,
+  "edad_mediana": 29
  },
  "dz": {
   "poblacion": 45606000,
@@ -225,7 +280,12 @@
   "personal": 307000,
   "aviones": 600,
   "barcos": 50,
-  "tanques": 1895
+  "tanques": 1895,
+  "menores": 27.8,
+  "adolescentes": 15.7,
+  "adultos": 50.5,
+  "mayores": 6.0,
+  "edad_mediana": 29
  },
  "eg": {
   "poblacion": 111247248,
@@ -244,6 +304,35 @@
   "personal": 450000,
   "aviones": 1062,
   "barcos": 93,
-  "tanques": 5285
+  "tanques": 5285,
+  "menores": 31.5,
+  "adolescentes": 18.3,
+  "adultos": 45.5,
+  "mayores": 4.7,
+  "edad_mediana": 25
+ },
+ "pt": {
+  "poblacion": 10578000,
+  "pib": 287080000000.0,
+  "inflacion": 2.5,
+  "desempleo": 6.5,
+  "idh": 0.874,
+  "moneda": "EUR",
+  "region": "Europa",
+  "renta_pc": 27300,
+  "alfabetizacion": 96.6,
+  "seguridad_social": 20.0,
+  "titulados": 38.0,
+  "defensa_usd": 4200000000.0,
+  "defensa_pct": 1.5,
+  "personal": 30000,
+  "aviones": 92,
+  "barcos": 51,
+  "tanques": 34,
+  "menores": 13.1,
+  "adolescentes": 11.0,
+  "adultos": 57.5,
+  "mayores": 18.4,
+  "edad_mediana": 46
  }
 }

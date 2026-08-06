@@ -1,90 +1,115 @@
 {
  "country": "fr",
- "generated": "2026-08-06T12:36:36.506362",
+ "generated": "2026-08-06T12:43:15.465667",
  "indicators": {
+  "adolescentes": {
+   "value": "11.7",
+   "updated": "2026-08-06T12:43:15.446929+00:00",
+   "source": "worldbank"
+  },
+  "adultos": {
+   "value": "55.1",
+   "updated": "2026-08-06T12:43:15.446934+00:00",
+   "source": "worldbank"
+  },
   "alfabetizacion": {
    "value": "99.0",
-   "updated": "2026-08-06T12:36:36.494743+00:00",
+   "updated": "2026-08-06T12:43:15.446872+00:00",
    "source": "worldbank"
   },
   "aviones": {
    "value": "972",
-   "updated": "2026-08-06T12:36:36.494779+00:00",
+   "updated": "2026-08-06T12:43:15.446907+00:00",
    "source": "worldbank"
   },
   "barcos": {
    "value": "87",
-   "updated": "2026-08-06T12:36:36.494784+00:00",
+   "updated": "2026-08-06T12:43:15.446912+00:00",
    "source": "worldbank"
   },
   "defensa_pct": {
    "value": "1.9",
-   "updated": "2026-08-06T12:36:36.494767+00:00",
+   "updated": "2026-08-06T12:43:15.446896+00:00",
    "source": "worldbank"
   },
   "defensa_usd": {
    "value": "49700000000.0",
-   "updated": "2026-08-06T12:36:36.494761+00:00",
+   "updated": "2026-08-06T12:43:15.446890+00:00",
    "source": "worldbank"
   },
   "desempleo": {
    "value": "7.3",
-   "updated": "2026-08-06T12:36:36.494715+00:00",
+   "updated": "2026-08-06T12:43:15.446844+00:00",
+   "source": "worldbank"
+  },
+  "edad_mediana": {
+   "value": "42",
+   "updated": "2026-08-06T12:43:15.446955+00:00",
    "source": "worldbank"
   },
   "idh": {
    "value": "0.91",
-   "updated": "2026-08-06T12:36:36.494721+00:00",
+   "updated": "2026-08-06T12:43:15.446850+00:00",
    "source": "worldbank"
   },
   "inflacion": {
    "value": "0.94",
-   "updated": "2026-08-06T12:36:36.494709+00:00",
+   "updated": "2026-08-06T12:43:15.446837+00:00",
+   "source": "worldbank"
+  },
+  "mayores": {
+   "value": "15.5",
+   "updated": "2026-08-06T12:43:15.446949+00:00",
+   "source": "worldbank"
+  },
+  "menores": {
+   "value": "17.7",
+   "updated": "2026-08-06T12:43:15.446923+00:00",
    "source": "worldbank"
   },
   "moneda": {
    "value": "EUR",
-   "updated": "2026-08-06T12:36:36.494727+00:00",
+   "updated": "2026-08-06T12:43:15.446856+00:00",
    "source": "worldbank"
   },
   "personal": {
    "value": "205000",
-   "updated": "2026-08-06T12:36:36.494773+00:00",
+   "updated": "2026-08-06T12:43:15.446901+00:00",
    "source": "worldbank"
   },
   "pib": {
    "value": "3366315927447.33",
-   "updated": "2026-08-06T12:36:36.494702+00:00",
+   "updated": "2026-08-06T12:43:15.446830+00:00",
    "source": "worldbank"
   },
   "poblacion": {
    "value": "68720337",
-   "updated": "2026-08-06T12:36:36.494695+00:00",
+   "updated": "2026-08-06T12:43:15.446820+00:00",
    "source": "worldbank"
   },
   "region": {
    "value": "Europa",
-   "updated": "2026-08-06T12:36:36.494732+00:00",
+   "updated": "2026-08-06T12:43:15.446861+00:00",
    "source": "worldbank"
   },
   "renta_pc": {
    "value": "43400",
-   "updated": "2026-08-06T12:36:36.494737+00:00",
+   "updated": "2026-08-06T12:43:15.446867+00:00",
    "source": "worldbank"
   },
   "seguridad_social": {
    "value": "31.5",
-   "updated": "2026-08-06T12:36:36.494749+00:00",
+   "updated": "2026-08-06T12:43:15.446878+00:00",
    "source": "worldbank"
   },
   "tanques": {
    "value": "222",
-   "updated": "2026-08-06T12:36:36.494789+00:00",
+   "updated": "2026-08-06T12:43:15.446918+00:00",
    "source": "worldbank"
   },
   "titulados": {
    "value": "43.0",
-   "updated": "2026-08-06T12:36:36.494755+00:00",
+   "updated": "2026-08-06T12:43:15.446884+00:00",
    "source": "worldbank"
   }
  }
