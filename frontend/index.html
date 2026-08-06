@@ -51,6 +51,10 @@
   button.ci{background:#111827;border:1px solid #00d4ff;color:#00d4ff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:.85em}
   button.ci:hover{background:#00d4ff;color:#0b1020}
   .fstage{background:#111827;border:1px solid #1e293b;border-left:3px solid #00d4ff;border-radius:6px;padding:8px 12px;margin-bottom:6px;font-size:.82em}
+  .nota{background:#0f172a;border:1px solid #1e293b;border-radius:8px;padding:8px 10px;margin-top:8px;color:#94a3b8;font-size:.72em;line-height:1.5}
+  .nota b{color:#00d4ff}
+  .nota ul{margin:4px 0 0;padding-left:16px}
+  .yr{color:#475569;font-size:.68em;margin-top:2px}
   .ov{position:fixed;inset:58px 0 0 0;background:#0b1020;z-index:900;overflow:auto;padding:18px;display:none}
   .ov table{background:#111827;border-radius:10px;padding:6px}
   select.ci{background:#111827;border:1px solid #00d4ff;color:#00d4ff;border-radius:8px;padding:6px 10px;font-size:.85em}
@@ -245,6 +249,29 @@ function dispName(cc){
   if (g && g.name) return flagFromCode(cc) + ' ' + g.name;
   return flagFromCode(cc) + ' ' + cc.toUpperCase();
 }
+var NOTAS = {};
+function footNotes(keys){
+  var items = keys.filter(function(k){ return NOTAS[k]; }).map(function(k){ return '<li><b>'+ILABEL[k]+'</b> — '+NOTAS[k]+'</li>'; });
+  return items.length ? '<div class="nota"><b>Notas metodológicas:</b><ul>'+items.join('')+'</ul></div>' : '';
+}
+function dynamicNota(c){
+  var anys = [];
+  var seedOnly = 0, wb = 0;
+  var inds = c.indicators || {};
+  Object.keys(inds).forEach(function(k){
+    var s = (inds[k] && inds[k].source) || '';
+    if (s.indexOf('seed') !== -1 || s.indexOf('GFP') !== -1 || s.indexOf('SIPRI') !== -1 || s.indexOf('Intl') !== -1 || s.indexOf('RSF') !== -1 || s.indexOf('EIU') !== -1 || s.indexOf('CIA') !== -1) seedOnly++;
+    else if (s.indexOf('worldbank') !== -1) wb++;
+  });
+  var parts = [];
+  if (wb) parts.push(wb + ' indicadores del Banco Mundial (año ' + (freshYear(inds) || '2024') + ')');
+  if (seedOnly) parts.push(seedOnly + ' valores de referencia (fuente propia/indices; se actualizarán vía cron)');
+  return parts.length ? '<div class="nota">Fuentes: ' + parts.join(' · ') + '.</div>' : '';
+}
+function freshYear(inds){
+  var ys = Object.keys(inds).map(function(k){ return inds[k].year; }).filter(Boolean).sort();
+  return ys.length ? ys[ys.length - 1] : null;
+}
 function freshBadge(c){
   var upds = Object.keys(c.indicators||{}).map(function(k){ return c.indicators[k].updated; }).filter(Boolean);
   if (!upds.length) return '';
@@ -316,7 +343,11 @@ function migSec(c){
   return '<div class="sec"><h3>🛂 Migración</h3><div class="grid">'+cellsOf(c,['net_mig','migrant_pct'])+'</div>' + (lab ? '<div style="font-size:.78em;color:#94a3b8;margin-top:6px;">'+lab+'</div>' : '') + '</div>';
 }
 function cellsOf(c, keys){
-  return keys.map(function(k){ var v = gv(c,k); return '<div class="cell"><div class="l">'+ILABEL[k]+'</div><div class="v">'+fmt(v,k)+'</div></div>'; }).join('');
+  return keys.map(function(k){
+    var v = gv(c,k); var ind = (c.indicators||{})[k] || {};
+    var tip = ind.source ? (ind.source + (ind.year ? ' · ' + ind.year : '')) : '';
+    return '<div class="cell" title="'+tip+'"><div class="l">'+ILABEL[k]+'</div><div class="v">'+fmt(v,k)+'</div>' + (ind.year ? '<div class="yr">'+ind.year+'</div>' : '') + '</div>';
+  }).join('');
 }
 function travelSec(cc){
   return '<div class="sec"><h3>🛂 Ficha de viaje (UK FCDO)</h3><div id="travel">Cargando aviso oficial...</div></div>';
@@ -370,11 +401,11 @@ function loadCountry(cc){
       '<span class="back" onclick="closeDash()">← Volver al mapa</span>' +
       '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div class="cname">'+meta[1]+' '+meta[0]+'</div><button class="ci" data-c="'+cc+'" onclick="shareCountry(this.dataset.c)">📤 Compartir</button></div><div class="cmeta">'+ (region||'') + (region?' · ':'') + freshBadge(c) +' · datos abiertos</div>' +
       '<div class="sec"><h3>🤖 Resumen IA</h3><div class="resumen">'+resumenIA(c)+'</div></div>' +
-      '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','pib_ppa_pc','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
-      '<div class="sec"><h3>📈 Desarrollo e instituciones</h3><div class="grid">'+cellsOf(c,['esperanza_vida','esperanza_saludable','fertilidad','urbanizacion','internet_pct','co2_pc','gini','homicidios','deuda_pib','gasto_salud','gasto_educacion','corrupcion','libertad_prensa','democracia'])+'</div></div>' +
+      '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','pib_ppa_pc','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div>'+footNotes(['poblacion','renta_pc','pib','pib_ppa_pc','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','edad_mediana','net_mig','migrant_pct'])+'</div>' +
+      '<div class="sec"><h3>📈 Desarrollo e instituciones</h3><div class="grid">'+cellsOf(c,['esperanza_vida','esperanza_saludable','fertilidad','urbanizacion','internet_pct','co2_pc','gini','homicidios','deuda_pib','gasto_salud','gasto_educacion','corrupcion','libertad_prensa','democracia'])+'</div>'+footNotes(['esperanza_vida','esperanza_saludable','fertilidad','urbanizacion','internet_pct','co2_pc','gini','homicidios','deuda_pib','gasto_salud','gasto_educacion','corrupcion','libertad_prensa','democracia'])+'</div>' +
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
       migSec(c) +
-      '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div></div>' +
+      '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div>'+footNotes(['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div>' + dynamicNota(c) +
       '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
       '<div class="sec"><h3>🧳 Riesgo visita país</h3>'+riesgoVisita(c)+'</div>' +
       travelSec(cc) +
@@ -527,7 +558,7 @@ function buildHeat(){
   }).join('');
   var heads = '<tr><th style="border:1px solid #1e293b;"></th>'+codes.map(function(cc){ return '<th style="color:#00d4ff;font-size:10px;padding:4px 2px;border:1px solid #1e293b;">'+dispName(cc)+'</th>'; }).join('')+'</tr>';
   tbl.innerHTML = '<table style="border-collapse:collapse;margin:auto;">'+heads+rows+'</table>' +
-    '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:10px;">🔵 Azul = por debajo · 🔴 Rojo = por encima (normalizado por indicador) · económicos: seed ref. · defensa: GFP/SIPRI 2025</div>';
+    '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:10px;">🔵 Azul = por debajo · 🔴 Rojo = por encima (normalizado por indicador) · el año por indicador varía según fuente</div>' + footNotes(HEAT.map(function(h){ return h[0]; }));
 }
 var HEAT = [
   ['renta_pc','Renta pc'], ['pib','PIB'], ['poblacion','Población'], ['idh','IDH'], ['alfabetizacion','Alfabetización'], ['titulados','Titulados sup.'], ['edad_mediana','Edad mediana'], ['menores','Menores 0-14'], ['adolescentes','Adolescentes'], ['inflacion','Inflación'], ['desempleo','Desempleo'], ['net_mig','Saldo migratorio'], ['migrant_pct','Inmigrantes %'], ['defensa_usd','Gasto defensa'], ['defensa_pct','Defensa % PIB'], ['personal','Personal militar'], ['aviones','Aviones'], ['barcos','Barcos'], ['tanques','Tanques']
@@ -555,7 +586,7 @@ function buildCmp(){
       '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(va,k)+'</td>' +
       '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(vb,k)+'</td></tr>';
   }).join('');
-  document.getElementById('cmptable').innerHTML =
+  document.getElementById('cmptable').innerHTML = footNotes(CMP) +
     '<table style="border-collapse:collapse;width:100%;"><tr><th style="text-align:left;border:1px solid #1e293b;"></th>' +
     '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[a]?META[a][1]+' '+META[a][0]:a)+'</th>' +
     '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[b]?META[b][1]+' '+META[b][0]:b)+'</th></tr>'+rows+'</table>';
@@ -581,7 +612,7 @@ function buildRank(){
       '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(x.v,k)+'</td></tr>';
   }).join('');
   var note = (asc ? 'Menor primero' : 'Mayor primero') + (INV[k] ? ' · para este indicador, menor = mejor' : '');
-  document.getElementById('ranktable').innerHTML = '<table style="border-collapse:collapse;width:100%;"><tr><th style="border:1px solid #1e293b;color:#64748b;">#</th><th style="text-align:left;border:1px solid #1e293b;color:#00d4ff;">País</th><th style="border:1px solid #1e293b;color:#00d4ff;text-align:right;">'+ILABEL[k]+'</th></tr>'+rows+'</table>' +
+  document.getElementById('ranktable').innerHTML = footNotes([k]) + '<table style="border-collapse:collapse;width:100%;"><tr><th style="border:1px solid #1e293b;color:#64748b;">#</th><th style="text-align:left;border:1px solid #1e293b;color:#00d4ff;">País</th><th style="border:1px solid #1e293b;color:#00d4ff;text-align:right;">'+ILABEL[k]+'</th></tr>'+rows+'</table>' +
     '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:8px;">'+note+'</div>';
 }
 
@@ -611,6 +642,7 @@ function applyConfig(cfg){
   if (f.zoom) ZOOM = f.zoom;
   if (f.risk) RISK = f.risk;
   if (f.alerts) ALERT_CFG = f.alerts;
+  if (f.notas) NOTAS = f.notas;
 }
 function handleDeepLink(){
   var m = (location.search||'').match(/[?&]c=([a-z]{2})/i);
