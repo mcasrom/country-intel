@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Country Intelligence OSINT</title>
+<style>
+  body{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0;margin:0;padding:20px}
+  h1{color:#00d4ff}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+  .card{background:#111827;border:1px solid #1e293b;border-radius:12px;padding:16px}
+  .card h3{margin:0 0 6px;color:#00d4ff}
+  .val{font-size:1.4em;font-weight:700}
+  .meta{color:#64748b;font-size:.78em}
+</style>
+</head>
+<body>
+<h1>🌍 Country Intelligence OSINT</h1>
+<p id="status">Cargando países...</p>
+<div class="grid" id="cards"></div>
+<script>
+fetch('/api/countries').then(r=>r.json()).then(function(d){
+  document.getElementById('status').textContent = d.countries.length + ' países';
+  d.countries.forEach(function(cc){
+    fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
+      var el = document.createElement('div'); el.className='card';
+      var inds = Object.entries(c.indicators||{}).map(function(kv){
+        return '<div><strong>'+kv[0]+':</strong> <span class="val">'+ (kv[1].value ?? '—') +'</span> <span class="meta">('+ (kv[1].updated||'').slice(0,10) +')</span></div>';
+      }).join('');
+      el.innerHTML = '<h3>'+cc.toUpperCase()+'</h3>'+inds;
+      document.getElementById('cards').appendChild(el);
+    });
+  });
+});
+</script>
+</body>
+</html>
