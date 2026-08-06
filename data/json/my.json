@@ -1,0 +1,47 @@
+{
+ "country": "my",
+ "generated": "2026-08-06T16:57:05.233792+00:00",
+ "geo": {
+  "name": "Malaysia",
+  "lat": 3.12433,
+  "lon": 101.684,
+  "iso2": "my"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.846",
+   "updated": "2026-08-06T16:57:05.172169+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.834100204499",
+   "updated": "2026-08-06T16:57:05.172157+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "10.7",
+   "updated": "2026-08-06T16:57:05.172205+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "174770",
+   "updated": "2026-08-06T16:57:05.172194+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "422227005428.688",
+   "updated": "2026-08-06T16:57:05.172144+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "35557673",
+   "updated": "2026-08-06T16:57:05.172133+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "11874.4273684245",
+   "updated": "2026-08-06T16:57:05.172181+00:00",
+   "source": "worldbank"
+  }
+ }
+}

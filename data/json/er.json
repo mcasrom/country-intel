@@ -1,0 +1,32 @@
+{
+ "country": "er",
+ "generated": "2026-08-06T16:57:05.203769+00:00",
+ "geo": {
+  "name": "Eritrea",
+  "lat": 15.3315,
+  "lon": 38.9183,
+  "iso2": "er"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "5.947",
+   "updated": "2026-08-06T16:57:05.162721+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.4",
+   "updated": "2026-08-06T16:57:05.162732+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-12696",
+   "updated": "2026-08-06T16:57:05.162726+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "3535603",
+   "updated": "2026-08-06T16:57:05.162715+00:00",
+   "source": "worldbank"
+  }
+ }
+}

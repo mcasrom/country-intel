@@ -1,0 +1,37 @@
+{
+ "country": "so",
+ "generated": "2026-08-06T16:57:05.245306+00:00",
+ "geo": {
+  "name": "Somalia, Fed. Rep.",
+  "lat": 2.07515,
+  "lon": 45.3254,
+  "iso2": "so"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "18.949",
+   "updated": "2026-08-06T16:57:05.175897+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "26859",
+   "updated": "2026-08-06T16:57:05.175921+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "11967000000",
+   "updated": "2026-08-06T16:57:05.175885+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "19009151",
+   "updated": "2026-08-06T16:57:05.175873+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "629.538899449007",
+   "updated": "2026-08-06T16:57:05.175908+00:00",
+   "source": "worldbank"
+  }
+ }
+}

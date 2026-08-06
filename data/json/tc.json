@@ -1,0 +1,32 @@
+{
+ "country": "tc",
+ "generated": "2026-08-06T16:57:05.248250+00:00",
+ "geo": {
+  "name": "Turks and Caicos Islands",
+  "lat": 21.4602778,
+  "lon": -71.141389,
+  "iso2": "tc"
+ },
+ "indicators": {
+  "net_mig": {
+   "value": "176",
+   "updated": "2026-08-06T16:57:05.176420+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1745378000",
+   "updated": "2026-08-06T16:57:05.176396+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "46535",
+   "updated": "2026-08-06T16:57:05.176385+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "37506.7798431288",
+   "updated": "2026-08-06T16:57:05.176408+00:00",
+   "source": "worldbank"
+  }
+ }
+}

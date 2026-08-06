@@ -1,0 +1,47 @@
+{
+ "country": "bb",
+ "generated": "2026-08-06T16:57:05.190947+00:00",
+ "geo": {
+  "name": "Barbados",
+  "lat": 13.0935,
+  "lon": -59.6105,
+  "iso2": "bb"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "6.448",
+   "updated": "2026-08-06T16:57:05.158170+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.4464366430616",
+   "updated": "2026-08-06T16:57:05.158155+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "12.5",
+   "updated": "2026-08-06T16:57:05.158212+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-70",
+   "updated": "2026-08-06T16:57:05.158198+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "7597571450",
+   "updated": "2026-08-06T16:57:05.158142+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "282467",
+   "updated": "2026-08-06T16:57:05.158128+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "26897.2002039176",
+   "updated": "2026-08-06T16:57:05.158183+00:00",
+   "source": "worldbank"
+  }
+ }
+}

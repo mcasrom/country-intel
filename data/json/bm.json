@@ -1,0 +1,37 @@
+{
+ "country": "bm",
+ "generated": "2026-08-06T16:57:05.193483+00:00",
+ "geo": {
+  "name": "Bermuda",
+  "lat": 32.3293,
+  "lon": -64.706,
+  "iso2": "bm"
+ },
+ "indicators": {
+  "migrant_pct": {
+   "value": "31.2",
+   "updated": "2026-08-06T16:57:05.158800+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-5",
+   "updated": "2026-08-06T16:57:05.158794+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "9194499000",
+   "updated": "2026-08-06T16:57:05.158781+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "64636",
+   "updated": "2026-08-06T16:57:05.158775+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "142250.433195123",
+   "updated": "2026-08-06T16:57:05.158787+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "country": "ls",
+ "generated": "2026-08-06T16:57:05.226313+00:00",
+ "geo": {
+  "name": "Lesotho",
+  "lat": -29.5208,
+  "lon": 27.7167,
+  "iso2": "ls"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "90.4499969482422",
+   "updated": "2026-08-06T16:57:05.169545+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "16.34",
+   "updated": "2026-08-06T16:57:05.169525+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "6.10544624245032",
+   "updated": "2026-08-06T16:57:05.169510+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.6",
+   "updated": "2026-08-06T16:57:05.169565+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-5107",
+   "updated": "2026-08-06T16:57:05.169556+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2391282547.80028",
+   "updated": "2026-08-06T16:57:05.169494+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "2337423",
+   "updated": "2026-08-06T16:57:05.169480+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1023.04227681523",
+   "updated": "2026-08-06T16:57:05.169536+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "hk",
+ "generated": "2026-08-06T16:57:05.212958+00:00",
+ "geo": {
+  "name": "Hong Kong SAR, China",
+  "lat": 22.3964,
+  "lon": 114.109,
+  "iso2": "hk"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "2.988",
+   "updated": "2026-08-06T16:57:05.165413+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.72972119105914",
+   "updated": "2026-08-06T16:57:05.165400+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "41.3",
+   "updated": "2026-08-06T16:57:05.165463+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-19272",
+   "updated": "2026-08-06T16:57:05.165449+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "408368682415.423",
+   "updated": "2026-08-06T16:57:05.165390+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "7524100",
+   "updated": "2026-08-06T16:57:05.165377+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "54274.7547767073",
+   "updated": "2026-08-06T16:57:05.165428+00:00",
+   "source": "worldbank"
+  }
+ }
+}

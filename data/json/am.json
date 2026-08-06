@@ -1,0 +1,47 @@
+{
+ "country": "am",
+ "generated": "2026-08-06T16:57:05.187471+00:00",
+ "geo": {
+  "name": "Armenia",
+  "lat": 40.1596,
+  "lon": 44.509,
+  "iso2": "am"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "12.405",
+   "updated": "2026-08-06T16:57:05.157302+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "0.269511978259125",
+   "updated": "2026-08-06T16:57:05.157288+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "9.2",
+   "updated": "2026-08-06T16:57:05.157366+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-29966",
+   "updated": "2026-08-06T16:57:05.157352+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "25955275380.0321",
+   "updated": "2026-08-06T16:57:05.157273+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "3033500",
+   "updated": "2026-08-06T16:57:05.157258+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "8556.21406956719",
+   "updated": "2026-08-06T16:57:05.157316+00:00",
+   "source": "worldbank"
+  }
+ }
+}

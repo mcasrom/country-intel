@@ -1,0 +1,27 @@
+{
+ "country": "sm",
+ "generated": "2026-08-06T16:57:05.244737+00:00",
+ "geo": {
+  "name": "San Marino",
+  "lat": 43.9322,
+  "lon": 12.4486,
+  "iso2": "sm"
+ },
+ "indicators": {
+  "inflacion": {
+   "value": "1.24216507945569",
+   "updated": "2026-08-06T16:57:05.175770+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "37",
+   "updated": "2026-08-06T16:57:05.175783+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "33977",
+   "updated": "2026-08-06T16:57:05.175757+00:00",
+   "source": "worldbank"
+  }
+ }
+}

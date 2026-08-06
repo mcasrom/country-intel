@@ -1,0 +1,47 @@
+{
+ "country": "jp",
+ "generated": "2026-08-06T16:57:05.219862+00:00",
+ "geo": {
+  "name": "Japan",
+  "lat": 35.67,
+  "lon": 139.77,
+  "iso2": "jp"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "2.5",
+   "updated": "2026-08-06T16:57:05.167641+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.73853681635241",
+   "updated": "2026-08-06T16:57:05.167627+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "2.8",
+   "updated": "2026-08-06T16:57:05.167682+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "153357",
+   "updated": "2026-08-06T16:57:05.167669+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "4190008188358.57",
+   "updated": "2026-08-06T16:57:05.167613+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "123975371",
+   "updated": "2026-08-06T16:57:05.167600+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "33797.1014287876",
+   "updated": "2026-08-06T16:57:05.167655+00:00",
+   "source": "worldbank"
+  }
+ }
+}

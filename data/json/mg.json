@@ -1,0 +1,47 @@
+{
+ "country": "mg",
+ "generated": "2026-08-06T16:57:05.230184+00:00",
+ "geo": {
+  "name": "Madagascar",
+  "lat": -20.4667,
+  "lon": 45.7167,
+  "iso2": "mg"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.051",
+   "updated": "2026-08-06T16:57:05.170691+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "7.61335784313723",
+   "updated": "2026-08-06T16:57:05.170679+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.1",
+   "updated": "2026-08-06T16:57:05.170727+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-1795",
+   "updated": "2026-08-06T16:57:05.170716+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "17592832696.1336",
+   "updated": "2026-08-06T16:57:05.170667+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "31964956",
+   "updated": "2026-08-06T16:57:05.170655+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "550.37875528856",
+   "updated": "2026-08-06T16:57:05.170703+00:00",
+   "source": "worldbank"
+  }
+ }
+}

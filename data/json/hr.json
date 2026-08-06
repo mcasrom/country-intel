@@ -1,0 +1,47 @@
+{
+ "country": "hr",
+ "generated": "2026-08-06T16:57:05.213654+00:00",
+ "geo": {
+  "name": "Croatia",
+  "lat": 45.8069,
+  "lon": 15.9614,
+  "iso2": "hr"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "5",
+   "updated": "2026-08-06T16:57:05.165667+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.97200477643626",
+   "updated": "2026-08-06T16:57:05.165654+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "13.6",
+   "updated": "2026-08-06T16:57:05.165709+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-5186",
+   "updated": "2026-08-06T16:57:05.165695+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "92981894167.9687",
+   "updated": "2026-08-06T16:57:05.165639+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "3866200",
+   "updated": "2026-08-06T16:57:05.165627+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "24049.9441746337",
+   "updated": "2026-08-06T16:57:05.165680+00:00",
+   "source": "worldbank"
+  }
+ }
+}

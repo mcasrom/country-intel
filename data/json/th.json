@@ -1,0 +1,42 @@
+{
+ "country": "th",
+ "generated": "2026-08-06T16:57:05.248905+00:00",
+ "geo": {
+  "name": "Thailand",
+  "lat": 13.7308,
+  "lon": 100.521,
+  "iso2": "th"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "0.781",
+   "updated": "2026-08-06T16:57:05.176624+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "0.398333333333422",
+   "updated": "2026-08-06T16:57:05.176612+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "23321",
+   "updated": "2026-08-06T16:57:05.176649+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "529385520941.539",
+   "updated": "2026-08-06T16:57:05.176600+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "71668011",
+   "updated": "2026-08-06T16:57:05.176588+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "7386.63615126055",
+   "updated": "2026-08-06T16:57:05.176636+00:00",
+   "source": "worldbank"
+  }
+ }
+}

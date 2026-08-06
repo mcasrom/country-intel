@@ -1,0 +1,47 @@
+{
+ "country": "bi",
+ "generated": "2026-08-06T16:57:05.192824+00:00",
+ "geo": {
+  "name": "Burundi",
+  "lat": -3.3784,
+  "lon": 29.3639,
+  "iso2": "bi"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "0.915",
+   "updated": "2026-08-06T16:57:05.158702+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "20.2124925027847",
+   "updated": "2026-08-06T16:57:05.158695+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "2.8",
+   "updated": "2026-08-06T16:57:05.158722+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-27074",
+   "updated": "2026-08-06T16:57:05.158716+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "3037579858.38142",
+   "updated": "2026-08-06T16:57:05.158688+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "14047786",
+   "updated": "2026-08-06T16:57:05.158682+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "216.231928531758",
+   "updated": "2026-08-06T16:57:05.158709+00:00",
+   "source": "worldbank"
+  }
+ }
+}

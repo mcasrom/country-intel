@@ -1,0 +1,32 @@
+{
+ "country": "kn",
+ "generated": "2026-08-06T16:57:05.221908+00:00",
+ "geo": {
+  "name": "St. Kitts and Nevis",
+  "lat": 17.3,
+  "lon": -62.7309,
+  "iso2": "kn"
+ },
+ "indicators": {
+  "net_mig": {
+   "value": "-7",
+   "updated": "2026-08-06T16:57:05.168472+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1122388888.88889",
+   "updated": "2026-08-06T16:57:05.168443+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "46843",
+   "updated": "2026-08-06T16:57:05.168429+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "23960.6534357084",
+   "updated": "2026-08-06T16:57:05.168459+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "country": "se",
+ "generated": "2026-08-06T16:57:05.243615+00:00",
+ "geo": {
+  "name": "Sweden",
+  "lat": 59.3327,
+  "lon": 18.0645,
+  "iso2": "se"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "8.4",
+   "updated": "2026-08-06T16:57:05.175376+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.83581658224034",
+   "updated": "2026-08-06T16:57:05.175356+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "50115",
+   "updated": "2026-08-06T16:57:05.175410+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "604827393488.582",
+   "updated": "2026-08-06T16:57:05.175344+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "10569709",
+   "updated": "2026-08-06T16:57:05.175331+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "57222.7100565003",
+   "updated": "2026-08-06T16:57:05.175397+00:00",
+   "source": "worldbank"
+  }
+ }
+}

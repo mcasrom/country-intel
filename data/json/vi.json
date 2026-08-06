@@ -1,0 +1,27 @@
+{
+ "country": "vi",
+ "generated": "2026-08-06T16:57:05.254178+00:00",
+ "geo": {
+  "name": "Virgin Islands (U.S.)",
+  "lat": 18.3358,
+  "lon": -64.8963,
+  "iso2": "vi"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "11.423",
+   "updated": "2026-08-06T16:57:05.178164+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-420",
+   "updated": "2026-08-06T16:57:05.178177+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "104377",
+   "updated": "2026-08-06T16:57:05.178153+00:00",
+   "source": "worldbank"
+  }
+ }
+}

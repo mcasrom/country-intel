@@ -1,0 +1,47 @@
+{
+ "country": "km",
+ "generated": "2026-08-06T16:57:05.221581+00:00",
+ "geo": {
+  "name": "Comoros",
+  "lat": -11.6986,
+  "lon": 43.2418,
+  "iso2": "km"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.815",
+   "updated": "2026-08-06T16:57:05.168370+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "5.05192609588218",
+   "updated": "2026-08-06T16:57:05.168355+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "1.4",
+   "updated": "2026-08-06T16:57:05.168415+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-2051",
+   "updated": "2026-08-06T16:57:05.168401+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1610082688.26617",
+   "updated": "2026-08-06T16:57:05.168338+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "866628",
+   "updated": "2026-08-06T16:57:05.168305+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1857.87060684189",
+   "updated": "2026-08-06T16:57:05.168384+00:00",
+   "source": "worldbank"
+  }
+ }
+}

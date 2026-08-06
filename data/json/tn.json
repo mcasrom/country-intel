@@ -1,0 +1,42 @@
+{
+ "country": "tn",
+ "generated": "2026-08-06T16:57:05.250216+00:00",
+ "geo": {
+  "name": "Tunisia",
+  "lat": 36.7899,
+  "lon": 10.21,
+  "iso2": "tn"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "15.341",
+   "updated": "2026-08-06T16:57:05.176907+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "7.20661657168794",
+   "updated": "2026-08-06T16:57:05.176894+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-15221",
+   "updated": "2026-08-06T16:57:05.176931+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "51412122479.8468",
+   "updated": "2026-08-06T16:57:05.176882+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "12277109",
+   "updated": "2026-08-06T16:57:05.176871+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "4187.64079392362",
+   "updated": "2026-08-06T16:57:05.176919+00:00",
+   "source": "worldbank"
+  }
+ }
+}

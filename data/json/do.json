@@ -1,0 +1,52 @@
+{
+ "country": "do",
+ "generated": "2026-08-06T16:57:05.202077+00:00",
+ "geo": {
+  "name": "Dominican Republic",
+  "lat": 18.479,
+  "lon": -69.8908,
+  "iso2": "do"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "94.0299987792969",
+   "updated": "2026-08-06T16:57:05.162293+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "5.312",
+   "updated": "2026-08-06T16:57:05.162281+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.30223338951227",
+   "updated": "2026-08-06T16:57:05.162276+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "6.5",
+   "updated": "2026-08-06T16:57:05.162305+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-34806",
+   "updated": "2026-08-06T16:57:05.162299+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "124282245638.568",
+   "updated": "2026-08-06T16:57:05.162270+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "11427557",
+   "updated": "2026-08-06T16:57:05.162264+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "10875.6618443092",
+   "updated": "2026-08-06T16:57:05.162287+00:00",
+   "source": "worldbank"
+  }
+ }
+}

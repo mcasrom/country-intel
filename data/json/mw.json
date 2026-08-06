@@ -1,0 +1,47 @@
+{
+ "country": "mw",
+ "generated": "2026-08-06T16:57:05.233178+00:00",
+ "geo": {
+  "name": "Malawi",
+  "lat": -13.9899,
+  "lon": 33.7703,
+  "iso2": "mw"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "5.051",
+   "updated": "2026-08-06T16:57:05.171763+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "32.1796504225025",
+   "updated": "2026-08-06T16:57:05.171747+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.9",
+   "updated": "2026-08-06T16:57:05.171800+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-1507",
+   "updated": "2026-08-06T16:57:05.171789+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "11311971400.3864",
+   "updated": "2026-08-06T16:57:05.171730+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "21655286",
+   "updated": "2026-08-06T16:57:05.171705+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "522.365366146003",
+   "updated": "2026-08-06T16:57:05.171776+00:00",
+   "source": "worldbank"
+  }
+ }
+}

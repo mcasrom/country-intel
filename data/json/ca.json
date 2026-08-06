@@ -1,0 +1,47 @@
+{
+ "country": "ca",
+ "generated": "2026-08-06T16:57:05.196911+00:00",
+ "geo": {
+  "name": "Canada",
+  "lat": 45.4215,
+  "lon": -75.6919,
+  "iso2": "ca"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "6.351",
+   "updated": "2026-08-06T16:57:05.159733+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.38158383281173",
+   "updated": "2026-08-06T16:57:05.159719+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "22.2",
+   "updated": "2026-08-06T16:57:05.159777+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "368599",
+   "updated": "2026-08-06T16:57:05.159762+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2270076189683.46",
+   "updated": "2026-08-06T16:57:05.159704+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "41262329",
+   "updated": "2026-08-06T16:57:05.159690+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "55015.7066917734",
+   "updated": "2026-08-06T16:57:05.159748+00:00",
+   "source": "worldbank"
+  }
+ }
+}

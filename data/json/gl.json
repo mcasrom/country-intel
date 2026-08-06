@@ -1,0 +1,27 @@
+{
+ "country": "gl",
+ "generated": "2026-08-06T16:57:05.209857+00:00",
+ "geo": {
+  "name": "Greenland",
+  "lat": 64.1836,
+  "lon": -51.7214,
+  "iso2": "gl"
+ },
+ "indicators": {
+  "migrant_pct": {
+   "value": "10.4",
+   "updated": "2026-08-06T16:57:05.164702+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-284",
+   "updated": "2026-08-06T16:57:05.164690+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "56836",
+   "updated": "2026-08-06T16:57:05.164681+00:00",
+   "source": "worldbank"
+  }
+ }
+}

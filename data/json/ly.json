@@ -1,0 +1,47 @@
+{
+ "country": "ly",
+ "generated": "2026-08-06T16:57:05.227795+00:00",
+ "geo": {
+  "name": "Libya",
+  "lat": 32.8578,
+  "lon": 13.1072,
+  "iso2": "ly"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "19.085",
+   "updated": "2026-08-06T16:57:05.169893+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.12615766885021",
+   "updated": "2026-08-06T16:57:05.169881+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "12.2",
+   "updated": "2026-08-06T16:57:05.169942+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "3448",
+   "updated": "2026-08-06T16:57:05.169922+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "48487151215.345",
+   "updated": "2026-08-06T16:57:05.169868+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "7381023",
+   "updated": "2026-08-06T16:57:05.169857+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "6569.16408678648",
+   "updated": "2026-08-06T16:57:05.169905+00:00",
+   "source": "worldbank"
+  }
+ }
+}

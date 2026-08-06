@@ -1,0 +1,47 @@
+{
+ "country": "il",
+ "generated": "2026-08-06T16:57:05.215748+00:00",
+ "geo": {
+  "name": "Israel",
+  "lat": 31.7717,
+  "lon": 35.2035,
+  "iso2": "il"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.595",
+   "updated": "2026-08-06T16:57:05.166149+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.07480889805025",
+   "updated": "2026-08-06T16:57:05.166133+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "22.3",
+   "updated": "2026-08-06T16:57:05.166191+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "10612",
+   "updated": "2026-08-06T16:57:05.166178+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "542284494490.778",
+   "updated": "2026-08-06T16:57:05.166119+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "10002200",
+   "updated": "2026-08-06T16:57:05.166105+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "54216.5218142787",
+   "updated": "2026-08-06T16:57:05.166163+00:00",
+   "source": "worldbank"
+  }
+ }
+}

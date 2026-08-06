@@ -1,0 +1,47 @@
+{
+ "country": "lt",
+ "generated": "2026-08-06T16:57:05.226709+00:00",
+ "geo": {
+  "name": "Lithuania",
+  "lat": 54.6896,
+  "lon": 25.2799,
+  "iso2": "lt"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "6.851",
+   "updated": "2026-08-06T16:57:05.169626+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "0.715735835228723",
+   "updated": "2026-08-06T16:57:05.169610+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "6.1",
+   "updated": "2026-08-06T16:57:05.169665+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "2617",
+   "updated": "2026-08-06T16:57:05.169651+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "85503938573.5664",
+   "updated": "2026-08-06T16:57:05.169595+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "2888278",
+   "updated": "2026-08-06T16:57:05.169581+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "29603.7772588256",
+   "updated": "2026-08-06T16:57:05.169642+00:00",
+   "source": "worldbank"
+  }
+ }
+}

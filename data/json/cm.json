@@ -1,0 +1,47 @@
+{
+ "country": "cm",
+ "generated": "2026-08-06T16:57:05.198891+00:00",
+ "geo": {
+  "name": "Cameroon",
+  "lat": 3.8721,
+  "lon": 11.5174,
+  "iso2": "cm"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.603",
+   "updated": "2026-08-06T16:57:05.160451+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "4.53331349711606",
+   "updated": "2026-08-06T16:57:05.160436+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "2.2",
+   "updated": "2026-08-06T16:57:05.160494+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-13892",
+   "updated": "2026-08-06T16:57:05.160479+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "53296694320.2057",
+   "updated": "2026-08-06T16:57:05.160422+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "29123744",
+   "updated": "2026-08-06T16:57:05.160408+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1830.00833684727",
+   "updated": "2026-08-06T16:57:05.160465+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "za",
+ "generated": "2026-08-06T16:57:05.255924+00:00",
+ "geo": {
+  "name": "South Africa",
+  "lat": -25.746,
+  "lon": 28.1871,
+  "iso2": "za"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "91.1500015258789",
+   "updated": "2026-08-06T16:57:05.178633+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "32.279",
+   "updated": "2026-08-06T16:57:05.178609+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "4.36115246518962",
+   "updated": "2026-08-06T16:57:05.178597+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "166972",
+   "updated": "2026-08-06T16:57:05.178646+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "401144998373.585",
+   "updated": "2026-08-06T16:57:05.178584+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "64007187",
+   "updated": "2026-08-06T16:57:05.178573+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "6267.186814093",
+   "updated": "2026-08-06T16:57:05.178621+00:00",
+   "source": "worldbank"
+  }
+ }
+}

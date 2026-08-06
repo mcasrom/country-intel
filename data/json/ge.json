@@ -1,0 +1,52 @@
+{
+ "country": "ge",
+ "generated": "2026-08-06T16:57:05.208813+00:00",
+ "geo": {
+  "name": "Georgia",
+  "lat": 41.71,
+  "lon": 44.793,
+  "iso2": "ge"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "99.6800003051758",
+   "updated": "2026-08-06T16:57:05.164520+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "11.557",
+   "updated": "2026-08-06T16:57:05.164489+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.10971758022096",
+   "updated": "2026-08-06T16:57:05.164473+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "2.1",
+   "updated": "2026-08-06T16:57:05.164545+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "1745",
+   "updated": "2026-08-06T16:57:05.164533+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "34189423333.141",
+   "updated": "2026-08-06T16:57:05.164461+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "3812518",
+   "updated": "2026-08-06T16:57:05.164450+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "8967.67525638987",
+   "updated": "2026-08-06T16:57:05.164504+00:00",
+   "source": "worldbank"
+  }
+ }
+}

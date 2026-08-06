@@ -1,0 +1,47 @@
+{
+ "country": "gq",
+ "generated": "2026-08-06T16:57:05.210880+00:00",
+ "geo": {
+  "name": "Equatorial Guinea",
+  "lat": 3.7523,
+  "lon": 8.7741,
+  "iso2": "gq"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "8.293",
+   "updated": "2026-08-06T16:57:05.164901+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.92140227309103",
+   "updated": "2026-08-06T16:57:05.164891+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "13.2",
+   "updated": "2026-08-06T16:57:05.164928+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "3891",
+   "updated": "2026-08-06T16:57:05.164920+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "13254388261.1258",
+   "updated": "2026-08-06T16:57:05.164881+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "1892516",
+   "updated": "2026-08-06T16:57:05.164872+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "7003.58055684906",
+   "updated": "2026-08-06T16:57:05.164910+00:00",
+   "source": "worldbank"
+  }
+ }
+}

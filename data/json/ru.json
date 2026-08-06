@@ -1,0 +1,42 @@
+{
+ "country": "ru",
+ "generated": "2026-08-06T16:57:05.242028+00:00",
+ "geo": {
+  "name": "Russian Federation",
+  "lat": 55.7558,
+  "lon": 37.6176,
+  "iso2": "ru"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "2.43",
+   "updated": "2026-08-06T16:57:05.174902+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "8.43486410496723",
+   "updated": "2026-08-06T16:57:05.174890+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-178042",
+   "updated": "2026-08-06T16:57:05.174926+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2186462268813.08",
+   "updated": "2026-08-06T16:57:05.174877+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "143669648",
+   "updated": "2026-08-06T16:57:05.174866+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "14961.8974609375",
+   "updated": "2026-08-06T16:57:05.174914+00:00",
+   "source": "worldbank"
+  }
+ }
+}

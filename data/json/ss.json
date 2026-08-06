@@ -1,0 +1,27 @@
+{
+ "country": "ss",
+ "generated": "2026-08-06T16:57:05.246183+00:00",
+ "geo": {
+  "name": "South Sudan",
+  "lat": 4.85,
+  "lon": 31.6,
+  "iso2": "ss"
+ },
+ "indicators": {
+  "inflacion": {
+   "value": "91.4408220769046",
+   "updated": "2026-08-06T16:57:05.176017+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "15374",
+   "updated": "2026-08-06T16:57:05.176030+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "11943408",
+   "updated": "2026-08-06T16:57:05.176006+00:00",
+   "source": "worldbank"
+  }
+ }
+}

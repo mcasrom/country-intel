@@ -1,0 +1,47 @@
+{
+ "country": "ne",
+ "generated": "2026-08-06T16:57:05.234700+00:00",
+ "geo": {
+  "name": "Niger",
+  "lat": 13.514,
+  "lon": 2.1073,
+  "iso2": "ne"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "0.376",
+   "updated": "2026-08-06T16:57:05.172569+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "9.07151997725013",
+   "updated": "2026-08-06T16:57:05.172553+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "1.7",
+   "updated": "2026-08-06T16:57:05.172618+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-4041",
+   "updated": "2026-08-06T16:57:05.172605+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "19729786046.7618",
+   "updated": "2026-08-06T16:57:05.172541+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "27032412",
+   "updated": "2026-08-06T16:57:05.172529+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "729.856664168989",
+   "updated": "2026-08-06T16:57:05.172581+00:00",
+   "source": "worldbank"
+  }
+ }
+}

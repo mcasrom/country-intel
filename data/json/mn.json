@@ -1,0 +1,52 @@
+{
+ "country": "mn",
+ "generated": "2026-08-06T16:57:05.231656+00:00",
+ "geo": {
+  "name": "Mongolia",
+  "lat": 47.9129,
+  "lon": 106.937,
+  "iso2": "mn"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "98.6399993896484",
+   "updated": "2026-08-06T16:57:05.171153+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "5.158",
+   "updated": "2026-08-06T16:57:05.171129+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "6.1977990165842",
+   "updated": "2026-08-06T16:57:05.171117+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.6",
+   "updated": "2026-08-06T16:57:05.171191+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "83",
+   "updated": "2026-08-06T16:57:05.171179+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "23794540024.5132",
+   "updated": "2026-08-06T16:57:05.171104+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "3524788",
+   "updated": "2026-08-06T16:57:05.171093+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "6750.6301157724",
+   "updated": "2026-08-06T16:57:05.171141+00:00",
+   "source": "worldbank"
+  }
+ }
+}

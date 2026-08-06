@@ -1,0 +1,52 @@
+{
+ "country": "bh",
+ "generated": "2026-08-06T16:57:05.192496+00:00",
+ "geo": {
+  "name": "Bahrain",
+  "lat": 26.1921,
+  "lon": 50.5354,
+  "iso2": "bh"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "97.8199996948242",
+   "updated": "2026-08-06T16:57:05.158652+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "1.084",
+   "updated": "2026-08-06T16:57:05.158639+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "0.919635459817651",
+   "updated": "2026-08-06T16:57:05.158632+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "52.3",
+   "updated": "2026-08-06T16:57:05.158675+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "22699",
+   "updated": "2026-08-06T16:57:05.158669+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "47210732712.766",
+   "updated": "2026-08-06T16:57:05.158625+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "1588670",
+   "updated": "2026-08-06T16:57:05.158619+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "29717.1424605273",
+   "updated": "2026-08-06T16:57:05.158645+00:00",
+   "source": "worldbank"
+  }
+ }
+}

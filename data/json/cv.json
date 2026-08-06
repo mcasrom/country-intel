@@ -1,0 +1,52 @@
+{
+ "country": "cv",
+ "generated": "2026-08-06T16:57:05.200070+00:00",
+ "geo": {
+  "name": "Cabo Verde",
+  "lat": 14.9218,
+  "lon": -23.5087,
+  "iso2": "cv"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "88.4700012207031",
+   "updated": "2026-08-06T16:57:05.161311+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "11.883",
+   "updated": "2026-08-06T16:57:05.161278+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.04817001091965",
+   "updated": "2026-08-06T16:57:05.161254+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "3.1",
+   "updated": "2026-08-06T16:57:05.161361+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-1209",
+   "updated": "2026-08-06T16:57:05.161346+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2713721857.39153",
+   "updated": "2026-08-06T16:57:05.161238+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "524877",
+   "updated": "2026-08-06T16:57:05.161213+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "5170.20531932535",
+   "updated": "2026-08-06T16:57:05.161297+00:00",
+   "source": "worldbank"
+  }
+ }
+}

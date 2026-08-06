@@ -1,0 +1,32 @@
+{
+ "country": "kp",
+ "generated": "2026-08-06T16:57:05.222249+00:00",
+ "geo": {
+  "name": "Korea, Dem. People's Rep.",
+  "lat": 39.0319,
+  "lon": 125.754,
+  "iso2": "kp"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.539",
+   "updated": "2026-08-06T16:57:05.168500+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.2",
+   "updated": "2026-08-06T16:57:05.168525+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-2473",
+   "updated": "2026-08-06T16:57:05.168512+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "26498823",
+   "updated": "2026-08-06T16:57:05.168486+00:00",
+   "source": "worldbank"
+  }
+ }
+}

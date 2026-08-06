@@ -1,0 +1,47 @@
+{
+ "country": "cr",
+ "generated": "2026-08-06T16:57:05.199675+00:00",
+ "geo": {
+  "name": "Costa Rica",
+  "lat": 9.63701,
+  "lon": -84.0089,
+  "iso2": "cr"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "6.936",
+   "updated": "2026-08-06T16:57:05.161097+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "-0.412853001047069",
+   "updated": "2026-08-06T16:57:05.161082+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "12.2",
+   "updated": "2026-08-06T16:57:05.161139+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "967",
+   "updated": "2026-08-06T16:57:05.161126+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "96715644330.6612",
+   "updated": "2026-08-06T16:57:05.161067+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "5129910",
+   "updated": "2026-08-06T16:57:05.161048+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "18853.2828705886",
+   "updated": "2026-08-06T16:57:05.161111+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "ht",
+ "generated": "2026-08-06T16:57:05.213959+00:00",
+ "geo": {
+  "name": "Haiti",
+  "lat": 18.5392,
+  "lon": -72.3288,
+  "iso2": "ht"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "14.609",
+   "updated": "2026-08-06T16:57:05.165767+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "26.9490564091987",
+   "updated": "2026-08-06T16:57:05.165753+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.2",
+   "updated": "2026-08-06T16:57:05.165795+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-31747",
+   "updated": "2026-08-06T16:57:05.165787+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "24255657481.2502",
+   "updated": "2026-08-06T16:57:05.165737+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "11772557",
+   "updated": "2026-08-06T16:57:05.165723+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "2060.35591768638",
+   "updated": "2026-08-06T16:57:05.165777+00:00",
+   "source": "worldbank"
+  }
+ }
+}

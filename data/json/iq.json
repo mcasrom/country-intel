@@ -1,0 +1,47 @@
+{
+ "country": "iq",
+ "generated": "2026-08-06T16:57:05.217013+00:00",
+ "geo": {
+  "name": "Iraq",
+  "lat": 33.3302,
+  "lon": 44.394,
+  "iso2": "iq"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "15.293",
+   "updated": "2026-08-06T16:57:05.166703+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.6116961151764",
+   "updated": "2026-08-06T16:57:05.166688+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.8",
+   "updated": "2026-08-06T16:57:05.166760+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-17735",
+   "updated": "2026-08-06T16:57:05.166732+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "279641257615.385",
+   "updated": "2026-08-06T16:57:05.166672+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "46042015",
+   "updated": "2026-08-06T16:57:05.166659+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "6073.61032342708",
+   "updated": "2026-08-06T16:57:05.166717+00:00",
+   "source": "worldbank"
+  }
+ }
+}

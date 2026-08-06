@@ -1,0 +1,47 @@
+{
+ "country": "az",
+ "generated": "2026-08-06T16:57:05.190108+00:00",
+ "geo": {
+  "name": "Azerbaijan",
+  "lat": 40.3834,
+  "lon": 49.8932,
+  "iso2": "az"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "5.648",
+   "updated": "2026-08-06T16:57:05.157947+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.21217188919901",
+   "updated": "2026-08-06T16:57:05.157940+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "2.1",
+   "updated": "2026-08-06T16:57:05.158025+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "10864",
+   "updated": "2026-08-06T16:57:05.158005+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "74426000000",
+   "updated": "2026-08-06T16:57:05.157933+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "10202830",
+   "updated": "2026-08-06T16:57:05.157927+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "7294.64276088105",
+   "updated": "2026-08-06T16:57:05.157974+00:00",
+   "source": "worldbank"
+  }
+ }
+}

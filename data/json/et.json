@@ -1,0 +1,47 @@
+{
+ "country": "et",
+ "generated": "2026-08-06T16:57:05.204658+00:00",
+ "geo": {
+  "name": "Ethiopia",
+  "lat": 9.02274,
+  "lon": 38.7468,
+  "iso2": "et"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.357",
+   "updated": "2026-08-06T16:57:05.163124+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "21.0377460577711",
+   "updated": "2026-08-06T16:57:05.163110+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.9",
+   "updated": "2026-08-06T16:57:05.163170+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "30069",
+   "updated": "2026-08-06T16:57:05.163155+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "149740297952.375",
+   "updated": "2026-08-06T16:57:05.163095+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "132059767",
+   "updated": "2026-08-06T16:57:05.163081+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1133.88279681256",
+   "updated": "2026-08-06T16:57:05.163139+00:00",
+   "source": "worldbank"
+  }
+ }
+}

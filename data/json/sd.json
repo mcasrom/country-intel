@@ -1,0 +1,32 @@
+{
+ "country": "sd",
+ "generated": "2026-08-06T16:57:05.243437+00:00",
+ "geo": {
+  "name": "Sudan",
+  "lat": 15.5932,
+  "lon": 32.5363,
+  "iso2": "sd"
+ },
+ "indicators": {
+  "net_mig": {
+   "value": "-544257",
+   "updated": "2026-08-06T16:57:05.175308+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "49672435513.1126",
+   "updated": "2026-08-06T16:57:05.175283+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "50448963",
+   "updated": "2026-08-06T16:57:05.175271+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "984.607666015625",
+   "updated": "2026-08-06T16:57:05.175295+00:00",
+   "source": "worldbank"
+  }
+ }
+}

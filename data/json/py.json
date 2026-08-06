@@ -1,0 +1,47 @@
+{
+ "country": "py",
+ "generated": "2026-08-06T16:57:05.240630+00:00",
+ "geo": {
+  "name": "Paraguay",
+  "lat": -25.3005,
+  "lon": -57.6362,
+  "iso2": "py"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "94.8600006103516",
+   "updated": "2026-08-06T16:57:05.174594+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "5.686",
+   "updated": "2026-08-06T16:57:05.174548+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.83540271728533",
+   "updated": "2026-08-06T16:57:05.174536+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-12451",
+   "updated": "2026-08-06T16:57:05.174606+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "44738819362.3269",
+   "updated": "2026-08-06T16:57:05.174524+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "6929153",
+   "updated": "2026-08-06T16:57:05.174512+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "6456.60723068562",
+   "updated": "2026-08-06T16:57:05.174581+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "na",
+ "generated": "2026-08-06T16:57:05.234222+00:00",
+ "geo": {
+  "name": "Namibia",
+  "lat": -22.5648,
+  "lon": 17.0931,
+  "iso2": "na"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "19.157",
+   "updated": "2026-08-06T16:57:05.172383+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "4.23903922877036",
+   "updated": "2026-08-06T16:57:05.172370+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "3.8",
+   "updated": "2026-08-06T16:57:05.172419+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "4211",
+   "updated": "2026-08-06T16:57:05.172407+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "13641190683.4641",
+   "updated": "2026-08-06T16:57:05.172357+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "3030131",
+   "updated": "2026-08-06T16:57:05.172339+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "4501.84849548225",
+   "updated": "2026-08-06T16:57:05.172395+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "country": "sx",
+ "generated": "2026-08-06T16:57:05.247256+00:00",
+ "geo": {
+  "name": "Sint Maarten (Dutch part)",
+  "lat": 0.0,
+  "lon": 0.0,
+  "iso2": "sx"
+ },
+ "indicators": {
+  "net_mig": {
+   "value": "558",
+   "updated": "2026-08-06T16:57:05.176255+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1797836648.04469",
+   "updated": "2026-08-06T16:57:05.176220+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "43350",
+   "updated": "2026-08-06T16:57:05.176209+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "41472.5870367865",
+   "updated": "2026-08-06T16:57:05.176243+00:00",
+   "source": "worldbank"
+  }
+ }
+}

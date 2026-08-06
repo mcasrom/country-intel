@@ -1,0 +1,52 @@
+{
+ "country": "sv",
+ "generated": "2026-08-06T16:57:05.246844+00:00",
+ "geo": {
+  "name": "El Salvador",
+  "lat": 13.7034,
+  "lon": -89.2073,
+  "iso2": "sv"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "89.7699966430664",
+   "updated": "2026-08-06T16:57:05.176173+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "3.261",
+   "updated": "2026-08-06T16:57:05.176148+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "0.853782292567288",
+   "updated": "2026-08-06T16:57:05.176136+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.7",
+   "updated": "2026-08-06T16:57:05.176197+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-23102",
+   "updated": "2026-08-06T16:57:05.176185+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "34879730000",
+   "updated": "2026-08-06T16:57:05.176124+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "6338193",
+   "updated": "2026-08-06T16:57:05.176113+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "5503.10317151907",
+   "updated": "2026-08-06T16:57:05.176160+00:00",
+   "source": "worldbank"
+  }
+ }
+}

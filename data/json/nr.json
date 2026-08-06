@@ -1,0 +1,37 @@
+{
+ "country": "nr",
+ "generated": "2026-08-06T16:57:05.236538+00:00",
+ "geo": {
+  "name": "Naoero",
+  "lat": -0.5477,
+  "lon": 166.920867,
+  "iso2": "nr"
+ },
+ "indicators": {
+  "migrant_pct": {
+   "value": "21.3",
+   "updated": "2026-08-06T16:57:05.173129+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-121",
+   "updated": "2026-08-06T16:57:05.173115+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "167833414.846177",
+   "updated": "2026-08-06T16:57:05.173091+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "11947",
+   "updated": "2026-08-06T16:57:05.173079+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "14048.163961344",
+   "updated": "2026-08-06T16:57:05.173103+00:00",
+   "source": "worldbank"
+  }
+ }
+}

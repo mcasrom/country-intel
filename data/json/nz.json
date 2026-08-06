@@ -1,0 +1,47 @@
+{
+ "country": "nz",
+ "generated": "2026-08-06T16:57:05.236747+00:00",
+ "geo": {
+  "name": "New Zealand",
+  "lat": -41.2865,
+  "lon": 174.776,
+  "iso2": "nz"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "4.724",
+   "updated": "2026-08-06T16:57:05.173179+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.92279782301957",
+   "updated": "2026-08-06T16:57:05.173164+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "28.2",
+   "updated": "2026-08-06T16:57:05.173220+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "18766",
+   "updated": "2026-08-06T16:57:05.173209+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "261497198363.906",
+   "updated": "2026-08-06T16:57:05.173156+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "5290000",
+   "updated": "2026-08-06T16:57:05.173146+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "49432.3626396797",
+   "updated": "2026-08-06T16:57:05.173195+00:00",
+   "source": "worldbank"
+  }
+ }
+}

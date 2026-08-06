@@ -1,0 +1,47 @@
+{
+ "country": "np",
+ "generated": "2026-08-06T16:57:05.236183+00:00",
+ "geo": {
+  "name": "Nepal",
+  "lat": 27.6939,
+  "lon": 85.3157,
+  "iso2": "np"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "10.5",
+   "updated": "2026-08-06T16:57:05.173031+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "4.6850965426577",
+   "updated": "2026-08-06T16:57:05.173019+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "1.6",
+   "updated": "2026-08-06T16:57:05.173067+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-401282",
+   "updated": "2026-08-06T16:57:05.173056+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "43298911699.9284",
+   "updated": "2026-08-06T16:57:05.173007+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "29651054",
+   "updated": "2026-08-06T16:57:05.172996+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1460.28237984149",
+   "updated": "2026-08-06T16:57:05.173044+00:00",
+   "source": "worldbank"
+  }
+ }
+}

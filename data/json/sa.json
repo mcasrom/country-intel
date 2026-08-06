@@ -1,0 +1,47 @@
+{
+ "country": "sa",
+ "generated": "2026-08-06T16:57:05.242700+00:00",
+ "geo": {
+  "name": "Saudi Arabia",
+  "lat": 24.6748,
+  "lon": 46.6977,
+  "iso2": "sa"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "97.9300003051758",
+   "updated": "2026-08-06T16:57:05.175089+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "3.518",
+   "updated": "2026-08-06T16:57:05.175065+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.68792112375809",
+   "updated": "2026-08-06T16:57:05.175052+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "122170",
+   "updated": "2026-08-06T16:57:05.175101+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1254140800000",
+   "updated": "2026-08-06T16:57:05.175041+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "35300280",
+   "updated": "2026-08-06T16:57:05.175029+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "35527.786181866",
+   "updated": "2026-08-06T16:57:05.175077+00:00",
+   "source": "worldbank"
+  }
+ }
+}

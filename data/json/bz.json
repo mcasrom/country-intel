@@ -1,0 +1,47 @@
+{
+ "country": "bz",
+ "generated": "2026-08-06T16:57:05.196574+00:00",
+ "geo": {
+  "name": "Belize",
+  "lat": 17.2534,
+  "lon": -88.7713,
+  "iso2": "bz"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "8.698",
+   "updated": "2026-08-06T16:57:05.159615+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.28955985952768",
+   "updated": "2026-08-06T16:57:05.159601+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "16.5",
+   "updated": "2026-08-06T16:57:05.159667+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "490",
+   "updated": "2026-08-06T16:57:05.159644+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "3203631800",
+   "updated": "2026-08-06T16:57:05.159587+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "417072",
+   "updated": "2026-08-06T16:57:05.159573+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "7681.24400583113",
+   "updated": "2026-08-06T16:57:05.159629+00:00",
+   "source": "worldbank"
+  }
+ }
+}

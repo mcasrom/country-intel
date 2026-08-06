@@ -1,0 +1,47 @@
+{
+ "country": "fj",
+ "generated": "2026-08-06T16:57:05.205490+00:00",
+ "geo": {
+  "name": "Fiji",
+  "lat": -18.1149,
+  "lon": 178.399,
+  "iso2": "fj"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "5.361",
+   "updated": "2026-08-06T16:57:05.163385+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.89084237884105",
+   "updated": "2026-08-06T16:57:05.163368+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "1.5",
+   "updated": "2026-08-06T16:57:05.163429+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-3278",
+   "updated": "2026-08-06T16:57:05.163413+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "5968125909.27126",
+   "updated": "2026-08-06T16:57:05.163352+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "928784",
+   "updated": "2026-08-06T16:57:05.163318+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "6425.74151715712",
+   "updated": "2026-08-06T16:57:05.163398+00:00",
+   "source": "worldbank"
+  }
+ }
+}

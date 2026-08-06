@@ -1,0 +1,37 @@
+{
+ "country": "cw",
+ "generated": "2026-08-06T16:57:05.200404+00:00",
+ "geo": {
+  "name": "Curacao",
+  "lat": 0.0,
+  "lon": 0.0,
+  "iso2": "cw"
+ },
+ "indicators": {
+  "migrant_pct": {
+   "value": "43.1",
+   "updated": "2026-08-06T16:57:05.161469+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "513",
+   "updated": "2026-08-06T16:57:05.161424+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "3561178212.2905",
+   "updated": "2026-08-06T16:57:05.161394+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "155967",
+   "updated": "2026-08-06T16:57:05.161380+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "22832.895498987",
+   "updated": "2026-08-06T16:57:05.161409+00:00",
+   "source": "worldbank"
+  }
+ }
+}

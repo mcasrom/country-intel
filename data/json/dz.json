@@ -1,125 +1,131 @@
 {
  "country": "dz",
- "generated": "2026-08-06T16:43:00.271929",
+ "generated": "2026-08-06T16:57:05.202310+00:00",
+ "geo": {
+  "name": "Algeria",
+  "lat": 36.7397,
+  "lon": 3.05097,
+  "iso2": "dz"
+ },
  "indicators": {
   "adolescentes": {
    "value": "15.7",
-   "updated": "2026-08-06T16:43:00.259758+00:00",
+   "updated": "2026-08-06T16:57:05.162465+00:00",
    "source": "worldbank"
   },
   "adultos": {
    "value": "50.5",
-   "updated": "2026-08-06T16:43:00.259772+00:00",
+   "updated": "2026-08-06T16:57:05.162471+00:00",
    "source": "worldbank"
   },
   "alfabetizacion": {
    "value": "81.4",
-   "updated": "2026-08-06T16:43:00.259610+00:00",
+   "updated": "2026-08-06T16:57:05.162373+00:00",
    "source": "worldbank"
   },
   "aviones": {
    "value": "600",
-   "updated": "2026-08-06T16:43:00.259702+00:00",
+   "updated": "2026-08-06T16:57:05.162442+00:00",
    "source": "worldbank"
   },
   "barcos": {
    "value": "50",
-   "updated": "2026-08-06T16:43:00.259728+00:00",
+   "updated": "2026-08-06T16:57:05.162448+00:00",
    "source": "worldbank"
   },
   "defensa_pct": {
    "value": "4.8",
-   "updated": "2026-08-06T16:43:00.259668+00:00",
+   "updated": "2026-08-06T16:57:05.162430+00:00",
    "source": "worldbank"
   },
   "defensa_usd": {
    "value": "9100000000.0",
-   "updated": "2026-08-06T16:43:00.259651+00:00",
+   "updated": "2026-08-06T16:57:05.162424+00:00",
    "source": "worldbank"
   },
   "desempleo": {
-   "value": "11.8",
-   "updated": "2026-08-06T16:43:00.259542+00:00",
+   "value": "11.655",
+   "updated": "2026-08-06T16:57:05.162351+00:00",
    "source": "worldbank"
   },
   "edad_mediana": {
    "value": "29",
-   "updated": "2026-08-06T16:43:00.259806+00:00",
+   "updated": "2026-08-06T16:57:05.162483+00:00",
    "source": "worldbank"
   },
   "idh": {
    "value": "0.745",
-   "updated": "2026-08-06T16:43:00.259559+00:00",
+   "updated": "2026-08-06T16:57:05.162398+00:00",
    "source": "worldbank"
   },
   "inflacion": {
-   "value": "4.5",
-   "updated": "2026-08-06T16:43:00.259524+00:00",
+   "value": "4.04611455313434",
+   "updated": "2026-08-06T16:57:05.162343+00:00",
    "source": "worldbank"
   },
   "mayores": {
    "value": "6.0",
-   "updated": "2026-08-06T16:43:00.259789+00:00",
+   "updated": "2026-08-06T16:57:05.162477+00:00",
    "source": "worldbank"
   },
   "menores": {
    "value": "27.8",
-   "updated": "2026-08-06T16:43:00.259748+00:00",
+   "updated": "2026-08-06T16:57:05.162459+00:00",
    "source": "worldbank"
   },
   "migrant_pct": {
-   "value": "1.0",
-   "updated": "2026-08-06T16:43:00.259841+00:00",
+   "value": "0.6",
+   "updated": "2026-08-06T16:57:05.162392+00:00",
    "source": "worldbank"
   },
   "moneda": {
    "value": "DZD",
-   "updated": "2026-08-06T16:43:00.259577+00:00",
+   "updated": "2026-08-06T16:57:05.162405+00:00",
    "source": "worldbank"
   },
   "net_mig": {
-   "value": "-0.9",
-   "updated": "2026-08-06T16:43:00.259823+00:00",
+   "value": "-31240",
+   "updated": "2026-08-06T16:57:05.162386+00:00",
    "source": "worldbank"
   },
   "personal": {
    "value": "307000",
-   "updated": "2026-08-06T16:43:00.259685+00:00",
+   "updated": "2026-08-06T16:57:05.162437+00:00",
    "source": "worldbank"
   },
   "pib": {
-   "value": "239899000000.0",
-   "updated": "2026-08-06T16:43:00.259507+00:00",
+   "value": "269322281664.773",
+   "updated": "2026-08-06T16:57:05.162317+00:00",
    "source": "worldbank"
   },
   "poblacion": {
-   "value": "45606000",
-   "updated": "2026-08-06T16:43:00.259491+00:00",
+   "value": "46814308",
+   "updated": "2026-08-06T16:57:05.162310+00:00",
    "source": "worldbank"
   },
   "region": {
    "value": "África",
-   "updated": "2026-08-06T16:43:00.259590+00:00",
+   "updated": "2026-08-06T16:57:05.162410+00:00",
    "source": "worldbank"
   },
   "renta_pc": {
-   "value": "5300",
-   "updated": "2026-08-06T16:43:00.259601+00:00",
+   "value": "5752.99076651465",
+   "updated": "2026-08-06T16:57:05.162357+00:00",
    "source": "worldbank"
   },
   "seguridad_social": {
    "value": "9.1",
-   "updated": "2026-08-06T16:43:00.259620+00:00",
+   "updated": "2026-08-06T16:57:05.162418+00:00",
    "source": "worldbank"
   },
   "tanques": {
    "value": "1895",
-   "updated": "2026-08-06T16:43:00.259738+00:00",
+   "updated": "2026-08-06T16:57:05.162453+00:00",
    "source": "worldbank"
   },
   "titulados": {
    "value": "22.0",
-   "updated": "2026-08-06T16:43:00.259634+00:00",
+   "updated": "2026-08-06T16:57:05.162380+00:00",
    "source": "worldbank"
   }
  }

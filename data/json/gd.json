@@ -1,0 +1,42 @@
+{
+ "country": "gd",
+ "generated": "2026-08-06T16:57:05.208381+00:00",
+ "geo": {
+  "name": "Grenada",
+  "lat": 12.0653,
+  "lon": -61.7449,
+  "iso2": "gd"
+ },
+ "indicators": {
+  "inflacion": {
+   "value": "1.08615365134737",
+   "updated": "2026-08-06T16:57:05.164426+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "6.3",
+   "updated": "2026-08-06T16:57:05.164444+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-192",
+   "updated": "2026-08-06T16:57:05.164438+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1351270370.37037",
+   "updated": "2026-08-06T16:57:05.164419+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "117207",
+   "updated": "2026-08-06T16:57:05.164413+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "11528.9220811928",
+   "updated": "2026-08-06T16:57:05.164432+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,42 @@
+{
+ "country": "vn",
+ "generated": "2026-08-06T16:57:05.254421+00:00",
+ "geo": {
+  "name": "Viet Nam",
+  "lat": 21.0069,
+  "lon": 105.825,
+  "iso2": "vn"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "1.602",
+   "updated": "2026-08-06T16:57:05.178236+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.62109273885844",
+   "updated": "2026-08-06T16:57:05.178212+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-59645",
+   "updated": "2026-08-06T16:57:05.178268+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "476324572783.807",
+   "updated": "2026-08-06T16:57:05.178200+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "100987686",
+   "updated": "2026-08-06T16:57:05.178188+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "4716.6599379632",
+   "updated": "2026-08-06T16:57:05.178255+00:00",
+   "source": "worldbank"
+  }
+ }
+}

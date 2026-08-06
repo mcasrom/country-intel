@@ -1,0 +1,42 @@
+{
+ "country": "sb",
+ "generated": "2026-08-06T16:57:05.242916+00:00",
+ "geo": {
+  "name": "Solomon Islands",
+  "lat": -9.42676,
+  "lon": 159.949,
+  "iso2": "sb"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "1.444",
+   "updated": "2026-08-06T16:57:05.175150+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "4.32183948388033",
+   "updated": "2026-08-06T16:57:05.175137+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "1610",
+   "updated": "2026-08-06T16:57:05.175174+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1583964703.75061",
+   "updated": "2026-08-06T16:57:05.175125+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "819198",
+   "updated": "2026-08-06T16:57:05.175113+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1933.55538435227",
+   "updated": "2026-08-06T16:57:05.175162+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "gw",
+ "generated": "2026-08-06T16:57:05.212260+00:00",
+ "geo": {
+  "name": "Guinea-Bissau",
+  "lat": 11.8037,
+  "lon": -15.1804,
+  "iso2": "gw"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "2.647",
+   "updated": "2026-08-06T16:57:05.165184+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.76555825770114",
+   "updated": "2026-08-06T16:57:05.165170+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.7",
+   "updated": "2026-08-06T16:57:05.165217+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-1712",
+   "updated": "2026-08-06T16:57:05.165207+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2197777209.94218",
+   "updated": "2026-08-06T16:57:05.165154+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "2201352",
+   "updated": "2026-08-06T16:57:05.165140+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "998.376093392688",
+   "updated": "2026-08-06T16:57:05.165196+00:00",
+   "source": "worldbank"
+  }
+ }
+}

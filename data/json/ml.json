@@ -1,0 +1,52 @@
+{
+ "country": "ml",
+ "generated": "2026-08-06T16:57:05.231126+00:00",
+ "geo": {
+  "name": "Mali",
+  "lat": 13.5667,
+  "lon": -7.50034,
+  "iso2": "ml"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "35.6300010681152",
+   "updated": "2026-08-06T16:57:05.170967+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "2.924",
+   "updated": "2026-08-06T16:57:05.170942+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.2063986409966",
+   "updated": "2026-08-06T16:57:05.170925+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "2.2",
+   "updated": "2026-08-06T16:57:05.170991+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-46880",
+   "updated": "2026-08-06T16:57:05.170979+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "26761281076.7658",
+   "updated": "2026-08-06T16:57:05.170910+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "24478595",
+   "updated": "2026-08-06T16:57:05.170896+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1093.2523323649",
+   "updated": "2026-08-06T16:57:05.170954+00:00",
+   "source": "worldbank"
+  }
+ }
+}

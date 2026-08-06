@@ -1,0 +1,47 @@
+{
+ "country": "bd",
+ "generated": "2026-08-06T16:57:05.191259+00:00",
+ "geo": {
+  "name": "Bangladesh",
+  "lat": 23.7055,
+  "lon": 90.4113,
+  "iso2": "bd"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.635",
+   "updated": "2026-08-06T16:57:05.158281+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "10.4657482763412",
+   "updated": "2026-08-06T16:57:05.158267+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "1.7",
+   "updated": "2026-08-06T16:57:05.158341+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-473362",
+   "updated": "2026-08-06T16:57:05.158309+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "450119432068.852",
+   "updated": "2026-08-06T16:57:05.158253+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "173562364",
+   "updated": "2026-08-06T16:57:05.158238+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "2593.41611680774",
+   "updated": "2026-08-06T16:57:05.158295+00:00",
+   "source": "worldbank"
+  }
+ }
+}

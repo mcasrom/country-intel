@@ -1,0 +1,47 @@
+{
+ "country": "bt",
+ "generated": "2026-08-06T16:57:05.195575+00:00",
+ "geo": {
+  "name": "Bhutan",
+  "lat": 27.5768,
+  "lon": 89.6177,
+  "iso2": "bt"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.282",
+   "updated": "2026-08-06T16:57:05.159288+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.76131569624098",
+   "updated": "2026-08-06T16:57:05.159273+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "7",
+   "updated": "2026-08-06T16:57:05.159346+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-277",
+   "updated": "2026-08-06T16:57:05.159316+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "3346603858.7495",
+   "updated": "2026-08-06T16:57:05.159258+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "791524",
+   "updated": "2026-08-06T16:57:05.159239+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "4228.05102403654",
+   "updated": "2026-08-06T16:57:05.159302+00:00",
+   "source": "worldbank"
+  }
+ }
+}

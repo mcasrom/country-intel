@@ -1,0 +1,32 @@
+{
+ "country": "jg",
+ "generated": "2026-08-06T16:57:05.218858+00:00",
+ "geo": {
+  "name": "Channel Islands",
+  "lat": 0.0,
+  "lon": 0.0,
+  "iso2": "jg"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "6.031",
+   "updated": "2026-08-06T16:57:05.167356+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "50.9",
+   "updated": "2026-08-06T16:57:05.167383+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "747",
+   "updated": "2026-08-06T16:57:05.167370+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "168126",
+   "updated": "2026-08-06T16:57:05.167342+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "bw",
+ "generated": "2026-08-06T16:57:05.195946+00:00",
+ "geo": {
+  "name": "Botswana",
+  "lat": -24.6544,
+  "lon": 25.9201,
+  "iso2": "bw"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "23.81",
+   "updated": "2026-08-06T16:57:05.159405+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.81835131676251",
+   "updated": "2026-08-06T16:57:05.159391+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "4.6",
+   "updated": "2026-08-06T16:57:05.159448+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-5778",
+   "updated": "2026-08-06T16:57:05.159434+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "19286251067.5078",
+   "updated": "2026-08-06T16:57:05.159376+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "2521139",
+   "updated": "2026-08-06T16:57:05.159360+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "7649.81663744354",
+   "updated": "2026-08-06T16:57:05.159420+00:00",
+   "source": "worldbank"
+  }
+ }
+}

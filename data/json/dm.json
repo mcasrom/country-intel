@@ -1,0 +1,42 @@
+{
+ "country": "dm",
+ "generated": "2026-08-06T16:57:05.201895+00:00",
+ "geo": {
+  "name": "Dominica",
+  "lat": 15.2976,
+  "lon": -61.39,
+  "iso2": "dm"
+ },
+ "indicators": {
+  "inflacion": {
+   "value": "2.73620751873313",
+   "updated": "2026-08-06T16:57:05.162240+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "12.7",
+   "updated": "2026-08-06T16:57:05.162258+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-200",
+   "updated": "2026-08-06T16:57:05.162253+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "688881481.481481",
+   "updated": "2026-08-06T16:57:05.162218+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "66205",
+   "updated": "2026-08-06T16:57:05.162207+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "10405.2787777582",
+   "updated": "2026-08-06T16:57:05.162247+00:00",
+   "source": "worldbank"
+  }
+ }
+}

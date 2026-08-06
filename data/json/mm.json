@@ -1,0 +1,42 @@
+{
+ "country": "mm",
+ "generated": "2026-08-06T16:57:05.231457+00:00",
+ "geo": {
+  "name": "Myanmar",
+  "lat": 21.914,
+  "lon": 95.9562,
+  "iso2": "mm"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "2.887",
+   "updated": "2026-08-06T16:57:05.171035+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.1",
+   "updated": "2026-08-06T16:57:05.171081+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-37979",
+   "updated": "2026-08-06T16:57:05.171067+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "74068349523.8095",
+   "updated": "2026-08-06T16:57:05.171020+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "54500091",
+   "updated": "2026-08-06T16:57:05.171006+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1359.05001560107",
+   "updated": "2026-08-06T16:57:05.171051+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "dj",
+ "generated": "2026-08-06T16:57:05.201464+00:00",
+ "geo": {
+  "name": "Djibouti",
+  "lat": 11.5806,
+  "lon": 43.1425,
+  "iso2": "dj"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "26.007",
+   "updated": "2026-08-06T16:57:05.162073+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.1120116728497",
+   "updated": "2026-08-06T16:57:05.162061+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "10.8",
+   "updated": "2026-08-06T16:57:05.162109+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-11",
+   "updated": "2026-08-06T16:57:05.162098+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "4152145939.98458",
+   "updated": "2026-08-06T16:57:05.162048+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "1168722",
+   "updated": "2026-08-06T16:57:05.162037+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "3552.72335079222",
+   "updated": "2026-08-06T16:57:05.162085+00:00",
+   "source": "worldbank"
+  }
+ }
+}

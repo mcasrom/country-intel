@@ -1,0 +1,42 @@
+{
+ "country": "st",
+ "generated": "2026-08-06T16:57:05.246517+00:00",
+ "geo": {
+  "name": "Sao Tome and Principe",
+  "lat": 0.20618,
+  "lon": 6.6071,
+  "iso2": "st"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "9.057",
+   "updated": "2026-08-06T16:57:05.176077+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "14.3519273571008",
+   "updated": "2026-08-06T16:57:05.176065+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-604",
+   "updated": "2026-08-06T16:57:05.176101+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "824992558.045383",
+   "updated": "2026-08-06T16:57:05.176052+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "235536",
+   "updated": "2026-08-06T16:57:05.176041+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "3502.6176807171",
+   "updated": "2026-08-06T16:57:05.176089+00:00",
+   "source": "worldbank"
+  }
+ }
+}

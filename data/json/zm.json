@@ -1,0 +1,47 @@
+{
+ "country": "zm",
+ "generated": "2026-08-06T16:57:05.256362+00:00",
+ "geo": {
+  "name": "Zambia",
+  "lat": -15.3982,
+  "lon": 28.2937,
+  "iso2": "zm"
+ },
+ "indicators": {
+  "alfabetizacion": {
+   "value": "71.7699966430664",
+   "updated": "2026-08-06T16:57:05.178717+00:00",
+   "source": "worldbank"
+  },
+  "desempleo": {
+   "value": "5.898",
+   "updated": "2026-08-06T16:57:05.178693+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "14.9856262747939",
+   "updated": "2026-08-06T16:57:05.178681+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "7381",
+   "updated": "2026-08-06T16:57:05.178730+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "25303185342.2511",
+   "updated": "2026-08-06T16:57:05.178669+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "21314956",
+   "updated": "2026-08-06T16:57:05.178657+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1187.10943350064",
+   "updated": "2026-08-06T16:57:05.178705+00:00",
+   "source": "worldbank"
+  }
+ }
+}

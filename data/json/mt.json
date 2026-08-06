@@ -1,0 +1,47 @@
+{
+ "country": "mt",
+ "generated": "2026-08-06T16:57:05.232587+00:00",
+ "geo": {
+  "name": "Malta",
+  "lat": 35.9042,
+  "lon": 14.5189,
+  "iso2": "mt"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.1",
+   "updated": "2026-08-06T16:57:05.171469+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.65079469283109",
+   "updated": "2026-08-06T16:57:05.171456+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "37",
+   "updated": "2026-08-06T16:57:05.171507+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "6323",
+   "updated": "2026-08-06T16:57:05.171493+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "25042712191.3281",
+   "updated": "2026-08-06T16:57:05.171444+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "568847",
+   "updated": "2026-08-06T16:57:05.171433+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "44023.6341078148",
+   "updated": "2026-08-06T16:57:05.171480+00:00",
+   "source": "worldbank"
+  }
+ }
+}

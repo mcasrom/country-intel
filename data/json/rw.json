@@ -1,0 +1,42 @@
+{
+ "country": "rw",
+ "generated": "2026-08-06T16:57:05.242376+00:00",
+ "geo": {
+  "name": "Rwanda",
+  "lat": -1.95325,
+  "lon": 30.0587,
+  "iso2": "rw"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "11.331",
+   "updated": "2026-08-06T16:57:05.174993+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.77029240198635",
+   "updated": "2026-08-06T16:57:05.174980+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-15582",
+   "updated": "2026-08-06T16:57:05.175017+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "15111064181.9687",
+   "updated": "2026-08-06T16:57:05.174950+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "14256567",
+   "updated": "2026-08-06T16:57:05.174938+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1059.93709298801",
+   "updated": "2026-08-06T16:57:05.175005+00:00",
+   "source": "worldbank"
+  }
+ }
+}

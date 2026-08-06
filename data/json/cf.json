@@ -1,0 +1,47 @@
+{
+ "country": "cf",
+ "generated": "2026-08-06T16:57:05.197517+00:00",
+ "geo": {
+  "name": "Central African Republic",
+  "lat": 5.63056,
+  "lon": 21.6407,
+  "iso2": "cf"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "6.253",
+   "updated": "2026-08-06T16:57:05.159915+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "1.47733600718744",
+   "updated": "2026-08-06T16:57:05.159900+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "1.8",
+   "updated": "2026-08-06T16:57:05.159957+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-15357",
+   "updated": "2026-08-06T16:57:05.159944+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2751494281.06887",
+   "updated": "2026-08-06T16:57:05.159884+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "5330690",
+   "updated": "2026-08-06T16:57:05.159866+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "516.160999996036",
+   "updated": "2026-08-06T16:57:05.159929+00:00",
+   "source": "worldbank"
+  }
+ }
+}

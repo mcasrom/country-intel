@@ -1,0 +1,42 @@
+{
+ "country": "rs",
+ "generated": "2026-08-06T16:57:05.241670+00:00",
+ "geo": {
+  "name": "Serbia",
+  "lat": 44.8024,
+  "lon": 20.4656,
+  "iso2": "rs"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "7.24",
+   "updated": "2026-08-06T16:57:05.174828+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "4.6705297488997",
+   "updated": "2026-08-06T16:57:05.174810+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-8132",
+   "updated": "2026-08-06T16:57:05.174854+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "90088366320.4062",
+   "updated": "2026-08-06T16:57:05.174793+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "6586476",
+   "updated": "2026-08-06T16:57:05.174775+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "13677.7794863909",
+   "updated": "2026-08-06T16:57:05.174841+00:00",
+   "source": "worldbank"
+  }
+ }
+}

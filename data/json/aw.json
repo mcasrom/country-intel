@@ -1,0 +1,37 @@
+{
+ "country": "aw",
+ "generated": "2026-08-06T16:57:05.189736+00:00",
+ "geo": {
+  "name": "Aruba",
+  "lat": 12.5167,
+  "lon": -70.0167,
+  "iso2": "aw"
+ },
+ "indicators": {
+  "migrant_pct": {
+   "value": "68",
+   "updated": "2026-08-06T16:57:05.157909+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "141",
+   "updated": "2026-08-06T16:57:05.157902+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "4167588070.29217",
+   "updated": "2026-08-06T16:57:05.157882+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "107995",
+   "updated": "2026-08-06T16:57:05.157875+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "38590.5650288641",
+   "updated": "2026-08-06T16:57:05.157893+00:00",
+   "source": "worldbank"
+  }
+ }
+}

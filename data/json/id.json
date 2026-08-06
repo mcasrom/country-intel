@@ -1,0 +1,47 @@
+{
+ "country": "id",
+ "generated": "2026-08-06T16:57:05.214723+00:00",
+ "geo": {
+  "name": "Indonesia",
+  "lat": -6.19752,
+  "lon": 106.83,
+  "iso2": "id"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.301",
+   "updated": "2026-08-06T16:57:05.165950+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "2.18151273615189",
+   "updated": "2026-08-06T16:57:05.165935+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.2",
+   "updated": "2026-08-06T16:57:05.165992+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-38469",
+   "updated": "2026-08-06T16:57:05.165978+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "1396301788461.69",
+   "updated": "2026-08-06T16:57:05.165921+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "283487931",
+   "updated": "2026-08-06T16:57:05.165906+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "4925.43644992666",
+   "updated": "2026-08-06T16:57:05.165964+00:00",
+   "source": "worldbank"
+  }
+ }
+}

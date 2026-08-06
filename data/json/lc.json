@@ -1,0 +1,42 @@
+{
+ "country": "lc",
+ "generated": "2026-08-06T16:57:05.224879+00:00",
+ "geo": {
+  "name": "St. Lucia",
+  "lat": 14.0,
+  "lon": -60.9832,
+  "iso2": "lc"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "10.199",
+   "updated": "2026-08-06T16:57:05.169095+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "-0.674240853418779",
+   "updated": "2026-08-06T16:57:05.169082+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-7",
+   "updated": "2026-08-06T16:57:05.169125+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "2605148148.14815",
+   "updated": "2026-08-06T16:57:05.169070+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "179744",
+   "updated": "2026-08-06T16:57:05.169056+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "14493.658470648",
+   "updated": "2026-08-06T16:57:05.169105+00:00",
+   "source": "worldbank"
+  }
+ }
+}

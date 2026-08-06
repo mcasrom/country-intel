@@ -1,0 +1,47 @@
+{
+ "country": "gn",
+ "generated": "2026-08-06T16:57:05.210531+00:00",
+ "geo": {
+  "name": "Guinea",
+  "lat": 9.51667,
+  "lon": -13.7,
+  "iso2": "gn"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "5.132",
+   "updated": "2026-08-06T16:57:05.164835+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "8.12313914948596",
+   "updated": "2026-08-06T16:57:05.164825+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.8",
+   "updated": "2026-08-06T16:57:05.164863+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-12024",
+   "updated": "2026-08-06T16:57:05.164854+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "25008678293.4073",
+   "updated": "2026-08-06T16:57:05.164815+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "14754785",
+   "updated": "2026-08-06T16:57:05.164806+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "1694.95375862185",
+   "updated": "2026-08-06T16:57:05.164844+00:00",
+   "source": "worldbank"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "country": "me",
+ "generated": "2026-08-06T16:57:05.229640+00:00",
+ "geo": {
+  "name": "Montenegro",
+  "lat": 42.4602,
+  "lon": 19.2595,
+  "iso2": "me"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "13.206",
+   "updated": "2026-08-06T16:57:05.170584+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "3.33675009282281",
+   "updated": "2026-08-06T16:57:05.170571+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "14.4",
+   "updated": "2026-08-06T16:57:05.170620+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-1686",
+   "updated": "2026-08-06T16:57:05.170609+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "8274290505.96367",
+   "updated": "2026-08-06T16:57:05.170559+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "623525",
+   "updated": "2026-08-06T16:57:05.170547+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "13270.1824401005",
+   "updated": "2026-08-06T16:57:05.170596+00:00",
+   "source": "worldbank"
+  }
+ }
+}

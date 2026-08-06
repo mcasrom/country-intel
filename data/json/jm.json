@@ -1,0 +1,47 @@
+{
+ "country": "jm",
+ "generated": "2026-08-06T16:57:05.219204+00:00",
+ "geo": {
+  "name": "Jamaica",
+  "lat": 17.9927,
+  "lon": -76.792,
+  "iso2": "jm"
+ },
+ "indicators": {
+  "desempleo": {
+   "value": "3.151",
+   "updated": "2026-08-06T16:57:05.167438+00:00",
+   "source": "worldbank"
+  },
+  "inflacion": {
+   "value": "5.41194447981659",
+   "updated": "2026-08-06T16:57:05.167423+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "0.8",
+   "updated": "2026-08-06T16:57:05.167478+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "-10506",
+   "updated": "2026-08-06T16:57:05.167465+00:00",
+   "source": "worldbank"
+  },
+  "pib": {
+   "value": "22014429050.9995",
+   "updated": "2026-08-06T16:57:05.167409+00:00",
+   "source": "worldbank"
+  },
+  "poblacion": {
+   "value": "2839175",
+   "updated": "2026-08-06T16:57:05.167396+00:00",
+   "source": "worldbank"
+  },
+  "renta_pc": {
+   "value": "7753.8119527678",
+   "updated": "2026-08-06T16:57:05.167451+00:00",
+   "source": "worldbank"
+  }
+ }
+}
