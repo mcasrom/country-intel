@@ -21,3 +21,9 @@ venv/bin/uvicorn src.server:app --port 8710
 ## Embrion vi-core
 
 `src/core/` (http.py, collector.py) es el nucleo reutilizable del ecosistema viajeinteligencia.
+
+## Contacto
+
+- Email: country@viajeinteligencia.com (Cloudflare Email Routing)
+- Repo: https://github.com/mcasrom/country-intel
+- Live: https://country.viajeinteligencia.com
