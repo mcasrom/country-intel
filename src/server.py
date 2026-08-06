@@ -288,6 +288,10 @@ def _seo_page(code: str) -> str:
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://country.viajeinteligencia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{name} · Country Intelligence OSINT">
 <link rel="alternate" hreflang="es" href="{url}">
 <script type="application/ld+json">
 {json.dumps(ld, ensure_ascii=False, indent=1)}
