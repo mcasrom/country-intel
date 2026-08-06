@@ -33,6 +33,13 @@ TRAVEL_SLUGS = {
 }
 FCDO_URL = "https://www.gov.uk/api/content/foreign-travel-advice/{slug}"
 
+TRENDS_FILE = BASE_DIR / "data" / "trends.json"
+NAMES = {
+    "es": "España", "fr": "Francia", "de": "Alemania", "it": "Italia", "gb": "Reino Unido",
+    "us": "Estados Unidos", "cn": "China", "br": "Brasil", "in": "India", "mx": "México",
+    "ma": "Marruecos", "dz": "Argelia", "eg": "Egipto", "pt": "Portugal", "au": "Australia",
+}
+
 
 def _clean(html: str, limit: int = 600):
     text = re.sub(r"<[^>]+>", " ", html or "")
@@ -147,6 +154,125 @@ def news(code: str):
     out = {"country": code.lower(), "source": src, "articles": arts or []}
     cache.write_text(json.dumps(out, ensure_ascii=False))
     return out
+
+
+def _load_trends():
+    try:
+        return json.loads(TRENDS_FILE.read_text())
+    except Exception:
+        return {}
+
+
+def _save_trends(t):
+    TRENDS_FILE.parent.mkdir(parents=True, exist_ok=True)
+    TRENDS_FILE.write_text(json.dumps(t, ensure_ascii=False, indent=1))
+
+
+@app.get("/api/trends")
+def trends():
+    t = _load_trends()
+    rows = [{"code": cc, "name": NAMES.get(cc, cc.upper()), "views": v} for cc, v in t.items()]
+    rows.sort(key=lambda r: r["views"], reverse=True)
+    return {"trends": rows}
+
+
+@app.get("/api/trends/view/{code}")
+def trend_view(code: str):
+    t = _load_trends()
+    cc = code.lower()
+    t[cc] = t.get(cc, 0) + 1
+    _save_trends(t)
+    return {"code": cc, "views": t[cc]}
+
+
+def _seo_page(code: str) -> str:
+    cc = code.lower()
+    name = NAMES.get(cc, cc.upper())
+    fp = JSON_DIR / f"{cc}.json"
+    data = {}
+    if fp.exists():
+        data = json.loads(fp.read_text())
+    ind = data.get("indicators", {})
+    def gv(k):
+        v = ind.get(k, {}).get("value") if ind.get(k) else None
+        if v is None:
+            return None
+        try:
+            return float(v)
+        except (TypeError, ValueError):
+            return v
+    pobl = gv("poblacion")
+    pib = gv("pib")
+    pobl_txt = f"{(pobl / 1e6):.1f} millones" if isinstance(pobl, float) else "n/d"
+    pib_txt = f"{pib / 1e12:.2f} billones de USD" if isinstance(pib, float) and pib >= 1e12 else (f"{pib / 1e9:.1f} mil millones de USD" if isinstance(pib, float) else "n/d")
+    desc = f"Ficha de inteligencia OSINT de {name}: población {pobl_txt}, PIB {pib_txt}, inflación, desempleo, defensa, estructura etaria, riesgo de visita, avisos de viaje, noticias y alertas."
+    url = f"https://country.viajeinteligencia.com/pais/{cc}"
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "Country",
+        "name": name,
+        "description": desc,
+        "url": url,
+    }
+    region = gv("region")
+    if region:
+        ld["containedInPlace"] = {"@type": "Continent", "name": region}
+    if pobl:
+        ld["population"] = {"@type": "QuantitativeValue", "value": int(pobl)}
+    return f"""<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{name} · Inteligencia OSINT | Country Intelligence</title>
+<meta name="description" content="{desc}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{url}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{name} · Inteligencia OSINT">
+<meta property="og:description" content="{desc}">
+<meta property="og:url" content="{url}">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" hreflang="es" href="{url}">
+<script type="application/ld+json">
+{json.dumps(ld, ensure_ascii=False, indent=1)}
+</script>
+</head>
+<body>
+<h1>{name}</h1>
+<p>{desc}</p>
+<p>Información orientativa para investigación. Ver el dashboard interactivo:</p>
+<p><a href="https://country.viajeinteligencia.com/?c={cc}">Abrir ficha interactiva de {name}</a> · <a href="https://country.viajeinteligencia.com/">Inicio</a></p>
+</body>
+</html>"""
+
+
+@app.get("/pais/{code}")
+def pais(code: str):
+    cc = code.lower()
+    if cc not in NAMES:
+        raise HTTPException(404, "Pais no encontrado")
+    from fastapi.responses import HTMLResponse
+    return HTMLResponse(_seo_page(cc))
+
+
+@app.get("/sitemap.xml")
+def sitemap():
+    urls = ["https://country.viajeinteligencia.com/"]
+    urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in sorted(NAMES)]
+    body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
+    from fastapi.responses import Response
+    return Response(content=f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{body}
+</urlset>""", media_type="application/xml")
+
+
+@app.get("/robots.txt")
+def robots():
+    from fastapi.responses import Response
+    return Response(content="User-agent: *\nAllow: /\nSitemap: https://country.viajeinteligencia.com/sitemap.xml", media_type="text/plain")
 
 
 FRONTEND = BASE_DIR / "frontend"

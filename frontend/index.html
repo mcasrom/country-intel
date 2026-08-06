@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Country Intelligence OSINT · Inteligencia geopolítica por país</title>
 <meta name="description" content="Dashboard OSINT de inteligencia geopolítica por país: indicadores, defensa, fichas de viaje oficiales, noticias, alertas, comparador y riesgo.">
+<link rel="canonical" href="https://country.viajeinteligencia.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Country Intelligence OSINT · Inteligencia geopolítica por país">
+<meta property="og:description" content="Indicadores, defensa, fichas de viaje oficiales, noticias, alertas, comparador y riesgo para 15 países. Datos abiertos, sin tracking.">
+<meta property="og:url" content="https://country.viajeinteligencia.com/">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Country Intelligence OSINT","url":"https://country.viajeinteligencia.com/","description":"Dashboard OSINT de inteligencia geopolítica por país con datos abiertos."}
+</script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
 <style>
@@ -61,6 +71,8 @@
     <button class="ci" onclick="toggleHeat()">🔍 Comparativa</button>
     <button class="ci" onclick="openCmp()">⚖️ Comparar</button>
     <button class="ci" onclick="openRank()">🏆 Rankings</button>
+    <button class="ci" onclick="toggleTrends()">📈 Tendencias</button>
+    <button class="ci" onclick="toggleView()">🗂️ Vista</button>
     <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Apóyame</a>
   </div>
 </header>
@@ -92,6 +104,22 @@
     <select class="ci" id="rankInd" onchange="buildRank()"></select>
   </div>
   <div id="ranktable" style="max-width:620px;margin:0 auto;"></div>
+</div>
+<div class="ov" id="trends" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;max-width:620px;margin:0 auto 12px;gap:8px;flex-wrap:wrap;">
+    <b style="color:#00d4ff;">📈 Tendencias · qué países se consultan más</b>
+    <button class="ci" onclick="toggleOv('trends')">✕ Cerrar</button>
+  </div>
+  <div id="trendtable" style="max-width:620px;margin:0 auto;"></div>
+</div>
+<div id="iconview" style="display:none;padding:18px;">
+  <div style="max-width:980px;margin:0 auto;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px;">
+      <b style="color:#00d4ff;">🗂️ Países</b>
+      <button class="ci" onclick="toggleView()">🗺️ Volver al mapa</button>
+    </div>
+    <div id="icongrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;"></div>
+  </div>
 </div>
 <div id="welcome">
   <div class="wcard">
@@ -253,9 +281,10 @@ function loadCountry(cc){
   fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
     var meta = META[cc] || [cc.toUpperCase(), '🌍', 0, 0];
     var region = gv(c,'region');
+    fireTrend(cc);
     var html =
       '<span class="back" onclick="closeDash()">← Volver al mapa</span>' +
-      '<div class="cname">'+meta[1]+' '+meta[0]+'</div><div class="cmeta">'+ (region||'') +' · datos abiertos</div>' +
+      '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div class="cname">'+meta[1]+' '+meta[0]+'</div><button class="ci" data-c="'+cc+'" onclick="shareCountry(this.dataset.c)">📤 Compartir</button></div><div class="cmeta">'+ (region||'') +' · datos abiertos</div>' +
       '<div class="sec"><h3>🤖 Resumen IA</h3><div class="resumen">'+resumenIA(c)+'</div></div>' +
       '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
@@ -293,6 +322,56 @@ function loadAlerts(lat, lon){
     }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">EMSC no disponible ahora.</div>'; });
 }
 function closeDash(){ document.getElementById('dash').style.display='none'; }
+
+function toggleTrends(){
+  toggleOv('trends');
+  if (document.getElementById('trends').style.display === 'block') buildTrends();
+}
+function buildTrends(){
+  var el = document.getElementById('trendtable');
+  el.innerHTML = '<div style="color:#64748b;text-align:center;">Cargando tendencias...</div>';
+  fetch('/api/trends').then(r=>r.json()).then(function(d){
+    var rows = (d.trends||[]).map(function(t,i){
+      var pct = i === 0 ? 100 : Math.round(t.views / d.trends[0].views * 100);
+      return '<tr><td style="padding:6px 8px;border:1px solid #1e293b;color:#64748b;">'+(i+1)+'</td>' +
+        '<td style="padding:6px 8px;border:1px solid #1e293b;">'+(META[t.code]?META[t.code][1]:'')+' '+t.name+'</td>' +
+        '<td style="padding:6px 8px;border:1px solid #1e293b;width:40%;"><div style="background:#111827;border-radius:4px;height:12px;"><div style="width:'+pct+'%;background:#00d4ff;height:12px;border-radius:4px;"></div></div></td>' +
+        '<td style="padding:6px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+t.views+'</td></tr>';
+    }).join('');
+    el.innerHTML = (rows ? '<table style="border-collapse:collapse;width:100%;"><tr><th style="border:1px solid #1e293b;color:#64748b;">#</th><th style="text-align:left;border:1px solid #1e293b;color:#00d4ff;">País</th><th style="border:1px solid #1e293b;"></th><th style="border:1px solid #1e293b;color:#00d4ff;text-align:right;">Visitas</th></tr>'+rows+'</table>' : '<div style="color:#64748b;text-align:center;">Todavía sin consultas registradas. Empieza a explorar países.</div>') +
+      '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:8px;">Conteo agregado anónimo de fichas abiertas · sin cookies ni tracking personal.</div>';
+  }).catch(function(){ el.innerHTML = '<div style="color:#64748b;text-align:center;">Tendencias no disponibles.</div>'; });
+}
+function fireTrend(cc){ try { fetch('/api/trends/view/'+cc, { method:'GET' }).catch(function(){}); } catch(e){} }
+function toggleView(){
+  var g = document.getElementById('iconview'), l = document.getElementById('layout');
+  if (g.style.display === 'none') { g.style.display = 'block'; l.style.display = 'none'; buildIcons(); }
+  else { g.style.display = 'none'; l.style.display = 'flex'; }
+}
+function buildIcons(){
+  var el = document.getElementById('icongrid');
+  el.innerHTML = '<div style="color:#64748b;">Cargando...</div>';
+  ensureHeatLoaded().then(function(){
+    var codes = Object.keys(ALL).sort();
+    el.innerHTML = codes.map(function(cc){
+      var c = ALL[cc], meta = META[cc] || [cc.toUpperCase(),'🌍'];
+      var rv = riesgoVisita(c);
+      var badge = (rv.match(/Baja ·/) || rv.match(/Media ·/) || rv.match(/Alta ·/) || [])[0] || '';
+      return '<div data-c="'+cc+'" onclick="loadCountry(this.dataset.c);toggleView();" style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:14px;cursor:pointer;text-align:center;">' +
+        '<div style="font-size:2.2em;margin-bottom:6px;">'+meta[1]+'</div>' +
+        '<div style="font-weight:800;margin-bottom:4px;">'+meta[0]+'</div>' +
+        '<div style="color:#94a3b8;font-size:.75em;">'+fmt(gv(c,'poblacion'),'poblacion')+' · '+fmt(gv(c,'renta_pc'),'renta_pc')+'</div>' +
+        '<div style="margin-top:6px;font-size:.7em;">'+badge+'</div></div>';
+    }).join('');
+  });
+}
+function shareCountry(cc){
+  var meta = META[cc] || [cc.toUpperCase(),'🌍'];
+  var text = meta[1]+' '+meta[0]+' · Ficha de inteligencia OSINT (indicadores, defensa, riesgo de visita, avisos de viaje) — https://country.viajeinteligencia.com/?c='+cc;
+  if (navigator.share) { navigator.share({ title: meta[1]+' '+meta[0]+' · Country Intelligence', text: text }).catch(function(){}); }
+  else if (navigator.clipboard) { navigator.clipboard.writeText(text).then(function(){ alert('Enlace y texto copiados: '+text); }).catch(function(){}); }
+  else { alert(text); }
+}
 
 function closeWelcome(){ document.getElementById('welcome').style.display = 'none'; }
 function togTab(btn, id){
@@ -397,6 +476,11 @@ function load(){
   });
 }
 load();
+function handleDeepLink(){
+  var m = (location.search||'').match(/[?&]c=([a-z]{2})/i);
+  if (m && META[m[1].toLowerCase()]) { closeWelcome(); loadCountry(m[1].toLowerCase()); }
+}
+handleDeepLink();
 </script>
 </body>
 </html>
