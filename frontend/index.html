@@ -3,36 +3,151 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Country Intelligence OSINT</title>
+<title>Country Intelligence OSINT · Inteligencia geopolítica por país</title>
+<meta name="description" content="Dashboard OSINT de inteligencia geopolítica por país: indicadores, defensa, noticias, alertas y riesgo con datos abiertos.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
 <style>
-  body{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0;margin:0;padding:20px}
-  h1{color:#00d4ff}
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
-  .card{background:#111827;border:1px solid #1e293b;border-radius:12px;padding:16px}
-  .card h3{margin:0 0 6px;color:#00d4ff}
-  .val{font-size:1.4em;font-weight:700}
-  .meta{color:#64748b;font-size:.78em}
+  body{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0;margin:0}
+  header{padding:16px 22px;border-bottom:1px solid #1e293b;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  h1{margin:0;color:#00d4ff;font-size:1.25em}
+  #layout{display:flex;height:calc(100vh - 120px)}
+  #map{flex:1;min-width:320px;background:#0b1020}
+  #dash{width:440px;max-width:100%;overflow-y:auto;border-left:1px solid #1e293b;padding:18px;display:none}
+  .sec{margin-bottom:16px}
+  .sec h3{color:#00d4ff;font-size:.85em;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;border-bottom:1px solid #1e293b;padding-bottom:6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .cell{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:8px 10px}
+  .cell .l{color:#64748b;font-size:.72em;text-transform:uppercase}
+  .cell .v{font-size:1.05em;font-weight:700;margin-top:2px}
+  .news,.alerta{padding:7px 0;border-bottom:1px solid #1e293b;font-size:.82em}
+  .news a{color:#cbd5e1;text-decoration:none}
+  .news a:hover{color:#00d4ff}
+  .alerta b{color:#f87171}
+  .risk{display:flex;gap:8px;flex-wrap:wrap}
+  .risk span{background:#111827;border:1px solid #1e293b;border-radius:20px;padding:4px 12px;font-size:.8em}
+  .risk .alta{color:#f87171}.risk .media{color:#fbbf24}.risk .baja{color:#34d399}
+  .resumen{background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px;font-size:.85em;line-height:1.6}
+  .resumen b{color:#00d4ff}
+  footer{padding:10px 22px;color:#64748b;font-size:.75em;border-top:1px solid #1e293b}
+  .cname{font-size:1.3em;font-weight:800;margin-bottom:4px}
+  .cmeta{color:#64748b;font-size:.8em;margin-bottom:12px}
+  .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#111827;color:#e2e8f0}
+  .back{cursor:pointer;color:#00d4ff;font-size:.8em;margin-bottom:8px;display:inline-block}
 </style>
 </head>
 <body>
-<h1>🌍 Country Intelligence OSINT</h1>
-<p id="status">Cargando países...</p>
-<div class="grid" id="cards"></div>
+<header>
+  <h1>🌍 Country Intelligence OSINT</h1>
+  <span style="color:#64748b;font-size:.82em;">Indicadores · defensa · noticias · alertas · riesgo</span>
+</header>
+<div id="layout">
+  <div id="map"></div>
+  <div id="dash"></div>
+</div>
+<footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · datos abiertos · económicos: Banco Mundial (seed ref.) · defensa: GFP/SIPRI 2025</footer>
 <script>
-fetch('/api/countries').then(r=>r.json()).then(function(d){
-  document.getElementById('status').textContent = d.countries.length + ' países';
-  d.countries.forEach(function(cc){
-    fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
-      var el = document.createElement('div'); el.className='card';
-      var inds = Object.entries(c.indicators||{}).map(function(kv){
-        return '<div><strong>'+kv[0]+':</strong> <span class="val">'+ (kv[1].value ?? '—') +'</span> <span class="meta">('+ (kv[1].updated||'').slice(0,10) +')</span></div>';
-      }).join('');
-      el.innerHTML = '<h3>'+cc.toUpperCase()+'</h3>'+inds;
-      document.getElementById('cards').appendChild(el);
+var META = {
+  es:["España","🇪🇸",40.4,-3.7], fr:["Francia","🇫🇷",48.8,2.3], de:["Alemania","🇩🇪",52.5,13.4],
+  it:["Italia","🇮🇹",41.9,12.5], gb:["Reino Unido","🇬🇧",51.5,-0.1], us:["EE.UU.","🇺🇸",39.8,-98.6],
+  cn:["China","🇨🇳",35.9,104.2], br:["Brasil","🇧🇷",-14.2,-51.9], in:["India","🇮🇳",20.6,79.0],
+  mx:["México","🇲🇽",23.6,-102.5], ma:["Marruecos","🇲🇦",31.8,-7.1], dz:["Argelia","🇩🇿",28.0,1.7], eg:["Egipto","🇪🇬",26.8,30.8]
+};
+var ILABEL = { poblacion:"Población", pib:"PIB", inflacion:"Inflación (IPC)", desempleo:"Desempleo", idh:"IDH", moneda:"Moneda", region:"Región", renta_pc:"Renta per cápita", alfabetizacion:"Alfabetización", seguridad_social:"Seguridad social (% PIB)", titulados:"Titulados superiores", defensa_usd:"Gasto en defensa", defensa_pct:"Defensa (% PIB)", personal:"Personal militar", aviones:"Aviones", barcos:"Barcos", tanques:"Tanques" };
+function fmt(v, ind){
+  if (v == null) return "—";
+  if (ind === "inflacion" || ind === "desempleo" || ind === "defensa_pct") return Number(v).toFixed(1) + "%";
+  if (ind === "pib") { var n=Number(v); return n>=1e12 ? "$"+(n/1e12).toFixed(2)+"T" : "$"+(n/1e9).toFixed(1)+"B"; }
+  if (ind === "defensa_usd") { var n=Number(v); return "$"+(n/1e9).toFixed(1)+"B"; }
+  if (ind === "renta_pc") return "$" + Number(v).toLocaleString();
+  if (ind === "poblacion") return Number(v)>=1e6 ? (Number(v)/1e6).toFixed(1)+"M" : Number(v).toLocaleString();
+  if (ind === "alfabetizacion" || ind === "titulados" || ind === "seguridad_social") return Number(v).toFixed(1) + "%";
+  if (ind === "personal" || ind === "aviones" || ind === "barcos" || ind === "tanques") return Number(v).toLocaleString();
+  return String(v);
+}
+var map = L.map('map').setView([30, 5], 2);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution:'© OSM © CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
+
+function gv(c, k){ var i = c.indicators || {}; return (i[k] && i[k].value != null) ? i[k].value : null; }
+function resumenIA(c){
+  var idh = gv(c,'idh');
+  var idhLab = idh == null ? "—" : (idh >= 0.8 ? "muy alto" : idh >= 0.7 ? "alto" : idh >= 0.55 ? "medio" : "bajo");
+  return [
+    "<b>Población:</b> " + fmt(gv(c,'poblacion'),'poblacion') + " · <b>renta per cápita:</b> " + fmt(gv(c,'renta_pc'),'renta_pc') + ".",
+    "<b>Economía:</b> PIB " + fmt(gv(c,'pib'),'pib') + " · inflación " + fmt(gv(c,'inflacion'),'inflacion') + " · desempleo " + fmt(gv(c,'desempleo'),'desempleo') + ".",
+    "<b>Desarrollo humano:</b> IDH " + (idh==null?"—":Number(idh).toFixed(3)) + " (" + idhLab + ").",
+    "<b>Capital humano:</b> alfabetización " + fmt(gv(c,'alfabetizacion'),'alfabetizacion') + " · titulados superiores " + fmt(gv(c,'titulados'),'titulados') + ".",
+    "<b>Red social:</b> gasto en seguridad social " + fmt(gv(c,'seguridad_social'),'seguridad_social') + " del PIB.",
+    "<b>Defensa:</b> gasto " + fmt(gv(c,'defensa_usd'),'defensa_usd') + " (" + fmt(gv(c,'defensa_pct'),'defensa_pct') + " del PIB) · personal " + fmt(gv(c,'personal'),'personal') + "."
+  ].join('<br>');
+}
+function riesgo(c){
+  var out = [];
+  var inf = gv(c,'inflacion'), de = gv(c,'desempleo');
+  if (inf != null && inf > 6) out.push(['Inflación alta','alta']); else if (inf != null && inf > 3) out.push(['Inflación moderada','media']);
+  if (de != null && de > 10) out.push(['Desempleo alto','alta']); else if (de != null && de > 6) out.push(['Desempleo moderado','media']);
+  if (out.length === 0) out.push(['Estabilidad económica relativa','baja']);
+  return out;
+}
+function cellsOf(c, keys){
+  return keys.map(function(k){ var v = gv(c,k); return '<div class="cell"><div class="l">'+ILABEL[k]+'</div><div class="v">'+fmt(v,k)+'</div></div>'; }).join('');
+}
+function loadCountry(cc){
+  var dash = document.getElementById('dash');
+  dash.style.display = 'block';
+  dash.innerHTML = '<span class="back" onclick="closeDash()">← Volver al mapa</span><div style="color:#64748b;">Cargando ' + (META[cc]||[cc])[0] + '...</div>';
+  fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
+    var meta = META[cc] || [cc.toUpperCase(), '🌍', 0, 0];
+    var region = gv(c,'region');
+    var html =
+      '<span class="back" onclick="closeDash()">← Volver al mapa</span>' +
+      '<div class="cname">'+meta[1]+' '+meta[0]+'</div><div class="cmeta">'+ (region||'') +' · datos abiertos</div>' +
+      '<div class="sec"><h3>🤖 Resumen IA</h3><div class="resumen">'+resumenIA(c)+'</div></div>' +
+      '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
+      '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div></div>' +
+      '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
+      '<div class="sec"><h3>📰 Noticias</h3><div id="news">Cargando...</div></div>' +
+      '<div class="sec"><h3>⚠️ Alertas</h3><div id="alerts">Cargando...</div></div>' +
+      '<div class="sec"><h3>🔜 Más secciones</h3><div style="color:#64748b;font-size:.8em;">Timeline · Economía detallada · Relaciones internacionales · Infraestructuras · Turismo — próximos sprints.</div></div>';
+    dash.innerHTML = html;
+    loadNews(cc, meta[0]); loadAlerts(meta[2], meta[3]);
+  });
+}
+function loadNews(cc, name){
+  var el = document.getElementById('news');
+  var q = name === 'EE.UU.' ? '"United States" OR "USA"' : (name === 'Reino Unido' ? '"United Kingdom" OR UK' : name + ' OR ' + cc.toUpperCase());
+  fetch('https://api.gdeltproject.org/api/v2/doc/doc?query=('+encodeURIComponent(q)+')&mode=artlist&format=json&maxrecords=5&sort=updateddesc', { mode:'cors' })
+    .then(r=>r.ok?r.json():Promise.reject()).then(function(d){
+      var arts = (d.articles||[]);
+      el.innerHTML = arts.length ? arts.map(function(a){ return '<div class="news"><a href="'+(a.url||'#')+'" target="_blank" rel="noopener">📄 '+ (a.title||'').slice(0,80)+'</a></div>'; }).join('') : 'Sin noticias recientes.';
+    }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">GDELT no disponible ahora.</div>'; });
+}
+function loadAlerts(lat, lon){
+  var el = document.getElementById('alerts');
+  var box = 'minlat='+(lat-4)+'&maxlat='+(lat+4)+'&minlon='+(lon-6)+'&maxlon='+(lon+6);
+  fetch('https://www.seismicportal.eu/fdsnws/event/1/query?format=json&minmagnitude=4&'+box+'&limit=5', { mode:'cors' })
+    .then(r=>r.ok?r.json():Promise.reject()).then(function(d){
+      var ev = (d.features||[]).slice(0,5);
+      el.innerHTML = ev.length ? ev.map(function(f){
+        var p=f.properties||{}; return '<div class="alerta">🌐 <b>M'+p.mag+'</b> · '+(p.place||'')+'<br><span style="color:#64748b;font-size:.72em;">'+ (p.time||'').replace('T',' ').slice(0,16)+' UTC</span></div>';
+      }).join('') : 'Sin terremotos ≥M4 recientes en la zona.';
+    }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">EMSC no disponible ahora.</div>'; });
+}
+function closeDash(){ document.getElementById('dash').style.display='none'; }
+
+function load(){
+  fetch('/api/countries').then(r=>r.json()).then(function(d){
+    d.countries.forEach(function(cc){
+      fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
+        var meta = META[cc] || [cc.toUpperCase(),'🌍',0,0];
+        var popup = '<b>'+meta[1]+' '+meta[0]+'</b><br>Población: '+fmt(gv(c,'poblacion'),'poblacion')+'<br>PIB: '+fmt(gv(c,'pib'),'pib')+'<br>Renta pc: '+fmt(gv(c,'renta_pc'),'renta_pc');
+        L.circleMarker([meta[2],meta[3]], { radius: 9, color:'#00d4ff', weight:1.5, fillColor:'#00d4ff', fillOpacity:0.35 })
+          .bindPopup(popup).on('click', function(){ loadCountry(cc); }).addTo(map);
+      });
     });
   });
-});
+}
+load();
 </script>
-<p style="color:#64748b;font-size:.8em;margin-top:20px;">Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com">country@viajeinteligencia.com</a> · datos abiertos</p>
 </body>
 </html>
