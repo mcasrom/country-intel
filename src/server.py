@@ -1,7 +1,9 @@
 import json
 import re
 import time
+import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -10,10 +12,19 @@ from fastapi.staticfiles import StaticFiles
 
 from src.config import JSON_DIR, BASE_DIR
 
-app = FastAPI(title="Country Intelligence", version="0.2.0")
+app = FastAPI(title="Country Intelligence", version="0.3.0")
 
 TRAVEL_DIR = BASE_DIR / "data" / "travel"
+NEWS_DIR = BASE_DIR / "data" / "news"
 TRAVEL_TTL = 24 * 3600
+NEWS_TTL = 3600
+NEWS_QUERY = {
+    "es": "España OR Spain", "fr": "Francia OR France", "de": "Alemania OR Germany",
+    "it": "Italia OR Italy", "gb": "Reino Unido OR United Kingdom", "us": "United States OR USA",
+    "cn": "China", "br": "Brasil OR Brazil", "in": "India", "mx": "México OR Mexico",
+    "ma": "Marruecos OR Morocco", "dz": "Argelia OR Algeria", "eg": "Egipto OR Egypt",
+    "pt": "Portugal", "au": "Australia",
+}
 TRAVEL_SLUGS = {
     "es": "spain", "fr": "france", "de": "germany", "it": "italy",
     "gb": None, "us": "usa", "cn": "china", "br": "brazil", "in": "india",
@@ -92,6 +103,50 @@ def travel(code: str):
         return out
     except Exception as e:
         return {"country": code.lower(), "slug": slug, "error": str(e), "alerts": []}
+
+
+def _gdelt(q: str):
+    url = "https://api.gdeltproject.org/api/v2/doc/doc?query=" + urllib.parse.quote(q) + "&mode=artlist&format=json&maxrecords=6&sort=updateddesc"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "country-intel/0.3 (research)"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            d = json.loads(r.read().decode("utf-8"))
+            return [{"title": a.get("title", ""), "url": a.get("url", "")} for a in d.get("articles", [])]
+    except Exception:
+        return None
+
+
+def _gnews_rss(q: str):
+    url = "https://news.google.com/rss/search?q=" + urllib.parse.quote(q) + "&hl=es&gl=ES&ceid=ES:es"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (research)"})
+        with urllib.request.urlopen(req, timeout=15) as r:
+            root = ET.fromstring(r.read())
+            items = []
+            for it in root.iter("item"):
+                items.append({"title": it.findtext("title") or "", "url": it.findtext("link") or ""})
+                if len(items) >= 6:
+                    break
+            return items
+    except Exception:
+        return []
+
+
+@app.get("/api/news/{code}")
+def news(code: str):
+    q = NEWS_QUERY.get(code.lower(), code.upper())
+    cache = NEWS_DIR / f"{code.lower()}.json"
+    if cache.exists() and (time.time() - cache.stat().st_mtime) < NEWS_TTL:
+        return json.loads(cache.read_text())
+    arts = _gdelt(q)
+    src = "gdelt"
+    if arts is None or not arts:
+        arts = _gnews_rss(q)
+        src = "google-news-rss"
+    NEWS_DIR.mkdir(parents=True, exist_ok=True)
+    out = {"country": code.lower(), "source": src, "articles": arts or []}
+    cache.write_text(json.dumps(out, ensure_ascii=False))
+    return out
 
 
 FRONTEND = BASE_DIR / "frontend"

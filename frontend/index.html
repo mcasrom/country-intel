@@ -266,27 +266,30 @@ function loadCountry(cc){
       '<div class="sec"><h3>📰 Noticias</h3><div id="news">Cargando...</div></div>' +
       '<div class="sec"><h3>⚠️ Alertas</h3><div id="alerts">Cargando...</div></div>';
     dash.innerHTML = html;
-    loadTravel(cc); loadNews(cc, meta[0]); loadAlerts(meta[2], meta[3]);
+    loadTravel(cc); loadNews(cc); loadAlerts(meta[2], meta[3]);
   });
 }
-function loadNews(cc, name){
+function loadNews(cc){
   var el = document.getElementById('news');
-  var q = name === 'EE.UU.' ? '"United States" OR "USA"' : (name === 'Reino Unido' ? '"United Kingdom" OR UK' : name + ' OR ' + cc.toUpperCase());
-  fetch('https://api.gdeltproject.org/api/v2/doc/doc?query=('+encodeURIComponent(q)+')&mode=artlist&format=json&maxrecords=5&sort=updateddesc', { mode:'cors' })
-    .then(r=>r.ok?r.json():Promise.reject()).then(function(d){
-      var arts = (d.articles||[]);
-      el.innerHTML = arts.length ? arts.map(function(a){ return '<div class="news"><a href="'+(a.url||'#')+'" target="_blank" rel="noopener">📄 '+ (a.title||'').slice(0,80)+'</a></div>'; }).join('') : 'Sin noticias recientes.';
-    }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">GDELT no disponible ahora.</div>'; });
+  el.innerHTML = 'Cargando...';
+  fetch('/api/news/'+cc).then(r=>r.json()).then(function(d){
+    var arts = (d.articles||[]);
+    var src = d.source === 'google-news-rss' ? 'Google News' : 'GDELT';
+    var head = '<div style="color:#64748b;font-size:.72em;margin-bottom:4px;">Fuente: '+src+'</div>';
+    el.innerHTML = head + (arts.length ? arts.map(function(a){ return '<div class="news"><a href="'+(a.url||'#')+'" target="_blank" rel="noopener">📄 '+ (a.title||'').slice(0,80)+'</a></div>'; }).join('') : 'Sin noticias recientes.');
+  }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Noticias no disponibles ahora.</div>'; });
 }
 function loadAlerts(lat, lon){
   var el = document.getElementById('alerts');
   var box = 'minlat='+(lat-4)+'&maxlat='+(lat+4)+'&minlon='+(lon-6)+'&maxlon='+(lon+6);
-  fetch('https://www.seismicportal.eu/fdsnws/event/1/query?format=json&minmagnitude=4&'+box+'&limit=5', { mode:'cors' })
-    .then(r=>r.ok?r.json():Promise.reject()).then(function(d){
-      var ev = (d.features||[]).slice(0,5);
+  var dd = new Date(); dd.setDate(dd.getDate() - 30);
+  var start = dd.toISOString().slice(0,10);
+  fetch('https://www.seismicportal.eu/fdsnws/event/1/query?format=json&minmagnitude=3&starttime='+start+'&'+box+'&limit=6', { mode:'cors' })
+    .then(r=>r.ok?r.json():Promise.reject()).then(function(res){
+      var ev = (res.features||[]).slice(0,5);
       el.innerHTML = ev.length ? ev.map(function(f){
-        var p=f.properties||{}; return '<div class="alerta">🌐 <b>M'+p.mag+'</b> · '+(p.place||'')+'<br><span style="color:#64748b;font-size:.72em;">'+ (p.time||'').replace('T',' ').slice(0,16)+' UTC</span></div>';
-      }).join('') : 'Sin terremotos ≥M4 recientes en la zona.';
+        var p=f.properties||{}; return '<div class="alerta">🌐 <b>M'+p.mag+'</b> · '+(p.flynn_region||'')+'<br><span style="color:#64748b;font-size:.72em;">'+ (p.time||'').replace('T',' ').slice(0,16)+' UTC</span></div>';
+      }).join('') : 'Sin terremotos ≥M3 en los últimos 30 días en la zona.';
     }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">EMSC no disponible ahora.</div>'; });
 }
 function closeDash(){ document.getElementById('dash').style.display='none'; }
