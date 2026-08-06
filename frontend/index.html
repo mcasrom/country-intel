@@ -38,6 +38,7 @@
   button.ci:hover{background:#00d4ff;color:#0b1020}
   #heat{position:fixed;inset:58px 0 40px 0;background:#0b1020;z-index:1000;overflow:auto;padding:18px}
   #heat table{background:#111827;border-radius:10px;padding:6px}
+  .fstage{background:#111827;border:1px solid #1e293b;border-left:3px solid #00d4ff;border-radius:6px;padding:8px 12px;margin-bottom:6px;font-size:.82em}
 </style>
 </head>
 <body>
@@ -46,6 +47,8 @@
   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
     <span style="color:#64748b;font-size:.82em;">Indicadores · defensa · noticias · alertas · riesgo</span>
     <button class="ci" onclick="toggleHeat()">🔍 Comparativa</button>
+    <button class="ci" onclick="toggleInfo()">ℹ️ Acerca de</button>
+    <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Apóyame</a>
   </div>
 </header>
 <div id="heat" style="display:none">
@@ -54,6 +57,41 @@
     <button class="ci" onclick="toggleHeat()">✕ Cerrar</button>
   </div>
   <div id="heattable"></div>
+</div>
+<div id="info" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;max-width:860px;margin:0 auto 12px;">
+    <b style="color:#00d4ff;">ℹ️ Acerca de Country Intelligence OSINT</b>
+    <button class="ci" onclick="toggleInfo()">✕ Cerrar</button>
+  </div>
+  <div style="max-width:860px;margin:0 auto;color:#cbd5e1;font-size:.88em;line-height:1.7;">
+    <div class="sec"><h3>🔻 El funnel: cómo funciona</h3>
+      <div class="fstage" style="width:100%">1 · FUENTES · datos abiertos y primarios (Banco Mundial, UNESCO, SIPRI/GFP, CIA Factbook, GDELT, EMSC)</div>
+      <div class="fstage" style="width:76%">2 · COLECTORES · pipeline diario (cron 03:00) con caché y seed de referencia</div>
+      <div class="fstage" style="width:55%">3 · ANÁLISIS · resumen por país, riesgo derivado, comparativa normalizada</div>
+      <div class="fstage" style="width:38%">4 · DASHBOARD · mapa, panel por país, heatmap de diferencias</div>
+    </div>
+    <div class="sec"><h3>⚙️ Metodología</h3>
+      <p>Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen y el riesgo</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Los datos económicos son un <b>seed de referencia</b> (2023-2024) que el colector del Banco Mundial refresca cuando la API lo permite; el resto son aproximaciones públicas 2025. Se actualiza a diario vía cron.</p>
+    </div>
+    <div class="sec"><h3>📚 Fuentes</h3>
+      <ul style="padding-left:18px;margin:0;">
+        <li>Banco Mundial · PIB, población, inflación (API)</li>
+        <li>UNESCO / Naciones Unidas · alfabetización, educación, IDH (PNUD)</li>
+        <li>SIPRI · Global Firepower · gasto y equipamiento de defensa</li>
+        <li>CIA World Factbook · estructura etaria y edad mediana</li>
+        <li>GDELT · noticias en tiempo real por país</li>
+        <li>EMSC · alertas sísmicas (terremotos ≥M4)</li>
+      </ul>
+    </div>
+    <div class="sec"><h3>ℹ️ About</h3>
+      <p><b>Country Intelligence OSINT</b> es un dashboard independiente de inteligencia geopolitica de <b>datos abiertos</b>, sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal de investigación. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
+      <p style="color:#64748b;font-size:.82em;">Aviso: datos orientativos para investigación, no recomendaciones de inversión ni seguridad oficial. Verifica siempre en fuentes gubernamentales antes de viajar.</p>
+    </div>
+    <div class="sec"><h3>☕ Apoya el proyecto</h3>
+      <p>Si te resulta útil, invítame a un café:</p>
+      <a class="ci" style="text-decoration:none;display:inline-block;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Invítame a un café en Ko-fi</a>
+    </div>
+  </div>
 </div>
 <div id="layout">
   <div id="map"></div>
@@ -118,6 +156,22 @@ function riesgo(c){
   if (out.length === 0) out.push(['Estabilidad económica relativa','baja']);
   return out;
 }
+function riesgoVisita(c){
+  var s = 1;
+  var idh = gv(c,'idh'), inf = gv(c,'inflacion'), de = gv(c,'desempleo');
+  if (idh != null) { if (idh < 0.55) s += 3; else if (idh < 0.7) s += 2; else if (idh < 0.8) s += 1; }
+  if (inf != null) { if (inf > 6) s += 2; else if (inf > 3) s += 1; }
+  if (de != null) { if (de > 10) s += 2; else if (de > 6) s += 1; }
+  var nivel = s <= 2 ? ['baja','Baja · 👍'] : s <= 4 ? ['media','Media · ⚠️'] : ['alta','Alta · 🔴'];
+  var consejos = [];
+  if (inf != null && inf > 6) consejos.push('Inflación elevada: prevé precios al alza y presupuesto flexible.');
+  if (de != null && de > 10) consejos.push('Desempleo alto: precaución con estafas laborales y «ofertas» sospechosas.');
+  if (idh != null && idh < 0.7) consejos.push('IDH medio/bajo: revisa cobertura sanitaria, agua potable y seguridad local.');
+  if (idh != null && idh < 0.55) consejos.push('Entorno con fragilidad institucional: registra tu presencia en la embajada/consulado.');
+  if (!consejos.length) consejos.push('Clima económico estable. Aplica precauciones habituales de viaje.');
+  return '<div class="risk"><span class="'+nivel[0]+'">Riesgo visita: '+nivel[1]+'</span></div>' +
+         '<ul style="margin:8px 0 0;padding-left:18px;color:#94a3b8;font-size:.8em;line-height:1.6;">'+consejos.map(function(x){ return '<li>'+x+'</li>'; }).join('')+'</ul>';
+}
 function cellsOf(c, keys){
   return keys.map(function(k){ var v = gv(c,k); return '<div class="cell"><div class="l">'+ILABEL[k]+'</div><div class="v">'+fmt(v,k)+'</div></div>'; }).join('');
 }
@@ -136,6 +190,7 @@ function loadCountry(cc){
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
       '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div></div>' +
       '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
+      '<div class="sec"><h3>🧳 Riesgo visita país</h3>'+riesgoVisita(c)+'</div>' +
       '<div class="sec"><h3>📰 Noticias</h3><div id="news">Cargando...</div></div>' +
       '<div class="sec"><h3>⚠️ Alertas</h3><div id="alerts">Cargando...</div></div>' +
       '<div class="sec"><h3>🔜 Más secciones</h3><div style="color:#64748b;font-size:.8em;">Timeline · Economía detallada · Relaciones internacionales · Infraestructuras · Turismo — próximos sprints.</div></div>';
@@ -172,6 +227,10 @@ var HEAT = [
 function toggleHeat(){
   var h = document.getElementById('heat');
   if (h.style.display === 'none') { h.style.display = 'block'; buildHeat(); } else h.style.display = 'none';
+}
+function toggleInfo(){
+  var h = document.getElementById('info');
+  if (h.style.display === 'none') h.style.display = 'block'; else h.style.display = 'none';
 }
 function buildHeat(){
   var tbl = document.getElementById('heattable');
