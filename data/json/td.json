@@ -1,6 +1,6 @@
 {
  "country": "td",
- "generated": "2026-08-06T16:57:05.248492+00:00",
+ "generated": "2026-08-06T17:14:50.351235+00:00",
  "geo": {
   "name": "Chad",
   "lat": 12.1048,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "1.053",
    "updated": "2026-08-06T16:57:05.176468+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "8.89950732263754",
    "updated": "2026-08-06T16:57:05.176456+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "6.3",
    "updated": "2026-08-06T16:57:05.176504+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "204040",
    "updated": "2026-08-06T16:57:05.176493+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "19906706689.7582",
    "updated": "2026-08-06T16:57:05.176444+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "20299123",
    "updated": "2026-08-06T16:57:05.176432+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "980.668312111718",
    "updated": "2026-08-06T16:57:05.176480+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

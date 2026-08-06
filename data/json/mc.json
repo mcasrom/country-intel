@@ -1,6 +1,6 @@
 {
  "country": "mc",
- "generated": "2026-08-06T16:57:05.228911+00:00",
+ "generated": "2026-08-06T17:14:50.319551+00:00",
  "geo": {
   "name": "Monaco",
   "lat": 43.7325,
@@ -11,27 +11,32 @@
   "migrant_pct": {
    "value": "70.2",
    "updated": "2026-08-06T16:57:05.170438+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "110",
    "updated": "2026-08-06T16:57:05.170423+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "11125788838.2812",
    "updated": "2026-08-06T16:57:05.170388+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "38631",
    "updated": "2026-08-06T16:57:05.170375+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "288001.574856495",
    "updated": "2026-08-06T16:57:05.170403+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

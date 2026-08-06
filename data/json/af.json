@@ -1,6 +1,6 @@
 {
  "country": "af",
- "generated": "2026-08-06T16:57:05.186486+00:00",
+ "generated": "2026-08-06T17:14:50.259687+00:00",
  "geo": {
   "name": "Afghanistan",
   "lat": 34.5228,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "13.687",
    "updated": "2026-08-06T16:57:05.157063+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "-6.60118564073726",
    "updated": "2026-08-06T16:57:05.157056+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0.2",
    "updated": "2026-08-06T16:57:05.157084+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-44089",
    "updated": "2026-08-06T16:57:05.157077+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "17778508875.7396",
    "updated": "2026-08-06T16:57:05.157049+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "42647492",
    "updated": "2026-08-06T16:57:05.157043+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "416.871146273728",
    "updated": "2026-08-06T16:57:05.157070+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

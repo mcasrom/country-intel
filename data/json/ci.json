@@ -1,6 +1,6 @@
 {
  "country": "ci",
- "generated": "2026-08-06T16:57:05.198348+00:00",
+ "generated": "2026-08-06T17:14:50.276646+00:00",
  "geo": {
   "name": "Cote d'Ivoire",
   "lat": 5.332,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "2.273",
    "updated": "2026-08-06T16:57:05.160209+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.45053028131019",
    "updated": "2026-08-06T16:57:05.160193+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "9",
    "updated": "2026-08-06T16:57:05.160266+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "7838",
    "updated": "2026-08-06T16:57:05.160253+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "87113179149.284",
    "updated": "2026-08-06T16:57:05.160178+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "31934230",
    "updated": "2026-08-06T16:57:05.160165+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2727.8935220697",
    "updated": "2026-08-06T16:57:05.160236+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

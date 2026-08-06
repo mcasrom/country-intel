@@ -1,6 +1,6 @@
 {
  "country": "im",
- "generated": "2026-08-06T16:57:05.216055+00:00",
+ "generated": "2026-08-06T17:14:50.303919+00:00",
  "geo": {
   "name": "Isle of Man",
   "lat": 54.1509,
@@ -11,17 +11,20 @@
   "migrant_pct": {
    "value": "51.9",
    "updated": "2026-08-06T16:57:05.166240+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "177",
    "updated": "2026-08-06T16:57:05.166216+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "84160",
    "updated": "2026-08-06T16:57:05.166203+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "ga",
- "generated": "2026-08-06T16:57:05.207475+00:00",
+ "generated": "2026-08-06T17:14:50.292314+00:00",
  "geo": {
   "name": "Gabon",
   "lat": 0.38832,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "20.091",
    "updated": "2026-08-06T16:57:05.163974+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.17311998381218",
    "updated": "2026-08-06T16:57:05.163960+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "17.7",
    "updated": "2026-08-06T16:57:05.164015+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "1105",
    "updated": "2026-08-06T16:57:05.164001+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "20895684425.6752",
    "updated": "2026-08-06T16:57:05.163946+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "2538952",
    "updated": "2026-08-06T16:57:05.163933+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "8230.04311451151",
    "updated": "2026-08-06T16:57:05.163987+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

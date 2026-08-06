@@ -1,6 +1,6 @@
 {
  "country": "ch",
- "generated": "2026-08-06T16:57:05.198118+00:00",
+ "generated": "2026-08-06T17:14:50.276167+00:00",
  "geo": {
   "name": "Switzerland",
   "lat": 46.948,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "4.343",
    "updated": "2026-08-06T16:57:05.160122+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.06234041976595",
    "updated": "2026-08-06T16:57:05.160108+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "40099",
    "updated": "2026-08-06T16:57:05.160151+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "969919786394.884",
    "updated": "2026-08-06T16:57:05.160093+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "9005582",
    "updated": "2026-08-06T16:57:05.160079+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "107702.065940312",
    "updated": "2026-08-06T16:57:05.160136+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

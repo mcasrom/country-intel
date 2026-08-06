@@ -1,6 +1,6 @@
 {
  "country": "pg",
- "generated": "2026-08-06T16:57:05.238266+00:00",
+ "generated": "2026-08-06T17:14:50.336647+00:00",
  "geo": {
   "name": "Papua New Guinea",
   "lat": -9.47357,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "2.625",
    "updated": "2026-08-06T16:57:05.173636+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "0.602403921107917",
    "updated": "2026-08-06T16:57:05.173624+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-707",
    "updated": "2026-08-06T16:57:05.173661+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "30803971189.4102",
    "updated": "2026-08-06T16:57:05.173612+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "10576502",
    "updated": "2026-08-06T16:57:05.173600+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2912.4914068385",
    "updated": "2026-08-06T16:57:05.173648+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

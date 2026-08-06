@@ -1,6 +1,6 @@
 {
  "country": "ng",
- "generated": "2026-08-06T16:57:05.234910+00:00",
+ "generated": "2026-08-06T17:14:50.330401+00:00",
  "geo": {
   "name": "Nigeria",
   "lat": 9.05804,
@@ -11,42 +11,50 @@
   "alfabetizacion": {
    "value": "70.4100036621094",
    "updated": "2026-08-06T16:57:05.172708+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "3.045",
    "updated": "2026-08-06T16:57:05.172683+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "33.2416590552749",
    "updated": "2026-08-06T16:57:05.172669+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0.6",
    "updated": "2026-08-06T16:57:05.172732+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-35202",
    "updated": "2026-08-06T16:57:05.172721+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "252261880140.271",
    "updated": "2026-08-06T16:57:05.172657+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "232679478",
    "updated": "2026-08-06T16:57:05.172645+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "1084.16041805058",
    "updated": "2026-08-06T16:57:05.172695+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

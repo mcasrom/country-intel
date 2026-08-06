@@ -1,6 +1,6 @@
 {
  "country": "si",
- "generated": "2026-08-06T16:57:05.243992+00:00",
+ "generated": "2026-08-06T17:14:50.345835+00:00",
  "geo": {
   "name": "Slovenia",
   "lat": 46.0546,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "3.7",
    "updated": "2026-08-06T16:57:05.175574+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.96562656432505",
    "updated": "2026-08-06T16:57:05.175561+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "3319",
    "updated": "2026-08-06T16:57:05.175598+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "72972015197.3859",
    "updated": "2026-08-06T16:57:05.175530+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "2127400",
    "updated": "2026-08-06T16:57:05.175499+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "34301.0318686594",
    "updated": "2026-08-06T16:57:05.175585+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

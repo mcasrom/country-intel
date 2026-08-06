@@ -1,6 +1,6 @@
 {
  "country": "ke",
- "generated": "2026-08-06T16:57:05.220206+00:00",
+ "generated": "2026-08-06T17:14:50.309312+00:00",
  "geo": {
   "name": "Kenya",
   "lat": -1.27975,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "5.487",
    "updated": "2026-08-06T16:57:05.167739+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "4.48978854243448",
    "updated": "2026-08-06T16:57:05.167723+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1.8",
    "updated": "2026-08-06T16:57:05.167780+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-19781",
    "updated": "2026-08-06T16:57:05.167767+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "120397537849.826",
    "updated": "2026-08-06T16:57:05.167708+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "56432944",
    "updated": "2026-08-06T16:57:05.167695+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2133.46193404026",
    "updated": "2026-08-06T16:57:05.167753+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

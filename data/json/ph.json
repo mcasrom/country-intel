@@ -1,6 +1,6 @@
 {
  "country": "ph",
- "generated": "2026-08-06T16:57:05.238569+00:00",
+ "generated": "2026-08-06T17:14:50.337105+00:00",
  "geo": {
   "name": "Philippines",
   "lat": 14.5515,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "2.202",
    "updated": "2026-08-06T16:57:05.173708+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.21260487006347",
    "updated": "2026-08-06T16:57:05.173696+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-160373",
    "updated": "2026-08-06T16:57:05.173733+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "461671157904.74",
    "updated": "2026-08-06T16:57:05.173684+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "115843670",
    "updated": "2026-08-06T16:57:05.173672+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "3985.29464669706",
    "updated": "2026-08-06T16:57:05.173720+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

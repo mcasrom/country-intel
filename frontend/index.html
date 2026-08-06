@@ -160,7 +160,7 @@
     <div class="tab" onclick="togTab(this,'t-aviso')"><span>⚖️ Aviso legal</span><span class="arr">▸</span></div>
   </div>
   <div class="tabbody" id="t-metodo">
-    <p style="margin:0;">Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). Los datos económicos son un <b>seed de referencia</b> (2023-2024) que el colector del Banco Mundial refresca cuando la API lo permite; el resto son aproximaciones públicas 2025. Se actualiza a diario vía cron.</p>
+    <p style="margin:0;">Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). <b>Año de referencia único 2023-2024</b> (último año disponible por indicador, persistido) con <b>fuente por bloque</b>: Banco Mundial/FMI economía, ONU demografía y salud, PNUD IDH, UNESCO educación, Transparency Intl corrupción, RSF libertad de prensa, EIU democracia, SIPRI/GFP defensa, CIA edad mediana. El colector del Banco Mundial se ejecuta a diario (cron 03:00); si el API falla conserva los últimos valores y lo marca en <b>datos: hace Xd</b>. Para nuevos países se incorporan los indicadores disponibles del Banco Mundial de forma automática.</p>
   </div>
   <div class="tabbody" id="t-fuentes">
     <ul style="padding-left:18px;margin:0;">
@@ -208,6 +208,14 @@ function fmt(v, ind){
   if (ind === "edad_mediana") return Number(v) + " años";
   if (ind === "net_mig") { var n=Number(v); return (n>0?"+":"")+n.toFixed(1)+"‰"; }
   if (ind === "migrant_pct") return Number(v).toFixed(1) + "%";
+  if (ind === "pib_ppa_pc") return "$" + Number(v).toLocaleString();
+  if (ind === "esperanza_vida" || ind === "esperanza_saludable") return Number(v).toFixed(1) + " años";
+  if (ind === "homicidios") return Number(v).toFixed(1) + " /100k";
+  if (ind === "gini" || ind === "corrupcion" || ind === "libertad_prensa") return Number(v).toFixed(1);
+  if (ind === "democracia") return Number(v).toFixed(2);
+  if (ind === "fertilidad") return Number(v).toFixed(1);
+  if (ind === "deuda_pib" || ind === "gasto_salud" || ind === "gasto_educacion" || ind === "internet_pct" || ind === "urbanizacion") return Number(v).toFixed(1) + "%";
+  if (ind === "co2_pc") return Number(v).toFixed(1) + " t";
   return String(v);
 }
 var map = null;
@@ -362,7 +370,8 @@ function loadCountry(cc){
       '<span class="back" onclick="closeDash()">← Volver al mapa</span>' +
       '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div class="cname">'+meta[1]+' '+meta[0]+'</div><button class="ci" data-c="'+cc+'" onclick="shareCountry(this.dataset.c)">📤 Compartir</button></div><div class="cmeta">'+ (region||'') + (region?' · ':'') + freshBadge(c) +' · datos abiertos</div>' +
       '<div class="sec"><h3>🤖 Resumen IA</h3><div class="resumen">'+resumenIA(c)+'</div></div>' +
-      '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
+      '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','pib_ppa_pc','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
+      '<div class="sec"><h3>📈 Desarrollo e instituciones</h3><div class="grid">'+cellsOf(c,['esperanza_vida','esperanza_saludable','fertilidad','urbanizacion','internet_pct','co2_pc','gini','homicidios','deuda_pib','gasto_salud','gasto_educacion','corrupcion','libertad_prensa','democracia'])+'</div></div>' +
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
       migSec(c) +
       '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div></div>' +

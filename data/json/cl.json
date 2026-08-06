@@ -1,6 +1,6 @@
 {
  "country": "cl",
- "generated": "2026-08-06T16:57:05.198688+00:00",
+ "generated": "2026-08-06T17:14:50.277063+00:00",
  "geo": {
   "name": "Chile",
   "lat": -33.475,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "8.718",
    "updated": "2026-08-06T16:57:05.160352+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "4.29763891572524",
    "updated": "2026-08-06T16:57:05.160316+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "7.8",
    "updated": "2026-08-06T16:57:05.160394+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "58316",
    "updated": "2026-08-06T16:57:05.160381+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "329260633698.726",
    "updated": "2026-08-06T16:57:05.160301+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "19764771",
    "updated": "2026-08-06T16:57:05.160281+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "16658.9652720351",
    "updated": "2026-08-06T16:57:05.160366+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

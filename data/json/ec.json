@@ -1,6 +1,6 @@
 {
  "country": "ec",
- "generated": "2026-08-06T16:57:05.202683+00:00",
+ "generated": "2026-08-06T17:14:50.285591+00:00",
  "geo": {
   "name": "Ecuador",
   "lat": -0.229498,
@@ -11,42 +11,50 @@
   "alfabetizacion": {
    "value": "93.4899978637695",
    "updated": "2026-08-06T16:57:05.162517+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "3.453",
    "updated": "2026-08-06T16:57:05.162506+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.54732515615369",
    "updated": "2026-08-06T16:57:05.162500+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "4.1",
    "updated": "2026-08-06T16:57:05.162528+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-19704",
    "updated": "2026-08-06T16:57:05.162523+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "123802374000",
    "updated": "2026-08-06T16:57:05.162494+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "18135478",
    "updated": "2026-08-06T16:57:05.162489+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "6826.5294137822",
    "updated": "2026-08-06T16:57:05.162511+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

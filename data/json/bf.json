@@ -1,6 +1,6 @@
 {
  "country": "bf",
- "generated": "2026-08-06T16:57:05.191881+00:00",
+ "generated": "2026-08-06T17:14:50.267206+00:00",
  "geo": {
   "name": "Burkina Faso",
   "lat": 12.3605,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "3.441",
    "updated": "2026-08-06T16:57:05.158497+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "4.19081721344523",
    "updated": "2026-08-06T16:57:05.158482+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "3.1",
    "updated": "2026-08-06T16:57:05.158551+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-25807",
    "updated": "2026-08-06T16:57:05.158526+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "23136514855.7646",
    "updated": "2026-08-06T16:57:05.158468+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "23548781",
    "updated": "2026-08-06T16:57:05.158454+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "982.493100418428",
    "updated": "2026-08-06T16:57:05.158510+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

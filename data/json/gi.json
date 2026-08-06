@@ -1,6 +1,6 @@
 {
  "country": "gi",
- "generated": "2026-08-06T16:57:05.209539+00:00",
+ "generated": "2026-08-06T17:14:50.295751+00:00",
  "geo": {
   "name": "Gibraltar",
   "lat": 0.0,
@@ -11,17 +11,20 @@
   "migrant_pct": {
    "value": "28.7",
    "updated": "2026-08-06T16:57:05.164673+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "598",
    "updated": "2026-08-06T16:57:05.164665+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "39329",
    "updated": "2026-08-06T16:57:05.164656+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

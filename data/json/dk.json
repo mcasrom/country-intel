@@ -1,6 +1,6 @@
 {
  "country": "dk",
- "generated": "2026-08-06T16:57:05.201696+00:00",
+ "generated": "2026-08-06T17:14:50.283506+00:00",
  "geo": {
   "name": "Denmark",
   "lat": 55.6763,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "5.358",
    "updated": "2026-08-06T16:57:05.162158+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.37220049768926",
    "updated": "2026-08-06T16:57:05.162146+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "14.2",
    "updated": "2026-08-06T16:57:05.162194+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "25639",
    "updated": "2026-08-06T16:57:05.162183+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "424524722037.047",
    "updated": "2026-08-06T16:57:05.162133+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "5976992",
    "updated": "2026-08-06T16:57:05.162122+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "71026.4832271897",
    "updated": "2026-08-06T16:57:05.162170+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

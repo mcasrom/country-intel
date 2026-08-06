@@ -26,14 +26,14 @@ def write_json(conn, geo):
     cur.execute("SELECT DISTINCT country FROM indicators")
     codes = [r[0] for r in cur.fetchall()]
     for cc in codes:
-        cur.execute("SELECT indicator, value, updated_at, source FROM indicators WHERE country=?", (cc,))
+        cur.execute("SELECT indicator, value, updated_at, source, year FROM indicators WHERE country=?", (cc,))
         rows = cur.fetchall()
         g = geo.get(cc, {})
         payload = {
             "country": cc,
             "generated": _now(),
             "geo": {"name": g.get("name", cc.upper()), "lat": g.get("lat"), "lon": g.get("lon"), "iso2": cc},
-            "indicators": {r[0]: {"value": r[1], "updated": r[2], "source": r[3]} for r in rows},
+            "indicators": {r[0]: {"value": r[1], "updated": r[2], "source": r[3], "year": r[4] or ""} for r in rows},
         }
         (JSON_DIR / f"{cc}.json").write_text(json.dumps(payload, ensure_ascii=False, indent=1))
     for fp in JSON_DIR.glob("*.json"):

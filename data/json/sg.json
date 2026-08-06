@@ -1,6 +1,6 @@
 {
  "country": "sg",
- "generated": "2026-08-06T16:57:05.243796+00:00",
+ "generated": "2026-08-06T17:14:50.345447+00:00",
  "geo": {
   "name": "Singapore",
   "lat": 1.28941,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "2.737",
    "updated": "2026-08-06T16:57:05.175459+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.38951123595017",
    "updated": "2026-08-06T16:57:05.175446+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "20011",
    "updated": "2026-08-06T16:57:05.175487+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "572877260178.427",
    "updated": "2026-08-06T16:57:05.175433+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "6036860",
    "updated": "2026-08-06T16:57:05.175422+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "94896.5621495988",
    "updated": "2026-08-06T16:57:05.175474+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

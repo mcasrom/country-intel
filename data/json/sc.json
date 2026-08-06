@@ -1,6 +1,6 @@
 {
  "country": "sc",
- "generated": "2026-08-06T16:57:05.243212+00:00",
+ "generated": "2026-08-06T17:14:50.344138+00:00",
  "geo": {
   "name": "Seychelles",
   "lat": -4.6309,
@@ -11,27 +11,32 @@
   "inflacion": {
    "value": "0.311726050919668",
    "updated": "2026-08-06T16:57:05.175211+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "1747",
    "updated": "2026-08-06T16:57:05.175260+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "2228608684.29911",
    "updated": "2026-08-06T16:57:05.175198+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "121354",
    "updated": "2026-08-06T16:57:05.175186+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "18364.5259678223",
    "updated": "2026-08-06T16:57:05.175246+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

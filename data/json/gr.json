@@ -1,6 +1,6 @@
 {
  "country": "gr",
- "generated": "2026-08-06T16:57:05.211273+00:00",
+ "generated": "2026-08-06T17:14:50.298188+00:00",
  "geo": {
   "name": "Greece",
   "lat": 37.9792,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "10.02",
    "updated": "2026-08-06T16:57:05.164964+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.74101875679486",
    "updated": "2026-08-06T16:57:05.164955+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "14.2",
    "updated": "2026-08-06T16:57:05.164990+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-122772",
    "updated": "2026-08-06T16:57:05.164982+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "256238371778.118",
    "updated": "2026-08-06T16:57:05.164946+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "10405134",
    "updated": "2026-08-06T16:57:05.164937+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "24626.1481858973",
    "updated": "2026-08-06T16:57:05.164972+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

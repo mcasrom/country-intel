@@ -1,6 +1,6 @@
 {
  "country": "la",
- "generated": "2026-08-06T16:57:05.223902+00:00",
+ "generated": "2026-08-06T17:14:50.313852+00:00",
  "geo": {
   "name": "Lao PDR",
   "lat": 18.5826,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "1.174",
    "updated": "2026-08-06T16:57:05.168926+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "23.1305695942588",
    "updated": "2026-08-06T16:57:05.168913+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0.7",
    "updated": "2026-08-06T16:57:05.168962+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-10284",
    "updated": "2026-08-06T16:57:05.168950+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "16502933121.3379",
    "updated": "2026-08-06T16:57:05.168901+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "7769819",
    "updated": "2026-08-06T16:57:05.168889+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2123.97909415109",
    "updated": "2026-08-06T16:57:05.168938+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

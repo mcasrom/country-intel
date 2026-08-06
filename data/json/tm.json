@@ -1,6 +1,6 @@
 {
  "country": "tm",
- "generated": "2026-08-06T16:57:05.249845+00:00",
+ "generated": "2026-08-06T17:14:50.353726+00:00",
  "geo": {
   "name": "Turkmenistan",
   "lat": 37.9509,
@@ -11,27 +11,32 @@
   "desempleo": {
    "value": "4.02",
    "updated": "2026-08-06T16:57:05.176835+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "14646",
    "updated": "2026-08-06T16:57:05.176859+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "44249447717.2312",
    "updated": "2026-08-06T16:57:05.176822+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "7494498",
    "updated": "2026-08-06T16:57:05.176809+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "5904.25772576512",
    "updated": "2026-08-06T16:57:05.176847+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

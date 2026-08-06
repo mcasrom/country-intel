@@ -1,6 +1,6 @@
 {
  "country": "lv",
- "generated": "2026-08-06T16:57:05.227406+00:00",
+ "generated": "2026-08-06T17:14:50.317476+00:00",
  "geo": {
   "name": "Latvia",
   "lat": 56.9465,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "6.9",
    "updated": "2026-08-06T16:57:05.169809+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.26579885828729",
    "updated": "2026-08-06T16:57:05.169797+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "11.8",
    "updated": "2026-08-06T16:57:05.169845+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2225",
    "updated": "2026-08-06T16:57:05.169833+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "44001275012.6141",
    "updated": "2026-08-06T16:57:05.169784+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1866124",
    "updated": "2026-08-06T16:57:05.169773+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "23578.9663562625",
    "updated": "2026-08-06T16:57:05.169821+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "bs",
- "generated": "2026-08-06T16:57:05.195201+00:00",
+ "generated": "2026-08-06T17:14:50.271843+00:00",
  "geo": {
   "name": "Bahamas, The",
   "lat": 25.0661,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "9.049",
    "updated": "2026-08-06T16:57:05.159189+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "0.409162489083286",
    "updated": "2026-08-06T16:57:05.159181+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "16.8",
    "updated": "2026-08-06T16:57:05.159218+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "1018",
    "updated": "2026-08-06T16:57:05.159211+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "15832800000",
    "updated": "2026-08-06T16:57:05.159174+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "401283",
    "updated": "2026-08-06T16:57:05.159167+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "39455.4466548546",
    "updated": "2026-08-06T16:57:05.159204+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

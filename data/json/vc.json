@@ -1,6 +1,6 @@
 {
  "country": "vc",
- "generated": "2026-08-06T16:57:05.253524+00:00",
+ "generated": "2026-08-06T17:14:50.359142+00:00",
  "geo": {
   "name": "St. Vincent and the Grenadines",
   "lat": 13.2035,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "18.093",
    "updated": "2026-08-06T16:57:05.178008+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.62770736940927",
    "updated": "2026-08-06T16:57:05.177996+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-737",
    "updated": "2026-08-06T16:57:05.178033+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "1157207407.40741",
    "updated": "2026-08-06T16:57:05.177984+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "100616",
    "updated": "2026-08-06T16:57:05.177972+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "11501.2265187188",
    "updated": "2026-08-06T16:57:05.178020+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

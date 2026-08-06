@@ -1,6 +1,6 @@
 {
  "country": "lb",
- "generated": "2026-08-06T16:57:05.224543+00:00",
+ "generated": "2026-08-06T17:14:50.314298+00:00",
  "geo": {
   "name": "Lebanon",
   "lat": 33.8872,
@@ -11,32 +11,38 @@
   "inflacion": {
    "value": "45.2430422716718",
    "updated": "2026-08-06T16:57:05.169000+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "24.5",
    "updated": "2026-08-06T16:57:05.169044+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-17267",
    "updated": "2026-08-06T16:57:05.169032+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "25971643441.3408",
    "updated": "2026-08-06T16:57:05.168987+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "5805962",
    "updated": "2026-08-06T16:57:05.168974+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "4473.27134441128",
    "updated": "2026-08-06T16:57:05.169019+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

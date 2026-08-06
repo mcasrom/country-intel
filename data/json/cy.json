@@ -1,6 +1,6 @@
 {
  "country": "cy",
- "generated": "2026-08-06T16:57:05.200686+00:00",
+ "generated": "2026-08-06T17:14:50.281125+00:00",
  "geo": {
   "name": "Cyprus",
   "lat": 35.1676,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "4.9",
    "updated": "2026-08-06T16:57:05.161576+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.80023018624824",
    "updated": "2026-08-06T16:57:05.161517+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "14.9",
    "updated": "2026-08-06T16:57:05.161623+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "8138",
    "updated": "2026-08-06T16:57:05.161611+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "37634551820.7367",
    "updated": "2026-08-06T16:57:05.161503+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1358282",
    "updated": "2026-08-06T16:57:05.161485+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "38674.3125",
    "updated": "2026-08-06T16:57:05.161594+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

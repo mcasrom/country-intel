@@ -1,6 +1,6 @@
 {
  "country": "pw",
- "generated": "2026-08-06T16:57:05.240202+00:00",
+ "generated": "2026-08-06T17:14:50.340249+00:00",
  "geo": {
   "name": "Palau",
   "lat": 7.34194,
@@ -11,32 +11,38 @@
   "inflacion": {
    "value": "2.23172772921704",
    "updated": "2026-08-06T16:57:05.174462+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "29.5",
    "updated": "2026-08-06T16:57:05.174500+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-14",
    "updated": "2026-08-06T16:57:05.174488+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "321501812.5",
    "updated": "2026-08-06T16:57:05.174449+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "17695",
    "updated": "2026-08-06T16:57:05.174437+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "18169.0767165866",
    "updated": "2026-08-06T16:57:05.174476+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

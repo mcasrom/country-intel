@@ -1,6 +1,6 @@
 {
  "country": "ws",
- "generated": "2026-08-06T16:57:05.255033+00:00",
+ "generated": "2026-08-06T17:14:50.361422+00:00",
  "geo": {
   "name": "Samoa",
   "lat": -13.8314,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "4.855",
    "updated": "2026-08-06T16:57:05.178440+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.17245530514377",
    "updated": "2026-08-06T16:57:05.178428+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2754",
    "updated": "2026-08-06T16:57:05.178464+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "1175749785.65113",
    "updated": "2026-08-06T16:57:05.178415+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "218019",
    "updated": "2026-08-06T16:57:05.178403+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "5392.87761915762",
    "updated": "2026-08-06T16:57:05.178452+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

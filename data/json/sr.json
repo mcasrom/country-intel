@@ -1,6 +1,6 @@
 {
  "country": "sr",
- "generated": "2026-08-06T16:57:05.245631+00:00",
+ "generated": "2026-08-06T17:14:50.348211+00:00",
  "geo": {
   "name": "Suriname",
   "lat": 5.8232,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "7.621",
    "updated": "2026-08-06T16:57:05.175968+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "16.2296159130279",
    "updated": "2026-08-06T16:57:05.175956+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-1166",
    "updated": "2026-08-06T16:57:05.175992+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "4416775112.72266",
    "updated": "2026-08-06T16:57:05.175944+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "634431",
    "updated": "2026-08-06T16:57:05.175932+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "6961.78956060258",
    "updated": "2026-08-06T16:57:05.175980+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "cd",
- "generated": "2026-08-06T16:57:05.197198+00:00",
+ "generated": "2026-08-06T17:14:50.274528+00:00",
  "geo": {
   "name": "Congo, Dem. Rep.",
   "lat": -4.325,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "4.421",
    "updated": "2026-08-06T16:57:05.159821+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1",
    "updated": "2026-08-06T16:57:05.159850+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-26968",
    "updated": "2026-08-06T16:57:05.159841+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "75716176105.0704",
    "updated": "2026-08-06T16:57:05.159811+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "109276265",
    "updated": "2026-08-06T16:57:05.159796+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "692.887665085098",
    "updated": "2026-08-06T16:57:05.159830+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

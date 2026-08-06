@@ -1,6 +1,6 @@
 {
  "country": "gu",
- "generated": "2026-08-06T16:57:05.211941+00:00",
+ "generated": "2026-08-06T17:14:50.299009+00:00",
  "geo": {
   "name": "Guam",
   "lat": 13.4443,
@@ -11,22 +11,26 @@
   "desempleo": {
    "value": "5.252",
    "updated": "2026-08-06T16:57:05.165099+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "50.2",
    "updated": "2026-08-06T16:57:05.165126+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-504",
    "updated": "2026-08-06T16:57:05.165112+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "167777",
    "updated": "2026-08-06T16:57:05.165086+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

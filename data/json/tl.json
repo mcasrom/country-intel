@@ -1,6 +1,6 @@
 {
  "country": "tl",
- "generated": "2026-08-06T16:57:05.249518+00:00",
+ "generated": "2026-08-06T17:14:50.353308+00:00",
  "geo": {
   "name": "Timor-Leste",
   "lat": -8.56667,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "1.523",
    "updated": "2026-08-06T16:57:05.176764+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.06284153005468",
    "updated": "2026-08-06T16:57:05.176749+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2552",
    "updated": "2026-08-06T16:57:05.176794+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "1865608515.41321",
    "updated": "2026-08-06T16:57:05.176733+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1400638",
    "updated": "2026-08-06T16:57:05.176721+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "1331.9705130185",
    "updated": "2026-08-06T16:57:05.176777+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

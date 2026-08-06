@@ -1,6 +1,6 @@
 {
  "country": "lk",
- "generated": "2026-08-06T16:57:05.225574+00:00",
+ "generated": "2026-08-06T17:14:50.315512+00:00",
  "geo": {
   "name": "Sri Lanka",
   "lat": 6.92148,
@@ -11,37 +11,44 @@
   "alfabetizacion": {
    "value": "92.7399978637695",
    "updated": "2026-08-06T16:57:05.169353+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "4.239",
    "updated": "2026-08-06T16:57:05.169305+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "-0.42936004906973",
    "updated": "2026-08-06T16:57:05.169291+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-27245",
    "updated": "2026-08-06T16:57:05.169369+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "99616111265.7633",
    "updated": "2026-08-06T16:57:05.169256+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "21916000",
    "updated": "2026-08-06T16:57:05.169216+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "4545.36006870612",
    "updated": "2026-08-06T16:57:05.169336+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

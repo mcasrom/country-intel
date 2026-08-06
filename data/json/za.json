@@ -1,6 +1,6 @@
 {
  "country": "za",
- "generated": "2026-08-06T16:57:05.255924+00:00",
+ "generated": "2026-08-06T17:14:50.362737+00:00",
  "geo": {
   "name": "South Africa",
   "lat": -25.746,
@@ -11,37 +11,44 @@
   "alfabetizacion": {
    "value": "91.1500015258789",
    "updated": "2026-08-06T16:57:05.178633+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "32.279",
    "updated": "2026-08-06T16:57:05.178609+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "4.36115246518962",
    "updated": "2026-08-06T16:57:05.178597+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "166972",
    "updated": "2026-08-06T16:57:05.178646+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "401144998373.585",
    "updated": "2026-08-06T16:57:05.178584+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "64007187",
    "updated": "2026-08-06T16:57:05.178573+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "6267.186814093",
    "updated": "2026-08-06T16:57:05.178621+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

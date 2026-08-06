@@ -1,6 +1,6 @@
 {
  "country": "ba",
- "generated": "2026-08-06T16:57:05.190469+00:00",
+ "generated": "2026-08-06T17:14:50.265304+00:00",
  "geo": {
   "name": "Bosnia and Herzegovina",
   "lat": 43.8607,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "10.69",
    "updated": "2026-08-06T16:57:05.158072+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1.1",
    "updated": "2026-08-06T16:57:05.158114+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-4497",
    "updated": "2026-08-06T16:57:05.158101+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "29737363103.0492",
    "updated": "2026-08-06T16:57:05.158058+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "3164253",
    "updated": "2026-08-06T16:57:05.158044+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "9397.90942855997",
    "updated": "2026-08-06T16:57:05.158086+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

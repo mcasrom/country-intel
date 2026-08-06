@@ -1,6 +1,6 @@
 {
  "country": "uy",
- "generated": "2026-08-06T16:57:05.252886+00:00",
+ "generated": "2026-08-06T17:14:50.358278+00:00",
  "geo": {
   "name": "Uruguay",
   "lat": -34.8941,
@@ -11,37 +11,44 @@
   "alfabetizacion": {
    "value": "98.9100036621094",
    "updated": "2026-08-06T16:57:05.177875+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "8.209",
    "updated": "2026-08-06T16:57:05.177850+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "4.84914366613156",
    "updated": "2026-08-06T16:57:05.177837+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-1348",
    "updated": "2026-08-06T16:57:05.177888+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "82322859144.2816",
    "updated": "2026-08-06T16:57:05.177813+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "3386588",
    "updated": "2026-08-06T16:57:05.177798+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "24308.4954958447",
    "updated": "2026-08-06T16:57:05.177862+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

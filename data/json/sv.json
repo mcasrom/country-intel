@@ -1,6 +1,6 @@
 {
  "country": "sv",
- "generated": "2026-08-06T16:57:05.246844+00:00",
+ "generated": "2026-08-06T17:14:50.349389+00:00",
  "geo": {
   "name": "El Salvador",
   "lat": 13.7034,
@@ -11,42 +11,50 @@
   "alfabetizacion": {
    "value": "89.7699966430664",
    "updated": "2026-08-06T16:57:05.176173+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "3.261",
    "updated": "2026-08-06T16:57:05.176148+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "0.853782292567288",
    "updated": "2026-08-06T16:57:05.176136+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0.7",
    "updated": "2026-08-06T16:57:05.176197+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-23102",
    "updated": "2026-08-06T16:57:05.176185+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "34879730000",
    "updated": "2026-08-06T16:57:05.176124+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "6338193",
    "updated": "2026-08-06T16:57:05.176113+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "5503.10317151907",
    "updated": "2026-08-06T16:57:05.176160+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "mv",
- "generated": "2026-08-06T16:57:05.232991+00:00",
+ "generated": "2026-08-06T17:14:50.326268+00:00",
  "geo": {
   "name": "Maldives",
   "lat": 4.1742,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "4.278",
    "updated": "2026-08-06T16:57:05.171648+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.41093527910134",
    "updated": "2026-08-06T16:57:05.171631+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "14.2",
    "updated": "2026-08-06T16:57:05.171686+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2421",
    "updated": "2026-08-06T16:57:05.171673+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "7061608267.25451",
    "updated": "2026-08-06T16:57:05.171614+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "527799",
    "updated": "2026-08-06T16:57:05.171602+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "13379.3513577224",
    "updated": "2026-08-06T16:57:05.171660+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

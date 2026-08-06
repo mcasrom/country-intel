@@ -1,6 +1,6 @@
 {
  "country": "so",
- "generated": "2026-08-06T16:57:05.245306+00:00",
+ "generated": "2026-08-06T17:14:50.347834+00:00",
  "geo": {
   "name": "Somalia, Fed. Rep.",
   "lat": 2.07515,
@@ -11,27 +11,32 @@
   "desempleo": {
    "value": "18.949",
    "updated": "2026-08-06T16:57:05.175897+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "26859",
    "updated": "2026-08-06T16:57:05.175921+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "11967000000",
    "updated": "2026-08-06T16:57:05.175885+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "19009151",
    "updated": "2026-08-06T16:57:05.175873+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "629.538899449007",
    "updated": "2026-08-06T16:57:05.175908+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "fo",
- "generated": "2026-08-06T16:57:05.206518+00:00",
+ "generated": "2026-08-06T17:14:50.290735+00:00",
  "geo": {
   "name": "Faroe Islands",
   "lat": 61.8926,
@@ -11,27 +11,32 @@
   "migrant_pct": {
    "value": "14.6",
    "updated": "2026-08-06T16:57:05.163561+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "488",
    "updated": "2026-08-06T16:57:05.163547+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "4052937169.76536",
    "updated": "2026-08-06T16:57:05.163517+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "54640",
    "updated": "2026-08-06T16:57:05.163506+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "74175.2776311377",
    "updated": "2026-08-06T16:57:05.163532+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

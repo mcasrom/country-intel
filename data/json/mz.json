@@ -1,6 +1,6 @@
 {
  "country": "mz",
- "generated": "2026-08-06T16:57:05.234004+00:00",
+ "generated": "2026-08-06T17:14:50.328741+00:00",
  "geo": {
   "name": "Mozambique",
   "lat": -25.9664,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "6.668",
    "updated": "2026-08-06T16:57:05.172270+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "4.07856834812022",
    "updated": "2026-08-06T16:57:05.172257+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1",
    "updated": "2026-08-06T16:57:05.172306+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-38940",
    "updated": "2026-08-06T16:57:05.172294+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "22752244245.473",
    "updated": "2026-08-06T16:57:05.172244+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "34631766",
    "updated": "2026-08-06T16:57:05.172217+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "656.976148587772",
    "updated": "2026-08-06T16:57:05.172282+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

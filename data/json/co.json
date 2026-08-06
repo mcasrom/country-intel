@@ -1,6 +1,6 @@
 {
  "country": "co",
- "generated": "2026-08-06T16:57:05.199469+00:00",
+ "generated": "2026-08-06T17:14:50.279019+00:00",
  "geo": {
   "name": "Colombia",
   "lat": 4.60987,
@@ -11,42 +11,50 @@
   "alfabetizacion": {
    "value": "95.3399963378906",
    "updated": "2026-08-06T16:57:05.161004+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "9.619",
    "updated": "2026-08-06T16:57:05.160975+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "6.60908593728228",
    "updated": "2026-08-06T16:57:05.160960+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "5.8",
    "updated": "2026-08-06T16:57:05.161033+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "141643",
    "updated": "2026-08-06T16:57:05.161019+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "420504033143.211",
    "updated": "2026-08-06T16:57:05.160945+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "52886363",
    "updated": "2026-08-06T16:57:05.160931+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "7951.08624019412",
    "updated": "2026-08-06T16:57:05.160989+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

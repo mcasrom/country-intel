@@ -1,6 +1,6 @@
 {
  "country": "cu",
- "generated": "2026-08-06T16:57:05.199898+00:00",
+ "generated": "2026-08-06T17:14:50.279840+00:00",
  "geo": {
   "name": "Cuba",
   "lat": 23.1333,
@@ -11,22 +11,26 @@
   "desempleo": {
    "value": "1.755",
    "updated": "2026-08-06T16:57:05.161167+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0",
    "updated": "2026-08-06T16:57:05.161200+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-22356",
    "updated": "2026-08-06T16:57:05.161186+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "10979783",
    "updated": "2026-08-06T16:57:05.161154+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

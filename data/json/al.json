@@ -1,6 +1,6 @@
 {
  "country": "al",
- "generated": "2026-08-06T16:57:05.187101+00:00",
+ "generated": "2026-08-06T17:14:50.260693+00:00",
  "geo": {
   "name": "Albania",
   "lat": 41.3317,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "10.689",
    "updated": "2026-08-06T16:57:05.157156+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.21587375089992",
    "updated": "2026-08-06T16:57:05.157149+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1.7",
    "updated": "2026-08-06T16:57:05.157217+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-24472",
    "updated": "2026-08-06T16:57:05.157211+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "27037474263.2977",
    "updated": "2026-08-06T16:57:05.157139+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "2377128",
    "updated": "2026-08-06T16:57:05.157132+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "11374.0085781236",
    "updated": "2026-08-06T16:57:05.157202+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

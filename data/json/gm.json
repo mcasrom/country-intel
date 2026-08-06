@@ -1,6 +1,6 @@
 {
  "country": "gm",
- "generated": "2026-08-06T16:57:05.210158+00:00",
+ "generated": "2026-08-06T17:14:50.296501+00:00",
  "geo": {
   "name": "Gambia, The",
   "lat": 13.4495,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "6.48",
    "updated": "2026-08-06T16:57:05.164741+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "11.5610532897511",
    "updated": "2026-08-06T16:57:05.164729+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "8.6",
    "updated": "2026-08-06T16:57:05.164792+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2989",
    "updated": "2026-08-06T16:57:05.164772+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "2404888737.54853",
    "updated": "2026-08-06T16:57:05.164719+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "2759988",
    "updated": "2026-08-06T16:57:05.164711+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "871.340287547821",
    "updated": "2026-08-06T16:57:05.164758+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

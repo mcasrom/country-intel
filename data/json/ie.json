@@ -1,6 +1,6 @@
 {
  "country": "ie",
- "generated": "2026-08-06T16:57:05.215370+00:00",
+ "generated": "2026-08-06T17:14:50.303103+00:00",
  "geo": {
   "name": "Ireland",
   "lat": 53.3441,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "4.3",
    "updated": "2026-08-06T16:57:05.166049+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.11344999577317",
    "updated": "2026-08-06T16:57:05.166035+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "23.1",
    "updated": "2026-08-06T16:57:05.166091+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "39059",
    "updated": "2026-08-06T16:57:05.166077+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "609157459747.205",
    "updated": "2026-08-06T16:57:05.166020+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "5395790",
    "updated": "2026-08-06T16:57:05.166007+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "112894.953240805",
    "updated": "2026-08-06T16:57:05.166063+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

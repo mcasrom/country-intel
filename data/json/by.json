@@ -1,6 +1,6 @@
 {
  "country": "by",
- "generated": "2026-08-06T16:57:05.196258+00:00",
+ "generated": "2026-08-06T17:14:50.273123+00:00",
  "geo": {
   "name": "Belarus",
   "lat": 53.9678,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "3.458",
    "updated": "2026-08-06T16:57:05.159504+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "5.78531910428005",
    "updated": "2026-08-06T16:57:05.159490+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "11.6",
    "updated": "2026-08-06T16:57:05.159557+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-3119",
    "updated": "2026-08-06T16:57:05.159538+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "78591839299.7087",
    "updated": "2026-08-06T16:57:05.159475+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "9132629",
    "updated": "2026-08-06T16:57:05.159462+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "8605.60954569694",
    "updated": "2026-08-06T16:57:05.159518+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

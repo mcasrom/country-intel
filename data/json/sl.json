@@ -1,6 +1,6 @@
 {
  "country": "sl",
- "generated": "2026-08-06T16:57:05.244474+00:00",
+ "generated": "2026-08-06T17:14:50.346714+00:00",
  "geo": {
   "name": "Sierra Leone",
   "lat": 8.4821,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "3.103",
    "updated": "2026-08-06T16:57:05.175717+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "28.6337500014115",
    "updated": "2026-08-06T16:57:05.175704+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-11000",
    "updated": "2026-08-06T16:57:05.175744+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "6971127234.07241",
    "updated": "2026-08-06T16:57:05.175692+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "8642022",
    "updated": "2026-08-06T16:57:05.175681+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "806.654650274255",
    "updated": "2026-08-06T16:57:05.175729+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

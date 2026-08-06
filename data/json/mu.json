@@ -1,6 +1,6 @@
 {
  "country": "mu",
- "generated": "2026-08-06T16:57:05.232797+00:00",
+ "generated": "2026-08-06T17:14:50.325870+00:00",
  "geo": {
   "name": "Mauritius",
   "lat": -20.1605,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "5.548",
    "updated": "2026-08-06T16:57:05.171567+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.6045220384796",
    "updated": "2026-08-06T16:57:05.171559+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "2.3",
    "updated": "2026-08-06T16:57:05.171592+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2787",
    "updated": "2026-08-06T16:57:05.171582+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "14938055690.3609",
    "updated": "2026-08-06T16:57:05.171544+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1245779",
    "updated": "2026-08-06T16:57:05.171527+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "11990.9355434317",
    "updated": "2026-08-06T16:57:05.171574+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

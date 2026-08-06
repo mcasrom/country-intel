@@ -1,6 +1,6 @@
 {
  "country": "kz",
- "generated": "2026-08-06T16:57:05.223571+00:00",
+ "generated": "2026-08-06T17:14:50.313444+00:00",
  "geo": {
   "name": "Kazakhstan",
   "lat": 51.1879,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "4.833",
    "updated": "2026-08-06T16:57:05.168841+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "8.69082156104494",
    "updated": "2026-08-06T16:57:05.168829+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "10.1",
    "updated": "2026-08-06T16:57:05.168877+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-7368",
    "updated": "2026-08-06T16:57:05.168865+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "291480274648.826",
    "updated": "2026-08-06T16:57:05.168816+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "20592571",
    "updated": "2026-08-06T16:57:05.168804+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "14154.6324958076",
    "updated": "2026-08-06T16:57:05.168853+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "pe",
- "generated": "2026-08-06T16:57:05.237676+00:00",
+ "generated": "2026-08-06T17:14:50.335539+00:00",
  "geo": {
   "name": "Peru",
   "lat": -12.0931,
@@ -11,37 +11,44 @@
   "alfabetizacion": {
    "value": "93.6600036621094",
    "updated": "2026-08-06T16:57:05.173504+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "5.199",
    "updated": "2026-08-06T16:57:05.173479+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.00770739412712",
    "updated": "2026-08-06T16:57:05.173467+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "18406",
    "updated": "2026-08-06T16:57:05.173516+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "291751523018.903",
    "updated": "2026-08-06T16:57:05.173454+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "34217848",
    "updated": "2026-08-06T16:57:05.173443+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "8526.29665719783",
    "updated": "2026-08-06T16:57:05.173491+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

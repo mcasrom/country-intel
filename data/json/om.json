@@ -1,6 +1,6 @@
 {
  "country": "om",
- "generated": "2026-08-06T16:57:05.236948+00:00",
+ "generated": "2026-08-06T17:14:50.334698+00:00",
  "geo": {
   "name": "Oman",
   "lat": 23.6105,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "3.203",
    "updated": "2026-08-06T16:57:05.173282+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "0.593589236248469",
    "updated": "2026-08-06T16:57:05.173269+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "43.2",
    "updated": "2026-08-06T16:57:05.173318+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "154219",
    "updated": "2026-08-06T16:57:05.173306+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "107137198699.61",
    "updated": "2026-08-06T16:57:05.173257+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "5281538",
    "updated": "2026-08-06T16:57:05.173245+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "20285.2272765262",
    "updated": "2026-08-06T16:57:05.173294+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

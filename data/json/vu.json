@@ -1,6 +1,6 @@
 {
  "country": "vu",
- "generated": "2026-08-06T16:57:05.254742+00:00",
+ "generated": "2026-08-06T17:14:50.361015+00:00",
  "geo": {
   "name": "Vanuatu",
   "lat": -17.7404,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "4.988",
    "updated": "2026-08-06T16:57:05.178330+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.14348948727412",
    "updated": "2026-08-06T16:57:05.178304+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-43",
    "updated": "2026-08-06T16:57:05.178367+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "1297956614.77783",
    "updated": "2026-08-06T16:57:05.178291+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "327777",
    "updated": "2026-08-06T16:57:05.178280+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "3959.87703462363",
    "updated": "2026-08-06T16:57:05.178343+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

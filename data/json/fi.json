@@ -1,6 +1,6 @@
 {
  "country": "fi",
- "generated": "2026-08-06T16:57:05.205046+00:00",
+ "generated": "2026-08-06T17:14:50.289205+00:00",
  "geo": {
   "name": "Finland",
   "lat": 60.1608,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "8.4",
    "updated": "2026-08-06T16:57:05.163261+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.56568906231616",
    "updated": "2026-08-06T16:57:05.163245+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "9.2",
    "updated": "2026-08-06T16:57:05.163305+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "26894",
    "updated": "2026-08-06T16:57:05.163289+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "298729432711.719",
    "updated": "2026-08-06T16:57:05.163212+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "5619911",
    "updated": "2026-08-06T16:57:05.163197+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "53155.5451165897",
    "updated": "2026-08-06T16:57:05.163273+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

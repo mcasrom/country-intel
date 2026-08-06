@@ -1,6 +1,6 @@
 {
  "country": "ht",
- "generated": "2026-08-06T16:57:05.213959+00:00",
+ "generated": "2026-08-06T17:14:50.301705+00:00",
  "geo": {
   "name": "Haiti",
   "lat": 18.5392,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "14.609",
    "updated": "2026-08-06T16:57:05.165767+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "26.9490564091987",
    "updated": "2026-08-06T16:57:05.165753+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0.2",
    "updated": "2026-08-06T16:57:05.165795+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-31747",
    "updated": "2026-08-06T16:57:05.165787+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "24255657481.2502",
    "updated": "2026-08-06T16:57:05.165737+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "11772557",
    "updated": "2026-08-06T16:57:05.165723+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2060.35591768638",
    "updated": "2026-08-06T16:57:05.165777+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

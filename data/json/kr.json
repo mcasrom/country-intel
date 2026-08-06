@@ -1,6 +1,6 @@
 {
  "country": "kr",
- "generated": "2026-08-06T16:57:05.222548+00:00",
+ "generated": "2026-08-06T17:14:50.312224+00:00",
  "geo": {
   "name": "Korea, Rep.",
   "lat": 37.5323,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "2.784",
    "updated": "2026-08-06T16:57:05.168582+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.32174328643542",
    "updated": "2026-08-06T16:57:05.168567+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "3.5",
    "updated": "2026-08-06T16:57:05.168611+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "75963",
    "updated": "2026-08-06T16:57:05.168604+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "1875388209406.8",
    "updated": "2026-08-06T16:57:05.168552+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "51751065",
    "updated": "2026-08-06T16:57:05.168538+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "36238.639908315",
    "updated": "2026-08-06T16:57:05.168593+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

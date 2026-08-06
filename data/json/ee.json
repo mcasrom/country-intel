@@ -1,6 +1,6 @@
 {
  "country": "ee",
- "generated": "2026-08-06T16:57:05.202890+00:00",
+ "generated": "2026-08-06T17:14:50.286018+00:00",
  "geo": {
   "name": "Estonia",
   "lat": 59.4392,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "7.6",
    "updated": "2026-08-06T16:57:05.162551+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.5194118998392",
    "updated": "2026-08-06T16:57:05.162545+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "14.9",
    "updated": "2026-08-06T16:57:05.162567+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-7742",
    "updated": "2026-08-06T16:57:05.162562+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "43130419829.35",
    "updated": "2026-08-06T16:57:05.162539+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1372341",
    "updated": "2026-08-06T16:57:05.162534+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "31428.3547816104",
    "updated": "2026-08-06T16:57:05.162556+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

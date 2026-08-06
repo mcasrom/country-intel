@@ -1,6 +1,6 @@
 {
  "country": "xk",
- "generated": "2026-08-06T16:57:05.255344+00:00",
+ "generated": "2026-08-06T17:14:50.361815+00:00",
  "geo": {
   "name": "Kosovo",
   "lat": 42.565,
@@ -11,27 +11,32 @@
   "inflacion": {
    "value": "1.61944994559476",
    "updated": "2026-08-06T16:57:05.178500+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-22178",
    "updated": "2026-08-06T16:57:05.178524+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "11203038332.3359",
    "updated": "2026-08-06T16:57:05.178487+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1594353",
    "updated": "2026-08-06T16:57:05.178476+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "7026.6988128325",
    "updated": "2026-08-06T16:57:05.178512+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

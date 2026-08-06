@@ -1,6 +1,6 @@
 {
  "country": "ge",
- "generated": "2026-08-06T16:57:05.208813+00:00",
+ "generated": "2026-08-06T17:14:50.294886+00:00",
  "geo": {
   "name": "Georgia",
   "lat": 41.71,
@@ -11,42 +11,50 @@
   "alfabetizacion": {
    "value": "99.6800003051758",
    "updated": "2026-08-06T16:57:05.164520+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "desempleo": {
    "value": "11.557",
    "updated": "2026-08-06T16:57:05.164489+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "1.10971758022096",
    "updated": "2026-08-06T16:57:05.164473+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "2.1",
    "updated": "2026-08-06T16:57:05.164545+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "1745",
    "updated": "2026-08-06T16:57:05.164533+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "34189423333.141",
    "updated": "2026-08-06T16:57:05.164461+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "3812518",
    "updated": "2026-08-06T16:57:05.164450+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "8967.67525638987",
    "updated": "2026-08-06T16:57:05.164504+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

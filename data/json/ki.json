@@ -1,6 +1,6 @@
 {
  "country": "ki",
- "generated": "2026-08-06T16:57:05.221217+00:00",
+ "generated": "2026-08-06T17:14:50.310671+00:00",
  "geo": {
   "name": "Kiribati",
   "lat": 1.32905,
@@ -11,32 +11,38 @@
   "inflacion": {
    "value": "2.45545072159028",
    "updated": "2026-08-06T16:57:05.168238+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "2.5",
    "updated": "2026-08-06T16:57:05.168279+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-471",
    "updated": "2026-08-06T16:57:05.168268+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "343153235.077124",
    "updated": "2026-08-06T16:57:05.168213+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "134518",
    "updated": "2026-08-06T16:57:05.168199+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2550.98377226188",
    "updated": "2026-08-06T16:57:05.168253+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "ar",
- "generated": "2026-08-06T16:57:05.188076+00:00",
+ "generated": "2026-08-06T17:14:50.262063+00:00",
  "geo": {
   "name": "Argentina",
   "lat": -34.6118,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "7.15",
    "updated": "2026-08-06T16:57:05.157527+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "219.883929014578",
    "updated": "2026-08-06T16:57:05.157507+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "4.3",
    "updated": "2026-08-06T16:57:05.157575+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "3454",
    "updated": "2026-08-06T16:57:05.157567+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "638365455340.04",
    "updated": "2026-08-06T16:57:05.157492+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "45696159",
    "updated": "2026-08-06T16:57:05.157478+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "13969.7836603737",
    "updated": "2026-08-06T16:57:05.157547+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

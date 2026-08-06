@@ -1,6 +1,6 @@
 {
  "country": "ua",
- "generated": "2026-08-06T16:57:05.252029+00:00",
+ "generated": "2026-08-06T17:14:50.356364+00:00",
  "geo": {
   "name": "Ukraine",
   "lat": 50.4536,
@@ -11,27 +11,32 @@
   "inflacion": {
    "value": "6.50198464669254",
    "updated": "2026-08-06T16:57:05.177344+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "1146012",
    "updated": "2026-08-06T16:57:05.177369+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "190833835445.1",
    "updated": "2026-08-06T16:57:05.177331+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "37860221",
    "updated": "2026-08-06T16:57:05.177309+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "5391.62255859375",
    "updated": "2026-08-06T16:57:05.177356+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

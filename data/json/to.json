@@ -1,6 +1,6 @@
 {
  "country": "to",
- "generated": "2026-08-06T16:57:05.250580+00:00",
+ "generated": "2026-08-06T17:14:50.354487+00:00",
  "geo": {
   "name": "Tonga",
   "lat": -21.136,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "1.965",
    "updated": "2026-08-06T16:57:05.176997+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.18188924237472",
    "updated": "2026-08-06T16:57:05.176985+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2149",
    "updated": "2026-08-06T16:57:05.177021+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "647488243.847291",
    "updated": "2026-08-06T16:57:05.176973+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "104175",
    "updated": "2026-08-06T16:57:05.176961+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "6215.38990974121",
    "updated": "2026-08-06T16:57:05.177009+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "tz",
- "generated": "2026-08-06T16:57:05.251807+00:00",
+ "generated": "2026-08-06T17:14:50.355981+00:00",
  "geo": {
   "name": "Tanzania",
   "lat": -6.17486,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "1.557",
    "updated": "2026-08-06T16:57:05.177273+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "3.05694676312373",
    "updated": "2026-08-06T16:57:05.177260+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-29865",
    "updated": "2026-08-06T16:57:05.177297+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "79235713444.9777",
    "updated": "2026-08-06T16:57:05.177248+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "68560157",
    "updated": "2026-08-06T16:57:05.177236+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "1192.60668945313",
    "updated": "2026-08-06T16:57:05.177285+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "cz",
- "generated": "2026-08-06T16:57:05.200897+00:00",
+ "generated": "2026-08-06T17:14:50.281545+00:00",
  "geo": {
   "name": "Czechia",
   "lat": 50.0878,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "2.6",
    "updated": "2026-08-06T16:57:05.161675+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "2.43531202435314",
    "updated": "2026-08-06T16:57:05.161663+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "9.5",
    "updated": "2026-08-06T16:57:05.161712+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-86169",
    "updated": "2026-08-06T16:57:05.161700+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "347082562221.377",
    "updated": "2026-08-06T16:57:05.161650+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "10905028",
    "updated": "2026-08-06T16:57:05.161638+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "31827.7552539413",
    "updated": "2026-08-06T16:57:05.161687+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

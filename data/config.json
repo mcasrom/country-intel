@@ -1,6 +1,8 @@
 {
   "port": 8710,
-  "sleep_worldbank": 1.2,
+  "sleep_worldbank": 0.8,
+  "wb_year": "2023:2024",
+  "wb_cache_ttl": 604800,
   "max_countries": 0,
   "stale_days": 7,
   "ttl": { "travel": 86400, "news": 3600, "trending": 21600 },
@@ -46,26 +48,34 @@
       "eg": ["Egipto", "🇪🇬", 26.8, 30.8], "pt": ["Portugal", "🇵🇹", 39.4, -8.2], "au": ["Australia", "🇦🇺", -25.3, 133.8]
     },
     "labels": {
-      "poblacion": "Población", "pib": "PIB", "inflacion": "Inflación (IPC)", "desempleo": "Desempleo",
+      "poblacion": "Población", "pib": "PIB", "pib_ppa_pc": "PIB PPA per cápita", "inflacion": "Inflación (IPC)", "desempleo": "Desempleo",
       "idh": "IDH", "moneda": "Moneda", "region": "Región", "renta_pc": "Renta per cápita",
       "alfabetizacion": "Alfabetización", "seguridad_social": "Seguridad social (% PIB)", "titulados": "Titulados superiores",
       "defensa_usd": "Gasto en defensa", "defensa_pct": "Defensa (% PIB)", "personal": "Personal militar",
       "aviones": "Aviones", "barcos": "Barcos", "tanques": "Tanques",
       "menores": "Menores (0-14)", "adolescentes": "Adolescentes (15-24)", "adultos": "Adultos (25-64)",
-      "mayores": "Mayores (65+)", "edad_mediana": "Edad mediana", "net_mig": "Saldo migratorio (‰)", "migrant_pct": "Inmigrantes (% pobl.)"
+      "mayores": "Mayores (65+)", "edad_mediana": "Edad mediana", "net_mig": "Saldo migratorio (‰)", "migrant_pct": "Inmigrantes (% pobl.)",
+      "esperanza_vida": "Esperanza de vida", "esperanza_saludable": "Esperanza vida saludable", "homicidios": "Homicidios (x100k)",
+      "gini": "Índice Gini", "deuda_pib": "Deuda pública (% PIB)", "gasto_salud": "Gasto sanitario (% PIB)",
+      "gasto_educacion": "Gasto educativo (% PIB)", "co2_pc": "CO₂ per cápita (t)", "internet_pct": "Acceso a Internet (%)",
+      "urbanizacion": "Urbanización (%)", "fertilidad": "Fertilidad (hijos)", "corrupcion": "Corrupción CPI (0-100)",
+      "libertad_prensa": "Lib. prensa RSF (0-100)", "democracia": "Democracia EIU (0-10)"
     },
     "topics_label": {
       "hoteles": "🏨 Hoteles", "precios": "💰 Precios", "trabajo": "💼 Trabajo", "vacaciones": "🌴 Vacaciones",
       "vuelos": "✈️ Vuelos", "comida": "🍽️ Comida", "seguridad": "🛡️ Seguridad", "alquiler": "🏠 Alquiler"
     },
     "heat": [
-      ["renta_pc", "Renta pc"], ["pib", "PIB"], ["poblacion", "Población"], ["idh", "IDH"], ["alfabetizacion", "Alfabetización"],
+      ["renta_pc", "Renta pc"], ["pib_ppa_pc", "PIB PPA pc"], ["pib", "PIB"], ["poblacion", "Población"], ["idh", "IDH"], ["alfabetizacion", "Alfabetización"],
       ["titulados", "Titulados sup."], ["edad_mediana", "Edad mediana"], ["menores", "Menores 0-14"], ["adolescentes", "Adolescentes"],
-      ["inflacion", "Inflación"], ["desempleo", "Desempleo"], ["net_mig", "Saldo migratorio"], ["migrant_pct", "Inmigrantes %"],
+      ["inflacion", "Inflación"], ["desempleo", "Desempleo"], ["esperanza_vida", "Esperanza vida"], ["gini", "Gini"],
+      ["deuda_pib", "Deuda % PIB"], ["gasto_salud", "Gasto salud"], ["gasto_educacion", "Gasto educ."], ["internet_pct", "Internet"],
+      ["co2_pc", "CO₂ pc"], ["homicidios", "Homicidios"], ["corrupcion", "Corrupción"], ["libertad_prensa", "Lib. prensa"],
+      ["democracia", "Democracia"], ["net_mig", "Saldo migratorio"], ["migrant_pct", "Inmigrantes %"],
       ["defensa_usd", "Gasto defensa"], ["defensa_pct", "Defensa % PIB"], ["personal", "Personal militar"],
       ["aviones", "Aviones"], ["barcos", "Barcos"], ["tanques", "Tanques"]
     ],
-    "cmp": ["poblacion", "renta_pc", "pib", "inflacion", "desempleo", "idh", "alfabetizacion", "titulados", "seguridad_social", "net_mig", "migrant_pct", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores"],
-    "rank": ["poblacion", "renta_pc", "pib", "inflacion", "desempleo", "idh", "alfabetizacion", "titulados", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores", "net_mig", "migrant_pct"]
+    "cmp": ["poblacion", "renta_pc", "pib_ppa_pc", "pib", "inflacion", "desempleo", "esperanza_vida", "gini", "deuda_pib", "gasto_salud", "gasto_educacion", "internet_pct", "co2_pc", "homicidios", "corrupcion", "libertad_prensa", "democracia", "idh", "alfabetizacion", "titulados", "seguridad_social", "net_mig", "migrant_pct", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores", "fertilidad"],
+    "rank": ["poblacion", "renta_pc", "pib_ppa_pc", "pib", "inflacion", "desempleo", "esperanza_vida", "gini", "deuda_pib", "gasto_salud", "gasto_educacion", "internet_pct", "co2_pc", "homicidios", "corrupcion", "libertad_prensa", "democracia", "idh", "alfabetizacion", "titulados", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores", "net_mig", "migrant_pct", "fertilidad", "urbanizacion"]
   }
 }

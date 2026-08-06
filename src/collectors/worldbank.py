@@ -1,7 +1,6 @@
-"""Collector Banco Mundial VIVO: trae todos los paises por indicador (all-countries),
-con retry/backoff y throttle; construye geo (lat/lon) de todos los paises;
-fallback al seed de referencia; conserva valores previos si el API falla.
-"""
+"""Collector Banco Mundial VIVO: all-countries por indicador, periodo 2023-2024
+(ultimo año disponible por pais, persistido), geo de todos los paises,
+retry/backoff/throttle, fallback al seed, conserva valores previos si falla."""
 import json
 import time
 from urllib.error import HTTPError, URLError
@@ -11,16 +10,36 @@ from src.config import BASE_DIR, CFG
 from src.core.collector import BaseCollector
 
 WB = "https://api.worldbank.org/v2/"
+WB_CACHE = BASE_DIR / "data" / "wb_cache"
+WB_CACHE_TTL = int(CFG.get("wb_cache_ttl", 7 * 24 * 3600))
+WB_DATE = CFG.get("wb_year", "2024")
 INDICATORS = {
     "poblacion": "SP.POP.TOTL",
     "pib": "NY.GDP.MKTP.CD",
+    "pib_ppa_pc": "NY.GDP.PCAP.PP.CD",
+    "renta_pc": "NY.GDP.PCAP.CD",
     "inflacion": "FP.CPI.TOTL.ZG",
     "desempleo": "SL.UEM.TOTL.ZS",
-    "renta_pc": "NY.GDP.PCAP.CD",
     "alfabetizacion": "SE.ADT.LITR.ZS",
     "titulados": "SE.TER.CUAT.TL.ZS",
     "net_mig": "SM.POP.NETM",
     "migrant_pct": "SM.POP.TOTL.ZS",
+    "esperanza_vida": "SP.DYN.LE00.IN",
+    "esperanza_saludable": "SP.DYN.HALE.IN",
+    "homicidios": "VC.IHR.PSRC.P5",
+    "gini": "SI.POV.GINI",
+    "deuda_pib": "GC.DOD.TOTL.GD.ZS",
+    "gasto_salud": "SH.XPD.CHEX.GD.ZS",
+    "gasto_educacion": "SE.XPD.TOTL.GD.ZS",
+    "co2_pc": "EN.ATM.CO2E.PC",
+    "internet_pct": "IT.NET.USER.ZS",
+    "urbanizacion": "SP.URB.TOTL.IN.ZS",
+    "fertilidad": "SP.DYN.TFRT.IN",
+}
+STATIC_SOURCE = {
+    "corrupcion": "Transparency Intl 2024",
+    "libertad_prensa": "RSF 2024",
+    "democracia": "EIU 2024",
 }
 FALLBACK_GEO = {
     "es": ["España", 40.4, -3.7], "fr": ["Francia", 48.8, 2.3], "de": ["Alemania", 52.5, 13.4],
@@ -31,20 +50,27 @@ FALLBACK_GEO = {
 }
 
 
-def _get_json(url, retries=2):
-    for attempt in range(retries):
+def _get_json(url, retries=1):
+    for attempt in range(retries + 1):
         try:
-            req = Request(url, headers={"User-Agent": "country-intel/0.8 (research)"})
-            with urlopen(req, timeout=20) as r:
+            req = Request(url, headers={"User-Agent": "country-intel/0.9 (research)"})
+            with urlopen(req, timeout=10) as r:
                 return json.loads(r.read().decode("utf-8-sig"))
         except (URLError, HTTPError, OSError, ValueError):
-            if attempt == retries - 1:
+            if attempt >= retries:
                 return None
-            time.sleep(1.2 * (attempt + 1))
+            time.sleep(0.8 * (attempt + 1))
     return None
 
 
 def _all_rows(url):
+    WB_CACHE.mkdir(parents=True, exist_ok=True)
+    cache = WB_CACHE / f"{hash(url) & 0xffffffff:x}.json"
+    if cache.exists() and (time.time() - cache.stat().st_mtime) < WB_CACHE_TTL:
+        try:
+            return json.loads(cache.read_text())
+        except Exception:
+            pass
     d = _get_json(url)
     if not d or len(d) < 2:
         return []
@@ -54,12 +80,15 @@ def _all_rows(url):
         extra = _get_json(url + f"&page={p}")
         if extra and len(extra) > 1:
             out.extend(extra[1])
-        time.sleep(float(CFG.get("sleep_worldbank", 1.2)))
+        time.sleep(float(CFG.get("sleep_worldbank", 0.8)))
+    try:
+        cache.write_text(json.dumps(out, ensure_ascii=False))
+    except Exception:
+        pass
     return out
 
 
 def build_geo():
-    """Mapa {iso2: {name, lat, lon, iso3}} de todos los paises reales. Cache a data/geo.json."""
     geo_path = BASE_DIR / "data" / "geo.json"
     if geo_path.exists():
         return json.loads(geo_path.read_text())
@@ -93,17 +122,20 @@ class WorldBank(BaseCollector):
 
         vals = {}
         for label, code in INDICATORS.items():
-            rows = _all_rows(WB + f"country/all/indicator/{code}?format=json&per_page=100&date=2024")
+            rows = _all_rows(WB + f"country/all/indicator/{code}?format=json&per_page=100&date={WB_DATE}")
             found = {}
             for r in rows:
-                if r.get("value") is None:
+                if r.get("value") is None or not r.get("date"):
                     continue
                 iso2 = iso3_to_iso2.get(r.get("countryiso3code"))
-                if iso2:
-                    found[iso2] = r["value"]
+                if not iso2:
+                    continue
+                cur = found.get(iso2)
+                if cur is None or r["date"] > cur["year"]:
+                    found[iso2] = {"value": r["value"], "year": r["date"]}
             vals[label] = found
-            print(f"  {label}: {len(found)} paises")
-            time.sleep(float(CFG.get("sleep_worldbank", 1.2)))
+            print(f"  {label}: {len(found)} paises", flush=True)
+            time.sleep(float(CFG.get("sleep_worldbank", 0.8)))
 
         max_c = int(CFG.get("max_countries", 0))
         codes = sorted(self.geo)
@@ -117,15 +149,15 @@ class WorldBank(BaseCollector):
             got = False
             for label in INDICATORS:
                 live = vals[label].get(cc)
-                if live is not None:
-                    out.append({"country": cc, "indicator": label, "value": live, "source": self.name})
+                if live:
+                    out.append({"country": cc, "indicator": label, "value": live["value"], "year": live["year"], "source": self.name})
                     got = True
                 elif label in seed_ind:
                     out.append({"country": cc, "indicator": label, "value": seed_ind[label], "source": "seed"})
                     got = True
             for label, value in seed_ind.items():
                 if label not in INDICATORS:
-                    out.append({"country": cc, "indicator": label, "value": value, "source": "seed"})
+                    out.append({"country": cc, "indicator": label, "value": value, "source": STATIC_SOURCE.get(label, "seed")})
             if not got and not seed_ind:
                 self.errors.append(cc)
         return out

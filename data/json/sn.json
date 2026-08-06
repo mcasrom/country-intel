@@ -1,6 +1,6 @@
 {
  "country": "sn",
- "generated": "2026-08-06T16:57:05.244969+00:00",
+ "generated": "2026-08-06T17:14:50.347446+00:00",
  "geo": {
   "name": "Senegal",
   "lat": 14.7247,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "2.788",
    "updated": "2026-08-06T16:57:05.175838+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "0.804503298792438",
    "updated": "2026-08-06T16:57:05.175825+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-10307",
    "updated": "2026-08-06T16:57:05.175862+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "32169996051.8502",
    "updated": "2026-08-06T16:57:05.175813+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "18501984",
    "updated": "2026-08-06T16:57:05.175800+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "1738.73223822106",
    "updated": "2026-08-06T16:57:05.175849+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "ao",
- "generated": "2026-08-06T16:57:05.187766+00:00",
+ "generated": "2026-08-06T17:14:50.261654+00:00",
  "geo": {
   "name": "Angola",
   "lat": -8.81155,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "14.02",
    "updated": "2026-08-06T16:57:05.157422+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "28.2404948915772",
    "updated": "2026-08-06T16:57:05.157408+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1.8",
    "updated": "2026-08-06T16:57:05.157464+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-2629",
    "updated": "2026-08-06T16:57:05.157451+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "103080538044.058",
    "updated": "2026-08-06T16:57:05.157393+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "37885849",
    "updated": "2026-08-06T16:57:05.157380+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2720.81900669715",
    "updated": "2026-08-06T16:57:05.157436+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "nc",
- "generated": "2026-08-06T16:57:05.234505+00:00",
+ "generated": "2026-08-06T17:14:50.329611+00:00",
  "geo": {
   "name": "New Caledonia",
   "lat": -22.2677,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "10.991",
    "updated": "2026-08-06T16:57:05.172455+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "26.2",
    "updated": "2026-08-06T16:57:05.172517+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "455",
    "updated": "2026-08-06T16:57:05.172479+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "8548919387.12607",
    "updated": "2026-08-06T16:57:05.172442+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "292639",
    "updated": "2026-08-06T16:57:05.172431+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "29213.1923192946",
    "updated": "2026-08-06T16:57:05.172467+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

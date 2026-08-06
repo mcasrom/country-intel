@@ -1,6 +1,6 @@
 {
  "country": "bd",
- "generated": "2026-08-06T16:57:05.191259+00:00",
+ "generated": "2026-08-06T17:14:50.266294+00:00",
  "geo": {
   "name": "Bangladesh",
   "lat": 23.7055,
@@ -11,37 +11,44 @@
   "desempleo": {
    "value": "3.635",
    "updated": "2026-08-06T16:57:05.158281+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "inflacion": {
    "value": "10.4657482763412",
    "updated": "2026-08-06T16:57:05.158267+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "1.7",
    "updated": "2026-08-06T16:57:05.158341+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-473362",
    "updated": "2026-08-06T16:57:05.158309+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "450119432068.852",
    "updated": "2026-08-06T16:57:05.158253+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "173562364",
    "updated": "2026-08-06T16:57:05.158238+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "2593.41611680774",
    "updated": "2026-08-06T16:57:05.158295+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

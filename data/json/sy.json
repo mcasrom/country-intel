@@ -1,6 +1,6 @@
 {
  "country": "sy",
- "generated": "2026-08-06T16:57:05.247583+00:00",
+ "generated": "2026-08-06T17:14:50.350137+00:00",
  "geo": {
   "name": "Syrian Arab Republic",
   "lat": 33.5146,
@@ -11,17 +11,20 @@
   "desempleo": {
    "value": "13.359",
    "updated": "2026-08-06T16:57:05.176278+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "546494",
    "updated": "2026-08-06T16:57:05.176290+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "24672760",
    "updated": "2026-08-06T16:57:05.176267+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

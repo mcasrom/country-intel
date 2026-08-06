@@ -1,6 +1,6 @@
 {
  "country": "sz",
- "generated": "2026-08-06T16:57:05.247877+00:00",
+ "generated": "2026-08-06T17:14:50.350496+00:00",
  "geo": {
   "name": "Eswatini",
   "lat": -26.5225,
@@ -11,32 +11,38 @@
   "desempleo": {
    "value": "34.643",
    "updated": "2026-08-06T16:57:05.176337+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "migrant_pct": {
    "value": "2.7",
    "updated": "2026-08-06T16:57:05.176373+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-6754",
    "updated": "2026-08-06T16:57:05.176361+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "4858885840.77236",
    "updated": "2026-08-06T16:57:05.176314+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "1242822",
    "updated": "2026-08-06T16:57:05.176302+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "3909.55892378182",
    "updated": "2026-08-06T16:57:05.176349+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }

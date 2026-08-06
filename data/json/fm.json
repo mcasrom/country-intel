@@ -1,6 +1,6 @@
 {
  "country": "fm",
- "generated": "2026-08-06T16:57:05.206134+00:00",
+ "generated": "2026-08-06T17:14:50.290244+00:00",
  "geo": {
   "name": "Micronesia, Fed. Sts.",
   "lat": 6.91771,
@@ -11,27 +11,32 @@
   "migrant_pct": {
    "value": "2.6",
    "updated": "2026-08-06T16:57:05.163497+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "net_mig": {
    "value": "-1104",
    "updated": "2026-08-06T16:57:05.163488+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "pib": {
    "value": "481121300",
    "updated": "2026-08-06T16:57:05.163458+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "poblacion": {
    "value": "113160",
    "updated": "2026-08-06T16:57:05.163444+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   },
   "renta_pc": {
    "value": "4251.69052668788",
    "updated": "2026-08-06T16:57:05.163473+00:00",
-   "source": "worldbank"
+   "source": "worldbank",
+   "year": ""
   }
  }
 }
