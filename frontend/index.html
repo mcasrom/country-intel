@@ -72,6 +72,7 @@
     <button class="ci" onclick="openCmp()">⚖️ Comparar</button>
     <button class="ci" onclick="openRank()">🏆 Rankings</button>
     <button class="ci" onclick="toggleTrends()">📈 Tendencias</button>
+    <button class="ci" onclick="toggleWebtr()">🔍 Tendencias web</button>
     <button class="ci" onclick="toggleView()">🗂️ Vista</button>
     <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Apóyame</a>
   </div>
@@ -111,6 +112,16 @@
     <button class="ci" onclick="toggleOv('trends')">✕ Cerrar</button>
   </div>
   <div id="trendtable" style="max-width:620px;margin:0 auto;"></div>
+</div>
+<div class="ov" id="webtr" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;max-width:760px;margin:0 auto 12px;gap:8px;flex-wrap:wrap;">
+    <b style="color:#00d4ff;">🔍 Tendencias web · qué se busca en cada país</b>
+    <button class="ci" onclick="toggleOv('webtr')">✕ Cerrar</button>
+  </div>
+  <div style="display:flex;gap:10px;justify-content:center;align-items:center;max-width:760px;margin:0 auto 14px;flex-wrap:wrap;">
+    <select class="ci" id="webtrTopic" onchange="buildWebtr()"></select>
+  </div>
+  <div id="webtrtable" style="max-width:760px;margin:0 auto;"></div>
 </div>
 <div id="iconview" style="display:none;padding:18px;">
   <div style="max-width:980px;margin:0 auto;">
@@ -174,7 +185,7 @@ var META = {
   mx:["México","🇲🇽",23.6,-102.5], ma:["Marruecos","🇲🇦",31.8,-7.1], dz:["Argelia","🇩🇿",28.0,1.7],
   eg:["Egipto","🇪🇬",26.8,30.8], pt:["Portugal","🇵🇹",39.4,-8.2], au:["Australia","🇦🇺",-25.3,133.8]
 };
-var ILABEL = { poblacion:"Población", pib:"PIB", inflacion:"Inflación (IPC)", desempleo:"Desempleo", idh:"IDH", moneda:"Moneda", region:"Región", renta_pc:"Renta per cápita", alfabetizacion:"Alfabetización", seguridad_social:"Seguridad social (% PIB)", titulados:"Titulados superiores", defensa_usd:"Gasto en defensa", defensa_pct:"Defensa (% PIB)", personal:"Personal militar", aviones:"Aviones", barcos:"Barcos", tanques:"Tanques", menores:"Menores (0-14)", adolescentes:"Adolescentes (15-24)", adultos:"Adultos (25-64)", mayores:"Mayores (65+)", edad_mediana:"Edad mediana" };
+var ILABEL = { poblacion:"Población", pib:"PIB", inflacion:"Inflación (IPC)", desempleo:"Desempleo", idh:"IDH", moneda:"Moneda", region:"Región", renta_pc:"Renta per cápita", alfabetizacion:"Alfabetización", seguridad_social:"Seguridad social (% PIB)", titulados:"Titulados superiores", defensa_usd:"Gasto en defensa", defensa_pct:"Defensa (% PIB)", personal:"Personal militar", aviones:"Aviones", barcos:"Barcos", tanques:"Tanques", menores:"Menores (0-14)", adolescentes:"Adolescentes (15-24)", adultos:"Adultos (25-64)", mayores:"Mayores (65+)", edad_mediana:"Edad mediana", net_mig:"Saldo migratorio (‰)", migrant_pct:"Inmigrantes (% pobl.)" };
 var INV = { inflacion:1, desempleo:1 };
 function fmt(v, ind){
   if (v == null) return "—";
@@ -186,6 +197,8 @@ function fmt(v, ind){
   if (ind === "alfabetizacion" || ind === "titulados" || ind === "seguridad_social" || ind === "menores" || ind === "adolescentes" || ind === "adultos" || ind === "mayores") return Number(v).toFixed(1) + "%";
   if (ind === "personal" || ind === "aviones" || ind === "barcos" || ind === "tanques") return Number(v).toLocaleString();
   if (ind === "edad_mediana") return Number(v) + " años";
+  if (ind === "net_mig") { var n=Number(v); return (n>0?"+":"")+n.toFixed(1)+"‰"; }
+  if (ind === "migrant_pct") return Number(v).toFixed(1) + "%";
   return String(v);
 }
 var map = L.map('map').setView([25, 10], 2);
@@ -209,7 +222,8 @@ function resumenIA(c){
     "<b>Desarrollo humano:</b> IDH " + (idh==null?"—":Number(idh).toFixed(3)) + " (" + idhLab + ").",
     "<b>Capital humano:</b> alfabetización " + fmt(gv(c,'alfabetizacion'),'alfabetizacion') + " · titulados superiores " + fmt(gv(c,'titulados'),'titulados') + ".",
     "<b>Red social:</b> gasto en seguridad social " + fmt(gv(c,'seguridad_social'),'seguridad_social') + " del PIB.",
-    "<b>Defensa:</b> gasto " + fmt(gv(c,'defensa_usd'),'defensa_usd') + " (" + fmt(gv(c,'defensa_pct'),'defensa_pct') + " del PIB) · personal " + fmt(gv(c,'personal'),'personal') + "."
+    "<b>Defensa:</b> gasto " + fmt(gv(c,'defensa_usd'),'defensa_usd') + " (" + fmt(gv(c,'defensa_pct'),'defensa_pct') + " del PIB) · personal " + fmt(gv(c,'personal'),'personal') + ".",
+    "<b>Migración:</b> saldo " + fmt(gv(c,'net_mig'),'net_mig') + " · inmigrantes " + fmt(gv(c,'migrant_pct'),'migrant_pct') + " de la población."
   ].join('<br>');
 }
 function riesgo(c){
@@ -248,6 +262,11 @@ function edadBar(c){
   }).join('<br>');
   var med = gv(c,'edad_mediana');
   return '<div style="border:1px solid #1e293b;border-radius:8px;overflow:hidden;display:flex;margin-bottom:8px;">'+seg+'</div><div style="font-size:.8em;line-height:1.7;">'+leg+'</div><div style="font-size:.8em;color:#64748b;margin-top:6px;">Edad mediana: '+(med==null?'—':med+' años')+'</div>';
+}
+function migSec(c){
+  var net = gv(c,'net_mig');
+  var lab = net == null ? '' : (net > 0 ? '🧲 País receptor: más inmigrantes que emigrantes.' : (net < 0 ? '🚪 País emisor: más emigrantes que inmigrantes.' : 'Saldo migratorio equilibrado.'));
+  return '<div class="sec"><h3>🛂 Migración</h3><div class="grid">'+cellsOf(c,['net_mig','migrant_pct'])+'</div>' + (lab ? '<div style="font-size:.78em;color:#94a3b8;margin-top:6px;">'+lab+'</div>' : '') + '</div>';
 }
 function cellsOf(c, keys){
   return keys.map(function(k){ var v = gv(c,k); return '<div class="cell"><div class="l">'+ILABEL[k]+'</div><div class="v">'+fmt(v,k)+'</div></div>'; }).join('');
@@ -306,6 +325,7 @@ function loadCountry(cc){
       '<div class="sec"><h3>🤖 Resumen IA</h3><div class="resumen">'+resumenIA(c)+'</div></div>' +
       '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
+      migSec(c) +
       '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div></div>' +
       '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
       '<div class="sec"><h3>🧳 Riesgo visita país</h3>'+riesgoVisita(c)+'</div>' +
@@ -362,6 +382,39 @@ function buildTrends(){
   }).catch(function(){ el.innerHTML = '<div style="color:#64748b;text-align:center;">Tendencias no disponibles.</div>'; });
 }
 function fireTrend(cc){ try { fetch('/api/trends/view/'+cc, { method:'GET' }).catch(function(){}); } catch(e){} }
+
+var WEBTR = null;
+var TOPLAB = { hoteles:'🏨 Hoteles', precios:'💰 Precios', trabajo:'💼 Trabajo', vacaciones:'🌴 Vacaciones', vuelos:'✈️ Vuelos', comida:'🍽️ Comida', seguridad:'🛡️ Seguridad', alquiler:'🏠 Alquiler' };
+function toggleWebtr(){
+  toggleOv('webtr');
+  if (document.getElementById('webtr').style.display !== 'block') return;
+  var el = document.getElementById('webtrtable');
+  if (!WEBTR) {
+    el.innerHTML = '<div style="color:#64748b;text-align:center;">Cargando búsquedas reales de los 15 países (primera vez puede tardar unos segundos)...</div>';
+    fetch('/api/trending/all').then(r=>r.json()).then(function(d){ WEBTR = d.countries||{}; fillWebtrTopic(); buildWebtr(); })
+      .catch(function(){ el.innerHTML = '<div style="color:#64748b;text-align:center;">No disponible ahora.</div>'; });
+  } else { fillWebtrTopic(); buildWebtr(); }
+}
+function fillWebtrTopic(){
+  var sel = document.getElementById('webtrTopic');
+  sel.innerHTML = Object.keys(TOPLAB).map(function(t){ return '<option value="'+t+'">'+TOPLAB[t]+'</option>'; }).join('');
+}
+function buildWebtr(){
+  if (!WEBTR) return;
+  var t = document.getElementById('webtrTopic').value;
+  var rows = Object.keys(WEBTR).map(function(cc){
+    var sugs = (WEBTR[cc][t]||[]);
+    return { cc: cc, n: sugs.length, sugs: sugs };
+  }).filter(function(r){ return r.n > 0; }).sort(function(a,b){ return b.n - a.n; });
+  var html = rows.map(function(r,i){
+    return '<tr><td style="padding:6px 8px;border:1px solid #1e293b;color:#64748b;">'+(i+1)+'</td>' +
+      '<td style="padding:6px 8px;border:1px solid #1e293b;">'+(META[r.cc]?META[r.cc][1]+' '+META[r.cc][0]:r.cc)+'</td>' +
+      '<td style="padding:6px 8px;border:1px solid #1e293b;color:#94a3b8;font-size:.8em;">'+r.sugs.slice(0,3).join(' · ')+'</td></tr>';
+  }).join('');
+  var el = document.getElementById('webtrtable');
+  el.innerHTML = '<div style="color:#64748b;font-size:.75em;text-align:center;margin-bottom:8px;">Países con más búsquedas de «'+TOPLAB[t].replace(/[^A-Za-zÁÉÍÓÚáéíóúñÑ ]/g,'')+'» (sugerencias reales de Google) · precargado en el pipeline diario · caché 6 h</div>' +
+    (html ? '<table style="border-collapse:collapse;width:100%;"><tr><th style="border:1px solid #1e293b;color:#64748b;">#</th><th style="text-align:left;border:1px solid #1e293b;color:#00d4ff;">País</th><th style="text-align:left;border:1px solid #1e293b;color:#00d4ff;">Búsquedas reales</th></tr>'+html+'</table>' : '<div style="color:#64748b;text-align:center;">Sin búsquedas para este tema.</div>');
+}
 function toggleView(){
   var g = document.getElementById('iconview'), l = document.getElementById('layout');
   if (g.style.display === 'none') { g.style.display = 'block'; l.style.display = 'none'; buildIcons(); }
@@ -427,9 +480,9 @@ function buildHeat(){
     '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:10px;">🔵 Azul = por debajo · 🔴 Rojo = por encima (normalizado por indicador) · económicos: seed ref. · defensa: GFP/SIPRI 2025</div>';
 }
 var HEAT = [
-  ['renta_pc','Renta pc'], ['pib','PIB'], ['poblacion','Población'], ['idh','IDH'], ['alfabetizacion','Alfabetización'], ['titulados','Titulados sup.'], ['edad_mediana','Edad mediana'], ['menores','Menores 0-14'], ['adolescentes','Adolescentes'], ['inflacion','Inflación'], ['desempleo','Desempleo'], ['defensa_usd','Gasto defensa'], ['defensa_pct','Defensa % PIB'], ['personal','Personal militar'], ['aviones','Aviones'], ['barcos','Barcos'], ['tanques','Tanques']
+  ['renta_pc','Renta pc'], ['pib','PIB'], ['poblacion','Población'], ['idh','IDH'], ['alfabetizacion','Alfabetización'], ['titulados','Titulados sup.'], ['edad_mediana','Edad mediana'], ['menores','Menores 0-14'], ['adolescentes','Adolescentes'], ['inflacion','Inflación'], ['desempleo','Desempleo'], ['net_mig','Saldo migratorio'], ['migrant_pct','Inmigrantes %'], ['defensa_usd','Gasto defensa'], ['defensa_pct','Defensa % PIB'], ['personal','Personal militar'], ['aviones','Aviones'], ['barcos','Barcos'], ['tanques','Tanques']
 ];
-var CMP = ['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','defensa_usd','defensa_pct','personal','aviones','barcos','tanques','edad_mediana','menores','adultos','mayores'];
+var CMP = ['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','net_mig','migrant_pct','defensa_usd','defensa_pct','personal','aviones','barcos','tanques','edad_mediana','menores','adultos','mayores'];
 function openCmp(){
   toggleOv('cmp');
   if (document.getElementById('cmp').style.display !== 'block') return;

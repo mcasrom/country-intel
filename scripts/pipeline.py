@@ -1,7 +1,8 @@
-"""Pipeline nocturno (cron 03:00): recolectar -> SQLite -> JSON por pais."""
+"""Pipeline nocturno (cron 03:00): recolectar -> SQLite -> JSON por pais + warmup de busquedas."""
 import json
 import sqlite3
 import sys
+import time as _time
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -26,6 +27,17 @@ def write_json(conn):
     print(f"[pipeline] JSON escritos: {len(list(JSON_DIR.glob('*.json')))}")
 
 
+def warmup_trending():
+    try:
+        from src.server import NAMES, _refresh_trending
+        for cc in sorted(NAMES):
+            _refresh_trending(cc)
+            _time.sleep(0.3)
+        print(f"[pipeline] trending warmup: {len(NAMES)} paises")
+    except Exception as e:
+        print(f"[pipeline] trending warmup fallo: {e}")
+
+
 def run():
     conn = sqlite3.connect(str(DB_PATH))
     for col in COLLECTORS:
@@ -35,6 +47,7 @@ def run():
         print(f"  {len(items)} items")
     write_json(conn)
     conn.close()
+    warmup_trending()
 
 
 if __name__ == "__main__":

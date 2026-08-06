@@ -168,9 +168,7 @@ def _autocomplete(q: str):
         return data[1] if isinstance(data, list) and len(data) > 1 else []
 
 
-@app.get("/api/trending/{code}")
-def trending(code: str):
-    cc = code.lower()
+def _refresh_trending(cc: str):
     name = NAMES.get(cc, cc.upper()).lower()
     cache = TRENDING_DIR / f"{cc}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < TRENDING_TTL:
@@ -187,6 +185,29 @@ def trending(code: str):
     out = {"country": cc, "name": name, "topics": topics}
     cache.write_text(json.dumps(out, ensure_ascii=False))
     return out
+
+
+@app.get("/api/trending/all")
+def trending_all():
+    for cc in sorted(NAMES):
+        cache = TRENDING_DIR / f"{cc}.json"
+        fresh = cache.exists() and (time.time() - cache.stat().st_mtime) < TRENDING_TTL
+        if not fresh:
+            _refresh_trending(cc)
+            time.sleep(0.3)
+    countries = {}
+    for cc in sorted(NAMES):
+        try:
+            d = json.loads((TRENDING_DIR / f"{cc}.json").read_text())
+            countries[cc] = d.get("topics", {})
+        except Exception:
+            countries[cc] = {}
+    return {"countries": countries}
+
+
+@app.get("/api/trending/{code}")
+def trending(code: str):
+    return _refresh_trending(code.lower())
 
 
 def _load_trends():

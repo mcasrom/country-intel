@@ -1,115 +1,125 @@
 {
  "country": "it",
- "generated": "2026-08-06T12:54:13.678909",
+ "generated": "2026-08-06T13:25:50.200845",
  "indicators": {
   "adolescentes": {
    "value": "9.9",
-   "updated": "2026-08-06T12:54:13.666117+00:00",
+   "updated": "2026-08-06T13:25:50.183812+00:00",
    "source": "worldbank"
   },
   "adultos": {
    "value": "57.4",
-   "updated": "2026-08-06T12:54:13.666123+00:00",
+   "updated": "2026-08-06T13:25:50.183818+00:00",
    "source": "worldbank"
   },
   "alfabetizacion": {
    "value": "99.2",
-   "updated": "2026-08-06T12:54:13.666047+00:00",
+   "updated": "2026-08-06T13:25:50.183720+00:00",
    "source": "worldbank"
   },
   "aviones": {
    "value": "747",
-   "updated": "2026-08-06T12:54:13.666095+00:00",
+   "updated": "2026-08-06T13:25:50.183790+00:00",
    "source": "worldbank"
   },
   "barcos": {
    "value": "66",
-   "updated": "2026-08-06T12:54:13.666100+00:00",
+   "updated": "2026-08-06T13:25:50.183796+00:00",
    "source": "worldbank"
   },
   "defensa_pct": {
    "value": "1.5",
-   "updated": "2026-08-06T12:54:13.666083+00:00",
+   "updated": "2026-08-06T13:25:50.183779+00:00",
    "source": "worldbank"
   },
   "defensa_usd": {
    "value": "28800000000.0",
-   "updated": "2026-08-06T12:54:13.666078+00:00",
+   "updated": "2026-08-06T13:25:50.183773+00:00",
    "source": "worldbank"
   },
   "desempleo": {
    "value": "7.6",
-   "updated": "2026-08-06T12:54:13.666020+00:00",
+   "updated": "2026-08-06T13:25:50.183692+00:00",
    "source": "worldbank"
   },
   "edad_mediana": {
    "value": "46",
-   "updated": "2026-08-06T12:54:13.666134+00:00",
+   "updated": "2026-08-06T13:25:50.183830+00:00",
    "source": "worldbank"
   },
   "idh": {
    "value": "0.906",
-   "updated": "2026-08-06T12:54:13.666026+00:00",
+   "updated": "2026-08-06T13:25:50.183698+00:00",
    "source": "worldbank"
   },
   "inflacion": {
    "value": "1.53",
-   "updated": "2026-08-06T12:54:13.666014+00:00",
+   "updated": "2026-08-06T13:25:50.183686+00:00",
    "source": "worldbank"
   },
   "mayores": {
    "value": "19.3",
-   "updated": "2026-08-06T12:54:13.666128+00:00",
+   "updated": "2026-08-06T13:25:50.183824+00:00",
    "source": "worldbank"
   },
   "menores": {
    "value": "13.4",
-   "updated": "2026-08-06T12:54:13.666111+00:00",
+   "updated": "2026-08-06T13:25:50.183806+00:00",
+   "source": "worldbank"
+  },
+  "migrant_pct": {
+   "value": "10.6",
+   "updated": "2026-08-06T13:25:50.183856+00:00",
    "source": "worldbank"
   },
   "moneda": {
    "value": "EUR",
-   "updated": "2026-08-06T12:54:13.666031+00:00",
+   "updated": "2026-08-06T13:25:50.183704+00:00",
+   "source": "worldbank"
+  },
+  "net_mig": {
+   "value": "4.2",
+   "updated": "2026-08-06T13:25:50.183849+00:00",
    "source": "worldbank"
   },
   "personal": {
    "value": "161000",
-   "updated": "2026-08-06T12:54:13.666089+00:00",
+   "updated": "2026-08-06T13:25:50.183785+00:00",
    "source": "worldbank"
   },
   "pib": {
    "value": "2551556954100.35",
-   "updated": "2026-08-06T12:54:13.666008+00:00",
+   "updated": "2026-08-06T13:25:50.183679+00:00",
    "source": "worldbank"
   },
   "poblacion": {
    "value": "58915656",
-   "updated": "2026-08-06T12:54:13.666002+00:00",
+   "updated": "2026-08-06T13:25:50.183673+00:00",
    "source": "worldbank"
   },
   "region": {
    "value": "Europa",
-   "updated": "2026-08-06T12:54:13.666037+00:00",
+   "updated": "2026-08-06T13:25:50.183709+00:00",
    "source": "worldbank"
   },
   "renta_pc": {
    "value": "38400",
-   "updated": "2026-08-06T12:54:13.666042+00:00",
+   "updated": "2026-08-06T13:25:50.183715+00:00",
    "source": "worldbank"
   },
   "seguridad_social": {
    "value": "28.0",
-   "updated": "2026-08-06T12:54:13.666065+00:00",
+   "updated": "2026-08-06T13:25:50.183760+00:00",
    "source": "worldbank"
   },
   "tanques": {
    "value": "197",
-   "updated": "2026-08-06T12:54:13.666106+00:00",
+   "updated": "2026-08-06T13:25:50.183801+00:00",
    "source": "worldbank"
   },
   "titulados": {
    "value": "30.0",
-   "updated": "2026-08-06T12:54:13.666072+00:00",
+   "updated": "2026-08-06T13:25:50.183767+00:00",
    "source": "worldbank"
   }
  }
