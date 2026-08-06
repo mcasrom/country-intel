@@ -28,24 +28,35 @@
     "pt": "Portugal", "au": "Australia"
   },
   "frontend": {
+    "calidad": {
+      "poblacion": "alta", "pib": "alta", "pib_ppa_pc": "alta", "renta_pc": "alta", "inflacion": "alta",
+      "desempleo": "alta", "net_mig": "alta", "migrant_pct": "alta", "internet_pct": "alta", "urbanizacion": "alta",
+      "fertilidad": "alta", "co2_pc": "alta", "esperanza_vida": "alta", "gasto_salud": "alta",
+      "idh": "media", "gini": "media", "homicidios": "media", "gasto_educacion": "media", "alfabetizacion": "media",
+      "titulados": "media", "deuda_pib": "media",
+      "defensa_usd": "baja", "defensa_pct": "baja", "personal": "baja", "aviones": "baja", "barcos": "baja",
+      "tanques": "baja", "cazas": "baja", "transporte_aereo": "baja", "entrenadores": "baja", "helicopteros": "baja",
+      "submarinos": "baja", "seguridad_social": "baja", "edad_mediana": "baja", "corrupcion": "baja",
+      "libertad_prensa": "baja", "democracia": "baja"
+    },
     "notas": {
       "poblacion": "Censo/estimaciones ONU (Banco Mundial).",
       "pib": "USD corrientes, Banco Mundial.",
       "pib_ppa_pc": "USD PPA (constantes 2021), Banco Mundial/FMI.",
       "renta_pc": "USD corrientes, Banco Mundial.",
       "inflacion": "IPC, % anual, Banco Mundial.",
-      "desempleo": "% de la fuerza laboral, OIT/Banco Mundial.",
-      "idh": "PNUD; 0-1.",
+      "desempleo": "% de la fuerza laboral, OIT/Banco Mundial; definiciones nacionales pueden diferir.",
+      "idh": "PNUD; 0-1; año de referencia 2022 (no siempre actualizado).",
       "esperanza_vida": "Años al nacer, Banco Mundial/ONU.",
       "esperanza_saludable": "Años de vida saludable (HALE), OMS.",
       "homicidios": "Por 100.000 hab (ODS 16); cobertura y años variables por país.",
       "gini": "Desigualdad 0-100; último año disponible por país (2019-2023).",
-      "deuda_pib": "Deuda del gobierno central/PIB, Banco Mundial/FMI.",
+      "deuda_pib": "Deuda del gobierno central/PIB, Banco Mundial/FMI; definiciones por país.",
       "gasto_salud": "% del PIB, OMS.",
-      "gasto_educacion": "% del PIB, UNESCO.",
+      "gasto_educacion": "% del PIB, UNESCO; datos con desfase de 2-3 años.",
       "co2_pc": "Toneladas per cápita, Banco Mundial.",
-      "internet_pct": "% de la población, UIT.",
-      "urbanizacion": "% de población urbana, ONU.",
+      "internet_pct": "% de la población, UIT; «usuarios» según definición de uso reciente — puede sobreestimar el uso real.",
+      "urbanizacion": "% de población urbana, ONU; la definición de «urbano» varía por país.",
       "fertilidad": "Hijos por mujer, ONU.",
       "corrupcion": "CPI Transparency Intl 2024; 0=muy corrupto, 100=muy limpio.",
       "libertad_prensa": "RSF 2024; puntuación menor = más libertad (referencial).",
@@ -55,11 +66,16 @@
       "defensa_usd": "Gasto militar en USD, SIPRI/GFP (referencial).",
       "defensa_pct": "% del PIB, SIPRI (referencial).",
       "personal": "Personal militar activo, GFP (referencial).",
-      "aviones": "Aeronaves militares totales, GFP (referencial).",
+      "aviones": "Total de aeronaves militares, GFP (referencial). Incluye todas las categorías: un total alto no implica capacidad de combate (ver desglose).",
       "barcos": "Buques de la flota, GFP (referencial).",
-      "tanques": "Vehículos blindados, GFP (referencial).",
+      "tanques": "Vehículos blindados, GFP (referencial); incluye todas las generaciones.",
       "alfabetizacion": "% adultos alfabetizados, UNESCO/Banco Mundial; cobertura variable.",
-      "titulados": "% de la población 25+ con educación superior, UNESCO; años variables.",
+      "titulados": "% de la población 25+ con educación superior, UNESCO; definiciones ISCED y años variables — no siempre comparables.",
+      "cazas": "Aviones de combate (cazas+ataque); la cifra de capacidad aérea real frente al total.",
+      "transporte_aereo": "Aviones de transporte, GFP (referencial).",
+      "entrenadores": "Entrenadores, GFP (referencial).",
+      "helicopteros": "Helicópteros totales, GFP (referencial).",
+      "submarinos": "Submarinos, GFP (referencial).",
       "seguridad_social": "Gasto en protección social, % del PIB (referencial).",
       "edad_mediana": "Años, CIA World Factbook (referencial)."
     },
@@ -94,7 +110,9 @@
       "gini": "Índice Gini", "deuda_pib": "Deuda pública (% PIB)", "gasto_salud": "Gasto sanitario (% PIB)",
       "gasto_educacion": "Gasto educativo (% PIB)", "co2_pc": "CO₂ per cápita (t)", "internet_pct": "Acceso a Internet (%)",
       "urbanizacion": "Urbanización (%)", "fertilidad": "Fertilidad (hijos)", "corrupcion": "Corrupción CPI (0-100)",
-      "libertad_prensa": "Lib. prensa RSF (0-100)", "democracia": "Democracia EIU (0-10)"
+      "libertad_prensa": "Lib. prensa RSF (0-100)", "democracia": "Democracia EIU (0-10)",
+      "cazas": "Aviones de combate", "transporte_aereo": "Aviones de transporte", "entrenadores": "Entrenadores",
+      "helicopteros": "Helicópteros", "submarinos": "Submarinos"
     },
     "topics_label": {
       "hoteles": "🏨 Hoteles", "precios": "💰 Precios", "trabajo": "💼 Trabajo", "vacaciones": "🌴 Vacaciones",
@@ -108,9 +126,9 @@
       ["co2_pc", "CO₂ pc"], ["homicidios", "Homicidios"], ["corrupcion", "Corrupción"], ["libertad_prensa", "Lib. prensa"],
       ["democracia", "Democracia"], ["net_mig", "Saldo migratorio"], ["migrant_pct", "Inmigrantes %"],
       ["defensa_usd", "Gasto defensa"], ["defensa_pct", "Defensa % PIB"], ["personal", "Personal militar"],
-      ["aviones", "Aviones"], ["barcos", "Barcos"], ["tanques", "Tanques"]
+      ["aviones", "Aviones"], ["barcos", "Barcos"], ["tanques", "Tanques"], ["cazas", "Aviones combate"], ["submarinos", "Submarinos"]
     ],
-    "cmp": ["poblacion", "renta_pc", "pib_ppa_pc", "pib", "inflacion", "desempleo", "esperanza_vida", "gini", "deuda_pib", "gasto_salud", "gasto_educacion", "internet_pct", "co2_pc", "homicidios", "corrupcion", "libertad_prensa", "democracia", "idh", "alfabetizacion", "titulados", "seguridad_social", "net_mig", "migrant_pct", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores", "fertilidad"],
-    "rank": ["poblacion", "renta_pc", "pib_ppa_pc", "pib", "inflacion", "desempleo", "esperanza_vida", "gini", "deuda_pib", "gasto_salud", "gasto_educacion", "internet_pct", "co2_pc", "homicidios", "corrupcion", "libertad_prensa", "democracia", "idh", "alfabetizacion", "titulados", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "edad_mediana", "menores", "adultos", "mayores", "net_mig", "migrant_pct", "fertilidad", "urbanizacion"]
+    "cmp": ["poblacion", "renta_pc", "pib_ppa_pc", "pib", "inflacion", "desempleo", "esperanza_vida", "gini", "deuda_pib", "gasto_salud", "gasto_educacion", "internet_pct", "co2_pc", "homicidios", "corrupcion", "libertad_prensa", "democracia", "idh", "alfabetizacion", "titulados", "seguridad_social", "net_mig", "migrant_pct", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "cazas", "submarinos", "edad_mediana", "menores", "adultos", "mayores", "fertilidad"],
+    "rank": ["poblacion", "renta_pc", "pib_ppa_pc", "pib", "inflacion", "desempleo", "esperanza_vida", "gini", "deuda_pib", "gasto_salud", "gasto_educacion", "internet_pct", "co2_pc", "homicidios", "corrupcion", "libertad_prensa", "democracia", "idh", "alfabetizacion", "titulados", "defensa_usd", "defensa_pct", "personal", "aviones", "barcos", "tanques", "cazas", "submarinos", "edad_mediana", "menores", "adultos", "mayores", "net_mig", "migrant_pct", "fertilidad", "urbanizacion"]
   }
 }

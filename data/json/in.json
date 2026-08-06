@@ -1,6 +1,6 @@
 {
  "country": "in",
- "generated": "2026-08-06T17:14:50.304386+00:00",
+ "generated": "2026-08-06T17:23:39.378101+00:00",
  "geo": {
   "name": "India",
   "lat": 28.6353,
@@ -38,15 +38,21 @@
    "source": "worldbank",
    "year": ""
   },
+  "cazas": {
+   "value": "800",
+   "updated": "2026-08-06T17:23:39.326458+00:00",
+   "source": "seed",
+   "year": ""
+  },
   "co2_pc": {
    "value": "2.0",
-   "updated": "2026-08-06T17:14:50.250701+00:00",
+   "updated": "2026-08-06T17:23:39.326387+00:00",
    "source": "seed",
    "year": ""
   },
   "corrupcion": {
    "value": "39",
-   "updated": "2026-08-06T17:14:50.250507+00:00",
+   "updated": "2026-08-06T17:23:39.326270+00:00",
    "source": "Transparency Intl 2024",
    "year": ""
   },
@@ -64,7 +70,7 @@
   },
   "democracia": {
    "value": "7.18",
-   "updated": "2026-08-06T17:14:50.250532+00:00",
+   "updated": "2026-08-06T17:23:39.326282+00:00",
    "source": "EIU 2024",
    "year": ""
   },
@@ -76,7 +82,7 @@
   },
   "deuda_pib": {
    "value": "83",
-   "updated": "2026-08-06T17:14:50.250608+00:00",
+   "updated": "2026-08-06T17:23:39.326319+00:00",
    "source": "seed",
    "year": ""
   },
@@ -86,45 +92,57 @@
    "source": "worldbank",
    "year": ""
   },
+  "entrenadores": {
+   "value": "350",
+   "updated": "2026-08-06T17:23:39.326480+00:00",
+   "source": "seed",
+   "year": ""
+  },
   "esperanza_saludable": {
    "value": "58",
-   "updated": "2026-08-06T17:14:50.250571+00:00",
+   "updated": "2026-08-06T17:23:39.326302+00:00",
    "source": "seed",
    "year": ""
   },
   "esperanza_vida": {
    "value": "67",
-   "updated": "2026-08-06T17:14:50.250559+00:00",
+   "updated": "2026-08-06T17:23:39.326296+00:00",
    "source": "seed",
    "year": ""
   },
   "fertilidad": {
    "value": "2.0",
-   "updated": "2026-08-06T17:14:50.250739+00:00",
+   "updated": "2026-08-06T17:23:39.326447+00:00",
    "source": "seed",
    "year": ""
   },
   "gasto_educacion": {
    "value": "4.6",
-   "updated": "2026-08-06T17:14:50.250688+00:00",
+   "updated": "2026-08-06T17:23:39.326374+00:00",
    "source": "seed",
    "year": ""
   },
   "gasto_salud": {
    "value": "3.0",
-   "updated": "2026-08-06T17:14:50.250673+00:00",
+   "updated": "2026-08-06T17:23:39.326325+00:00",
    "source": "seed",
    "year": ""
   },
   "gini": {
    "value": "33",
-   "updated": "2026-08-06T17:14:50.250596+00:00",
+   "updated": "2026-08-06T17:23:39.326314+00:00",
+   "source": "seed",
+   "year": ""
+  },
+  "helicopteros": {
+   "value": "900",
+   "updated": "2026-08-06T17:23:39.326490+00:00",
    "source": "seed",
    "year": ""
   },
   "homicidios": {
    "value": "3.0",
-   "updated": "2026-08-06T17:14:50.250583+00:00",
+   "updated": "2026-08-06T17:23:39.326308+00:00",
    "source": "seed",
    "year": ""
   },
@@ -142,13 +160,13 @@
   },
   "internet_pct": {
    "value": "46",
-   "updated": "2026-08-06T17:14:50.250714+00:00",
+   "updated": "2026-08-06T17:23:39.326418+00:00",
    "source": "seed",
    "year": ""
   },
   "libertad_prensa": {
    "value": "32",
-   "updated": "2026-08-06T17:14:50.250520+00:00",
+   "updated": "2026-08-06T17:23:39.326277+00:00",
    "source": "RSF 2024",
    "year": ""
   },
@@ -196,7 +214,7 @@
   },
   "pib_ppa_pc": {
    "value": "11000",
-   "updated": "2026-08-06T17:14:50.250545+00:00",
+   "updated": "2026-08-06T17:23:39.326290+00:00",
    "source": "seed",
    "year": ""
   },
@@ -224,6 +242,12 @@
    "source": "worldbank",
    "year": ""
   },
+  "submarinos": {
+   "value": "16",
+   "updated": "2026-08-06T17:23:39.326501+00:00",
+   "source": "seed",
+   "year": ""
+  },
   "tanques": {
    "value": "4614",
    "updated": "2026-08-06T16:57:05.166570+00:00",
@@ -236,9 +260,15 @@
    "source": "worldbank",
    "year": ""
   },
+  "transporte_aereo": {
+   "value": "200",
+   "updated": "2026-08-06T17:23:39.326470+00:00",
+   "source": "seed",
+   "year": ""
+  },
   "urbanizacion": {
    "value": "36",
-   "updated": "2026-08-06T17:14:50.250727+00:00",
+   "updated": "2026-08-06T17:23:39.326435+00:00",
    "source": "seed",
    "year": ""
   }

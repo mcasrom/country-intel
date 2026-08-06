@@ -164,7 +164,7 @@
     <div class="tab" onclick="togTab(this,'t-aviso')"><span>⚖️ Aviso legal</span><span class="arr">▸</span></div>
   </div>
   <div class="tabbody" id="t-metodo">
-    <p style="margin:0;">Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). <b>Año de referencia único 2023-2024</b> (último año disponible por indicador, persistido) con <b>fuente por bloque</b>: Banco Mundial/FMI economía, ONU demografía y salud, PNUD IDH, UNESCO educación, Transparency Intl corrupción, RSF libertad de prensa, EIU democracia, SIPRI/GFP defensa, CIA edad mediana. El colector del Banco Mundial se ejecuta a diario (cron 03:00); si el API falla conserva los últimos valores y lo marca en <b>datos: hace Xd</b>. Para nuevos países se incorporan los indicadores disponibles del Banco Mundial de forma automática.</p>
+    <p style="margin:0;">Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). <b>Año de referencia único 2023-2024</b> (último año disponible por indicador, persistido) con <b>fuente por bloque</b>: Banco Mundial/FMI economía, ONU demografía y salud, PNUD IDH, UNESCO educación, Transparency Intl corrupción, RSF libertad de prensa, EIU democracia, SIPRI/GFP defensa, CIA edad mediana. El colector del Banco Mundial se ejecuta a diario (cron 03:00); si el API falla conserva los últimos valores y lo marca en <b>datos: hace Xd</b>. Para nuevos países se incorporan los indicadores disponibles del Banco Mundial de forma automática. <b>Homogeneidad y tiempos de captura:</b> economía Banco Mundial 2023-2024, IDH PNUD 2022, educación UNESCO (desfase 2-3 años), defensa GFP/SIPRI 2025 (referencial), índices TI/RSF/EIU 2024. Cada celda indica su fuente y año; cada indicador lleva una nota de definición y una <b>fiabilidad (alta/media/baja)</b>. Ninguna serie es inmune a errores de representatividad (p. ej. «aviones totales» no implica capacidad de combate); interpreta los agregados con cautela y mira el desglose.</p>
   </div>
   <div class="tabbody" id="t-fuentes">
     <ul style="padding-left:18px;margin:0;">
@@ -250,8 +250,24 @@ function dispName(cc){
   return flagFromCode(cc) + ' ' + cc.toUpperCase();
 }
 var NOTAS = {};
+var CALIDAD = {};
+function qBadge(k){
+  var q = CALIDAD[k];
+  if (!q) return '';
+  var col = q === 'alta' ? '#34d399' : q === 'media' ? '#fbbf24' : '#f87171';
+  return ' <span style="color:'+col+';font-size:.72em;border:1px solid '+col+';border-radius:10px;padding:1px 6px;">fiabilidad: '+q+'</span>';
+}
+function calidadSummary(c){
+  var n = { alta:0, media:0, baja:0, total:0 };
+  Object.keys(c.indicators||{}).forEach(function(k){
+    var q = CALIDAD[k]; if (!q) return;
+    n[q]++; n.total++;
+  });
+  if (!n.total) return '';
+  return '<div class="nota"><b>Fiabilidad de esta ficha:</b> ' + n.alta + ' alta · ' + n.media + ' media · ' + n.baja + ' baja (de ' + n.total + ' indicadores). Los indicadores «baja» son referenciales o subjetivos; interpreta con cautela.</div>';
+}
 function footNotes(keys){
-  var items = keys.filter(function(k){ return NOTAS[k]; }).map(function(k){ return '<li><b>'+ILABEL[k]+'</b> — '+NOTAS[k]+'</li>'; });
+  var items = keys.filter(function(k){ return NOTAS[k]; }).map(function(k){ return '<li><b>'+ILABEL[k]+'</b> — '+NOTAS[k]+qBadge(k)+'</li>'; });
   return items.length ? '<div class="nota"><b>Notas metodológicas:</b><ul>'+items.join('')+'</ul></div>' : '';
 }
 function dynamicNota(c){
@@ -342,6 +358,20 @@ function migSec(c){
   var lab = net == null ? '' : (net > 0 ? '🧲 País receptor: más inmigrantes que emigrantes.' : (net < 0 ? '🚪 País emisor: más emigrantes que inmigrantes.' : 'Saldo migratorio equilibrado.'));
   return '<div class="sec"><h3>🛂 Migración</h3><div class="grid">'+cellsOf(c,['net_mig','migrant_pct'])+'</div>' + (lab ? '<div style="font-size:.78em;color:#94a3b8;margin-top:6px;">'+lab+'</div>' : '') + '</div>';
 }
+function defensaBreak(c){
+  var av = gv(c,'aviones'), cazas = gv(c,'cazas'), bc = gv(c,'barcos'), subs = gv(c,'submarinos');
+  var lines = [];
+  if (av != null && cazas != null) {
+    var pct = Number(av) > 0 ? Math.round(Number(cazas)/Number(av)*100) : 0;
+    lines.push('<b>'+fmt(cazas,'cazas')+'</b> de '+fmt(av,'aviones')+' aeronaves son de combate ('+pct+'%).');
+  }
+  var seg = [['transporte_aereo','transporte'],['entrenadores','entrenadores'],['helicopteros','helicópteros']];
+  var det = [];
+  seg.forEach(function(s){ if (gv(c,s[0]) != null) det.push(fmt(gv(c,s[0]),s[0])+' '+s[1]); });
+  if (det.length) lines.push('Resto: '+det.join(' · ')+'.');
+  if (subs != null && bc != null) lines.push(fmt(subs,'submarinos')+' submarinos de '+fmt(bc,'barcos')+' buques.');
+  return lines.length ? '<div class="nota"><b>Capacidad frente al total:</b> '+lines.join(' ')+'</div>' : '';
+}
 function cellsOf(c, keys){
   return keys.map(function(k){
     var v = gv(c,k); var ind = (c.indicators||{})[k] || {};
@@ -405,7 +435,7 @@ function loadCountry(cc){
       '<div class="sec"><h3>📈 Desarrollo e instituciones</h3><div class="grid">'+cellsOf(c,['esperanza_vida','esperanza_saludable','fertilidad','urbanizacion','internet_pct','co2_pc','gini','homicidios','deuda_pib','gasto_salud','gasto_educacion','corrupcion','libertad_prensa','democracia'])+'</div>'+footNotes(['esperanza_vida','esperanza_saludable','fertilidad','urbanizacion','internet_pct','co2_pc','gini','homicidios','deuda_pib','gasto_salud','gasto_educacion','corrupcion','libertad_prensa','democracia'])+'</div>' +
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
       migSec(c) +
-      '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div>'+footNotes(['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div>' + dynamicNota(c) +
+      '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','cazas','barcos','submarinos','tanques'])+'</div>'+defensaBreak(c)+footNotes(['defensa_usd','defensa_pct','personal','aviones','cazas','transporte_aereo','entrenadores','helicopteros','barcos','submarinos','tanques'])+'</div>' + dynamicNota(c) + calidadSummary(c) +
       '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
       '<div class="sec"><h3>🧳 Riesgo visita país</h3>'+riesgoVisita(c)+'</div>' +
       travelSec(cc) +
@@ -643,6 +673,7 @@ function applyConfig(cfg){
   if (f.risk) RISK = f.risk;
   if (f.alerts) ALERT_CFG = f.alerts;
   if (f.notas) NOTAS = f.notas;
+  if (f.calidad) CALIDAD = f.calidad;
 }
 function handleDeepLink(){
   var m = (location.search||'').match(/[?&]c=([a-z]{2})/i);
