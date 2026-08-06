@@ -1,5 +1,8 @@
 {
   "port": 8710,
+  "sleep_worldbank": 1.2,
+  "max_countries": 0,
+  "stale_days": 7,
   "ttl": { "travel": 86400, "news": 3600, "trending": 21600 },
   "sleep_trending": 0.3,
   "topics": ["hoteles", "precios", "trabajo", "vacaciones", "vuelos", "comida", "seguridad", "alquiler"],

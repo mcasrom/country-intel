@@ -71,7 +71,7 @@
 <header>
   <h1>🌍 Country Intelligence OSINT</h1>
   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-    <span style="color:#64748b;font-size:.82em;">15 países · indicadores · defensa · viaje</span>
+    <span style="color:#64748b;font-size:.82em;"><span id="ccount">…</span> países · indicadores · defensa · viaje</span>
     <button class="ci" onclick="toggleHeat()">🔍 Comparativa</button>
     <button class="ci" onclick="openCmp()">⚖️ Comparar</button>
     <button class="ci" onclick="openRank()">🏆 Rankings</button>
@@ -84,6 +84,7 @@
 <div class="ov" id="heat" style="display:none">
   <div style="display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto 12px;">
     <b style="color:#00d4ff;">🔍 Heatmap comparativo · diferencias entre países</b>
+    <select class="ci" id="heatN" onchange="buildHeat()"><option value="20">20</option><option value="50" selected>50</option><option value="100">100</option><option value="200">200</option><option value="0">Todos</option></select>
     <button class="ci" onclick="toggleHeat()">✕ Cerrar</button>
   </div>
   <div id="heattable"></div>
@@ -180,7 +181,7 @@
     <p style="margin:0;color:#64748b;">Los datos son <b>orientativos para investigación</b>: no constituyen recomendaciones de inversión ni información oficial de seguridad. Los avisos de viaje se muestran como referencia del Gobierno del Reino Unido (FCDO); para viajes verifica siempre las recomendaciones oficiales de tu país (p. ej. MITECO, Department of State, FCDO). No nos hacemos responsables de decisiones tomadas con estos datos.</p>
   </div>
 </section>
-<footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · datos abiertos · económicos: Banco Mundial (seed ref.) · defensa: GFP/SIPRI 2025 · viaje: UK FCDO</footer>
+<footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · datos abiertos · económicos: Banco Mundial (datos vivos) · defensa: GFP/SIPRI 2025 · viaje: UK FCDO</footer>
 <script>
 var META = {
   es:["España","🇪🇸",40.4,-3.7], fr:["Francia","🇫🇷",48.8,2.3], de:["Alemania","🇩🇪",52.5,13.4],
@@ -216,6 +217,33 @@ function initMap(){
 }
 
 function gv(c, k){ var i = c.indicators || {}; return (i[k] && i[k].value != null) ? i[k].value : null; }
+function flagFromCode(cc){
+  try { return String.fromCodePoint.apply(null, cc.toUpperCase().split('').map(function(ch){ return 127397 + ch.charCodeAt(0); })); }
+  catch(e){ return ''; }
+}
+function cmeta(cc, c){
+  var g = (c && c.geo) || {};
+  var m = META[cc] || [];
+  return [
+    m[0] || g.name || cc.toUpperCase(),
+    m[1] || flagFromCode(g.iso2 || cc),
+    (g.lat != null) ? g.lat : m[2],
+    (g.lon != null) ? g.lon : m[3]
+  ];
+}
+function dispName(cc){
+  if (META[cc]) return META[cc][1] + ' ' + META[cc][0];
+  var g = ALL[cc] && ALL[cc].geo;
+  if (g && g.name) return flagFromCode(cc) + ' ' + g.name;
+  return flagFromCode(cc) + ' ' + cc.toUpperCase();
+}
+function freshBadge(c){
+  var upds = Object.keys(c.indicators||{}).map(function(k){ return c.indicators[k].updated; }).filter(Boolean);
+  if (!upds.length) return '';
+  var mx = upds.map(function(u){ return Date.parse(u); }).sort(function(a,b){ return b-a; })[0];
+  var days = Math.floor((Date.now() - mx) / 86400000);
+  return 'datos: ' + (days <= 1 ? 'hoy' : 'hace ' + days + 'd');
+}
 var ALL = {}; var ALL_LOADED = false;
 function ensureAll(cb){
   if (ALL_LOADED) { cb(); return; }
@@ -325,14 +353,14 @@ function loadTrending(cc){
 function loadCountry(cc){
   var dash = document.getElementById('dash');
   dash.style.display = 'block';
-  dash.innerHTML = '<span class="back" onclick="closeDash()">← Volver al mapa</span><div style="color:#64748b;">Cargando ' + (META[cc]||[cc])[0] + '...</div>';
+  dash.innerHTML = '<span class="back" onclick="closeDash()">← Volver al mapa</span><div style="color:#64748b;">Cargando ' + (cmeta(cc,{})[0]) + '...</div>';
   fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
-    var meta = META[cc] || [cc.toUpperCase(), '🌍', 0, 0];
+    var meta = cmeta(cc, c);
     var region = gv(c,'region');
     fireTrend(cc);
     var html =
       '<span class="back" onclick="closeDash()">← Volver al mapa</span>' +
-      '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div class="cname">'+meta[1]+' '+meta[0]+'</div><button class="ci" data-c="'+cc+'" onclick="shareCountry(this.dataset.c)">📤 Compartir</button></div><div class="cmeta">'+ (region||'') +' · datos abiertos</div>' +
+      '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;"><div class="cname">'+meta[1]+' '+meta[0]+'</div><button class="ci" data-c="'+cc+'" onclick="shareCountry(this.dataset.c)">📤 Compartir</button></div><div class="cmeta">'+ (region||'') + (region?' · ':'') + freshBadge(c) +' · datos abiertos</div>' +
       '<div class="sec"><h3>🤖 Resumen IA</h3><div class="resumen">'+resumenIA(c)+'</div></div>' +
       '<div class="sec"><h3>📊 Indicadores</h3><div class="grid">'+cellsOf(c,['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','moneda','region'])+'</div></div>' +
       '<div class="sec"><h3>👥 Estructura etaria</h3>'+edadBar(c)+'</div>' +
@@ -437,7 +465,7 @@ function buildIcons(){
   ensureHeatLoaded().then(function(){
     var codes = Object.keys(ALL).sort();
     el.innerHTML = codes.map(function(cc){
-      var c = ALL[cc], meta = META[cc] || [cc.toUpperCase(),'🌍'];
+      var c = ALL[cc], meta = cmeta(cc, c);
       var rv = riesgoVisita(c);
       var badge = (rv.match(/Baja ·/) || rv.match(/Media ·/) || rv.match(/Alta ·/) || [])[0] || '';
       return '<div data-c="'+cc+'" onclick="loadCountry(this.dataset.c);toggleView();" style="background:#111827;border:1px solid #1e293b;border-radius:10px;padding:14px;cursor:pointer;text-align:center;">' +
@@ -449,7 +477,7 @@ function buildIcons(){
   });
 }
 function shareCountry(cc){
-  var meta = META[cc] || [cc.toUpperCase(),'🌍'];
+  var meta = cmeta(cc, ALL[cc]);
   var text = meta[1]+' '+meta[0]+' · Ficha de inteligencia OSINT (indicadores, defensa, riesgo de visita, avisos de viaje) — https://country.viajeinteligencia.com/?c='+cc;
   if (navigator.share) { navigator.share({ title: meta[1]+' '+meta[0]+' · Country Intelligence', text: text }).catch(function(){}); }
   else if (navigator.clipboard) { navigator.clipboard.writeText(text).then(function(){ alert('Enlace y texto copiados: '+text); }).catch(function(){}); }
@@ -474,7 +502,9 @@ function ensureHeatLoaded(){ return new Promise(function(res){ ensureAll(functio
 function buildHeat(){
   var tbl = document.getElementById('heattable');
   if (!ALL_LOADED) { tbl.innerHTML = '<div style="color:#64748b;text-align:center;">Cargando datos de los países...</div>'; ensureHeatLoaded().then(buildHeat); return; }
-  var codes = Object.keys(ALL).sort();
+  var n = parseInt(document.getElementById('heatN').value || '50', 10);
+  var all = Object.keys(ALL).map(function(cc){ return { cc: cc, p: (gv(ALL[cc],'poblacion') != null ? Number(gv(ALL[cc],'poblacion')) : -1) }; }).sort(function(a,b){ return b.p - a.p; });
+  var codes = (n ? all.slice(0, n) : all).map(function(x){ return x.cc; });
   var rows = HEAT.map(function(h){
     var vals = codes.map(function(cc){ var v = gv(ALL[cc],h[0]); return v != null ? Number(v) : null; }).filter(function(v){ return v != null; });
     if (!vals.length) return '';
@@ -486,7 +516,7 @@ function buildHeat(){
     }).join('');
     return '<tr><th style="text-align:left;color:#94a3b8;padding:4px 8px;font-size:11px;border:1px solid #1e293b;white-space:nowrap;">'+h[1]+'</th>'+cells+'</tr>';
   }).join('');
-  var heads = '<tr><th style="border:1px solid #1e293b;"></th>'+codes.map(function(cc){ return '<th style="color:#00d4ff;font-size:10px;padding:4px 2px;border:1px solid #1e293b;">'+((META[cc]?META[cc][1]+' '+META[cc][0]:cc.toUpperCase()))+'</th>'; }).join('')+'</tr>';
+  var heads = '<tr><th style="border:1px solid #1e293b;"></th>'+codes.map(function(cc){ return '<th style="color:#00d4ff;font-size:10px;padding:4px 2px;border:1px solid #1e293b;">'+dispName(cc)+'</th>'; }).join('')+'</tr>';
   tbl.innerHTML = '<table style="border-collapse:collapse;margin:auto;">'+heads+rows+'</table>' +
     '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:10px;">🔵 Azul = por debajo · 🔴 Rojo = por encima (normalizado por indicador) · económicos: seed ref. · defensa: GFP/SIPRI 2025</div>';
 }
@@ -499,7 +529,7 @@ function openCmp(){
   if (document.getElementById('cmp').style.display !== 'block') return;
   ensureHeatLoaded().then(function(){
     var codes = Object.keys(ALL).sort();
-    var opts = codes.map(function(cc){ return '<option value="'+cc+'">'+(META[cc]?META[cc][1]+' '+META[cc][0]:cc)+'</option>'; }).join('');
+    var opts = codes.map(function(cc){ return '<option value="'+cc+'">'+dispName(cc)+'</option>'; }).join('');
     document.getElementById('cmpA').innerHTML = opts;
     document.getElementById('cmpB').innerHTML = opts;
     document.getElementById('cmpA').value = 'es';
@@ -538,7 +568,7 @@ function buildRank(){
     .sort(function(p,q){ return asc ? p.v - q.v : q.v - p.v; });
   var rows = arr.map(function(x,i){
     return '<tr><td style="padding:5px 8px;border:1px solid #1e293b;color:#64748b;">'+ (i+1) +'</td>' +
-      '<td style="padding:5px 8px;border:1px solid #1e293b;">'+(META[x.cc]?META[x.cc][1]+' '+META[x.cc][0]:x.cc)+'</td>' +
+      '<td style="padding:5px 8px;border:1px solid #1e293b;">'+dispName(x.cc)+'</td>' +
       '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(x.v,k)+'</td></tr>';
   }).join('');
   var note = (asc ? 'Menor primero' : 'Mayor primero') + (INV[k] ? ' · para este indicador, menor = mejor' : '');
@@ -548,9 +578,11 @@ function buildRank(){
 
 function load(){
   fetch('/api/countries').then(r=>r.json()).then(function(d){
+    document.getElementById('ccount').textContent = d.countries.length;
     d.countries.forEach(function(cc){
       fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
-        var meta = META[cc] || [cc.toUpperCase(),'🌍',0,0];
+        var meta = cmeta(cc, c);
+        if (meta[2] == null || meta[3] == null) return;
         var popup = '<b>'+meta[1]+' '+meta[0]+'</b><br>Población: '+fmt(gv(c,'poblacion'),'poblacion')+'<br>PIB: '+fmt(gv(c,'pib'),'pib')+'<br>Renta pc: '+fmt(gv(c,'renta_pc'),'renta_pc');
         L.circleMarker([meta[2],meta[3]], { radius: 9, color:'#00d4ff', weight:1.5, fillColor:'#00d4ff', fillOpacity:0.35 })
           .bindPopup(popup).on('click', function(){ loadCountry(cc); }).addTo(map);
@@ -573,7 +605,7 @@ function applyConfig(cfg){
 }
 function handleDeepLink(){
   var m = (location.search||'').match(/[?&]c=([a-z]{2})/i);
-  if (m && META[m[1].toLowerCase()]) { closeWelcome(); loadCountry(m[1].toLowerCase()); }
+  if (m && /^[a-z]{2}$/i.test(m[1])) { closeWelcome(); loadCountry(m[1].toLowerCase()); }
 }
 function boot(){
   fetch('/api/config').then(r=>r.json()).then(applyConfig).catch(function(){})

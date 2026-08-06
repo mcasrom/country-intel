@@ -4,6 +4,7 @@ import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -52,6 +53,39 @@ def _fetch_fcdo(slug: str):
 @app.get("/health")
 def health():
     return {"ok": True, "service": "country-intel"}
+
+
+@app.get("/api/health")
+def api_health():
+    last = {}
+    try:
+        last = json.loads((BASE_DIR / "data" / "last_run.json").read_text())
+    except Exception:
+        pass
+    now = datetime.now(timezone.utc)
+    ages = {}
+    for fp in JSON_DIR.glob("*.json"):
+        try:
+            d = json.loads(fp.read_text())
+            upds = [i.get("updated") for i in d.get("indicators", {}).values() if i.get("updated")]
+            if upds:
+                try:
+                    ages[fp.stem] = (now - datetime.fromisoformat(max(upds))).days
+                except Exception:
+                    pass
+        except Exception:
+            pass
+    max_age = max(ages.values()) if ages else -1
+    stale = sorted(cc for cc, a in ages.items() if a >= int(CFG.get("stale_days", 7)))
+    return {
+        "ok": True,
+        "service": "country-intel",
+        "last_run": last.get("run_at"),
+        "countries": len(list(JSON_DIR.glob("*.json"))),
+        "max_data_age_days": max_age,
+        "stale_countries": stale,
+        "errors": last.get("errors", []),
+    }
 
 
 @app.get("/api/config")
