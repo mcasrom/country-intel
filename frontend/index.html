@@ -43,6 +43,13 @@
   .part{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:8px 10px;margin-bottom:6px;font-size:.8em}
   .part b{color:#00d4ff}
   #aboutSec{max-width:980px;margin:0 auto;padding:22px;color:#cbd5e1;font-size:.9em;line-height:1.7}
+  .tab{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:12px 16px;margin-bottom:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:700;color:#00d4ff}
+  .tab:hover{border-color:#00d4ff}
+  .tab .arr{transition:transform .2s;color:#64748b}
+  .tabbody{display:none;background:#0f172a;border:1px solid #1e293b;border-top:none;border-radius:0 0 8px 8px;padding:14px 16px;margin:-8px 0 8px}
+  .welcome{position:fixed;inset:0;background:rgba(5,8,20,.85);z-index:2000;display:flex;align-items:center;justify-content:center;padding:16px}
+  .wcard{background:#111827;border:1px solid #00d4ff;border-radius:14px;padding:24px;max-width:480px;width:100%;box-shadow:0 10px 40px rgba(0,0,0,.6)}
+  .wcard h2{color:#00d4ff;margin:0 0 14px;font-size:1.1em}
 </style>
 </head>
 <body>
@@ -85,21 +92,28 @@
   </div>
   <div id="ranktable" style="max-width:620px;margin:0 auto;"></div>
 </div>
+<div id="welcome">
+  <div class="wcard">
+    <h2>🔻 Así funciona</h2>
+    <div class="fstage" style="width:100%">1 · FUENTES · datos abiertos y primarios (Banco Mundial, UNESCO, SIPRI/GFP, CIA, FCDO, GDELT, EMSC)</div>
+    <div class="fstage" style="width:78%">2 · COLECTORES · pipeline diario (cron 03:00) con caché y seed de referencia</div>
+    <div class="fstage" style="width:58%">3 · ANÁLISIS · resumen por país, riesgo derivado, comparativa normalizada</div>
+    <div class="fstage" style="width:40%">4 · DASHBOARD · mapa, panel por país, fichas de viaje, heatmap, comparador, rankings</div>
+    <p style="color:#64748b;font-size:.78em;margin:10px 0 0;">Clica un país del mapa para abrir su ficha completa.</p>
+    <div style="text-align:right;margin-top:12px;"><button class="ci" onclick="closeWelcome()">✕ Entendido</button></div>
+  </div>
+</div>
 <div id="layout">
   <div id="map"></div>
   <div id="dash"></div>
 </div>
 <section id="aboutSec">
-  <div class="sec"><h3>🔻 El funnel: cómo funciona</h3>
-    <div class="fstage" style="width:100%">1 · FUENTES · datos abiertos y primarios (Banco Mundial, UNESCO, SIPRI/GFP, CIA Factbook, GDELT, EMSC, UK FCDO)</div>
-    <div class="fstage" style="width:78%">2 · COLECTORES · pipeline diario (cron 03:00) con caché y seed de referencia</div>
-    <div class="fstage" style="width:58%">3 · ANÁLISIS · resumen por país, riesgo derivado, comparativa normalizada</div>
-    <div class="fstage" style="width:40%">4 · DASHBOARD · mapa, panel por país, fichas de viaje, heatmap, comparador, rankings</div>
+  <div class="tab" onclick="togTab('t-metodo')"><span>⚙️ Metodología</span><span class="arr">▸</span></div>
+  <div class="tabbody" id="t-metodo">
+    <p style="margin:0;">Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). Los datos económicos son un <b>seed de referencia</b> (2023-2024) que el colector del Banco Mundial refresca cuando la API lo permite; el resto son aproximaciones públicas 2025. Se actualiza a diario vía cron.</p>
   </div>
-  <div class="sec"><h3>⚙️ Metodología</h3>
-    <p>Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). Los datos económicos son un <b>seed de referencia</b> (2023-2024) que el colector del Banco Mundial refresca cuando la API lo permite; el resto son aproximaciones públicas 2025. Se actualiza a diario vía cron.</p>
-  </div>
-  <div class="sec"><h3>📚 Fuentes</h3>
+  <div class="tab" onclick="togTab('t-fuentes')"><span>📚 Fuentes</span><span class="arr">▸</span></div>
+  <div class="tabbody" id="t-fuentes">
     <ul style="padding-left:18px;margin:0;">
       <li>Banco Mundial · PIB, población, inflación (API)</li>
       <li>UNESCO / Naciones Unidas (PNUD) · alfabetización, educación, IDH</li>
@@ -110,12 +124,14 @@
       <li>EMSC · alertas sísmicas (terremotos ≥M4)</li>
     </ul>
   </div>
-  <div class="sec"><h3>ℹ️ About</h3>
-    <p><b>Country Intelligence OSINT</b> es un dashboard independiente de inteligencia geopolitica de <b>datos abiertos</b>, sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal de investigación. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
-    <p style="color:#94a3b8;">☕ Si te resulta útil, invítame a un café: <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">Apóyame en Ko-fi</a></p>
+  <div class="tab" onclick="togTab('t-about')"><span>ℹ️ About</span><span class="arr">▸</span></div>
+  <div class="tabbody" id="t-about">
+    <p style="margin:0 0 8px;"><b>Country Intelligence OSINT</b> es un dashboard independiente de inteligencia geopolitica de <b>datos abiertos</b>, sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal de investigación. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
+    <p style="margin:0;">☕ Si te resulta útil, invítame a un café: <a class="ci" style="text-decoration:none;display:inline-block;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">Apóyame en Ko-fi</a></p>
   </div>
-  <div class="sec"><h3>⚖️ Aviso legal</h3>
-    <p style="color:#64748b;font-size:.85em;">Los datos son <b>orientativos para investigación</b>: no constituyen recomendaciones de inversión ni información oficial de seguridad. Los avisos de viaje se muestran como referencia del Gobierno del Reino Unido (FCDO); para viajes verifica siempre las recomendaciones oficiales de tu país (p. ej. MITECO, Department of State, FCDO). No nos hacemos responsables de decisiones tomadas con estos datos.</p>
+  <div class="tab" onclick="togTab('t-aviso')"><span>⚖️ Aviso legal</span><span class="arr">▸</span></div>
+  <div class="tabbody" id="t-aviso">
+    <p style="margin:0;color:#64748b;">Los datos son <b>orientativos para investigación</b>: no constituyen recomendaciones de inversión ni información oficial de seguridad. Los avisos de viaje se muestran como referencia del Gobierno del Reino Unido (FCDO); para viajes verifica siempre las recomendaciones oficiales de tu país (p. ej. MITECO, Department of State, FCDO). No nos hacemos responsables de decisiones tomadas con estos datos.</p>
   </div>
 </section>
 <footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · datos abiertos · económicos: Banco Mundial (seed ref.) · defensa: GFP/SIPRI 2025 · viaje: UK FCDO</footer>
@@ -271,6 +287,14 @@ function loadAlerts(lat, lon){
     }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">EMSC no disponible ahora.</div>'; });
 }
 function closeDash(){ document.getElementById('dash').style.display='none'; }
+
+function closeWelcome(){ document.getElementById('welcome').style.display = 'none'; }
+function togTab(id){
+  var el = document.getElementById(id);
+  var arr = el.previousElementSibling ? el.previousElementSibling.querySelector('.arr') : null;
+  if (el.style.display === 'block') { el.style.display = 'none'; if (arr) arr.style.transform = ''; }
+  else { el.style.display = 'block'; if (arr) arr.style.transform = 'rotate(90deg)'; }
+}
 
 function toggleOv(id){
   var el = document.getElementById(id);
