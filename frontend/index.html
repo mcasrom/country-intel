@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Country Intelligence OSINT · Inteligencia geopolítica por país</title>
-<meta name="description" content="Dashboard OSINT de inteligencia geopolítica por país: indicadores, defensa, noticias, alertas y riesgo con datos abiertos.">
+<meta name="description" content="Dashboard OSINT de inteligencia geopolítica por país: indicadores, defensa, fichas de viaje oficiales, noticias, alertas, comparador y riesgo.">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
 <style>
   body{font-family:system-ui,sans-serif;background:#0b1020;color:#e2e8f0;margin:0}
-  header{padding:16px 22px;border-bottom:1px solid #1e293b;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
-  h1{margin:0;color:#00d4ff;font-size:1.25em}
-  #layout{display:flex;height:calc(100vh - 120px)}
+  header{padding:14px 22px;border-bottom:1px solid #1e293b;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;position:sticky;top:0;background:#0b1020;z-index:500}
+  h1{margin:0;color:#00d4ff;font-size:1.2em}
+  #layout{display:flex;height:560px}
   #map{flex:1;min-width:320px;background:#0b1020}
-  #dash{width:440px;max-width:100%;overflow-y:auto;border-left:1px solid #1e293b;padding:18px;display:none}
+  #dash{width:460px;max-width:100%;overflow-y:auto;border-left:1px solid #1e293b;padding:18px;display:none}
   .sec{margin-bottom:16px}
   .sec h3{color:#00d4ff;font-size:.85em;text-transform:uppercase;letter-spacing:1px;margin:0 0 8px;border-bottom:1px solid #1e293b;padding-bottom:6px}
   .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -29,98 +29,106 @@
   .risk .alta{color:#f87171}.risk .media{color:#fbbf24}.risk .baja{color:#34d399}
   .resumen{background:#111827;border:1px solid #1e293b;border-radius:10px;padding:12px;font-size:.85em;line-height:1.6}
   .resumen b{color:#00d4ff}
-  footer{padding:10px 22px;color:#64748b;font-size:.75em;border-top:1px solid #1e293b}
+  footer{padding:14px 22px;color:#64748b;font-size:.75em;border-top:1px solid #1e293b}
   .cname{font-size:1.3em;font-weight:800;margin-bottom:4px}
   .cmeta{color:#64748b;font-size:.8em;margin-bottom:12px}
   .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#111827;color:#e2e8f0}
   .back{cursor:pointer;color:#00d4ff;font-size:.8em;margin-bottom:8px;display:inline-block}
   button.ci{background:#111827;border:1px solid #00d4ff;color:#00d4ff;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:.85em}
   button.ci:hover{background:#00d4ff;color:#0b1020}
-  #heat{position:fixed;inset:58px 0 40px 0;background:#0b1020;z-index:1000;overflow:auto;padding:18px}
-  #heat table{background:#111827;border-radius:10px;padding:6px}
   .fstage{background:#111827;border:1px solid #1e293b;border-left:3px solid #00d4ff;border-radius:6px;padding:8px 12px;margin-bottom:6px;font-size:.82em}
+  .ov{position:fixed;inset:58px 0 0 0;background:#0b1020;z-index:900;overflow:auto;padding:18px;display:none}
+  .ov table{background:#111827;border-radius:10px;padding:6px}
+  select.ci{background:#111827;border:1px solid #00d4ff;color:#00d4ff;border-radius:8px;padding:6px 10px;font-size:.85em}
+  .part{background:#111827;border:1px solid #1e293b;border-radius:8px;padding:8px 10px;margin-bottom:6px;font-size:.8em}
+  .part b{color:#00d4ff}
+  #aboutSec{max-width:980px;margin:0 auto;padding:22px;color:#cbd5e1;font-size:.9em;line-height:1.7}
 </style>
 </head>
 <body>
 <header>
   <h1>🌍 Country Intelligence OSINT</h1>
   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-    <span style="color:#64748b;font-size:.82em;">Indicadores · defensa · noticias · alertas · riesgo</span>
+    <span style="color:#64748b;font-size:.82em;">15 países · indicadores · defensa · viaje</span>
     <button class="ci" onclick="toggleHeat()">🔍 Comparativa</button>
-    <button class="ci" onclick="toggleInfo()">ℹ️ Acerca de</button>
+    <button class="ci" onclick="openCmp()">⚖️ Comparar</button>
+    <button class="ci" onclick="openRank()">🏆 Rankings</button>
     <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Apóyame</a>
   </div>
 </header>
-<div id="heat" style="display:none">
+<div class="ov" id="heat" style="display:none">
   <div style="display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto 12px;">
     <b style="color:#00d4ff;">🔍 Heatmap comparativo · diferencias entre países</b>
     <button class="ci" onclick="toggleHeat()">✕ Cerrar</button>
   </div>
   <div id="heattable"></div>
 </div>
-<div id="info" style="display:none">
-  <div style="display:flex;justify-content:space-between;align-items:center;max-width:860px;margin:0 auto 12px;">
-    <b style="color:#00d4ff;">ℹ️ Acerca de Country Intelligence OSINT</b>
-    <button class="ci" onclick="toggleInfo()">✕ Cerrar</button>
+<div class="ov" id="cmp" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;max-width:760px;margin:0 auto 12px;gap:8px;flex-wrap:wrap;">
+    <b style="color:#00d4ff;">⚖️ Comparador de países</b>
+    <button class="ci" onclick="toggleOv('cmp')">✕ Cerrar</button>
   </div>
-  <div style="max-width:860px;margin:0 auto;color:#cbd5e1;font-size:.88em;line-height:1.7;">
-    <div class="sec"><h3>🔻 El funnel: cómo funciona</h3>
-      <div class="fstage" style="width:100%">1 · FUENTES · datos abiertos y primarios (Banco Mundial, UNESCO, SIPRI/GFP, CIA Factbook, GDELT, EMSC)</div>
-      <div class="fstage" style="width:76%">2 · COLECTORES · pipeline diario (cron 03:00) con caché y seed de referencia</div>
-      <div class="fstage" style="width:55%">3 · ANÁLISIS · resumen por país, riesgo derivado, comparativa normalizada</div>
-      <div class="fstage" style="width:38%">4 · DASHBOARD · mapa, panel por país, heatmap de diferencias</div>
-    </div>
-    <div class="sec"><h3>⚙️ Metodología</h3>
-      <p>Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen y el riesgo</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Los datos económicos son un <b>seed de referencia</b> (2023-2024) que el colector del Banco Mundial refresca cuando la API lo permite; el resto son aproximaciones públicas 2025. Se actualiza a diario vía cron.</p>
-    </div>
-    <div class="sec"><h3>📚 Fuentes</h3>
-      <ul style="padding-left:18px;margin:0;">
-        <li>Banco Mundial · PIB, población, inflación (API)</li>
-        <li>UNESCO / Naciones Unidas · alfabetización, educación, IDH (PNUD)</li>
-        <li>SIPRI · Global Firepower · gasto y equipamiento de defensa</li>
-        <li>CIA World Factbook · estructura etaria y edad mediana</li>
-        <li>GDELT · noticias en tiempo real por país</li>
-        <li>EMSC · alertas sísmicas (terremotos ≥M4)</li>
-      </ul>
-    </div>
-    <div class="sec"><h3>ℹ️ About</h3>
-      <p><b>Country Intelligence OSINT</b> es un dashboard independiente de inteligencia geopolitica de <b>datos abiertos</b>, sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal de investigación. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
-      <p style="color:#64748b;font-size:.82em;">Aviso: datos orientativos para investigación, no recomendaciones de inversión ni seguridad oficial. Verifica siempre en fuentes gubernamentales antes de viajar.</p>
-    </div>
-    <div class="sec"><h3>☕ Apoya el proyecto</h3>
-      <p>Si te resulta útil, invítame a un café:</p>
-      <a class="ci" style="text-decoration:none;display:inline-block;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Invítame a un café en Ko-fi</a>
-    </div>
+  <div style="display:flex;gap:10px;justify-content:center;align-items:center;max-width:760px;margin:0 auto 14px;flex-wrap:wrap;">
+    <select class="ci" id="cmpA" onchange="buildCmp()"></select>
+    <span style="color:#64748b;">vs</span>
+    <select class="ci" id="cmpB" onchange="buildCmp()"></select>
   </div>
+  <div id="cmptable" style="max-width:760px;margin:0 auto;"></div>
+</div>
+<div class="ov" id="rank" style="display:none">
+  <div style="display:flex;justify-content:space-between;align-items:center;max-width:620px;margin:0 auto 12px;gap:8px;flex-wrap:wrap;">
+    <b style="color:#00d4ff;">🏆 Rankings por indicador</b>
+    <button class="ci" onclick="toggleOv('rank')">✕ Cerrar</button>
+  </div>
+  <div style="display:flex;gap:10px;justify-content:center;align-items:center;max-width:620px;margin:0 auto 14px;flex-wrap:wrap;">
+    <select class="ci" id="rankInd" onchange="buildRank()"></select>
+  </div>
+  <div id="ranktable" style="max-width:620px;margin:0 auto;"></div>
 </div>
 <div id="layout">
   <div id="map"></div>
   <div id="dash"></div>
 </div>
-<footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · datos abiertos · económicos: Banco Mundial (seed ref.) · defensa: GFP/SIPRI 2025</footer>
+<section id="aboutSec">
+  <div class="sec"><h3>🔻 El funnel: cómo funciona</h3>
+    <div class="fstage" style="width:100%">1 · FUENTES · datos abiertos y primarios (Banco Mundial, UNESCO, SIPRI/GFP, CIA Factbook, GDELT, EMSC, UK FCDO)</div>
+    <div class="fstage" style="width:78%">2 · COLECTORES · pipeline diario (cron 03:00) con caché y seed de referencia</div>
+    <div class="fstage" style="width:58%">3 · ANÁLISIS · resumen por país, riesgo derivado, comparativa normalizada</div>
+    <div class="fstage" style="width:40%">4 · DASHBOARD · mapa, panel por país, fichas de viaje, heatmap, comparador, rankings</div>
+  </div>
+  <div class="sec"><h3>⚙️ Metodología</h3>
+    <p>Agregamos indicadores socioeconómicos, de capital humano y de defensa por país desde <b>fuentes abiertas</b> y los normalizamos para comparar diferencias (heatmap azul=bajo, rojo=alto). El <b>resumen, el riesgo y el riesgo de visita</b> se derivan por heurística transparente sobre los datos (IDH, inflación, desempleo). Las <b>fichas de viaje</b> usan el aviso oficial del Gobierno del Reino Unido (FCDO). Los datos económicos son un <b>seed de referencia</b> (2023-2024) que el colector del Banco Mundial refresca cuando la API lo permite; el resto son aproximaciones públicas 2025. Se actualiza a diario vía cron.</p>
+  </div>
+  <div class="sec"><h3>📚 Fuentes</h3>
+    <ul style="padding-left:18px;margin:0;">
+      <li>Banco Mundial · PIB, población, inflación (API)</li>
+      <li>UNESCO / Naciones Unidas (PNUD) · alfabetización, educación, IDH</li>
+      <li>SIPRI · Global Firepower · gasto y equipamiento de defensa</li>
+      <li>CIA World Factbook · estructura etaria y edad mediana</li>
+      <li>UK Foreign, Commonwealth & Development Office (FCDO) · avisos de viaje oficiales</li>
+      <li>GDELT · noticias en tiempo real por país</li>
+      <li>EMSC · alertas sísmicas (terremotos ≥M4)</li>
+    </ul>
+  </div>
+  <div class="sec"><h3>ℹ️ About</h3>
+    <p><b>Country Intelligence OSINT</b> es un dashboard independiente de inteligencia geopolitica de <b>datos abiertos</b>, sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal de investigación. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
+    <p style="color:#94a3b8;">☕ Si te resulta útil, invítame a un café: <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">Apóyame en Ko-fi</a></p>
+  </div>
+  <div class="sec"><h3>⚖️ Aviso legal</h3>
+    <p style="color:#64748b;font-size:.85em;">Los datos son <b>orientativos para investigación</b>: no constituyen recomendaciones de inversión ni información oficial de seguridad. Los avisos de viaje se muestran como referencia del Gobierno del Reino Unido (FCDO); para viajes verifica siempre las recomendaciones oficiales de tu país (p. ej. MITECO, Department of State, FCDO). No nos hacemos responsables de decisiones tomadas con estos datos.</p>
+  </div>
+</section>
+<footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · datos abiertos · económicos: Banco Mundial (seed ref.) · defensa: GFP/SIPRI 2025 · viaje: UK FCDO</footer>
 <script>
 var META = {
   es:["España","🇪🇸",40.4,-3.7], fr:["Francia","🇫🇷",48.8,2.3], de:["Alemania","🇩🇪",52.5,13.4],
   it:["Italia","🇮🇹",41.9,12.5], gb:["Reino Unido","🇬🇧",51.5,-0.1], us:["EE.UU.","🇺🇸",39.8,-98.6],
   cn:["China","🇨🇳",35.9,104.2], br:["Brasil","🇧🇷",-14.2,-51.9], in:["India","🇮🇳",20.6,79.0],
-  mx:["México","🇲🇽",23.6,-102.5], ma:["Marruecos","🇲🇦",31.8,-7.1], dz:["Argelia","🇩🇿",28.0,1.7], eg:["Egipto","🇪🇬",26.8,30.8], pt:["Portugal","🇵🇹",39.4,-8.2]
+  mx:["México","🇲🇽",23.6,-102.5], ma:["Marruecos","🇲🇦",31.8,-7.1], dz:["Argelia","🇩🇿",28.0,1.7],
+  eg:["Egipto","🇪🇬",26.8,30.8], pt:["Portugal","🇵🇹",39.4,-8.2], au:["Australia","🇦🇺",-25.3,133.8]
 };
-var ILABEL = { poblacion:"Población", pib:"PIB", inflacion:"Inflación (IPC)", desempleo:"Desempleo", idh:"IDH", moneda:"Moneda", region:"Región", renta_pc:"Renta per cápita", alfabetizacion:"Alfabetización", seguridad_social:"Seguridad social (% PIB)", titulados:"Titulados superiores", defensa_usd:"Gasto en defensa", defensa_pct:"Defensa (% PIB)", personal:"Personal militar", aviones:"Aviones", barcos:"Barcos", tanques:"Tanques", menores:"Menores (0-14)", adolescentes:"Adolescentes (15-24)", adultos:"Adultos (25-64)", mayores:"Mayores (65+)" };
-function edadBar(c){
-  var bandas = [["menores",0.66,0.67,1],["adolescentes",0.20,0.83,0.61],["adultos",0.98,0.75,0.14],["mayores",0.97,0.44,0.44]];
-  var total = 0; bandas.forEach(function(b){ var v = gv(c,b[0]); if (v != null) total += Number(v); });
-  if (total <= 0) return '<div style="color:#64748b;font-size:.8em;">Sin datos de estructura etaria.</div>';
-  var seg = bandas.map(function(b){
-    var v = Number(gv(c,b[0])) || 0;
-    return '<div style="width:'+(v*100/100)+'%;background:rgba('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+',0.85);height:22px;display:inline-block;" title="'+ILABEL[b[0]]+' '+v.toFixed(1)+'%"></div>';
-  }).join('');
-  var leg = bandas.map(function(b){
-    var v = Number(gv(c,b[0])) || 0;
-    return '<span style="color:'+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+';display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;background:rgb('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+');"></span>'+ILABEL[b[0]]+': '+v.toFixed(1)+'%';
-  }).join('<br>');
-  var med = gv(c,'edad_mediana');
-  return '<div style="border:1px solid #1e293b;border-radius:8px;overflow:hidden;display:flex;margin-bottom:8px;">'+seg+'</div><div style="font-size:.8em;line-height:1.7;">'+leg+'</div><div style="font-size:.8em;color:#64748b;margin-top:6px;">Edad mediana: '+(med==null?'—':med+' años')+'</div>';
-}
+var ILABEL = { poblacion:"Población", pib:"PIB", inflacion:"Inflación (IPC)", desempleo:"Desempleo", idh:"IDH", moneda:"Moneda", region:"Región", renta_pc:"Renta per cápita", alfabetizacion:"Alfabetización", seguridad_social:"Seguridad social (% PIB)", titulados:"Titulados superiores", defensa_usd:"Gasto en defensa", defensa_pct:"Defensa (% PIB)", personal:"Personal militar", aviones:"Aviones", barcos:"Barcos", tanques:"Tanques", menores:"Menores (0-14)", adolescentes:"Adolescentes (15-24)", adultos:"Adultos (25-64)", mayores:"Mayores (65+)", edad_mediana:"Edad mediana" };
+var INV = { inflacion:1, desempleo:1 };
 function fmt(v, ind){
   if (v == null) return "—";
   if (ind === "inflacion" || ind === "desempleo" || ind === "defensa_pct") return Number(v).toFixed(1) + "%";
@@ -128,14 +136,23 @@ function fmt(v, ind){
   if (ind === "defensa_usd") { var n=Number(v); return "$"+(n/1e9).toFixed(1)+"B"; }
   if (ind === "renta_pc") return "$" + Number(v).toLocaleString();
   if (ind === "poblacion") return Number(v)>=1e6 ? (Number(v)/1e6).toFixed(1)+"M" : Number(v).toLocaleString();
-  if (ind === "alfabetizacion" || ind === "titulados" || ind === "seguridad_social") return Number(v).toFixed(1) + "%";
+  if (ind === "alfabetizacion" || ind === "titulados" || ind === "seguridad_social" || ind === "menores" || ind === "adolescentes" || ind === "adultos" || ind === "mayores") return Number(v).toFixed(1) + "%";
   if (ind === "personal" || ind === "aviones" || ind === "barcos" || ind === "tanques") return Number(v).toLocaleString();
+  if (ind === "edad_mediana") return Number(v) + " años";
   return String(v);
 }
-var map = L.map('map').setView([30, 5], 2);
+var map = L.map('map').setView([25, 10], 2);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution:'© OSM © CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
 
 function gv(c, k){ var i = c.indicators || {}; return (i[k] && i[k].value != null) ? i[k].value : null; }
+var ALL = {}; var ALL_LOADED = false;
+function ensureAll(cb){
+  if (ALL_LOADED) { cb(); return; }
+  fetch('/api/countries').then(r=>r.json()).then(function(d){
+    var ps = d.countries.map(function(cc){ return fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){ ALL[cc] = c; }); });
+    return Promise.all(ps);
+  }).then(function(){ ALL_LOADED = true; cb(); });
+}
 function resumenIA(c){
   var idh = gv(c,'idh');
   var idhLab = idh == null ? "—" : (idh >= 0.8 ? "muy alto" : idh >= 0.7 ? "alto" : idh >= 0.55 ? "medio" : "bajo");
@@ -172,8 +189,43 @@ function riesgoVisita(c){
   return '<div class="risk"><span class="'+nivel[0]+'">Riesgo visita: '+nivel[1]+'</span></div>' +
          '<ul style="margin:8px 0 0;padding-left:18px;color:#94a3b8;font-size:.8em;line-height:1.6;">'+consejos.map(function(x){ return '<li>'+x+'</li>'; }).join('')+'</ul>';
 }
+function edadBar(c){
+  var bandas = [["menores",0.66,0.67,1],["adolescentes",0.20,0.83,0.61],["adultos",0.98,0.75,0.14],["mayores",0.97,0.44,0.44]];
+  var seg = bandas.map(function(b){
+    var v = Number(gv(c,b[0])) || 0;
+    return '<div style="width:'+v+'%;background:rgb('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+');height:22px;display:inline-block;"></div>';
+  }).join('');
+  var leg = bandas.map(function(b){
+    var v = Number(gv(c,b[0])) || 0;
+    return '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;background:rgb('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+');"></span>'+ILABEL[b[0]]+': '+v.toFixed(1)+'%';
+  }).join('<br>');
+  var med = gv(c,'edad_mediana');
+  return '<div style="border:1px solid #1e293b;border-radius:8px;overflow:hidden;display:flex;margin-bottom:8px;">'+seg+'</div><div style="font-size:.8em;line-height:1.7;">'+leg+'</div><div style="font-size:.8em;color:#64748b;margin-top:6px;">Edad mediana: '+(med==null?'—':med+' años')+'</div>';
+}
 function cellsOf(c, keys){
   return keys.map(function(k){ var v = gv(c,k); return '<div class="cell"><div class="l">'+ILABEL[k]+'</div><div class="v">'+fmt(v,k)+'</div></div>'; }).join('');
+}
+function travelSec(cc){
+  return '<div class="sec"><h3>🛂 Ficha de viaje (UK FCDO)</h3><div id="travel">Cargando aviso oficial...</div></div>';
+}
+function loadTravel(cc){
+  var el = document.getElementById('travel');
+  fetch('/api/travel/'+cc).then(r=>r.json()).then(function(d){
+    var h = '';
+    if (d.error) { el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Aviso FCDO no disponible ('+d.error.slice(0,60)+')</div>'; return; }
+    if (d.note) { el.innerHTML = '<div style="color:#64748b;font-size:.8em;">'+d.note+'</div>'; return; }
+    if (d.updated) h += '<div style="color:#64748b;font-size:.72em;margin-bottom:6px;">Actualizado: '+d.updated.replace('T',' ').slice(0,16)+' UTC</div>';
+    if (d.change) h += '<div style="color:#fbbf24;font-size:.75em;margin-bottom:6px;">🔄 '+d.change+'</div>';
+    var typeLab = { terrorism:'Terrorismo', 'safety':'Seguridad', nat:'Natural', entry:'Entrada' };
+    (d.alerts||[]).forEach(function(a){
+      h += '<div class="alerta" style="border:1px solid #f87171;border-radius:6px;padding:6px 8px;margin-bottom:6px;">⚠️ <b>'+a.title+'</b><br><span style="color:#94a3b8;font-size:.78em;">'+(a.body||'').slice(0,180)+'</span></div>';
+    });
+    if (!(d.alerts||[]).length) h += '<div style="color:#34d399;font-size:.78em;margin-bottom:6px;">✓ Sin alertas activas en el aviso oficial.</div>';
+    (d.parts||[]).forEach(function(pt){
+      h += '<div class="part"><b>'+pt.title+'</b><br>'+pt.body.slice(0,220)+'...</div>';
+    });
+    el.innerHTML = h;
+  }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Aviso FCDO no disponible ahora.</div>'; });
 }
 function loadCountry(cc){
   var dash = document.getElementById('dash');
@@ -191,11 +243,11 @@ function loadCountry(cc){
       '<div class="sec"><h3>🪖 Defensa</h3><div class="grid">'+cellsOf(c,['defensa_usd','defensa_pct','personal','aviones','barcos','tanques'])+'</div></div>' +
       '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
       '<div class="sec"><h3>🧳 Riesgo visita país</h3>'+riesgoVisita(c)+'</div>' +
+      travelSec(cc) +
       '<div class="sec"><h3>📰 Noticias</h3><div id="news">Cargando...</div></div>' +
-      '<div class="sec"><h3>⚠️ Alertas</h3><div id="alerts">Cargando...</div></div>' +
-      '<div class="sec"><h3>🔜 Más secciones</h3><div style="color:#64748b;font-size:.8em;">Timeline · Economía detallada · Relaciones internacionales · Infraestructuras · Turismo — próximos sprints.</div></div>';
+      '<div class="sec"><h3>⚠️ Alertas</h3><div id="alerts">Cargando...</div></div>';
     dash.innerHTML = html;
-    loadNews(cc, meta[0]); loadAlerts(meta[2], meta[3]);
+    loadTravel(cc); loadNews(cc, meta[0]); loadAlerts(meta[2], meta[3]);
   });
 }
 function loadNews(cc, name){
@@ -220,36 +272,23 @@ function loadAlerts(lat, lon){
 }
 function closeDash(){ document.getElementById('dash').style.display='none'; }
 
-var ALL = {};
-var HEAT = [
-  ['renta_pc','Renta pc'], ['pib','PIB'], ['poblacion','Población'], ['idh','IDH'], ['alfabetizacion','Alfabetización'], ['titulados','Titulados sup.'], ['edad_mediana','Edad mediana'], ['menores','Menores 0-14'], ['adolescentes','Adolescentes'], ['inflacion','Inflación'], ['desempleo','Desempleo'], ['defensa_usd','Gasto defensa'], ['defensa_pct','Defensa % PIB'], ['personal','Personal militar'], ['aviones','Aviones'], ['barcos','Barcos'], ['tanques','Tanques']
-];
-function toggleHeat(){
-  var h = document.getElementById('heat');
-  if (h.style.display === 'none') { h.style.display = 'block'; buildHeat(); } else h.style.display = 'none';
+function toggleOv(id){
+  var el = document.getElementById(id);
+  if (el.style.display === 'none') { document.querySelectorAll('.ov').forEach(function(x){ x.style.display='none'; }); el.style.display='block'; }
+  else el.style.display = 'none';
 }
-function toggleInfo(){
-  var h = document.getElementById('info');
-  if (h.style.display === 'none') h.style.display = 'block'; else h.style.display = 'none';
-}
+function toggleHeat(){ toggleOv('heat'); if (document.getElementById('heat').style.display === 'block') buildHeat(); }
+function ensureHeatLoaded(){ return new Promise(function(res){ ensureAll(function(){ res(); }); }); }
 function buildHeat(){
   var tbl = document.getElementById('heattable');
-  if (!Object.keys(ALL).length) {
-    tbl.innerHTML = '<div style="color:#64748b;text-align:center;">Cargando datos de los países...</div>';
-    fetch('/api/countries').then(r=>r.json()).then(function(d){
-      var ps = d.countries.map(function(cc){ return fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){ ALL[cc] = c.indicators; }); });
-      return Promise.all(ps);
-    }).then(function(){ buildHeat(); });
-    return;
-  }
+  if (!ALL_LOADED) { tbl.innerHTML = '<div style="color:#64748b;text-align:center;">Cargando datos de los países...</div>'; ensureHeatLoaded().then(buildHeat); return; }
   var codes = Object.keys(ALL).sort();
   var rows = HEAT.map(function(h){
-    var vals = codes.map(function(cc){ var v = ALL[cc][h[0]]; return v ? Number(v.value) : null; }).filter(function(v){ return v != null; });
+    var vals = codes.map(function(cc){ var v = gv(ALL[cc],h[0]); return v != null ? Number(v) : null; }).filter(function(v){ return v != null; });
     if (!vals.length) return '';
     var mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals), span = (mx - mn) || 1;
     var cells = codes.map(function(cc){
-      var v = ALL[cc][h[0]]; var n = v ? Number(v.value) : null;
-      var t = (n == null) ? -1 : (n - mn) / span;
+      var n = gv(ALL[cc],h[0]); var t = (n == null) ? -1 : (Number(n) - mn) / span;
       var hue = t < 0 ? 0 : (220 - 220 * t);
       return '<td style="background:hsl('+Math.max(0,Math.round(hue))+',60%,'+(t<0?12:Math.round(28+t*18))+'%);text-align:center;padding:4px 6px;border:1px solid #0b1020;font-size:11px;">'+(n==null?'—':fmt(n,h[0]))+'</td>';
     }).join('');
@@ -257,7 +296,62 @@ function buildHeat(){
   }).join('');
   var heads = '<tr><th style="border:1px solid #1e293b;"></th>'+codes.map(function(cc){ return '<th style="color:#00d4ff;font-size:10px;padding:4px 2px;border:1px solid #1e293b;">'+((META[cc]?META[cc][1]+' '+META[cc][0]:cc.toUpperCase()))+'</th>'; }).join('')+'</tr>';
   tbl.innerHTML = '<table style="border-collapse:collapse;margin:auto;">'+heads+rows+'</table>' +
-    '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:10px;">🔵 Azul = por debajo de la media · 🔴 Rojo = por encima (normalizado por indicador) · económicos: seed ref. · defensa: GFP/SIPRI 2025</div>';
+    '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:10px;">🔵 Azul = por debajo · 🔴 Rojo = por encima (normalizado por indicador) · económicos: seed ref. · defensa: GFP/SIPRI 2025</div>';
+}
+var HEAT = [
+  ['renta_pc','Renta pc'], ['pib','PIB'], ['poblacion','Población'], ['idh','IDH'], ['alfabetizacion','Alfabetización'], ['titulados','Titulados sup.'], ['edad_mediana','Edad mediana'], ['menores','Menores 0-14'], ['adolescentes','Adolescentes'], ['inflacion','Inflación'], ['desempleo','Desempleo'], ['defensa_usd','Gasto defensa'], ['defensa_pct','Defensa % PIB'], ['personal','Personal militar'], ['aviones','Aviones'], ['barcos','Barcos'], ['tanques','Tanques']
+];
+var CMP = ['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','seguridad_social','defensa_usd','defensa_pct','personal','aviones','barcos','tanques','edad_mediana','menores','adultos','mayores'];
+function openCmp(){
+  toggleOv('cmp');
+  if (document.getElementById('cmp').style.display !== 'block') return;
+  ensureHeatLoaded().then(function(){
+    var codes = Object.keys(ALL).sort();
+    var opts = codes.map(function(cc){ return '<option value="'+cc+'">'+(META[cc]?META[cc][1]+' '+META[cc][0]:cc)+'</option>'; }).join('');
+    document.getElementById('cmpA').innerHTML = opts;
+    document.getElementById('cmpB').innerHTML = opts;
+    document.getElementById('cmpA').value = 'es';
+    document.getElementById('cmpB').value = codes.indexOf('ma')!==-1 ? 'ma' : codes[1];
+    buildCmp();
+  });
+}
+function buildCmp(){
+  if (!ALL_LOADED) return;
+  var a = document.getElementById('cmpA').value, b = document.getElementById('cmpB').value;
+  var rows = CMP.map(function(k){
+    var va = gv(ALL[a],k), vb = gv(ALL[b],k);
+    return '<tr><td style="padding:5px 8px;border:1px solid #1e293b;color:#94a3b8;font-size:.8em;">'+ILABEL[k]+'</td>' +
+      '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(va,k)+'</td>' +
+      '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(vb,k)+'</td></tr>';
+  }).join('');
+  document.getElementById('cmptable').innerHTML =
+    '<table style="border-collapse:collapse;width:100%;"><tr><th style="text-align:left;border:1px solid #1e293b;"></th>' +
+    '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[a]?META[a][1]+' '+META[a][0]:a)+'</th>' +
+    '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[b]?META[b][1]+' '+META[b][0]:b)+'</th></tr>'+rows+'</table>';
+}
+var RANK_OPTS = ['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','defensa_usd','defensa_pct','personal','aviones','barcos','tanques','edad_mediana','menores','adultos','mayores'];
+function openRank(){
+  toggleOv('rank');
+  if (document.getElementById('rank').style.display !== 'block') return;
+  ensureHeatLoaded().then(function(){
+    document.getElementById('rankInd').innerHTML = RANK_OPTS.map(function(k){ return '<option value="'+k+'">'+ILABEL[k]+'</option>'; }).join('');
+    buildRank();
+  });
+}
+function buildRank(){
+  if (!ALL_LOADED) return;
+  var k = document.getElementById('rankInd').value;
+  var asc = INV[k];
+  var arr = Object.keys(ALL).map(function(cc){ return { cc: cc, v: gv(ALL[cc],k) }; }).filter(function(x){ return x.v != null; })
+    .sort(function(p,q){ return asc ? p.v - q.v : q.v - p.v; });
+  var rows = arr.map(function(x,i){
+    return '<tr><td style="padding:5px 8px;border:1px solid #1e293b;color:#64748b;">'+ (i+1) +'</td>' +
+      '<td style="padding:5px 8px;border:1px solid #1e293b;">'+(META[x.cc]?META[x.cc][1]+' '+META[x.cc][0]:x.cc)+'</td>' +
+      '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(x.v,k)+'</td></tr>';
+  }).join('');
+  var note = (asc ? 'Menor primero' : 'Mayor primero') + (INV[k] ? ' · para este indicador, menor = mejor' : '');
+  document.getElementById('ranktable').innerHTML = '<table style="border-collapse:collapse;width:100%;"><tr><th style="border:1px solid #1e293b;color:#64748b;">#</th><th style="text-align:left;border:1px solid #1e293b;color:#00d4ff;">País</th><th style="border:1px solid #1e293b;color:#00d4ff;text-align:right;">'+ILABEL[k]+'</th></tr>'+rows+'</table>' +
+    '<div style="text-align:center;color:#64748b;font-size:.72em;margin-top:8px;">'+note+'</div>';
 }
 
 function load(){
