@@ -274,6 +274,24 @@ function loadTravel(cc){
     el.innerHTML = h;
   }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Aviso FCDO no disponible ahora.</div>'; });
 }
+function trendingSec(cc){
+  return '<div class="sec"><h3>🔍 Qué se busca sobre este país</h3><div id="trending">Cargando búsquedas reales...</div></div>';
+}
+function loadTrending(cc){
+  var el = document.getElementById('trending');
+  fetch('/api/trending/'+cc).then(r=>r.json()).then(function(d){
+    var lab = { hoteles:'🏨 Hoteles', precios:'💰 Precios', trabajo:'💼 Trabajo', vacaciones:'🌴 Vacaciones', vuelos:'✈️ Vuelos', comida:'🍽️ Comida', seguridad:'🛡️ Seguridad', alquiler:'🏠 Alquiler' };
+    var h = '<div style="color:#64748b;font-size:.72em;margin-bottom:6px;">Sugerencias reales de búsqueda de Google (autocompletar) · se actualiza cada 6 h.</div>';
+    var any = false;
+    Object.keys(d.topics||{}).forEach(function(t){
+      var s = d.topics[t];
+      if (!s || !s.length) return;
+      any = true;
+      h += '<div class="part"><b>'+lab[t]+'</b><br>'+s.map(function(x){ return '• '+x; }).join('<br>')+'</div>';
+    });
+    el.innerHTML = any ? h : '<div style="color:#64748b;font-size:.8em;">Sin datos de búsquedas ahora.</div>';
+  }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Tendencias de búsqueda no disponibles ahora.</div>'; });
+}
 function loadCountry(cc){
   var dash = document.getElementById('dash');
   dash.style.display = 'block';
@@ -292,10 +310,11 @@ function loadCountry(cc){
       '<div class="sec"><h3>🛡️ Riesgo</h3><div class="risk">'+riesgo(c).map(function(r){ return '<span class="'+r[1]+'">'+r[0]+'</span>'; }).join('')+'</div></div>' +
       '<div class="sec"><h3>🧳 Riesgo visita país</h3>'+riesgoVisita(c)+'</div>' +
       travelSec(cc) +
+      trendingSec(cc) +
       '<div class="sec"><h3>📰 Noticias</h3><div id="news">Cargando...</div></div>' +
       '<div class="sec"><h3>⚠️ Alertas</h3><div id="alerts">Cargando...</div></div>';
     dash.innerHTML = html;
-    loadTravel(cc); loadNews(cc); loadAlerts(meta[2], meta[3]);
+    loadTravel(cc); loadTrending(cc); loadNews(cc); loadAlerts(meta[2], meta[3]);
   });
 }
 function loadNews(cc){

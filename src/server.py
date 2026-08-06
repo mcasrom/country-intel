@@ -34,6 +34,10 @@ TRAVEL_SLUGS = {
 FCDO_URL = "https://www.gov.uk/api/content/foreign-travel-advice/{slug}"
 
 TRENDS_FILE = BASE_DIR / "data" / "trends.json"
+TRENDING_DIR = BASE_DIR / "data" / "trending"
+TRENDING_TTL = 6 * 3600
+TOPICS = ["hoteles", "precios", "trabajo", "vacaciones", "vuelos", "comida", "seguridad", "alquiler"]
+AC_URL = "https://suggestqueries.google.com/complete/search?client=firefox&hl=es&q={q}"
 NAMES = {
     "es": "España", "fr": "Francia", "de": "Alemania", "it": "Italia", "gb": "Reino Unido",
     "us": "Estados Unidos", "cn": "China", "br": "Brasil", "in": "India", "mx": "México",
@@ -152,6 +156,35 @@ def news(code: str):
         src = "google-news-rss"
     NEWS_DIR.mkdir(parents=True, exist_ok=True)
     out = {"country": code.lower(), "source": src, "articles": arts or []}
+    cache.write_text(json.dumps(out, ensure_ascii=False))
+    return out
+
+
+def _autocomplete(q: str):
+    url = AC_URL.format(q=urllib.parse.quote(q))
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (research)"})
+    with urllib.request.urlopen(req, timeout=15) as r:
+        data = json.loads(r.read().decode("utf-8"))
+        return data[1] if isinstance(data, list) and len(data) > 1 else []
+
+
+@app.get("/api/trending/{code}")
+def trending(code: str):
+    cc = code.lower()
+    name = NAMES.get(cc, cc.upper()).lower()
+    cache = TRENDING_DIR / f"{cc}.json"
+    if cache.exists() and (time.time() - cache.stat().st_mtime) < TRENDING_TTL:
+        return json.loads(cache.read_text())
+    topics = {}
+    base = f"{name} "
+    for t in TOPICS:
+        try:
+            sugs = _autocomplete(base + t)
+            topics[t] = [s for s in sugs if s.strip().lower() != (base + t).strip().lower()][:5]
+        except Exception:
+            topics[t] = []
+    TRENDING_DIR.mkdir(parents=True, exist_ok=True)
+    out = {"country": cc, "name": name, "topics": topics}
     cache.write_text(json.dumps(out, ensure_ascii=False))
     return out
 
