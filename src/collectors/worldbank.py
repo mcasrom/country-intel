@@ -137,6 +137,15 @@ class WorldBank(BaseCollector):
             print(f"  {label}: {len(found)} paises", flush=True)
             time.sleep(float(CFG.get("sleep_worldbank", 0.8)))
 
+        # net_mig (SM.POP.NETM) es el valor ABSOLUTO de migración neta (personas);
+        # se convierte a tasa por 1000 habitantes usando la población para que sea
+        # consistente con el seed (por mil).
+        pops = vals.get("poblacion", {})
+        for cc, v in vals.get("net_mig", {}).items():
+            p = pops.get(cc, {}).get("value")
+            if p:
+                v["value"] = v["value"] / (float(p) / 1000.0)
+
         max_c = int(CFG.get("max_countries", 0))
         codes = sorted(self.geo)
         if max_c and len(codes) > max_c:

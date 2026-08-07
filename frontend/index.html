@@ -69,6 +69,19 @@
   .welcome{position:fixed;inset:0;background:rgba(5,8,20,.85);z-index:2000;display:flex;align-items:center;justify-content:center;padding:16px}
   .wcard{background:#111827;border:1px solid #00d4ff;border-radius:14px;padding:24px;max-width:480px;width:100%;box-shadow:0 10px 40px rgba(0,0,0,.6)}
   .wcard h2{color:#00d4ff;margin:0 0 14px;font-size:1.1em}
+  body.light{background:#f1f5f9;color:#0f172a}
+  body.light header{background:#ffffff;border-color:#e2e8f0}
+  body.light h1,body.light .cname,body.light .tab{color:#0369a1}
+  body.light .ov{background:#f1f5f9}
+  body.light .cell,body.light .part,body.light .tab,body.light .wcard,body.light .fstage,body.light #heat table,body.light select.ci,body.light button.ci{background:#ffffff;border-color:#e2e8f0;color:#0f172a}
+  body.light .tabbody,body.light .nota,body.light .resumen{background:#f8fafc;border-color:#e2e8f0;color:#334155}
+  body.light .cell .l,body.light .cmeta,body.light footer,body.light .wcard p{color:#64748b}
+  body.light .sec h3,body.light .resumen b,body.light .nota b{color:#0284c7}
+  body.light .news a,body.light a{color:#0369a1}
+  body.light button.ci{color:#0369a1;border-color:#0369a1}
+  body.light .welcome{background:rgba(241,245,249,.92)}
+  body.light .leaflet-container{background:#dbeafe}
+  body.light .leaflet-popup-content-wrapper,body.light .leaflet-popup-tip{background:#ffffff;color:#0f172a}
 </style>
 </head>
 <body>
@@ -82,6 +95,7 @@
     <button class="ci" onclick="toggleTrends()">📈 Tendencias</button>
     <button class="ci" onclick="toggleWebtr()">🔍 Tendencias web</button>
     <button class="ci" onclick="toggleView()">🗂️ Vista</button>
+    <button class="ci" id="themeBtn" onclick="toggleTheme()" title="Tema claro/oscuro">🌙</button>
     <a class="ci" style="text-decoration:none;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">☕ Apóyame</a>
   </div>
 </header>
@@ -205,14 +219,14 @@ function fmt(v, ind){
   if (ind === "inflacion" || ind === "desempleo" || ind === "defensa_pct") return Number(v).toFixed(1) + "%";
   if (ind === "pib") { var n=Number(v); return n>=1e12 ? "$"+(n/1e12).toFixed(2)+"T" : "$"+(n/1e9).toFixed(1)+"B"; }
   if (ind === "defensa_usd") { var n=Number(v); return "$"+(n/1e9).toFixed(1)+"B"; }
-  if (ind === "renta_pc") return "$" + Number(v).toLocaleString();
+  if (ind === "renta_pc") return "$" + Math.round(Number(v)).toLocaleString();
   if (ind === "poblacion") return Number(v)>=1e6 ? (Number(v)/1e6).toFixed(1)+"M" : Number(v).toLocaleString();
   if (ind === "alfabetizacion" || ind === "titulados" || ind === "seguridad_social" || ind === "menores" || ind === "adolescentes" || ind === "adultos" || ind === "mayores") return Number(v).toFixed(1) + "%";
   if (ind === "personal" || ind === "aviones" || ind === "barcos" || ind === "tanques") return Number(v).toLocaleString();
   if (ind === "edad_mediana") return Number(v) + " años";
   if (ind === "net_mig") { var n=Number(v); return (n>0?"+":"")+n.toFixed(1)+"‰"; }
   if (ind === "migrant_pct") return Number(v).toFixed(1) + "%";
-  if (ind === "pib_ppa_pc") return "$" + Number(v).toLocaleString();
+  if (ind === "pib_ppa_pc") return "$" + Math.round(Number(v)).toLocaleString();
   if (ind === "esperanza_vida" || ind === "esperanza_saludable") return Number(v).toFixed(1) + " años";
   if (ind === "homicidios") return Number(v).toFixed(1) + " /100k";
   if (ind === "gini" || ind === "corrupcion" || ind === "libertad_prensa") return Number(v).toFixed(1);
@@ -342,13 +356,15 @@ function riesgoVisita(c){
 }
 function edadBar(c){
   var bandas = [["menores",0.66,0.67,1],["adolescentes",0.20,0.83,0.61],["adultos",0.98,0.75,0.14],["mayores",0.97,0.44,0.44]];
+  var hasAny = bandas.some(function(b){ return gv(c,b[0]) != null; });
+  if (!hasAny) return '<div style="color:#64748b;font-size:.8em;">Sin datos de estructura etaria para este país.</div>';
   var seg = bandas.map(function(b){
     var v = Number(gv(c,b[0])) || 0;
     return '<div style="width:'+v+'%;background:rgb('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+');height:22px;display:inline-block;"></div>';
   }).join('');
   var leg = bandas.map(function(b){
-    var v = Number(gv(c,b[0])) || 0;
-    return '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;background:rgb('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+');"></span>'+ILABEL[b[0]]+': '+v.toFixed(1)+'%';
+    var v = gv(c,b[0]);
+    return '<span style="display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;background:rgb('+(b[1]*255)+','+(b[2]*255)+','+(b[3]*255)+');"></span>'+ILABEL[b[0]]+': '+(v==null?'—':Number(v).toFixed(1)+'%');
   }).join('<br>');
   var med = gv(c,'edad_mediana');
   return '<div style="border:1px solid #1e293b;border-radius:8px;overflow:hidden;display:flex;margin-bottom:8px;">'+seg+'</div><div style="font-size:.8em;line-height:1.7;">'+leg+'</div><div style="font-size:.8em;color:#64748b;margin-top:6px;">Edad mediana: '+(med==null?'—':med+' años')+'</div>';
@@ -554,6 +570,17 @@ function shareCountry(cc){
   else { alert(text); }
 }
 
+function toggleTheme(){
+  var light = document.body.classList.toggle('light');
+  try { localStorage.setItem('ci_theme', light ? 'light' : 'dark'); } catch(e){}
+  document.getElementById('themeBtn').textContent = light ? '☀️' : '🌙';
+  if (map) setTimeout(function(){ map.invalidateSize(); }, 200);
+}
+function applyTheme(){
+  var t = 'dark';
+  try { t = localStorage.getItem('ci_theme') || 'dark'; } catch(e){}
+  if (t === 'light') { document.body.classList.add('light'); document.getElementById('themeBtn').textContent = '☀️'; }
+}
 function closeWelcome(){ document.getElementById('welcome').style.display = 'none'; }
 function togTab(btn, id){
   var el = document.getElementById(id);
@@ -681,7 +708,7 @@ function handleDeepLink(){
 }
 function boot(){
   fetch('/api/config').then(r=>r.json()).then(applyConfig).catch(function(){})
-    .then(function(){ initMap(); load(); handleDeepLink(); });
+    .then(function(){ applyTheme(); initMap(); load(); handleDeepLink(); });
 }
 boot();
 </script>
