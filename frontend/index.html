@@ -424,13 +424,15 @@ function loadTrending(cc){
   var el = document.getElementById('trending');
   fetch('/api/trending/'+cc).then(r=>r.json()).then(function(d){
     var lab = { hoteles:'🏨 Hoteles', precios:'💰 Precios', trabajo:'💼 Trabajo', vacaciones:'🌴 Vacaciones', vuelos:'✈️ Vuelos', comida:'🍽️ Comida', seguridad:'🛡️ Seguridad', alquiler:'🏠 Alquiler' };
-    var h = '<div style="color:#64748b;font-size:.72em;margin-bottom:6px;">Sugerencias reales de búsqueda de Google (autocompletar) · se actualiza cada 6 h.</div>';
+    var h = '<div style="color:#64748b;font-size:.72em;margin-bottom:6px;">Sugerencias reales de búsqueda de Google (autocompletar) · se actualiza cada 6 h · <b style="color:#00d4ff;">clica una búsqueda para abrirla en Google</b>.</div>';
     var any = false;
     Object.keys(d.topics||{}).forEach(function(t){
       var s = d.topics[t];
       if (!s || !s.length) return;
       any = true;
-      h += '<div class="part"><b>'+lab[t]+'</b><br>'+s.map(function(x){ return '• '+x; }).join('<br>')+'</div>';
+      h += '<div class="part"><b>'+lab[t]+'</b><br><div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:4px;">'+s.map(function(x){
+        return '<a href="https://www.google.com/search?q='+encodeURIComponent(x)+'" target="_blank" rel="noopener" style="background:#111827;border:1px solid #1e293b;border-radius:14px;padding:3px 10px;font-size:.72em;color:#00d4ff;text-decoration:none;">🔍 '+x+'</a>';
+      }).join('')+'</div></div>';
     });
     el.innerHTML = any ? h : '<div style="color:#64748b;font-size:.8em;">Sin datos de búsquedas ahora.</div>';
   }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Tendencias de búsqueda no disponibles ahora.</div>'; });
