@@ -196,7 +196,13 @@ def _autocomplete(q: str):
 
 
 def _refresh_trending(cc: str):
-    name = NAMES.get(cc, cc.upper()).lower()
+    # Nombre real del país: NAMES curado (15) o nombre WB de geo.json (217), nunca el código ISO.
+    geo_name = ""
+    try:
+        geo_name = (json.loads((BASE_DIR / "data" / "geo.json").read_text()).get(cc, {}) or {}).get("name", "")
+    except Exception:
+        geo_name = ""
+    name = (NAMES.get(cc) or geo_name or cc.upper()).lower()
     cache = TRENDING_DIR / f"{cc}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < TRENDING_TTL:
         return json.loads(cache.read_text())
