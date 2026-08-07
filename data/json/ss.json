@@ -1,6 +1,6 @@
 {
  "country": "ss",
- "generated": "2026-08-07T03:14:03.541316+00:00",
+ "generated": "2026-08-07T08:54:30.228893+00:00",
  "geo": {
   "name": "South Sudan",
   "lat": 4.85,
@@ -8,6 +8,12 @@
   "iso2": "ss"
  },
  "indicators": {
+  "desempleo": {
+   "value": "12.374",
+   "updated": "2026-08-07T08:54:30.121017+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "inflacion": {
    "value": "91.4408220769046",
    "updated": "2026-08-06T16:57:05.176017+00:00",
@@ -22,9 +28,9 @@
   },
   "poblacion": {
    "value": "11943408",
-   "updated": "2026-08-06T16:57:05.176006+00:00",
+   "updated": "2026-08-07T08:54:30.121007+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

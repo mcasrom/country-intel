@@ -1,6 +1,6 @@
 {
  "country": "tc",
- "generated": "2026-08-07T03:14:03.543377+00:00",
+ "generated": "2026-08-07T08:54:30.231111+00:00",
  "geo": {
   "name": "Turks and Caicos Islands",
   "lat": 21.4602778,
@@ -16,15 +16,21 @@
   },
   "pib": {
    "value": "1745378000",
-   "updated": "2026-08-06T16:57:05.176396+00:00",
+   "updated": "2026-08-07T08:54:30.121196+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "38009.5079479808",
+   "updated": "2026-08-07T08:54:30.121207+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "46535",
-   "updated": "2026-08-06T16:57:05.176385+00:00",
+   "updated": "2026-08-07T08:54:30.121186+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "37506.7798431288",

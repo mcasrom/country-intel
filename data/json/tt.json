@@ -1,6 +1,6 @@
 {
  "country": "tt",
- "generated": "2026-08-07T03:14:03.547413+00:00",
+ "generated": "2026-08-07T08:54:30.234618+00:00",
  "geo": {
   "name": "Trinidad and Tobago",
   "lat": 10.6596,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "3.318",
-   "updated": "2026-08-06T16:57:05.177142+00:00",
+   "updated": "2026-08-07T08:54:30.121776+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "0.526884625776839",
@@ -28,15 +28,21 @@
   },
   "pib": {
    "value": "25633544529.4849",
-   "updated": "2026-08-06T16:57:05.177117+00:00",
+   "updated": "2026-08-07T08:54:30.121753+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "36381.2720794439",
+   "updated": "2026-08-07T08:54:30.121765+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "1368333",
-   "updated": "2026-08-06T16:57:05.177106+00:00",
+   "updated": "2026-08-07T08:54:30.121741+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "18733.4110406494",

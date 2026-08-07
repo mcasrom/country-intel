@@ -1,6 +1,6 @@
 {
  "country": "sk",
- "generated": "2026-08-07T03:14:03.539838+00:00",
+ "generated": "2026-08-07T08:54:30.226343+00:00",
  "geo": {
   "name": "Slovak Republic",
   "lat": 48.1484,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "5.3",
-   "updated": "2026-08-06T16:57:05.175645+00:00",
+   "updated": "2026-08-07T08:54:30.120777+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "2.75760909424279",
@@ -28,15 +28,21 @@
   },
   "pib": {
    "value": "140934076532.375",
-   "updated": "2026-08-06T16:57:05.175621+00:00",
+   "updated": "2026-08-07T08:54:30.120752+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "47846.6169154961",
+   "updated": "2026-08-07T08:54:30.120765+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "5422069",
-   "updated": "2026-08-06T16:57:05.175609+00:00",
+   "updated": "2026-08-07T08:54:30.120733+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "25992.6748502048",

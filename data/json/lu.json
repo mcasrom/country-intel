@@ -1,6 +1,6 @@
 {
  "country": "lu",
- "generated": "2026-08-07T03:14:03.520857+00:00",
+ "generated": "2026-08-07T08:54:30.196705+00:00",
  "geo": {
   "name": "Luxembourg",
   "lat": 49.61,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "6.4",
-   "updated": "2026-08-06T16:57:05.169724+00:00",
+   "updated": "2026-08-07T08:54:30.114994+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "2.05113269954859",
@@ -34,15 +34,21 @@
   },
   "pib": {
    "value": "93279851863.4062",
-   "updated": "2026-08-06T16:57:05.169691+00:00",
+   "updated": "2026-08-07T08:54:30.114962+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "156079.3685607",
+   "updated": "2026-08-07T08:54:30.114977+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "677012",
-   "updated": "2026-08-06T16:57:05.169678+00:00",
+   "updated": "2026-08-07T08:54:30.114949+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "137781.681659123",

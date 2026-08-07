@@ -1,6 +1,6 @@
 {
  "country": "kg",
- "generated": "2026-08-07T03:14:03.516438+00:00",
+ "generated": "2026-08-07T08:54:30.191773+00:00",
  "geo": {
   "name": "Kyrgyz Republic",
   "lat": 42.8851,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "3.491",
-   "updated": "2026-08-06T16:57:05.167836+00:00",
+   "updated": "2026-08-07T08:54:30.113975+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "4.99760701207323",
@@ -34,15 +34,21 @@
   },
   "pib": {
    "value": "18161630698.9052",
-   "updated": "2026-08-06T16:57:05.167807+00:00",
+   "updated": "2026-08-07T08:54:30.113946+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "8208.03081858011",
+   "updated": "2026-08-07T08:54:30.113960+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "7221868",
-   "updated": "2026-08-06T16:57:05.167794+00:00",
+   "updated": "2026-08-07T08:54:30.113934+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "2514.81066933171",

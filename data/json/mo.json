@@ -1,6 +1,6 @@
 {
  "country": "mo",
- "generated": "2026-08-07T03:14:03.524832+00:00",
+ "generated": "2026-08-07T08:54:30.203936+00:00",
  "geo": {
   "name": "Macao SAR, China",
   "lat": 22.1667,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "2.262",
-   "updated": "2026-08-06T16:57:05.171252+00:00",
+   "updated": "2026-08-07T08:54:30.116618+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "0.672498598854365",
@@ -34,15 +34,21 @@
   },
   "pib": {
    "value": "49467258923.3244",
-   "updated": "2026-08-06T16:57:05.171214+00:00",
+   "updated": "2026-08-07T08:54:30.116591+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "127144.298137913",
+   "updated": "2026-08-07T08:54:30.116606+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "687000",
-   "updated": "2026-08-06T16:57:05.171203+00:00",
+   "updated": "2026-08-07T08:54:30.116579+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "72004.7437020733",

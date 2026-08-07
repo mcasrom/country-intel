@@ -1,6 +1,6 @@
 {
  "country": "jg",
- "generated": "2026-08-07T03:14:03.515107+00:00",
+ "generated": "2026-08-07T08:54:30.190163+00:00",
  "geo": {
   "name": "Channel Islands",
   "lat": 0.0,
@@ -26,11 +26,17 @@
    "source": "worldbank",
    "year": ""
   },
+  "pib": {
+   "value": "12507320838.3932",
+   "updated": "2026-08-07T08:54:30.113718+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "poblacion": {
    "value": "168126",
-   "updated": "2026-08-06T16:57:05.167342+00:00",
+   "updated": "2026-08-07T08:54:30.113703+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

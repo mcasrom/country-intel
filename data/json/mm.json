@@ -1,6 +1,6 @@
 {
  "country": "mm",
- "generated": "2026-08-07T03:14:03.524096+00:00",
+ "generated": "2026-08-07T08:54:30.203040+00:00",
  "geo": {
   "name": "Myanmar",
   "lat": 21.914,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "2.887",
-   "updated": "2026-08-06T16:57:05.171035+00:00",
+   "updated": "2026-08-07T08:54:30.116500+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "0.1",
@@ -28,15 +28,21 @@
   },
   "pib": {
    "value": "74068349523.8095",
-   "updated": "2026-08-06T16:57:05.171020+00:00",
+   "updated": "2026-08-07T08:54:30.116362+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "6006.17514543646",
+   "updated": "2026-08-07T08:54:30.116380+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "54500091",
-   "updated": "2026-08-06T16:57:05.171006+00:00",
+   "updated": "2026-08-07T08:54:30.116343+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "1359.05001560107",

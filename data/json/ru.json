@@ -1,6 +1,6 @@
 {
  "country": "ru",
- "generated": "2026-08-07T03:14:03.537205+00:00",
+ "generated": "2026-08-07T08:54:30.222732+00:00",
  "geo": {
   "name": "Russian Federation",
   "lat": 55.7558,
@@ -10,9 +10,9 @@
  "indicators": {
   "desempleo": {
    "value": "2.43",
-   "updated": "2026-08-06T16:57:05.174902+00:00",
+   "updated": "2026-08-07T08:54:30.120162+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "8.43486410496723",
@@ -28,15 +28,21 @@
   },
   "pib": {
    "value": "2186462268813.08",
-   "updated": "2026-08-06T16:57:05.174877+00:00",
+   "updated": "2026-08-07T08:54:30.120133+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "47686.06640625",
+   "updated": "2026-08-07T08:54:30.120148+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "143669648",
-   "updated": "2026-08-06T16:57:05.174866+00:00",
+   "updated": "2026-08-07T08:54:30.120119+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "14961.8974609375",

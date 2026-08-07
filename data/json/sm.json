@@ -1,6 +1,6 @@
 {
  "country": "sm",
- "generated": "2026-08-07T03:14:03.540298+00:00",
+ "generated": "2026-08-07T08:54:30.227150+00:00",
  "geo": {
   "name": "San Marino",
   "lat": 43.9322,
@@ -20,11 +20,23 @@
    "source": "worldbank",
    "year": ""
   },
+  "pib": {
+   "value": "2027243193.5116",
+   "updated": "2026-08-07T08:54:30.120850+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "pib_ppa_pc": {
+   "value": "78810.3378046111",
+   "updated": "2026-08-07T08:54:30.120862+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "poblacion": {
    "value": "33977",
-   "updated": "2026-08-06T16:57:05.175757+00:00",
+   "updated": "2026-08-07T08:54:30.120838+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }
