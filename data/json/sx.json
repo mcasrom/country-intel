@@ -1,6 +1,6 @@
 {
  "country": "sx",
- "generated": "2026-08-07T09:38:13.959992+00:00",
+ "generated": "2026-08-07T10:03:45.634549+00:00",
  "geo": {
   "name": "Sint Maarten (Dutch part)",
   "lat": 0.0,
@@ -10,43 +10,67 @@
  "indicators": {
   "esperanza_vida": {
    "value": "76.528",
-   "updated": "2026-08-07T09:38:13.855256+00:00",
+   "updated": "2026-08-07T10:03:45.489414+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.44",
+   "updated": "2026-08-07T10:03:45.489433+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "3.92363832601723",
+   "updated": "2026-08-07T10:03:45.489421+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "migrant_pct": {
    "value": "69.5",
-   "updated": "2026-08-07T09:38:13.855241+00:00",
+   "updated": "2026-08-07T10:03:45.489402+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "12.8719723183391",
-   "updated": "2026-08-07T09:38:13.855225+00:00",
+   "updated": "2026-08-07T10:03:45.489395+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "1797836648.04469",
-   "updated": "2026-08-07T09:38:13.855177+00:00",
+   "updated": "2026-08-07T10:03:45.489375+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "53846.7442635227",
-   "updated": "2026-08-07T09:38:13.855193+00:00",
+   "updated": "2026-08-07T10:03:45.489382+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "43350",
-   "updated": "2026-08-07T09:38:13.855161+00:00",
+   "updated": "2026-08-07T10:03:45.489368+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Latin America & Caribbean ",
+   "updated": "2026-08-07T10:03:45.489439+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "41472.5870367865",
-   "updated": "2026-08-07T09:38:13.855209+00:00",
+   "updated": "2026-08-07T10:03:45.489389+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "100",
+   "updated": "2026-08-07T10:03:45.489427+00:00",
    "source": "worldbank",
    "year": "2024"
   }

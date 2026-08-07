@@ -3,1302 +3,1519 @@
   "name": "Spain",
   "lat": 40.4167,
   "lon": -3.70327,
-  "iso3": "ESP"
+  "iso3": "ESP",
+  "region": "Europe & Central Asia"
  },
  "fr": {
   "name": "France",
   "lat": 48.8566,
   "lon": 2.35097,
-  "iso3": "FRA"
+  "iso3": "FRA",
+  "region": "Europe & Central Asia"
  },
  "de": {
   "name": "Germany",
   "lat": 52.5235,
   "lon": 13.4115,
-  "iso3": "DEU"
+  "iso3": "DEU",
+  "region": "Europe & Central Asia"
  },
  "it": {
   "name": "Italy",
   "lat": 41.8955,
   "lon": 12.4823,
-  "iso3": "ITA"
+  "iso3": "ITA",
+  "region": "Europe & Central Asia"
  },
  "gb": {
   "name": "United Kingdom",
   "lat": 51.5002,
   "lon": -0.126236,
-  "iso3": "GBR"
+  "iso3": "GBR",
+  "region": "Europe & Central Asia"
  },
  "us": {
   "name": "United States",
   "lat": 38.8895,
   "lon": -77.032,
-  "iso3": "USA"
+  "iso3": "USA",
+  "region": "North America"
  },
  "cn": {
   "name": "China",
   "lat": 40.0495,
   "lon": 116.286,
-  "iso3": "CHN"
+  "iso3": "CHN",
+  "region": "East Asia & Pacific"
  },
  "br": {
   "name": "Brazil",
   "lat": -15.7801,
   "lon": -47.9292,
-  "iso3": "BRA"
+  "iso3": "BRA",
+  "region": "Latin America & Caribbean "
  },
  "in": {
   "name": "India",
   "lat": 28.6353,
   "lon": 77.225,
-  "iso3": "IND"
+  "iso3": "IND",
+  "region": "South Asia"
  },
  "mx": {
   "name": "Mexico",
   "lat": 19.427,
   "lon": -99.1276,
-  "iso3": "MEX"
+  "iso3": "MEX",
+  "region": "Latin America & Caribbean "
  },
  "ma": {
   "name": "Morocco",
   "lat": 33.9905,
   "lon": -6.8704,
-  "iso3": "MAR"
+  "iso3": "MAR",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "dz": {
   "name": "Algeria",
   "lat": 36.7397,
   "lon": 3.05097,
-  "iso3": "DZA"
+  "iso3": "DZA",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "eg": {
   "name": "Egypt, Arab Rep.",
   "lat": 30.0982,
   "lon": 31.2461,
-  "iso3": "EGY"
+  "iso3": "EGY",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "pt": {
   "name": "Portugal",
   "lat": 38.7072,
   "lon": -9.13552,
-  "iso3": "PRT"
+  "iso3": "PRT",
+  "region": "Europe & Central Asia"
  },
  "au": {
   "name": "Australia",
   "lat": -35.282,
   "lon": 149.129,
-  "iso3": "AUS"
+  "iso3": "AUS",
+  "region": "East Asia & Pacific"
  },
  "aw": {
   "name": "Aruba",
   "lat": 12.5167,
   "lon": -70.0167,
-  "iso3": "ABW"
+  "iso3": "ABW",
+  "region": "Latin America & Caribbean "
  },
  "af": {
   "name": "Afghanistan",
   "lat": 34.5228,
   "lon": 69.1761,
-  "iso3": "AFG"
+  "iso3": "AFG",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "ao": {
   "name": "Angola",
   "lat": -8.81155,
   "lon": 13.242,
-  "iso3": "AGO"
+  "iso3": "AGO",
+  "region": "Sub-Saharan Africa "
  },
  "al": {
   "name": "Albania",
   "lat": 41.3317,
   "lon": 19.8172,
-  "iso3": "ALB"
+  "iso3": "ALB",
+  "region": "Europe & Central Asia"
  },
  "ad": {
   "name": "Andorra",
   "lat": 42.5075,
   "lon": 1.5218,
-  "iso3": "AND"
+  "iso3": "AND",
+  "region": "Europe & Central Asia"
  },
  "ae": {
   "name": "United Arab Emirates",
   "lat": 24.4764,
   "lon": 54.3705,
-  "iso3": "ARE"
+  "iso3": "ARE",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "ar": {
   "name": "Argentina",
   "lat": -34.6118,
   "lon": -58.4173,
-  "iso3": "ARG"
+  "iso3": "ARG",
+  "region": "Latin America & Caribbean "
  },
  "am": {
   "name": "Armenia",
   "lat": 40.1596,
   "lon": 44.509,
-  "iso3": "ARM"
+  "iso3": "ARM",
+  "region": "Europe & Central Asia"
  },
  "as": {
   "name": "American Samoa",
   "lat": -14.2846,
   "lon": -170.691,
-  "iso3": "ASM"
+  "iso3": "ASM",
+  "region": "East Asia & Pacific"
  },
  "ag": {
   "name": "Antigua and Barbuda",
   "lat": 17.1175,
   "lon": -61.8456,
-  "iso3": "ATG"
+  "iso3": "ATG",
+  "region": "Latin America & Caribbean "
  },
  "at": {
   "name": "Austria",
   "lat": 48.2201,
   "lon": 16.3798,
-  "iso3": "AUT"
+  "iso3": "AUT",
+  "region": "Europe & Central Asia"
  },
  "az": {
   "name": "Azerbaijan",
   "lat": 40.3834,
   "lon": 49.8932,
-  "iso3": "AZE"
+  "iso3": "AZE",
+  "region": "Europe & Central Asia"
  },
  "bi": {
   "name": "Burundi",
   "lat": -3.3784,
   "lon": 29.3639,
-  "iso3": "BDI"
+  "iso3": "BDI",
+  "region": "Sub-Saharan Africa "
  },
  "be": {
   "name": "Belgium",
   "lat": 50.8371,
   "lon": 4.36761,
-  "iso3": "BEL"
+  "iso3": "BEL",
+  "region": "Europe & Central Asia"
  },
  "bj": {
   "name": "Benin",
   "lat": 6.4779,
   "lon": 2.6323,
-  "iso3": "BEN"
+  "iso3": "BEN",
+  "region": "Sub-Saharan Africa "
  },
  "bf": {
   "name": "Burkina Faso",
   "lat": 12.3605,
   "lon": -1.53395,
-  "iso3": "BFA"
+  "iso3": "BFA",
+  "region": "Sub-Saharan Africa "
  },
  "bd": {
   "name": "Bangladesh",
   "lat": 23.7055,
   "lon": 90.4113,
-  "iso3": "BGD"
+  "iso3": "BGD",
+  "region": "South Asia"
  },
  "bg": {
   "name": "Bulgaria",
   "lat": 42.7105,
   "lon": 23.3238,
-  "iso3": "BGR"
+  "iso3": "BGR",
+  "region": "Europe & Central Asia"
  },
  "bh": {
   "name": "Bahrain",
   "lat": 26.1921,
   "lon": 50.5354,
-  "iso3": "BHR"
+  "iso3": "BHR",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "bs": {
   "name": "Bahamas, The",
   "lat": 25.0661,
   "lon": -77.339,
-  "iso3": "BHS"
+  "iso3": "BHS",
+  "region": "Latin America & Caribbean "
  },
  "ba": {
   "name": "Bosnia and Herzegovina",
   "lat": 43.8607,
   "lon": 18.4214,
-  "iso3": "BIH"
+  "iso3": "BIH",
+  "region": "Europe & Central Asia"
  },
  "by": {
   "name": "Belarus",
   "lat": 53.9678,
   "lon": 27.5766,
-  "iso3": "BLR"
+  "iso3": "BLR",
+  "region": "Europe & Central Asia"
  },
  "bz": {
   "name": "Belize",
   "lat": 17.2534,
   "lon": -88.7713,
-  "iso3": "BLZ"
+  "iso3": "BLZ",
+  "region": "Latin America & Caribbean "
  },
  "bm": {
   "name": "Bermuda",
   "lat": 32.3293,
   "lon": -64.706,
-  "iso3": "BMU"
+  "iso3": "BMU",
+  "region": "North America"
  },
  "bo": {
   "name": "Bolivia",
   "lat": -13.9908,
   "lon": -66.1936,
-  "iso3": "BOL"
+  "iso3": "BOL",
+  "region": "Latin America & Caribbean "
  },
  "bb": {
   "name": "Barbados",
   "lat": 13.0935,
   "lon": -59.6105,
-  "iso3": "BRB"
+  "iso3": "BRB",
+  "region": "Latin America & Caribbean "
  },
  "bn": {
   "name": "Brunei Darussalam",
   "lat": 4.94199,
   "lon": 114.946,
-  "iso3": "BRN"
+  "iso3": "BRN",
+  "region": "East Asia & Pacific"
  },
  "bt": {
   "name": "Bhutan",
   "lat": 27.5768,
   "lon": 89.6177,
-  "iso3": "BTN"
+  "iso3": "BTN",
+  "region": "South Asia"
  },
  "bw": {
   "name": "Botswana",
   "lat": -24.6544,
   "lon": 25.9201,
-  "iso3": "BWA"
+  "iso3": "BWA",
+  "region": "Sub-Saharan Africa "
  },
  "cf": {
   "name": "Central African Republic",
   "lat": 5.63056,
   "lon": 21.6407,
-  "iso3": "CAF"
+  "iso3": "CAF",
+  "region": "Sub-Saharan Africa "
  },
  "ca": {
   "name": "Canada",
   "lat": 45.4215,
   "lon": -75.6919,
-  "iso3": "CAN"
+  "iso3": "CAN",
+  "region": "North America"
  },
  "ch": {
   "name": "Switzerland",
   "lat": 46.948,
   "lon": 7.44821,
-  "iso3": "CHE"
+  "iso3": "CHE",
+  "region": "Europe & Central Asia"
  },
  "jg": {
   "name": "Channel Islands",
   "lat": 0.0,
   "lon": 0.0,
-  "iso3": "CHI"
+  "iso3": "CHI",
+  "region": "Europe & Central Asia"
  },
  "cl": {
   "name": "Chile",
   "lat": -33.475,
   "lon": -70.6475,
-  "iso3": "CHL"
+  "iso3": "CHL",
+  "region": "Latin America & Caribbean "
  },
  "ci": {
   "name": "Cote d'Ivoire",
   "lat": 5.332,
   "lon": -4.0305,
-  "iso3": "CIV"
+  "iso3": "CIV",
+  "region": "Sub-Saharan Africa "
  },
  "cm": {
   "name": "Cameroon",
   "lat": 3.8721,
   "lon": 11.5174,
-  "iso3": "CMR"
+  "iso3": "CMR",
+  "region": "Sub-Saharan Africa "
  },
  "cd": {
   "name": "Congo, Dem. Rep.",
   "lat": -4.325,
   "lon": 15.3222,
-  "iso3": "COD"
+  "iso3": "COD",
+  "region": "Sub-Saharan Africa "
  },
  "cg": {
   "name": "Congo, Rep.",
   "lat": -4.2767,
   "lon": 15.2662,
-  "iso3": "COG"
+  "iso3": "COG",
+  "region": "Sub-Saharan Africa "
  },
  "co": {
   "name": "Colombia",
   "lat": 4.60987,
   "lon": -74.082,
-  "iso3": "COL"
+  "iso3": "COL",
+  "region": "Latin America & Caribbean "
  },
  "km": {
   "name": "Comoros",
   "lat": -11.6986,
   "lon": 43.2418,
-  "iso3": "COM"
+  "iso3": "COM",
+  "region": "Sub-Saharan Africa "
  },
  "cv": {
   "name": "Cabo Verde",
   "lat": 14.9218,
   "lon": -23.5087,
-  "iso3": "CPV"
+  "iso3": "CPV",
+  "region": "Sub-Saharan Africa "
  },
  "cr": {
   "name": "Costa Rica",
   "lat": 9.63701,
   "lon": -84.0089,
-  "iso3": "CRI"
+  "iso3": "CRI",
+  "region": "Latin America & Caribbean "
  },
  "cu": {
   "name": "Cuba",
   "lat": 23.1333,
   "lon": -82.3667,
-  "iso3": "CUB"
+  "iso3": "CUB",
+  "region": "Latin America & Caribbean "
  },
  "cw": {
   "name": "Curacao",
   "lat": 0.0,
   "lon": 0.0,
-  "iso3": "CUW"
+  "iso3": "CUW",
+  "region": "Latin America & Caribbean "
  },
  "ky": {
   "name": "Cayman Islands",
   "lat": 19.3022,
   "lon": -81.3857,
-  "iso3": "CYM"
+  "iso3": "CYM",
+  "region": "Latin America & Caribbean "
  },
  "cy": {
   "name": "Cyprus",
   "lat": 35.1676,
   "lon": 33.3736,
-  "iso3": "CYP"
+  "iso3": "CYP",
+  "region": "Europe & Central Asia"
  },
  "cz": {
   "name": "Czechia",
   "lat": 50.0878,
   "lon": 14.4205,
-  "iso3": "CZE"
+  "iso3": "CZE",
+  "region": "Europe & Central Asia"
  },
  "dj": {
   "name": "Djibouti",
   "lat": 11.5806,
   "lon": 43.1425,
-  "iso3": "DJI"
+  "iso3": "DJI",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "dm": {
   "name": "Dominica",
   "lat": 15.2976,
   "lon": -61.39,
-  "iso3": "DMA"
+  "iso3": "DMA",
+  "region": "Latin America & Caribbean "
  },
  "dk": {
   "name": "Denmark",
   "lat": 55.6763,
   "lon": 12.5681,
-  "iso3": "DNK"
+  "iso3": "DNK",
+  "region": "Europe & Central Asia"
  },
  "do": {
   "name": "Dominican Republic",
   "lat": 18.479,
   "lon": -69.8908,
-  "iso3": "DOM"
+  "iso3": "DOM",
+  "region": "Latin America & Caribbean "
  },
  "ec": {
   "name": "Ecuador",
   "lat": -0.229498,
   "lon": -78.5243,
-  "iso3": "ECU"
+  "iso3": "ECU",
+  "region": "Latin America & Caribbean "
  },
  "er": {
   "name": "Eritrea",
   "lat": 15.3315,
   "lon": 38.9183,
-  "iso3": "ERI"
+  "iso3": "ERI",
+  "region": "Sub-Saharan Africa "
  },
  "ee": {
   "name": "Estonia",
   "lat": 59.4392,
   "lon": 24.7586,
-  "iso3": "EST"
+  "iso3": "EST",
+  "region": "Europe & Central Asia"
  },
  "et": {
   "name": "Ethiopia",
   "lat": 9.02274,
   "lon": 38.7468,
-  "iso3": "ETH"
+  "iso3": "ETH",
+  "region": "Sub-Saharan Africa "
  },
  "fi": {
   "name": "Finland",
   "lat": 60.1608,
   "lon": 24.9525,
-  "iso3": "FIN"
+  "iso3": "FIN",
+  "region": "Europe & Central Asia"
  },
  "fj": {
   "name": "Fiji",
   "lat": -18.1149,
   "lon": 178.399,
-  "iso3": "FJI"
+  "iso3": "FJI",
+  "region": "East Asia & Pacific"
  },
  "fo": {
   "name": "Faroe Islands",
   "lat": 61.8926,
   "lon": -6.91181,
-  "iso3": "FRO"
+  "iso3": "FRO",
+  "region": "Europe & Central Asia"
  },
  "fm": {
   "name": "Micronesia, Fed. Sts.",
   "lat": 6.91771,
   "lon": 158.185,
-  "iso3": "FSM"
+  "iso3": "FSM",
+  "region": "East Asia & Pacific"
  },
  "ga": {
   "name": "Gabon",
   "lat": 0.38832,
   "lon": 9.45162,
-  "iso3": "GAB"
+  "iso3": "GAB",
+  "region": "Sub-Saharan Africa "
  },
  "ge": {
   "name": "Georgia",
   "lat": 41.71,
   "lon": 44.793,
-  "iso3": "GEO"
+  "iso3": "GEO",
+  "region": "Europe & Central Asia"
  },
  "gh": {
   "name": "Ghana",
   "lat": 5.57045,
   "lon": -0.20795,
-  "iso3": "GHA"
+  "iso3": "GHA",
+  "region": "Sub-Saharan Africa "
  },
  "gi": {
   "name": "Gibraltar",
   "lat": 0.0,
   "lon": 0.0,
-  "iso3": "GIB"
+  "iso3": "GIB",
+  "region": "Europe & Central Asia"
  },
  "gn": {
   "name": "Guinea",
   "lat": 9.51667,
   "lon": -13.7,
-  "iso3": "GIN"
+  "iso3": "GIN",
+  "region": "Sub-Saharan Africa "
  },
  "gm": {
   "name": "Gambia, The",
   "lat": 13.4495,
   "lon": -16.5885,
-  "iso3": "GMB"
+  "iso3": "GMB",
+  "region": "Sub-Saharan Africa "
  },
  "gw": {
   "name": "Guinea-Bissau",
   "lat": 11.8037,
   "lon": -15.1804,
-  "iso3": "GNB"
+  "iso3": "GNB",
+  "region": "Sub-Saharan Africa "
  },
  "gq": {
   "name": "Equatorial Guinea",
   "lat": 3.7523,
   "lon": 8.7741,
-  "iso3": "GNQ"
+  "iso3": "GNQ",
+  "region": "Sub-Saharan Africa "
  },
  "gr": {
   "name": "Greece",
   "lat": 37.9792,
   "lon": 23.7166,
-  "iso3": "GRC"
+  "iso3": "GRC",
+  "region": "Europe & Central Asia"
  },
  "gd": {
   "name": "Grenada",
   "lat": 12.0653,
   "lon": -61.7449,
-  "iso3": "GRD"
+  "iso3": "GRD",
+  "region": "Latin America & Caribbean "
  },
  "gl": {
   "name": "Greenland",
   "lat": 64.1836,
   "lon": -51.7214,
-  "iso3": "GRL"
+  "iso3": "GRL",
+  "region": "Europe & Central Asia"
  },
  "gt": {
   "name": "Guatemala",
   "lat": 14.6248,
   "lon": -90.5328,
-  "iso3": "GTM"
+  "iso3": "GTM",
+  "region": "Latin America & Caribbean "
  },
  "gu": {
   "name": "Guam",
   "lat": 13.4443,
   "lon": 144.794,
-  "iso3": "GUM"
+  "iso3": "GUM",
+  "region": "East Asia & Pacific"
  },
  "gy": {
   "name": "Guyana",
   "lat": 6.80461,
   "lon": -58.1548,
-  "iso3": "GUY"
+  "iso3": "GUY",
+  "region": "Latin America & Caribbean "
  },
  "hk": {
   "name": "Hong Kong SAR, China",
   "lat": 22.3964,
   "lon": 114.109,
-  "iso3": "HKG"
+  "iso3": "HKG",
+  "region": "East Asia & Pacific"
  },
  "hn": {
   "name": "Honduras",
   "lat": 15.1333,
   "lon": -87.4667,
-  "iso3": "HND"
+  "iso3": "HND",
+  "region": "Latin America & Caribbean "
  },
  "hr": {
   "name": "Croatia",
   "lat": 45.8069,
   "lon": 15.9614,
-  "iso3": "HRV"
+  "iso3": "HRV",
+  "region": "Europe & Central Asia"
  },
  "ht": {
   "name": "Haiti",
   "lat": 18.5392,
   "lon": -72.3288,
-  "iso3": "HTI"
+  "iso3": "HTI",
+  "region": "Latin America & Caribbean "
  },
  "hu": {
   "name": "Hungary",
   "lat": 47.4984,
   "lon": 19.0408,
-  "iso3": "HUN"
+  "iso3": "HUN",
+  "region": "Europe & Central Asia"
  },
  "id": {
   "name": "Indonesia",
   "lat": -6.19752,
   "lon": 106.83,
-  "iso3": "IDN"
+  "iso3": "IDN",
+  "region": "East Asia & Pacific"
  },
  "im": {
   "name": "Isle of Man",
   "lat": 54.1509,
   "lon": -4.47928,
-  "iso3": "IMN"
+  "iso3": "IMN",
+  "region": "Europe & Central Asia"
  },
  "ie": {
   "name": "Ireland",
   "lat": 53.3441,
   "lon": -6.26749,
-  "iso3": "IRL"
+  "iso3": "IRL",
+  "region": "Europe & Central Asia"
  },
  "ir": {
   "name": "Iran, Islamic Rep.",
   "lat": 35.6878,
   "lon": 51.4447,
-  "iso3": "IRN"
+  "iso3": "IRN",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "iq": {
   "name": "Iraq",
   "lat": 33.3302,
   "lon": 44.394,
-  "iso3": "IRQ"
+  "iso3": "IRQ",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "is": {
   "name": "Iceland",
   "lat": 64.1353,
   "lon": -21.8952,
-  "iso3": "ISL"
+  "iso3": "ISL",
+  "region": "Europe & Central Asia"
  },
  "il": {
   "name": "Israel",
   "lat": 31.7717,
   "lon": 35.2035,
-  "iso3": "ISR"
+  "iso3": "ISR",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "jm": {
   "name": "Jamaica",
   "lat": 17.9927,
   "lon": -76.792,
-  "iso3": "JAM"
+  "iso3": "JAM",
+  "region": "Latin America & Caribbean "
  },
  "jo": {
   "name": "Jordan",
   "lat": 31.9497,
   "lon": 35.9263,
-  "iso3": "JOR"
+  "iso3": "JOR",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "jp": {
   "name": "Japan",
   "lat": 35.67,
   "lon": 139.77,
-  "iso3": "JPN"
+  "iso3": "JPN",
+  "region": "East Asia & Pacific"
  },
  "kz": {
   "name": "Kazakhstan",
   "lat": 51.1879,
   "lon": 71.4382,
-  "iso3": "KAZ"
+  "iso3": "KAZ",
+  "region": "Europe & Central Asia"
  },
  "ke": {
   "name": "Kenya",
   "lat": -1.27975,
   "lon": 36.8126,
-  "iso3": "KEN"
+  "iso3": "KEN",
+  "region": "Sub-Saharan Africa "
  },
  "kg": {
   "name": "Kyrgyz Republic",
   "lat": 42.8851,
   "lon": 74.6057,
-  "iso3": "KGZ"
+  "iso3": "KGZ",
+  "region": "Europe & Central Asia"
  },
  "kh": {
   "name": "Cambodia",
   "lat": 11.5556,
   "lon": 104.874,
-  "iso3": "KHM"
+  "iso3": "KHM",
+  "region": "East Asia & Pacific"
  },
  "ki": {
   "name": "Kiribati",
   "lat": 1.32905,
   "lon": 172.979,
-  "iso3": "KIR"
+  "iso3": "KIR",
+  "region": "East Asia & Pacific"
  },
  "kn": {
   "name": "St. Kitts and Nevis",
   "lat": 17.3,
   "lon": -62.7309,
-  "iso3": "KNA"
+  "iso3": "KNA",
+  "region": "Latin America & Caribbean "
  },
  "kr": {
   "name": "Korea, Rep.",
   "lat": 37.5323,
   "lon": 126.957,
-  "iso3": "KOR"
+  "iso3": "KOR",
+  "region": "East Asia & Pacific"
  },
  "kw": {
   "name": "Kuwait",
   "lat": 29.3721,
   "lon": 47.9824,
-  "iso3": "KWT"
+  "iso3": "KWT",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "la": {
   "name": "Lao PDR",
   "lat": 18.5826,
   "lon": 102.177,
-  "iso3": "LAO"
+  "iso3": "LAO",
+  "region": "East Asia & Pacific"
  },
  "lb": {
   "name": "Lebanon",
   "lat": 33.8872,
   "lon": 35.5134,
-  "iso3": "LBN"
+  "iso3": "LBN",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "lr": {
   "name": "Liberia",
   "lat": 6.30039,
   "lon": -10.7957,
-  "iso3": "LBR"
+  "iso3": "LBR",
+  "region": "Sub-Saharan Africa "
  },
  "ly": {
   "name": "Libya",
   "lat": 32.8578,
   "lon": 13.1072,
-  "iso3": "LBY"
+  "iso3": "LBY",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "lc": {
   "name": "St. Lucia",
   "lat": 14.0,
   "lon": -60.9832,
-  "iso3": "LCA"
+  "iso3": "LCA",
+  "region": "Latin America & Caribbean "
  },
  "li": {
   "name": "Liechtenstein",
   "lat": 47.1411,
   "lon": 9.52148,
-  "iso3": "LIE"
+  "iso3": "LIE",
+  "region": "Europe & Central Asia"
  },
  "lk": {
   "name": "Sri Lanka",
   "lat": 6.92148,
   "lon": 79.8528,
-  "iso3": "LKA"
+  "iso3": "LKA",
+  "region": "South Asia"
  },
  "ls": {
   "name": "Lesotho",
   "lat": -29.5208,
   "lon": 27.7167,
-  "iso3": "LSO"
+  "iso3": "LSO",
+  "region": "Sub-Saharan Africa "
  },
  "lt": {
   "name": "Lithuania",
   "lat": 54.6896,
   "lon": 25.2799,
-  "iso3": "LTU"
+  "iso3": "LTU",
+  "region": "Europe & Central Asia"
  },
  "lu": {
   "name": "Luxembourg",
   "lat": 49.61,
   "lon": 6.1296,
-  "iso3": "LUX"
+  "iso3": "LUX",
+  "region": "Europe & Central Asia"
  },
  "lv": {
   "name": "Latvia",
   "lat": 56.9465,
   "lon": 24.1048,
-  "iso3": "LVA"
+  "iso3": "LVA",
+  "region": "Europe & Central Asia"
  },
  "mo": {
   "name": "Macao SAR, China",
   "lat": 22.1667,
   "lon": 113.55,
-  "iso3": "MAC"
+  "iso3": "MAC",
+  "region": "East Asia & Pacific"
  },
  "mf": {
   "name": "St. Martin (French part)",
   "lat": 0.0,
   "lon": 0.0,
-  "iso3": "MAF"
+  "iso3": "MAF",
+  "region": "Latin America & Caribbean "
  },
  "mc": {
   "name": "Monaco",
   "lat": 43.7325,
   "lon": 7.41891,
-  "iso3": "MCO"
+  "iso3": "MCO",
+  "region": "Europe & Central Asia"
  },
  "md": {
   "name": "Moldova",
   "lat": 47.0167,
   "lon": 28.8497,
-  "iso3": "MDA"
+  "iso3": "MDA",
+  "region": "Europe & Central Asia"
  },
  "mg": {
   "name": "Madagascar",
   "lat": -20.4667,
   "lon": 45.7167,
-  "iso3": "MDG"
+  "iso3": "MDG",
+  "region": "Sub-Saharan Africa "
  },
  "mv": {
   "name": "Maldives",
   "lat": 4.1742,
   "lon": 73.5109,
-  "iso3": "MDV"
+  "iso3": "MDV",
+  "region": "South Asia"
  },
  "mh": {
   "name": "Marshall Islands",
   "lat": 7.11046,
   "lon": 171.135,
-  "iso3": "MHL"
+  "iso3": "MHL",
+  "region": "East Asia & Pacific"
  },
  "mk": {
   "name": "North Macedonia",
   "lat": 42.0024,
   "lon": 21.4361,
-  "iso3": "MKD"
+  "iso3": "MKD",
+  "region": "Europe & Central Asia"
  },
  "ml": {
   "name": "Mali",
   "lat": 13.5667,
   "lon": -7.50034,
-  "iso3": "MLI"
+  "iso3": "MLI",
+  "region": "Sub-Saharan Africa "
  },
  "mt": {
   "name": "Malta",
   "lat": 35.9042,
   "lon": 14.5189,
-  "iso3": "MLT"
+  "iso3": "MLT",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "mm": {
   "name": "Myanmar",
   "lat": 21.914,
   "lon": 95.9562,
-  "iso3": "MMR"
+  "iso3": "MMR",
+  "region": "East Asia & Pacific"
  },
  "me": {
   "name": "Montenegro",
   "lat": 42.4602,
   "lon": 19.2595,
-  "iso3": "MNE"
+  "iso3": "MNE",
+  "region": "Europe & Central Asia"
  },
  "mn": {
   "name": "Mongolia",
   "lat": 47.9129,
   "lon": 106.937,
-  "iso3": "MNG"
+  "iso3": "MNG",
+  "region": "East Asia & Pacific"
  },
  "mp": {
   "name": "Northern Mariana Islands",
   "lat": 15.1935,
   "lon": 145.765,
-  "iso3": "MNP"
+  "iso3": "MNP",
+  "region": "East Asia & Pacific"
  },
  "mz": {
   "name": "Mozambique",
   "lat": -25.9664,
   "lon": 32.5713,
-  "iso3": "MOZ"
+  "iso3": "MOZ",
+  "region": "Sub-Saharan Africa "
  },
  "mr": {
   "name": "Mauritania",
   "lat": 18.2367,
   "lon": -15.9824,
-  "iso3": "MRT"
+  "iso3": "MRT",
+  "region": "Sub-Saharan Africa "
  },
  "mu": {
   "name": "Mauritius",
   "lat": -20.1605,
   "lon": 57.4977,
-  "iso3": "MUS"
+  "iso3": "MUS",
+  "region": "Sub-Saharan Africa "
  },
  "mw": {
   "name": "Malawi",
   "lat": -13.9899,
   "lon": 33.7703,
-  "iso3": "MWI"
+  "iso3": "MWI",
+  "region": "Sub-Saharan Africa "
  },
  "my": {
   "name": "Malaysia",
   "lat": 3.12433,
   "lon": 101.684,
-  "iso3": "MYS"
+  "iso3": "MYS",
+  "region": "East Asia & Pacific"
  },
  "na": {
   "name": "Namibia",
   "lat": -22.5648,
   "lon": 17.0931,
-  "iso3": "NAM"
+  "iso3": "NAM",
+  "region": "Sub-Saharan Africa "
  },
  "nc": {
   "name": "New Caledonia",
   "lat": -22.2677,
   "lon": 166.464,
-  "iso3": "NCL"
+  "iso3": "NCL",
+  "region": "East Asia & Pacific"
  },
  "ne": {
   "name": "Niger",
   "lat": 13.514,
   "lon": 2.1073,
-  "iso3": "NER"
+  "iso3": "NER",
+  "region": "Sub-Saharan Africa "
  },
  "ng": {
   "name": "Nigeria",
   "lat": 9.05804,
   "lon": 7.48906,
-  "iso3": "NGA"
+  "iso3": "NGA",
+  "region": "Sub-Saharan Africa "
  },
  "ni": {
   "name": "Nicaragua",
   "lat": 12.1475,
   "lon": -86.2734,
-  "iso3": "NIC"
+  "iso3": "NIC",
+  "region": "Latin America & Caribbean "
  },
  "nl": {
   "name": "Netherlands",
   "lat": 52.3738,
   "lon": 4.89095,
-  "iso3": "NLD"
+  "iso3": "NLD",
+  "region": "Europe & Central Asia"
  },
  "no": {
   "name": "Norway",
   "lat": 59.9138,
   "lon": 10.7387,
-  "iso3": "NOR"
+  "iso3": "NOR",
+  "region": "Europe & Central Asia"
  },
  "np": {
   "name": "Nepal",
   "lat": 27.6939,
   "lon": 85.3157,
-  "iso3": "NPL"
+  "iso3": "NPL",
+  "region": "South Asia"
  },
  "nr": {
   "name": "Naoero",
   "lat": -0.5477,
   "lon": 166.920867,
-  "iso3": "NRU"
+  "iso3": "NRU",
+  "region": "East Asia & Pacific"
  },
  "nz": {
   "name": "New Zealand",
   "lat": -41.2865,
   "lon": 174.776,
-  "iso3": "NZL"
+  "iso3": "NZL",
+  "region": "East Asia & Pacific"
  },
  "om": {
   "name": "Oman",
   "lat": 23.6105,
   "lon": 58.5874,
-  "iso3": "OMN"
+  "iso3": "OMN",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "pk": {
   "name": "Pakistan",
   "lat": 30.5167,
   "lon": 72.8,
-  "iso3": "PAK"
+  "iso3": "PAK",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "pa": {
   "name": "Panama",
   "lat": 8.99427,
   "lon": -79.5188,
-  "iso3": "PAN"
+  "iso3": "PAN",
+  "region": "Latin America & Caribbean "
  },
  "pe": {
   "name": "Peru",
   "lat": -12.0931,
   "lon": -77.0465,
-  "iso3": "PER"
+  "iso3": "PER",
+  "region": "Latin America & Caribbean "
  },
  "ph": {
   "name": "Philippines",
   "lat": 14.5515,
   "lon": 121.035,
-  "iso3": "PHL"
+  "iso3": "PHL",
+  "region": "East Asia & Pacific"
  },
  "pw": {
   "name": "Palau",
   "lat": 7.34194,
   "lon": 134.479,
-  "iso3": "PLW"
+  "iso3": "PLW",
+  "region": "East Asia & Pacific"
  },
  "pg": {
   "name": "Papua New Guinea",
   "lat": -9.47357,
   "lon": 147.194,
-  "iso3": "PNG"
+  "iso3": "PNG",
+  "region": "East Asia & Pacific"
  },
  "pl": {
   "name": "Poland",
   "lat": 52.26,
   "lon": 21.02,
-  "iso3": "POL"
+  "iso3": "POL",
+  "region": "Europe & Central Asia"
  },
  "pr": {
   "name": "Puerto Rico (US)",
   "lat": 18.23,
   "lon": -66.0,
-  "iso3": "PRI"
+  "iso3": "PRI",
+  "region": "Latin America & Caribbean "
  },
  "kp": {
   "name": "Korea, Dem. People's Rep.",
   "lat": 39.0319,
   "lon": 125.754,
-  "iso3": "PRK"
+  "iso3": "PRK",
+  "region": "East Asia & Pacific"
  },
  "py": {
   "name": "Paraguay",
   "lat": -25.3005,
   "lon": -57.6362,
-  "iso3": "PRY"
+  "iso3": "PRY",
+  "region": "Latin America & Caribbean "
  },
  "ps": {
   "name": "West Bank and Gaza",
   "lat": 0.0,
   "lon": 0.0,
-  "iso3": "PSE"
+  "iso3": "PSE",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "pf": {
   "name": "French Polynesia",
   "lat": -17.535,
   "lon": -149.57,
-  "iso3": "PYF"
+  "iso3": "PYF",
+  "region": "East Asia & Pacific"
  },
  "qa": {
   "name": "Qatar",
   "lat": 25.2948,
   "lon": 51.5082,
-  "iso3": "QAT"
+  "iso3": "QAT",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "ro": {
   "name": "Romania",
   "lat": 44.4479,
   "lon": 26.0979,
-  "iso3": "ROU"
+  "iso3": "ROU",
+  "region": "Europe & Central Asia"
  },
  "ru": {
   "name": "Russian Federation",
   "lat": 55.7558,
   "lon": 37.6176,
-  "iso3": "RUS"
+  "iso3": "RUS",
+  "region": "Europe & Central Asia"
  },
  "rw": {
   "name": "Rwanda",
   "lat": -1.95325,
   "lon": 30.0587,
-  "iso3": "RWA"
+  "iso3": "RWA",
+  "region": "Sub-Saharan Africa "
  },
  "sa": {
   "name": "Saudi Arabia",
   "lat": 24.6748,
   "lon": 46.6977,
-  "iso3": "SAU"
+  "iso3": "SAU",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "sd": {
   "name": "Sudan",
   "lat": 15.5932,
   "lon": 32.5363,
-  "iso3": "SDN"
+  "iso3": "SDN",
+  "region": "Sub-Saharan Africa "
  },
  "sn": {
   "name": "Senegal",
   "lat": 14.7247,
   "lon": -17.4734,
-  "iso3": "SEN"
+  "iso3": "SEN",
+  "region": "Sub-Saharan Africa "
  },
  "sg": {
   "name": "Singapore",
   "lat": 1.28941,
   "lon": 103.85,
-  "iso3": "SGP"
+  "iso3": "SGP",
+  "region": "East Asia & Pacific"
  },
  "sb": {
   "name": "Solomon Islands",
   "lat": -9.42676,
   "lon": 159.949,
-  "iso3": "SLB"
+  "iso3": "SLB",
+  "region": "East Asia & Pacific"
  },
  "sl": {
   "name": "Sierra Leone",
   "lat": 8.4821,
   "lon": -13.2134,
-  "iso3": "SLE"
+  "iso3": "SLE",
+  "region": "Sub-Saharan Africa "
  },
  "sv": {
   "name": "El Salvador",
   "lat": 13.7034,
   "lon": -89.2073,
-  "iso3": "SLV"
+  "iso3": "SLV",
+  "region": "Latin America & Caribbean "
  },
  "sm": {
   "name": "San Marino",
   "lat": 43.9322,
   "lon": 12.4486,
-  "iso3": "SMR"
+  "iso3": "SMR",
+  "region": "Europe & Central Asia"
  },
  "so": {
   "name": "Somalia, Fed. Rep.",
   "lat": 2.07515,
   "lon": 45.3254,
-  "iso3": "SOM"
+  "iso3": "SOM",
+  "region": "Sub-Saharan Africa "
  },
  "rs": {
   "name": "Serbia",
   "lat": 44.8024,
   "lon": 20.4656,
-  "iso3": "SRB"
+  "iso3": "SRB",
+  "region": "Europe & Central Asia"
  },
  "ss": {
   "name": "South Sudan",
   "lat": 4.85,
   "lon": 31.6,
-  "iso3": "SSD"
+  "iso3": "SSD",
+  "region": "Sub-Saharan Africa "
  },
  "st": {
   "name": "Sao Tome and Principe",
   "lat": 0.20618,
   "lon": 6.6071,
-  "iso3": "STP"
+  "iso3": "STP",
+  "region": "Sub-Saharan Africa "
  },
  "sr": {
   "name": "Suriname",
   "lat": 5.8232,
   "lon": -55.1679,
-  "iso3": "SUR"
+  "iso3": "SUR",
+  "region": "Latin America & Caribbean "
  },
  "sk": {
   "name": "Slovak Republic",
   "lat": 48.1484,
   "lon": 17.1073,
-  "iso3": "SVK"
+  "iso3": "SVK",
+  "region": "Europe & Central Asia"
  },
  "si": {
   "name": "Slovenia",
   "lat": 46.0546,
   "lon": 14.5044,
-  "iso3": "SVN"
+  "iso3": "SVN",
+  "region": "Europe & Central Asia"
  },
  "se": {
   "name": "Sweden",
   "lat": 59.3327,
   "lon": 18.0645,
-  "iso3": "SWE"
+  "iso3": "SWE",
+  "region": "Europe & Central Asia"
  },
  "sz": {
   "name": "Eswatini",
   "lat": -26.5225,
   "lon": 31.4659,
-  "iso3": "SWZ"
+  "iso3": "SWZ",
+  "region": "Sub-Saharan Africa "
  },
  "sx": {
   "name": "Sint Maarten (Dutch part)",
   "lat": 0.0,
   "lon": 0.0,
-  "iso3": "SXM"
+  "iso3": "SXM",
+  "region": "Latin America & Caribbean "
  },
  "sc": {
   "name": "Seychelles",
   "lat": -4.6309,
   "lon": 55.4466,
-  "iso3": "SYC"
+  "iso3": "SYC",
+  "region": "Sub-Saharan Africa "
  },
  "sy": {
   "name": "Syrian Arab Republic",
   "lat": 33.5146,
   "lon": 36.3119,
-  "iso3": "SYR"
+  "iso3": "SYR",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "tc": {
   "name": "Turks and Caicos Islands",
   "lat": 21.4602778,
   "lon": -71.141389,
-  "iso3": "TCA"
+  "iso3": "TCA",
+  "region": "Latin America & Caribbean "
  },
  "td": {
   "name": "Chad",
   "lat": 12.1048,
   "lon": 15.0445,
-  "iso3": "TCD"
+  "iso3": "TCD",
+  "region": "Sub-Saharan Africa "
  },
  "tg": {
   "name": "Togo",
   "lat": 6.1228,
   "lon": 1.2255,
-  "iso3": "TGO"
+  "iso3": "TGO",
+  "region": "Sub-Saharan Africa "
  },
  "th": {
   "name": "Thailand",
   "lat": 13.7308,
   "lon": 100.521,
-  "iso3": "THA"
+  "iso3": "THA",
+  "region": "East Asia & Pacific"
  },
  "tj": {
   "name": "Tajikistan",
   "lat": 38.5878,
   "lon": 68.7864,
-  "iso3": "TJK"
+  "iso3": "TJK",
+  "region": "Europe & Central Asia"
  },
  "tm": {
   "name": "Turkmenistan",
   "lat": 37.9509,
   "lon": 58.3794,
-  "iso3": "TKM"
+  "iso3": "TKM",
+  "region": "Europe & Central Asia"
  },
  "tl": {
   "name": "Timor-Leste",
   "lat": -8.56667,
   "lon": 125.567,
-  "iso3": "TLS"
+  "iso3": "TLS",
+  "region": "East Asia & Pacific"
  },
  "to": {
   "name": "Tonga",
   "lat": -21.136,
   "lon": -175.216,
-  "iso3": "TON"
+  "iso3": "TON",
+  "region": "East Asia & Pacific"
  },
  "tt": {
   "name": "Trinidad and Tobago",
   "lat": 10.6596,
   "lon": -61.4789,
-  "iso3": "TTO"
+  "iso3": "TTO",
+  "region": "Latin America & Caribbean "
  },
  "tn": {
   "name": "Tunisia",
   "lat": 36.7899,
   "lon": 10.21,
-  "iso3": "TUN"
+  "iso3": "TUN",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "tr": {
   "name": "Turkiye",
   "lat": 39.7153,
   "lon": 32.3606,
-  "iso3": "TUR"
+  "iso3": "TUR",
+  "region": "Europe & Central Asia"
  },
  "tv": {
   "name": "Tuvalu",
   "lat": -8.6314877,
   "lon": 179.089567,
-  "iso3": "TUV"
+  "iso3": "TUV",
+  "region": "East Asia & Pacific"
  },
  "tz": {
   "name": "Tanzania",
   "lat": -6.17486,
   "lon": 35.7382,
-  "iso3": "TZA"
+  "iso3": "TZA",
+  "region": "Sub-Saharan Africa "
  },
  "ug": {
   "name": "Uganda",
   "lat": 0.314269,
   "lon": 32.5729,
-  "iso3": "UGA"
+  "iso3": "UGA",
+  "region": "Sub-Saharan Africa "
  },
  "ua": {
   "name": "Ukraine",
   "lat": 50.4536,
   "lon": 30.5038,
-  "iso3": "UKR"
+  "iso3": "UKR",
+  "region": "Europe & Central Asia"
  },
  "uy": {
   "name": "Uruguay",
   "lat": -34.8941,
   "lon": -56.0675,
-  "iso3": "URY"
+  "iso3": "URY",
+  "region": "Latin America & Caribbean "
  },
  "uz": {
   "name": "Uzbekistan",
   "lat": 41.3052,
   "lon": 69.269,
-  "iso3": "UZB"
+  "iso3": "UZB",
+  "region": "Europe & Central Asia"
  },
  "vc": {
   "name": "St. Vincent and the Grenadines",
   "lat": 13.2035,
   "lon": -61.2653,
-  "iso3": "VCT"
+  "iso3": "VCT",
+  "region": "Latin America & Caribbean "
  },
  "ve": {
   "name": "Venezuela, RB",
   "lat": 9.08165,
   "lon": -69.8371,
-  "iso3": "VEN"
+  "iso3": "VEN",
+  "region": "Latin America & Caribbean "
  },
  "vg": {
   "name": "British Virgin Islands",
   "lat": 18.431389,
   "lon": -64.623056,
-  "iso3": "VGB"
+  "iso3": "VGB",
+  "region": "Latin America & Caribbean "
  },
  "vi": {
   "name": "Virgin Islands (U.S.)",
   "lat": 18.3358,
   "lon": -64.8963,
-  "iso3": "VIR"
+  "iso3": "VIR",
+  "region": "Latin America & Caribbean "
  },
  "vn": {
   "name": "Viet Nam",
   "lat": 21.0069,
   "lon": 105.825,
-  "iso3": "VNM"
+  "iso3": "VNM",
+  "region": "East Asia & Pacific"
  },
  "vu": {
   "name": "Vanuatu",
   "lat": -17.7404,
   "lon": 168.321,
-  "iso3": "VUT"
+  "iso3": "VUT",
+  "region": "East Asia & Pacific"
  },
  "ws": {
   "name": "Samoa",
   "lat": -13.8314,
   "lon": -171.752,
-  "iso3": "WSM"
+  "iso3": "WSM",
+  "region": "East Asia & Pacific"
  },
  "xk": {
   "name": "Kosovo",
   "lat": 42.565,
   "lon": 20.926,
-  "iso3": "XKX"
+  "iso3": "XKX",
+  "region": "Europe & Central Asia"
  },
  "ye": {
   "name": "Yemen, Rep.",
   "lat": 15.352,
   "lon": 44.2075,
-  "iso3": "YEM"
+  "iso3": "YEM",
+  "region": "Middle East, North Africa, Afghanistan & Pakistan"
  },
  "za": {
   "name": "South Africa",
   "lat": -25.746,
   "lon": 28.1871,
-  "iso3": "ZAF"
+  "iso3": "ZAF",
+  "region": "Sub-Saharan Africa "
  },
  "zm": {
   "name": "Zambia",
   "lat": -15.3982,
   "lon": 28.2937,
-  "iso3": "ZMB"
+  "iso3": "ZMB",
+  "region": "Sub-Saharan Africa "
  },
  "zw": {
   "name": "Zimbabwe",
   "lat": -17.8312,
   "lon": 31.0672,
-  "iso3": "ZWE"
+  "iso3": "ZWE",
+  "region": "Sub-Saharan Africa "
  }
 }

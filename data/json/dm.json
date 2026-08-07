@@ -1,6 +1,6 @@
 {
  "country": "dm",
- "generated": "2026-08-07T09:38:13.900593+00:00",
+ "generated": "2026-08-07T10:03:45.560261+00:00",
  "geo": {
   "name": "Dominica",
   "lat": 15.2976,
@@ -10,61 +10,91 @@
  "indicators": {
   "esperanza_vida": {
    "value": "71.294",
-   "updated": "2026-08-07T09:38:13.832754+00:00",
+   "updated": "2026-08-07T10:03:45.457979+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.48",
+   "updated": "2026-08-07T10:03:45.458020+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "5.38572189060925",
+   "updated": "2026-08-07T10:03:45.458000+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "5.00757647",
+   "updated": "2026-08-07T10:03:45.457993+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "homicidios": {
    "value": "27.063396005142",
-   "updated": "2026-08-07T09:38:13.832766+00:00",
+   "updated": "2026-08-07T10:03:45.457986+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "inflacion": {
    "value": "2.73620751873313",
-   "updated": "2026-08-07T09:38:13.832711+00:00",
+   "updated": "2026-08-07T10:03:45.457957+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "82.04689789",
-   "updated": "2026-08-07T09:38:13.832780+00:00",
+   "updated": "2026-08-07T10:03:45.458006+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "12.7",
-   "updated": "2026-08-07T09:38:13.832740+00:00",
+   "updated": "2026-08-07T10:03:45.457972+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "-3.0209198701004456",
-   "updated": "2026-08-07T09:38:13.832726+00:00",
+   "updated": "2026-08-07T10:03:45.457965+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "688881481.481481",
-   "updated": "2026-08-07T09:38:13.832669+00:00",
+   "updated": "2026-08-07T10:03:45.457900+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "21331.6193698018",
-   "updated": "2026-08-07T09:38:13.832683+00:00",
+   "updated": "2026-08-07T10:03:45.457914+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "66205",
-   "updated": "2026-08-07T09:38:13.832656+00:00",
+   "updated": "2026-08-07T10:03:45.457886+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Latin America & Caribbean ",
+   "updated": "2026-08-07T10:03:45.458026+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "10405.2787777582",
-   "updated": "2026-08-07T09:38:13.832696+00:00",
+   "updated": "2026-08-07T10:03:45.457929+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "73.5449839980866",
+   "updated": "2026-08-07T10:03:45.458013+00:00",
    "source": "worldbank",
    "year": "2024"
   }

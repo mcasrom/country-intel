@@ -1,6 +1,6 @@
 {
  "country": "as",
- "generated": "2026-08-07T09:38:13.874500+00:00",
+ "generated": "2026-08-07T10:03:45.521654+00:00",
  "geo": {
   "name": "American Samoa",
   "lat": -14.2846,
@@ -10,25 +10,43 @@
  "indicators": {
   "esperanza_vida": {
    "value": "72.992",
-   "updated": "2026-08-07T09:38:13.822850+00:00",
+   "updated": "2026-08-07T10:03:45.443148+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "2.267",
+   "updated": "2026-08-07T10:03:45.443172+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "50.6",
-   "updated": "2026-08-07T09:38:13.822836+00:00",
+   "updated": "2026-08-07T10:03:45.443117+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "-23.73569977547311",
-   "updated": "2026-08-07T09:38:13.822822+00:00",
+   "updated": "2026-08-07T10:03:45.443069+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "46765",
-   "updated": "2026-08-07T09:38:13.822809+00:00",
+   "updated": "2026-08-07T10:03:45.443040+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.443182+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
+  "urbanizacion": {
+   "value": "80.9446986961818",
+   "updated": "2026-08-07T10:03:45.443161+00:00",
    "source": "worldbank",
    "year": "2024"
   }

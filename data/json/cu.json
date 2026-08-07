@@ -1,6 +1,6 @@
 {
  "country": "cu",
- "generated": "2026-08-07T09:38:13.895820+00:00",
+ "generated": "2026-08-07T10:03:45.552475+00:00",
  "geo": {
   "name": "Cuba",
   "lat": 23.1333,
@@ -10,37 +10,73 @@
  "indicators": {
   "desempleo": {
    "value": "1.755",
-   "updated": "2026-08-07T09:38:13.830959+00:00",
+   "updated": "2026-08-07T10:03:45.455431+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "78.264",
-   "updated": "2026-08-07T09:38:13.831001+00:00",
+   "updated": "2026-08-07T10:03:45.455477+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.445",
+   "updated": "2026-08-07T10:03:45.455535+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "9.38383102",
+   "updated": "2026-08-07T10:03:45.455492+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.764",
+   "updated": "2026-08-07T10:03:45.455561+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "internet_pct": {
    "value": "70.47699738",
-   "updated": "2026-08-07T09:38:13.831014+00:00",
+   "updated": "2026-08-07T10:03:45.455506+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0",
-   "updated": "2026-08-07T09:38:13.830988+00:00",
+   "updated": "2026-08-07T10:03:45.455463+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "CUP",
+   "updated": "2026-08-07T10:03:45.455549+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-2.036105813748778",
-   "updated": "2026-08-07T09:38:13.830973+00:00",
+   "updated": "2026-08-07T10:03:45.455448+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10979783",
-   "updated": "2026-08-07T09:38:13.830945+00:00",
+   "updated": "2026-08-07T10:03:45.455308+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "region": {
+   "value": "Latin America & Caribbean ",
+   "updated": "2026-08-07T10:03:45.455575+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
+  "urbanizacion": {
+   "value": "77.1664929228275",
+   "updated": "2026-08-07T10:03:45.455521+00:00",
    "source": "worldbank",
    "year": "2024"
   }

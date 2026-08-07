@@ -1,6 +1,6 @@
 {
  "country": "mp",
- "generated": "2026-08-07T09:38:13.932870+00:00",
+ "generated": "2026-08-07T10:03:45.605796+00:00",
  "geo": {
   "name": "Northern Mariana Islands",
   "lat": 15.1935,
@@ -10,25 +10,43 @@
  "indicators": {
   "esperanza_vida": {
    "value": "78.947",
-   "updated": "2026-08-07T09:38:13.847140+00:00",
+   "updated": "2026-08-07T10:03:45.474284+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "2.324",
+   "updated": "2026-08-07T10:03:45.474297+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "49.7",
-   "updated": "2026-08-07T09:38:13.847132+00:00",
+   "updated": "2026-08-07T10:03:45.474278+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "-24.77528343646958",
-   "updated": "2026-08-07T09:38:13.847124+00:00",
+   "updated": "2026-08-07T10:03:45.474271+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "44278",
-   "updated": "2026-08-07T09:38:13.847116+00:00",
+   "updated": "2026-08-07T10:03:45.474266+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.474302+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
+  "urbanizacion": {
+   "value": "92.0747260922394",
+   "updated": "2026-08-07T10:03:45.474290+00:00",
    "source": "worldbank",
    "year": "2024"
   }

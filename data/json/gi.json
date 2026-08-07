@@ -1,6 +1,6 @@
 {
  "country": "gi",
- "generated": "2026-08-07T09:38:13.912466+00:00",
+ "generated": "2026-08-07T10:03:45.573623+00:00",
  "geo": {
   "name": "Gibraltar",
   "lat": 0.0,
@@ -10,25 +10,43 @@
  "indicators": {
   "esperanza_vida": {
    "value": "83.63",
-   "updated": "2026-08-07T09:38:13.838445+00:00",
+   "updated": "2026-08-07T10:03:45.462851+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "1.885",
+   "updated": "2026-08-07T10:03:45.462877+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "28.7",
-   "updated": "2026-08-07T09:38:13.838437+00:00",
+   "updated": "2026-08-07T10:03:45.462838+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "15.205064964784256",
-   "updated": "2026-08-07T09:38:13.838429+00:00",
+   "updated": "2026-08-07T10:03:45.462824+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "39329",
-   "updated": "2026-08-07T09:38:13.838421+00:00",
+   "updated": "2026-08-07T10:03:45.462811+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "region": {
+   "value": "Europe & Central Asia",
+   "updated": "2026-08-07T10:03:45.462890+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
+  "urbanizacion": {
+   "value": "100",
+   "updated": "2026-08-07T10:03:45.462865+00:00",
    "source": "worldbank",
    "year": "2024"
   }

@@ -1,6 +1,6 @@
 {
  "country": "lk",
- "generated": "2026-08-07T09:38:13.925461+00:00",
+ "generated": "2026-08-07T10:03:45.596917+00:00",
  "geo": {
   "name": "Sri Lanka",
   "lat": 6.92148,
@@ -10,67 +10,109 @@
  "indicators": {
   "alfabetizacion": {
    "value": "92.7399978637695",
-   "updated": "2026-08-07T09:38:13.843436+00:00",
+   "updated": "2026-08-07T10:03:45.470762+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "desempleo": {
    "value": "4.239",
-   "updated": "2026-08-07T09:38:13.843428+00:00",
+   "updated": "2026-08-07T10:03:45.470755+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "77.672",
-   "updated": "2026-08-07T09:38:13.843459+00:00",
+   "updated": "2026-08-07T10:03:45.470782+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.952",
+   "updated": "2026-08-07T10:03:45.470814+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "1.82774571561927",
+   "updated": "2026-08-07T10:03:45.470795+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "3.68313766",
+   "updated": "2026-08-07T10:03:45.470788+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.78",
+   "updated": "2026-08-07T10:03:45.470825+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "-0.42936004906973",
-   "updated": "2026-08-07T09:38:13.843411+00:00",
+   "updated": "2026-08-07T10:03:45.470748+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "54.59",
-   "updated": "2026-08-07T09:38:13.843466+00:00",
+   "updated": "2026-08-07T10:03:45.470801+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.2",
-   "updated": "2026-08-07T09:38:13.843452+00:00",
+   "updated": "2026-08-07T10:03:45.470776+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "LKR",
+   "updated": "2026-08-07T10:03:45.470819+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-1.2431556853440409",
-   "updated": "2026-08-07T09:38:13.843444+00:00",
+   "updated": "2026-08-07T10:03:45.470769+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "99616111265.7633",
-   "updated": "2026-08-07T09:38:13.843386+00:00",
+   "updated": "2026-08-07T10:03:45.470728+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "15701.0907191253",
-   "updated": "2026-08-07T09:38:13.843395+00:00",
+   "updated": "2026-08-07T10:03:45.470735+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "21916000",
-   "updated": "2026-08-07T09:38:13.843369+00:00",
+   "updated": "2026-08-07T10:03:45.470722+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "South Asia",
+   "updated": "2026-08-07T10:03:45.470830+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "4545.36006870612",
-   "updated": "2026-08-07T09:38:13.843403+00:00",
+   "updated": "2026-08-07T10:03:45.470742+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "20.2996997058686",
+   "updated": "2026-08-07T10:03:45.470807+00:00",
    "source": "worldbank",
    "year": "2024"
   }

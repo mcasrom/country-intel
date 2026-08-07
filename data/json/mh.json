@@ -1,6 +1,6 @@
 {
  "country": "mh",
- "generated": "2026-08-07T09:38:13.929754+00:00",
+ "generated": "2026-08-07T10:03:45.603256+00:00",
  "geo": {
   "name": "Marshall Islands",
   "lat": 7.11046,
@@ -10,49 +10,85 @@
  "indicators": {
   "esperanza_vida": {
    "value": "67.075",
-   "updated": "2026-08-07T09:38:13.846113+00:00",
+   "updated": "2026-08-07T10:03:45.473506+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "2.864",
+   "updated": "2026-08-07T10:03:45.473531+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "13.40528965",
+   "updated": "2026-08-07T10:03:45.473512+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.639",
+   "updated": "2026-08-07T10:03:45.473543+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "internet_pct": {
    "value": "65.915802",
-   "updated": "2026-08-07T09:38:13.846124+00:00",
+   "updated": "2026-08-07T10:03:45.473518+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "8.8",
-   "updated": "2026-08-07T09:38:13.846102+00:00",
+   "updated": "2026-08-07T10:03:45.473500+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "USD",
+   "updated": "2026-08-07T10:03:45.473537+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-47.00649834878023",
-   "updated": "2026-08-07T09:38:13.846081+00:00",
+   "updated": "2026-08-07T10:03:45.473493+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "285000000",
-   "updated": "2026-08-07T09:38:13.846044+00:00",
+   "updated": "2026-08-07T10:03:45.473469+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "8237.95897993999",
-   "updated": "2026-08-07T09:38:13.846054+00:00",
+   "updated": "2026-08-07T10:03:45.473479+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "37548",
-   "updated": "2026-08-07T09:38:13.846029+00:00",
+   "updated": "2026-08-07T10:03:45.473463+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.473548+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "7590.28443592202",
-   "updated": "2026-08-07T09:38:13.846067+00:00",
+   "updated": "2026-08-07T10:03:45.473486+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "78.7325660244112",
+   "updated": "2026-08-07T10:03:45.473525+00:00",
    "source": "worldbank",
    "year": "2024"
   }

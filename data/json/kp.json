@@ -1,6 +1,6 @@
 {
  "country": "kp",
- "generated": "2026-08-07T09:38:13.922819+00:00",
+ "generated": "2026-08-07T10:03:45.593432+00:00",
  "geo": {
   "name": "Korea, Dem. People's Rep.",
   "lat": 39.0319,
@@ -10,31 +10,61 @@
  "indicators": {
   "desempleo": {
    "value": "3.539",
-   "updated": "2026-08-07T09:38:13.842577+00:00",
+   "updated": "2026-08-07T10:03:45.469104+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "73.743",
-   "updated": "2026-08-07T09:38:13.842600+00:00",
+   "updated": "2026-08-07T10:03:45.469160+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "fertilidad": {
+   "value": "1.784",
+   "updated": "2026-08-07T10:03:45.469197+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "idh": {
+   "value": "0.712",
+   "updated": "2026-08-07T10:03:45.469221+00:00",
+   "source": "PNUD 2022",
+   "year": ""
   },
   "migrant_pct": {
    "value": "0.2",
-   "updated": "2026-08-07T09:38:13.842593+00:00",
+   "updated": "2026-08-07T10:03:45.469135+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "KPW",
+   "updated": "2026-08-07T10:03:45.469211+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-0.09332489975120782",
-   "updated": "2026-08-07T09:38:13.842584+00:00",
+   "updated": "2026-08-07T10:03:45.469117+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "26498823",
-   "updated": "2026-08-07T09:38:13.842570+00:00",
+   "updated": "2026-08-07T10:03:45.469090+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.469229+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
+  "urbanizacion": {
+   "value": "63.8589748211522",
+   "updated": "2026-08-07T10:03:45.469177+00:00",
    "source": "worldbank",
    "year": "2024"
   }

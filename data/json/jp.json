@@ -1,6 +1,6 @@
 {
  "country": "jp",
- "generated": "2026-08-07T09:38:13.920832+00:00",
+ "generated": "2026-08-07T10:03:45.589953+00:00",
  "geo": {
   "name": "Japan",
   "lat": 35.67,
@@ -10,67 +10,103 @@
  "indicators": {
   "desempleo": {
    "value": "2.5",
-   "updated": "2026-08-07T09:38:13.841913+00:00",
+   "updated": "2026-08-07T10:03:45.467299+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "84.0363414634146",
-   "updated": "2026-08-07T09:38:13.841950+00:00",
+   "updated": "2026-08-07T10:03:45.467318+00:00",
    "source": "worldbank",
    "year": "2024"
   },
-  "homicidios": {
-   "value": "0.229153196964695",
-   "updated": "2026-08-07T09:38:13.841962+00:00",
+  "fertilidad": {
+   "value": "1.15",
+   "updated": "2026-08-07T10:03:45.467363+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "10.73979473",
+   "updated": "2026-08-07T10:03:45.467345+00:00",
    "source": "worldbank",
    "year": "2023"
   },
+  "homicidios": {
+   "value": "0.229153196964695",
+   "updated": "2026-08-07T10:03:45.467338+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.925",
+   "updated": "2026-08-07T10:03:45.467374+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "2.73853681635241",
-   "updated": "2026-08-07T09:38:13.841900+00:00",
+   "updated": "2026-08-07T10:03:45.467293+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "85.54153081",
-   "updated": "2026-08-07T09:38:13.841974+00:00",
+   "updated": "2026-08-07T10:03:45.467351+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.8",
-   "updated": "2026-08-07T09:38:13.841938+00:00",
+   "updated": "2026-08-07T10:03:45.467312+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "JPY",
+   "updated": "2026-08-07T10:03:45.467369+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "1.2369956932816921",
-   "updated": "2026-08-07T09:38:13.841925+00:00",
+   "updated": "2026-08-07T10:03:45.467305+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "4190008188358.57",
-   "updated": "2026-08-07T09:38:13.841864+00:00",
+   "updated": "2026-08-07T10:03:45.467273+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "54156.2687689605",
-   "updated": "2026-08-07T09:38:13.841876+00:00",
+   "updated": "2026-08-07T10:03:45.467280+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "123975371",
-   "updated": "2026-08-07T09:38:13.841846+00:00",
+   "updated": "2026-08-07T10:03:45.467267+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.467380+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "33797.1014287876",
-   "updated": "2026-08-07T09:38:13.841888+00:00",
+   "updated": "2026-08-07T10:03:45.467286+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "92.1901718034531",
+   "updated": "2026-08-07T10:03:45.467357+00:00",
    "source": "worldbank",
    "year": "2024"
   }

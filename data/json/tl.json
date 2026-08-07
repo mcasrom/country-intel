@@ -1,6 +1,6 @@
 {
  "country": "tl",
- "generated": "2026-08-07T09:38:13.963954+00:00",
+ "generated": "2026-08-07T10:03:45.638465+00:00",
  "geo": {
   "name": "Timor-Leste",
   "lat": -8.56667,
@@ -10,55 +10,97 @@
  "indicators": {
   "desempleo": {
    "value": "1.523",
-   "updated": "2026-08-07T09:38:13.855906+00:00",
+   "updated": "2026-08-07T10:03:45.490614+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "67.904",
-   "updated": "2026-08-07T09:38:13.855932+00:00",
+   "updated": "2026-08-07T10:03:45.490668+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "2.627",
+   "updated": "2026-08-07T10:03:45.490780+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "5.24052834781801",
+   "updated": "2026-08-07T10:03:45.490723+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "9.59779453",
+   "updated": "2026-08-07T10:03:45.490694+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.607",
+   "updated": "2026-08-07T10:03:45.490830+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "2.06284153005468",
-   "updated": "2026-08-07T09:38:13.855898+00:00",
+   "updated": "2026-08-07T10:03:45.490594+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.6",
-   "updated": "2026-08-07T09:38:13.855925+00:00",
+   "updated": "2026-08-07T10:03:45.490643+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "USD",
+   "updated": "2026-08-07T10:03:45.490808+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-1.822026819206676",
-   "updated": "2026-08-07T09:38:13.855913+00:00",
+   "updated": "2026-08-07T10:03:45.490628+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "1865608515.41321",
-   "updated": "2026-08-07T09:38:13.855875+00:00",
+   "updated": "2026-08-07T10:03:45.490489+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "4429.20182282365",
-   "updated": "2026-08-07T09:38:13.855883+00:00",
+   "updated": "2026-08-07T10:03:45.490501+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "1400638",
-   "updated": "2026-08-07T09:38:13.855868+00:00",
+   "updated": "2026-08-07T10:03:45.490480+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.490850+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "1331.9705130185",
-   "updated": "2026-08-07T09:38:13.855890+00:00",
+   "updated": "2026-08-07T10:03:45.490516+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "28.6641074179574",
+   "updated": "2026-08-07T10:03:45.490751+00:00",
    "source": "worldbank",
    "year": "2024"
   }

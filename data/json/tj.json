@@ -1,6 +1,6 @@
 {
  "country": "tj",
- "generated": "2026-08-07T09:38:13.963493+00:00",
+ "generated": "2026-08-07T10:03:45.637864+00:00",
  "geo": {
   "name": "Tajikistan",
   "lat": 38.5878,
@@ -10,55 +10,103 @@
  "indicators": {
   "desempleo": {
    "value": "7.041",
-   "updated": "2026-08-07T09:38:13.855831+00:00",
+   "updated": "2026-08-07T10:03:45.490303+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "71.927",
-   "updated": "2026-08-07T09:38:13.855854+00:00",
+   "updated": "2026-08-07T10:03:45.490335+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "3.036",
+   "updated": "2026-08-07T10:03:45.490403+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "5.43682120015444",
+   "updated": "2026-08-07T10:03:45.490354+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "7.43789911",
+   "updated": "2026-08-07T10:03:45.490348+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gini": {
+   "value": "36.1",
+   "updated": "2026-08-07T10:03:45.490342+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "idh": {
+   "value": "0.685",
+   "updated": "2026-08-07T10:03:45.490452+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "internet_pct": {
    "value": "55.79339981",
-   "updated": "2026-08-07T09:38:13.855861+00:00",
+   "updated": "2026-08-07T10:03:45.490360+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.6",
-   "updated": "2026-08-07T09:38:13.855847+00:00",
+   "updated": "2026-08-07T10:03:45.490316+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "TJS",
+   "updated": "2026-08-07T10:03:45.490422+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-2.005112489208924",
-   "updated": "2026-08-07T09:38:13.855838+00:00",
+   "updated": "2026-08-07T10:03:45.490309+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "14425113699.7925",
-   "updated": "2026-08-07T09:38:13.855801+00:00",
+   "updated": "2026-08-07T10:03:45.490283+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "5413.83109811464",
-   "updated": "2026-08-07T09:38:13.855809+00:00",
+   "updated": "2026-08-07T10:03:45.490290+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10590927",
-   "updated": "2026-08-07T09:38:13.855794+00:00",
+   "updated": "2026-08-07T10:03:45.490277+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Europe & Central Asia",
+   "updated": "2026-08-07T10:03:45.490467+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "1362.02559981695",
-   "updated": "2026-08-07T09:38:13.855822+00:00",
+   "updated": "2026-08-07T10:03:45.490296+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "26.1788063651548",
+   "updated": "2026-08-07T10:03:45.490383+00:00",
    "source": "worldbank",
    "year": "2024"
   }

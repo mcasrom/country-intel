@@ -1,6 +1,6 @@
 {
  "country": "ua",
- "generated": "2026-08-07T09:38:13.967493+00:00",
+ "generated": "2026-08-07T10:03:45.642957+00:00",
  "geo": {
   "name": "Ukraine",
   "lat": 50.4536,
@@ -10,55 +10,85 @@
  "indicators": {
   "esperanza_vida": {
    "value": "74.692",
-   "updated": "2026-08-07T09:38:13.856772+00:00",
+   "updated": "2026-08-07T10:03:45.492259+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "0.988",
+   "updated": "2026-08-07T10:03:45.492281+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "idh": {
+   "value": "0.773",
+   "updated": "2026-08-07T10:03:45.492294+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "6.50198464669254",
-   "updated": "2026-08-07T09:38:13.856723+00:00",
+   "updated": "2026-08-07T10:03:45.492236+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "82.47489929",
-   "updated": "2026-08-07T09:38:13.856787+00:00",
+   "updated": "2026-08-07T10:03:45.492266+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "13.4",
-   "updated": "2026-08-07T09:38:13.856757+00:00",
+   "updated": "2026-08-07T10:03:45.492251+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "UAH",
+   "updated": "2026-08-07T10:03:45.492288+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "30.269553894046208",
-   "updated": "2026-08-07T09:38:13.856740+00:00",
+   "updated": "2026-08-07T10:03:45.492244+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "190833835445.1",
-   "updated": "2026-08-07T09:38:13.856664+00:00",
+   "updated": "2026-08-07T10:03:45.492172+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "18636.13671875",
-   "updated": "2026-08-07T09:38:13.856679+00:00",
+   "updated": "2026-08-07T10:03:45.492216+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "37860221",
-   "updated": "2026-08-07T09:38:13.856648+00:00",
+   "updated": "2026-08-07T10:03:45.492165+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Europe & Central Asia",
+   "updated": "2026-08-07T10:03:45.492300+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "5391.62255859375",
-   "updated": "2026-08-07T09:38:13.856696+00:00",
+   "updated": "2026-08-07T10:03:45.492227+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "69.5315643200148",
+   "updated": "2026-08-07T10:03:45.492273+00:00",
    "source": "worldbank",
    "year": "2024"
   }

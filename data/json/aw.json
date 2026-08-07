@@ -1,6 +1,6 @@
 {
  "country": "aw",
- "generated": "2026-08-07T09:38:13.876850+00:00",
+ "generated": "2026-08-07T10:03:45.524740+00:00",
  "geo": {
   "name": "Aruba",
   "lat": 12.5167,
@@ -10,43 +10,61 @@
  "indicators": {
   "esperanza_vida": {
    "value": "76.5",
-   "updated": "2026-08-07T09:38:13.824511+00:00",
+   "updated": "2026-08-07T10:03:45.444156+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "1.606",
+   "updated": "2026-08-07T10:03:45.444177+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "68",
-   "updated": "2026-08-07T09:38:13.824498+00:00",
+   "updated": "2026-08-07T10:03:45.444145+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "1.3056160007407749",
-   "updated": "2026-08-07T09:38:13.824483+00:00",
+   "updated": "2026-08-07T10:03:45.444132+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "4167588070.29217",
-   "updated": "2026-08-07T09:38:13.824439+00:00",
+   "updated": "2026-08-07T10:03:45.444035+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "51712.1531358934",
-   "updated": "2026-08-07T09:38:13.824454+00:00",
+   "updated": "2026-08-07T10:03:45.444074+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "107995",
-   "updated": "2026-08-07T09:38:13.824426+00:00",
+   "updated": "2026-08-07T10:03:45.444012+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Latin America & Caribbean ",
+   "updated": "2026-08-07T10:03:45.444187+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "38590.5650288641",
-   "updated": "2026-08-07T09:38:13.824468+00:00",
+   "updated": "2026-08-07T10:03:45.444117+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "61.7909396819594",
+   "updated": "2026-08-07T10:03:45.444166+00:00",
    "source": "worldbank",
    "year": "2024"
   }

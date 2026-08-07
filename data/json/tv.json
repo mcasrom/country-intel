@@ -1,6 +1,6 @@
 {
  "country": "tv",
- "generated": "2026-08-07T09:38:13.966781+00:00",
+ "generated": "2026-08-07T10:03:45.641742+00:00",
  "geo": {
   "name": "Tuvalu",
   "lat": -8.6314877,
@@ -10,43 +10,85 @@
  "indicators": {
   "esperanza_vida": {
    "value": "67.259",
-   "updated": "2026-08-07T09:38:13.856457+00:00",
+   "updated": "2026-08-07T10:03:45.491626+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "fertilidad": {
+   "value": "3.174",
+   "updated": "2026-08-07T10:03:45.491716+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "12.8456897735596",
+   "updated": "2026-08-07T10:03:45.491659+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "27.08968544",
+   "updated": "2026-08-07T10:03:45.491632+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.641",
+   "updated": "2026-08-07T10:03:45.491818+00:00",
+   "source": "PNUD 2022",
+   "year": ""
   },
   "migrant_pct": {
    "value": "2.6",
-   "updated": "2026-08-07T09:38:13.856434+00:00",
+   "updated": "2026-08-07T10:03:45.491620+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "AUD",
+   "updated": "2026-08-07T10:03:45.491792+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-29.027576197387514",
-   "updated": "2026-08-07T09:38:13.856417+00:00",
+   "updated": "2026-08-07T10:03:45.491613+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "56752265.8012166",
-   "updated": "2026-08-07T09:38:13.856364+00:00",
+   "updated": "2026-08-07T10:03:45.491593+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "6365.76616505123",
-   "updated": "2026-08-07T09:38:13.856373+00:00",
+   "updated": "2026-08-07T10:03:45.491600+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "9646",
-   "updated": "2026-08-07T09:38:13.856357+00:00",
+   "updated": "2026-08-07T10:03:45.491587+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.492002+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "5883.50257114002",
-   "updated": "2026-08-07T09:38:13.856401+00:00",
+   "updated": "2026-08-07T10:03:45.491606+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "64.7254793441291",
+   "updated": "2026-08-07T10:03:45.491687+00:00",
    "source": "worldbank",
    "year": "2024"
   }

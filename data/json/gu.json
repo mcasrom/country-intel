@@ -1,6 +1,6 @@
 {
  "country": "gu",
- "generated": "2026-08-07T09:38:13.914360+00:00",
+ "generated": "2026-08-07T10:03:45.576096+00:00",
  "geo": {
   "name": "Guam",
   "lat": 13.4443,
@@ -10,31 +10,49 @@
  "indicators": {
   "desempleo": {
    "value": "5.252",
-   "updated": "2026-08-07T09:38:13.838981+00:00",
+   "updated": "2026-08-07T10:03:45.463851+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "77.422",
-   "updated": "2026-08-07T09:38:13.839007+00:00",
+   "updated": "2026-08-07T10:03:45.463895+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "2.748",
+   "updated": "2026-08-07T10:03:45.463921+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "50.2",
-   "updated": "2026-08-07T09:38:13.839000+00:00",
+   "updated": "2026-08-07T10:03:45.463880+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "-3.0039874357033445",
-   "updated": "2026-08-07T09:38:13.838991+00:00",
+   "updated": "2026-08-07T10:03:45.463866+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "167777",
-   "updated": "2026-08-07T09:38:13.838946+00:00",
+   "updated": "2026-08-07T10:03:45.463815+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.463943+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
+  "urbanizacion": {
+   "value": "94.1726346571831",
+   "updated": "2026-08-07T10:03:45.463908+00:00",
    "source": "worldbank",
    "year": "2024"
   }

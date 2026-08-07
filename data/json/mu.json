@@ -1,6 +1,6 @@
 {
  "country": "mu",
- "generated": "2026-08-07T09:38:13.934647+00:00",
+ "generated": "2026-08-07T10:03:45.607006+00:00",
  "geo": {
   "name": "Mauritius",
   "lat": -20.1605,
@@ -10,67 +10,109 @@
  "indicators": {
   "alfabetizacion": {
    "value": "94.2877776512134",
-   "updated": "2026-08-07T09:38:13.847449+00:00",
+   "updated": "2026-08-07T10:03:45.474634+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "desempleo": {
    "value": "5.548",
-   "updated": "2026-08-07T09:38:13.847441+00:00",
+   "updated": "2026-08-07T10:03:45.474628+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "73.7890243902439",
-   "updated": "2026-08-07T09:38:13.847480+00:00",
+   "updated": "2026-08-07T10:03:45.474653+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.44",
+   "updated": "2026-08-07T10:03:45.474695+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "4.247389793396",
+   "updated": "2026-08-07T10:03:45.474665+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "5.56544495",
+   "updated": "2026-08-07T10:03:45.474659+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.802",
+   "updated": "2026-08-07T10:03:45.474707+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "3.6045220384796",
-   "updated": "2026-08-07T09:38:13.847433+00:00",
+   "updated": "2026-08-07T10:03:45.474621+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "73.30793533",
-   "updated": "2026-08-07T09:38:13.847501+00:00",
+   "updated": "2026-08-07T10:03:45.474672+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.3",
-   "updated": "2026-08-07T09:38:13.847472+00:00",
+   "updated": "2026-08-07T10:03:45.474647+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "MUR",
+   "updated": "2026-08-07T10:03:45.474701+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-2.2371544230557747",
-   "updated": "2026-08-07T09:38:13.847464+00:00",
+   "updated": "2026-08-07T10:03:45.474640+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "14938055690.3609",
-   "updated": "2026-08-07T09:38:13.847404+00:00",
+   "updated": "2026-08-07T10:03:45.474600+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "31696.7381226145",
-   "updated": "2026-08-07T09:38:13.847412+00:00",
+   "updated": "2026-08-07T10:03:45.474608+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "1245779",
-   "updated": "2026-08-07T09:38:13.847396+00:00",
+   "updated": "2026-08-07T10:03:45.474583+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Sub-Saharan Africa ",
+   "updated": "2026-08-07T10:03:45.474713+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "11990.9355434317",
-   "updated": "2026-08-07T09:38:13.847420+00:00",
+   "updated": "2026-08-07T10:03:45.474614+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "39.0162147027917",
+   "updated": "2026-08-07T10:03:45.474678+00:00",
    "source": "worldbank",
    "year": "2024"
   }

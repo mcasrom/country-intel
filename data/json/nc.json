@@ -1,6 +1,6 @@
 {
  "country": "nc",
- "generated": "2026-08-07T09:38:13.938698+00:00",
+ "generated": "2026-08-07T10:03:45.610641+00:00",
  "geo": {
   "name": "New Caledonia",
   "lat": -22.2677,
@@ -10,43 +10,61 @@
  "indicators": {
   "desempleo": {
    "value": "10.991",
-   "updated": "2026-08-07T09:38:13.848288+00:00",
+   "updated": "2026-08-07T10:03:45.476625+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "78.921",
-   "updated": "2026-08-07T09:38:13.848311+00:00",
+   "updated": "2026-08-07T10:03:45.476683+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "1.964",
+   "updated": "2026-08-07T10:03:45.476719+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "26.2",
-   "updated": "2026-08-07T09:38:13.848304+00:00",
+   "updated": "2026-08-07T10:03:45.476661+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "1.554816685404201",
-   "updated": "2026-08-07T09:38:13.848296+00:00",
+   "updated": "2026-08-07T10:03:45.476647+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "8548919387.12607",
-   "updated": "2026-08-07T09:38:13.848273+00:00",
+   "updated": "2026-08-07T10:03:45.476594+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "292639",
-   "updated": "2026-08-07T09:38:13.848266+00:00",
+   "updated": "2026-08-07T10:03:45.476581+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.476735+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "29213.1923192946",
-   "updated": "2026-08-07T09:38:13.848281+00:00",
+   "updated": "2026-08-07T10:03:45.476608+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "67.9514695585577",
+   "updated": "2026-08-07T10:03:45.476700+00:00",
    "source": "worldbank",
    "year": "2024"
   }

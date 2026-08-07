@@ -1,6 +1,6 @@
 {
  "country": "ml",
- "generated": "2026-08-07T09:38:13.930698+00:00",
+ "generated": "2026-08-07T10:03:45.604072+00:00",
  "geo": {
   "name": "Mali",
   "lat": 13.5667,
@@ -10,67 +10,109 @@
  "indicators": {
   "alfabetizacion": {
    "value": "35.6300010681152",
-   "updated": "2026-08-07T09:38:13.846516+00:00",
+   "updated": "2026-08-07T10:03:45.473705+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "desempleo": {
    "value": "2.924",
-   "updated": "2026-08-07T09:38:13.846501+00:00",
+   "updated": "2026-08-07T10:03:45.473699+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "60.675",
-   "updated": "2026-08-07T09:38:13.846565+00:00",
+   "updated": "2026-08-07T10:03:45.473724+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "5.51",
+   "updated": "2026-08-07T10:03:45.473755+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "4.18465094218116",
+   "updated": "2026-08-07T10:03:45.473736+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "3.81316996",
+   "updated": "2026-08-07T10:03:45.473730+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.428",
+   "updated": "2026-08-07T10:03:45.473766+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "3.2063986409966",
-   "updated": "2026-08-07T09:38:13.846481+00:00",
+   "updated": "2026-08-07T10:03:45.473692+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "36.80149841",
-   "updated": "2026-08-07T09:38:13.846598+00:00",
+   "updated": "2026-08-07T10:03:45.473743+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.2",
-   "updated": "2026-08-07T09:38:13.846549+00:00",
+   "updated": "2026-08-07T10:03:45.473718+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "XOF",
+   "updated": "2026-08-07T10:03:45.473761+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-1.9151425970322233",
-   "updated": "2026-08-07T09:38:13.846533+00:00",
+   "updated": "2026-08-07T10:03:45.473712+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "26761281076.7658",
-   "updated": "2026-08-07T09:38:13.846422+00:00",
+   "updated": "2026-08-07T10:03:45.473672+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "3321.57614442921",
-   "updated": "2026-08-07T09:38:13.846444+00:00",
+   "updated": "2026-08-07T10:03:45.473679+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "24478595",
-   "updated": "2026-08-07T09:38:13.846401+00:00",
+   "updated": "2026-08-07T10:03:45.473666+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Sub-Saharan Africa ",
+   "updated": "2026-08-07T10:03:45.473772+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "1093.2523323649",
-   "updated": "2026-08-07T09:38:13.846464+00:00",
+   "updated": "2026-08-07T10:03:45.473685+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "31.6075621182225",
+   "updated": "2026-08-07T10:03:45.473749+00:00",
    "source": "worldbank",
    "year": "2024"
   }

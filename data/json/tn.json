@@ -1,6 +1,6 @@
 {
  "country": "tn",
- "generated": "2026-08-07T09:38:13.964758+00:00",
+ "generated": "2026-08-07T10:03:45.639234+00:00",
  "geo": {
   "name": "Tunisia",
   "lat": 36.7899,
@@ -10,67 +10,109 @@
  "indicators": {
   "alfabetizacion": {
    "value": "86.25",
-   "updated": "2026-08-07T09:38:13.856061+00:00",
+   "updated": "2026-08-07T10:03:45.491080+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "desempleo": {
    "value": "15.341",
-   "updated": "2026-08-07T09:38:13.856054+00:00",
+   "updated": "2026-08-07T10:03:45.491074+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "76.711",
-   "updated": "2026-08-07T09:38:13.856085+00:00",
+   "updated": "2026-08-07T10:03:45.491101+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.818",
+   "updated": "2026-08-07T10:03:45.491184+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "6.73398856321206",
+   "updated": "2026-08-07T10:03:45.491162+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "7.98537874",
+   "updated": "2026-08-07T10:03:45.491108+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.732",
+   "updated": "2026-08-07T10:03:45.491196+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "7.20661657168794",
-   "updated": "2026-08-07T09:38:13.856046+00:00",
+   "updated": "2026-08-07T10:03:45.491068+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "76.5",
-   "updated": "2026-08-07T09:38:13.856092+00:00",
+   "updated": "2026-08-07T10:03:45.491171+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.5",
-   "updated": "2026-08-07T09:38:13.856077+00:00",
+   "updated": "2026-08-07T10:03:45.491094+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "TND",
+   "updated": "2026-08-07T10:03:45.491190+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-1.2397869889401487",
-   "updated": "2026-08-07T09:38:13.856068+00:00",
+   "updated": "2026-08-07T10:03:45.491087+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "51412122479.8468",
-   "updated": "2026-08-07T09:38:13.856022+00:00",
+   "updated": "2026-08-07T10:03:45.491048+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "14542.0966234293",
-   "updated": "2026-08-07T09:38:13.856029+00:00",
+   "updated": "2026-08-07T10:03:45.491054+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "12277109",
-   "updated": "2026-08-07T09:38:13.856014+00:00",
+   "updated": "2026-08-07T10:03:45.491041+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Middle East, North Africa, Afghanistan & Pakistan",
+   "updated": "2026-08-07T10:03:45.491202+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "4187.64079392362",
-   "updated": "2026-08-07T09:38:13.856037+00:00",
+   "updated": "2026-08-07T10:03:45.491061+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "70.3585355691955",
+   "updated": "2026-08-07T10:03:45.491178+00:00",
    "source": "worldbank",
    "year": "2024"
   }

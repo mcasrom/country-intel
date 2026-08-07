@@ -1,6 +1,6 @@
 {
  "country": "lu",
- "generated": "2026-08-07T09:38:13.926617+00:00",
+ "generated": "2026-08-07T10:03:45.598626+00:00",
  "geo": {
   "name": "Luxembourg",
   "lat": 49.61,
@@ -10,61 +10,103 @@
  "indicators": {
   "desempleo": {
    "value": "6.4",
-   "updated": "2026-08-07T09:38:13.844074+00:00",
+   "updated": "2026-08-07T10:03:45.471684+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "83.1951219512195",
-   "updated": "2026-08-07T09:38:13.844122+00:00",
+   "updated": "2026-08-07T10:03:45.471739+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.25",
+   "updated": "2026-08-07T10:03:45.471816+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "5.89136267",
+   "updated": "2026-08-07T10:03:45.471775+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gini": {
+   "value": "33.6",
+   "updated": "2026-08-07T10:03:45.471759+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.93",
+   "updated": "2026-08-07T10:03:45.471841+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "2.05113269954859",
-   "updated": "2026-08-07T09:38:13.844058+00:00",
+   "updated": "2026-08-07T10:03:45.471667+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "98.7606147",
-   "updated": "2026-08-07T09:38:13.844137+00:00",
+   "updated": "2026-08-07T10:03:45.471789+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "51.2",
-   "updated": "2026-08-07T09:38:13.844106+00:00",
+   "updated": "2026-08-07T10:03:45.471725+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "EUR",
+   "updated": "2026-08-07T10:03:45.471829+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "8.385375739277887",
-   "updated": "2026-08-07T09:38:13.844090+00:00",
+   "updated": "2026-08-07T10:03:45.471704+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "93279851863.4062",
-   "updated": "2026-08-07T09:38:13.844010+00:00",
+   "updated": "2026-08-07T10:03:45.471609+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "156079.3685607",
-   "updated": "2026-08-07T09:38:13.844026+00:00",
+   "updated": "2026-08-07T10:03:45.471626+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "677012",
-   "updated": "2026-08-07T09:38:13.843994+00:00",
+   "updated": "2026-08-07T10:03:45.471598+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Europe & Central Asia",
+   "updated": "2026-08-07T10:03:45.471854+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "137781.681659123",
-   "updated": "2026-08-07T09:38:13.844042+00:00",
+   "updated": "2026-08-07T10:03:45.471646+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "94.8438702866393",
+   "updated": "2026-08-07T10:03:45.471802+00:00",
    "source": "worldbank",
    "year": "2024"
   }

@@ -1,6 +1,6 @@
 {
  "country": "sb",
- "generated": "2026-08-07T09:38:13.952260+00:00",
+ "generated": "2026-08-07T10:03:45.627438+00:00",
  "geo": {
   "name": "Solomon Islands",
   "lat": -9.42676,
@@ -10,61 +10,109 @@
  "indicators": {
   "desempleo": {
    "value": "1.444",
-   "updated": "2026-08-07T09:38:13.853225+00:00",
+   "updated": "2026-08-07T10:03:45.485565+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "deuda_pib": {
+   "value": "26.0369330663254",
+   "updated": "2026-08-07T10:03:45.485626+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "70.694",
-   "updated": "2026-08-07T09:38:13.853272+00:00",
+   "updated": "2026-08-07T10:03:45.485612+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "3.513",
+   "updated": "2026-08-07T10:03:45.485728+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "8.29349080062944",
+   "updated": "2026-08-07T10:03:45.485652+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "5.36366177",
+   "updated": "2026-08-07T10:03:45.485639+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "idh": {
+   "value": "0.562",
+   "updated": "2026-08-07T10:03:45.485778+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "4.32183948388033",
-   "updated": "2026-08-07T09:38:13.853209+00:00",
+   "updated": "2026-08-07T10:03:45.485549+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "29.04070091",
-   "updated": "2026-08-07T09:38:13.853287+00:00",
+   "updated": "2026-08-07T10:03:45.485682+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.3",
-   "updated": "2026-08-07T09:38:13.853257+00:00",
+   "updated": "2026-08-07T10:03:45.485593+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "SBD",
+   "updated": "2026-08-07T10:03:45.485767+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "1.9653368294356188",
-   "updated": "2026-08-07T09:38:13.853241+00:00",
+   "updated": "2026-08-07T10:03:45.485575+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "1583964703.75061",
-   "updated": "2026-08-07T09:38:13.853160+00:00",
+   "updated": "2026-08-07T10:03:45.485492+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "2679.1210283533",
-   "updated": "2026-08-07T09:38:13.853177+00:00",
+   "updated": "2026-08-07T10:03:45.485506+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "819198",
-   "updated": "2026-08-07T09:38:13.853146+00:00",
+   "updated": "2026-08-07T10:03:45.485474+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "East Asia & Pacific",
+   "updated": "2026-08-07T10:03:45.485787+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "1933.55538435227",
-   "updated": "2026-08-07T09:38:13.853193+00:00",
+   "updated": "2026-08-07T10:03:45.485523+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "30.6617188562194",
+   "updated": "2026-08-07T10:03:45.485702+00:00",
    "source": "worldbank",
    "year": "2024"
   }

@@ -1,6 +1,6 @@
 {
  "country": "py",
- "generated": "2026-08-07T09:38:13.948407+00:00",
+ "generated": "2026-08-07T10:03:45.623378+00:00",
  "geo": {
   "name": "Paraguay",
   "lat": -25.3005,
@@ -10,73 +10,121 @@
  "indicators": {
   "alfabetizacion": {
    "value": "94.8600006103516",
-   "updated": "2026-08-07T09:38:13.851763+00:00",
+   "updated": "2026-08-07T10:03:45.483405+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "desempleo": {
    "value": "5.686",
-   "updated": "2026-08-07T09:38:13.851740+00:00",
+   "updated": "2026-08-07T10:03:45.483387+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "73.982",
-   "updated": "2026-08-07T09:38:13.851818+00:00",
+   "updated": "2026-08-07T10:03:45.483454+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "fertilidad": {
+   "value": "2.416",
+   "updated": "2026-08-07T10:03:45.483618+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "3.53410005569458",
+   "updated": "2026-08-07T10:03:45.483567+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_salud": {
+   "value": "8.35731316",
+   "updated": "2026-08-07T10:03:45.483543+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gini": {
+   "value": "44.2",
+   "updated": "2026-08-07T10:03:45.483521+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "homicidios": {
    "value": "6.7795163925492",
-   "updated": "2026-08-07T09:38:13.851844+00:00",
+   "updated": "2026-08-07T10:03:45.483496+00:00",
    "source": "worldbank",
    "year": "2023"
   },
+  "idh": {
+   "value": "0.717",
+   "updated": "2026-08-07T10:03:45.483643+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "3.83540271728533",
-   "updated": "2026-08-07T09:38:13.851722+00:00",
+   "updated": "2026-08-07T10:03:45.483372+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "81.57806793",
-   "updated": "2026-08-07T09:38:13.851867+00:00",
+   "updated": "2026-08-07T10:03:45.483585+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.6",
-   "updated": "2026-08-07T09:38:13.851803+00:00",
+   "updated": "2026-08-07T10:03:45.483440+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "moneda": {
+   "value": "PYG",
+   "updated": "2026-08-07T10:03:45.483631+00:00",
+   "source": "static",
+   "year": ""
+  },
   "net_mig": {
    "value": "-1.7969007178799485",
-   "updated": "2026-08-07T09:38:13.851785+00:00",
+   "updated": "2026-08-07T10:03:45.483425+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "44738819362.3269",
-   "updated": "2026-08-07T09:38:13.851665+00:00",
+   "updated": "2026-08-07T10:03:45.483306+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "18631.6436164051",
-   "updated": "2026-08-07T09:38:13.851687+00:00",
+   "updated": "2026-08-07T10:03:45.483340+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "6929153",
-   "updated": "2026-08-07T09:38:13.851648+00:00",
+   "updated": "2026-08-07T10:03:45.483296+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "region": {
+   "value": "Latin America & Caribbean ",
+   "updated": "2026-08-07T10:03:45.483656+00:00",
+   "source": "Banco Mundial",
+   "year": ""
+  },
   "renta_pc": {
    "value": "6456.60723068562",
-   "updated": "2026-08-07T09:38:13.851705+00:00",
+   "updated": "2026-08-07T10:03:45.483356+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "69.8622585886961",
+   "updated": "2026-08-07T10:03:45.483604+00:00",
    "source": "worldbank",
    "year": "2024"
   }
