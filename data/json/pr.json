@@ -1,6 +1,6 @@
 {
  "country": "pr",
- "generated": "2026-08-07T08:54:30.218854+00:00",
+ "generated": "2026-08-07T09:38:13.945591+00:00",
  "geo": {
   "name": "Puerto Rico (US)",
   "lat": 18.23,
@@ -10,39 +10,57 @@
  "indicators": {
   "desempleo": {
    "value": "5.639",
-   "updated": "2026-08-07T08:54:30.119165+00:00",
+   "updated": "2026-08-07T09:38:13.850624+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "81.902",
+   "updated": "2026-08-07T09:38:13.850671+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "14.5896581532053",
+   "updated": "2026-08-07T09:38:13.850686+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "migrant_pct": {
+   "value": "6.9",
+   "updated": "2026-08-07T09:38:13.850656+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
-   "value": "11561",
-   "updated": "2026-08-06T16:57:05.173984+00:00",
+   "value": "3.6099685216740185",
+   "updated": "2026-08-07T09:38:13.850640+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "126029527033.705",
-   "updated": "2026-08-07T08:54:30.119136+00:00",
+   "updated": "2026-08-07T09:38:13.850575+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "50332.9848222477",
-   "updated": "2026-08-07T08:54:30.119151+00:00",
+   "updated": "2026-08-07T09:38:13.850592+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "3202521",
-   "updated": "2026-08-07T08:54:30.119122+00:00",
+   "updated": "2026-08-07T09:38:13.850560+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "39353.2242360643",
-   "updated": "2026-08-06T16:57:05.173972+00:00",
+   "updated": "2026-08-07T09:38:13.850607+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

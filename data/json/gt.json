@@ -1,6 +1,6 @@
 {
  "country": "gt",
- "generated": "2026-08-07T08:54:30.182123+00:00",
+ "generated": "2026-08-07T09:38:13.914066+00:00",
  "geo": {
   "name": "Guatemala",
   "lat": 14.6248,
@@ -10,51 +10,75 @@
  "indicators": {
   "alfabetizacion": {
    "value": "82.1100006103516",
-   "updated": "2026-08-06T16:57:05.165045+00:00",
-   "source": "worldbank",
-   "year": ""
-  },
-  "desempleo": {
-   "value": "2.613",
-   "updated": "2026-08-07T08:54:30.111619+00:00",
+   "updated": "2026-08-07T09:38:13.838899+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "desempleo": {
+   "value": "2.613",
+   "updated": "2026-08-07T09:38:13.838892+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "72.746",
+   "updated": "2026-08-07T09:38:13.838924+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "23.3657267272051",
+   "updated": "2026-08-07T09:38:13.838931+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "inflacion": {
    "value": "2.86992752918294",
-   "updated": "2026-08-06T16:57:05.165018+00:00",
+   "updated": "2026-08-07T09:38:13.838884+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "60.22140121",
+   "updated": "2026-08-07T09:38:13.838938+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "0.5",
-   "updated": "2026-08-06T16:57:05.165074+00:00",
+   "updated": "2026-08-07T09:38:13.838915+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-7725",
-   "updated": "2026-08-06T16:57:05.165055+00:00",
+   "value": "-0.41969191190935695",
+   "updated": "2026-08-07T09:38:13.838907+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "113215575150.885",
-   "updated": "2026-08-07T08:54:30.111603+00:00",
+   "updated": "2026-08-07T09:38:13.838861+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "14393.0528302577",
+   "updated": "2026-08-07T09:38:13.838869+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "18406359",
-   "updated": "2026-08-07T08:54:30.111590+00:00",
+   "updated": "2026-08-07T09:38:13.838854+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "6150.89465281457",
-   "updated": "2026-08-06T16:57:05.165035+00:00",
+   "updated": "2026-08-07T09:38:13.838876+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

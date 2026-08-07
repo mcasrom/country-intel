@@ -1,6 +1,6 @@
 {
  "country": "tl",
- "generated": "2026-08-07T08:54:30.232870+00:00",
+ "generated": "2026-08-07T09:38:13.963954+00:00",
  "geo": {
   "name": "Timor-Leste",
   "lat": -8.56667,
@@ -10,45 +10,57 @@
  "indicators": {
   "desempleo": {
    "value": "1.523",
-   "updated": "2026-08-07T08:54:30.121515+00:00",
+   "updated": "2026-08-07T09:38:13.855906+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "67.904",
+   "updated": "2026-08-07T09:38:13.855932+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "inflacion": {
    "value": "2.06284153005468",
-   "updated": "2026-08-06T16:57:05.176749+00:00",
+   "updated": "2026-08-07T09:38:13.855898+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "0.6",
+   "updated": "2026-08-07T09:38:13.855925+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-2552",
-   "updated": "2026-08-06T16:57:05.176794+00:00",
+   "value": "-1.822026819206676",
+   "updated": "2026-08-07T09:38:13.855913+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "1865608515.41321",
-   "updated": "2026-08-07T08:54:30.121488+00:00",
+   "updated": "2026-08-07T09:38:13.855875+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "4429.20182282365",
-   "updated": "2026-08-07T08:54:30.121503+00:00",
+   "updated": "2026-08-07T09:38:13.855883+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "1400638",
-   "updated": "2026-08-07T08:54:30.121442+00:00",
+   "updated": "2026-08-07T09:38:13.855868+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "1331.9705130185",
-   "updated": "2026-08-06T16:57:05.176777+00:00",
+   "updated": "2026-08-07T09:38:13.855890+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

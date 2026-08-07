@@ -1,6 +1,6 @@
 {
  "country": "cy",
- "generated": "2026-08-07T08:54:30.167681+00:00",
+ "generated": "2026-08-07T09:38:13.897417+00:00",
  "geo": {
   "name": "Cyprus",
   "lat": 35.1676,
@@ -10,45 +10,69 @@
  "indicators": {
   "desempleo": {
    "value": "4.9",
-   "updated": "2026-08-06T16:57:05.161576+00:00",
+   "updated": "2026-08-07T09:38:13.831365+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "81.821",
+   "updated": "2026-08-07T09:38:13.831420+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "0.81785876397005",
+   "updated": "2026-08-07T09:38:13.831433+00:00",
+   "source": "worldbank",
+   "year": "2023"
   },
   "inflacion": {
    "value": "1.80023018624824",
-   "updated": "2026-08-06T16:57:05.161517+00:00",
+   "updated": "2026-08-07T09:38:13.831350+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "89.60099246",
+   "updated": "2026-08-07T09:38:13.831447+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "14.9",
-   "updated": "2026-08-06T16:57:05.161623+00:00",
+   "updated": "2026-08-07T09:38:13.831407+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "8138",
-   "updated": "2026-08-06T16:57:05.161611+00:00",
+   "value": "5.991392067332115",
+   "updated": "2026-08-07T09:38:13.831391+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "37634551820.7367",
-   "updated": "2026-08-07T08:54:30.104530+00:00",
+   "updated": "2026-08-07T09:38:13.831288+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "63006.765625",
+   "updated": "2026-08-07T09:38:13.831303+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "1358282",
-   "updated": "2026-08-07T08:54:30.104500+00:00",
+   "updated": "2026-08-07T09:38:13.831275+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "38674.3125",
-   "updated": "2026-08-06T16:57:05.161594+00:00",
+   "updated": "2026-08-07T09:38:13.831316+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

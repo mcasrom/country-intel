@@ -1,6 +1,6 @@
 {
  "country": "pw",
- "generated": "2026-08-07T08:54:30.220683+00:00",
+ "generated": "2026-08-07T09:38:13.947810+00:00",
  "geo": {
   "name": "Palau",
   "lat": 7.34194,
@@ -8,47 +8,59 @@
   "iso2": "pw"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "69.383",
+   "updated": "2026-08-07T09:38:13.851578+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "inflacion": {
    "value": "2.23172772921704",
-   "updated": "2026-08-06T16:57:05.174462+00:00",
+   "updated": "2026-08-07T09:38:13.851554+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "83.92549896",
+   "updated": "2026-08-07T09:38:13.851620+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "29.5",
-   "updated": "2026-08-06T16:57:05.174500+00:00",
+   "updated": "2026-08-07T09:38:13.851570+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-14",
-   "updated": "2026-08-06T16:57:05.174488+00:00",
+   "value": "-0.7911839502684374",
+   "updated": "2026-08-07T09:38:13.851562+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "321501812.5",
-   "updated": "2026-08-07T08:54:30.119865+00:00",
+   "updated": "2026-08-07T09:38:13.851528+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "21059.1347141726",
-   "updated": "2026-08-07T08:54:30.119881+00:00",
+   "updated": "2026-08-07T09:38:13.851536+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "17695",
-   "updated": "2026-08-07T08:54:30.119851+00:00",
+   "updated": "2026-08-07T09:38:13.851520+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "18169.0767165866",
-   "updated": "2026-08-06T16:57:05.174476+00:00",
+   "updated": "2026-08-07T09:38:13.851545+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

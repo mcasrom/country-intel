@@ -1,6 +1,6 @@
 {
  "country": "mo",
- "generated": "2026-08-07T08:54:30.203936+00:00",
+ "generated": "2026-08-07T09:38:13.932314+00:00",
  "geo": {
   "name": "Macao SAR, China",
   "lat": 22.1667,
@@ -10,51 +10,69 @@
  "indicators": {
   "desempleo": {
    "value": "2.262",
-   "updated": "2026-08-07T08:54:30.116618+00:00",
+   "updated": "2026-08-07T09:38:13.847066+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "esperanza_vida": {
+   "value": "83.3317073170732",
+   "updated": "2026-08-07T09:38:13.847089+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "0.560293537784445",
+   "updated": "2026-08-07T09:38:13.847096+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "inflacion": {
    "value": "0.672498598854365",
-   "updated": "2026-08-06T16:57:05.171239+00:00",
+   "updated": "2026-08-07T09:38:13.847058+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "89.82640076",
+   "updated": "2026-08-07T09:38:13.847104+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "59.3",
-   "updated": "2026-08-06T16:57:05.171288+00:00",
+   "updated": "2026-08-07T09:38:13.847081+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "1620",
-   "updated": "2026-08-06T16:57:05.171276+00:00",
+   "value": "2.3580786026200875",
+   "updated": "2026-08-07T09:38:13.847073+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "49467258923.3244",
-   "updated": "2026-08-07T08:54:30.116591+00:00",
+   "updated": "2026-08-07T09:38:13.847031+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "127144.298137913",
-   "updated": "2026-08-07T08:54:30.116606+00:00",
+   "updated": "2026-08-07T09:38:13.847040+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "687000",
-   "updated": "2026-08-07T08:54:30.116579+00:00",
+   "updated": "2026-08-07T09:38:13.847013+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "72004.7437020733",
-   "updated": "2026-08-06T16:57:05.171264+00:00",
+   "updated": "2026-08-07T09:38:13.847049+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

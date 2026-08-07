@@ -1,6 +1,6 @@
 {
  "country": "bm",
- "generated": "2026-08-07T08:54:30.154585+00:00",
+ "generated": "2026-08-07T09:38:13.882938+00:00",
  "geo": {
   "name": "Bermuda",
   "lat": 32.3293,
@@ -8,35 +8,53 @@
   "iso2": "bm"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "82.49",
+   "updated": "2026-08-07T09:38:13.826209+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "6.18257133141674",
+   "updated": "2026-08-07T09:38:13.826226+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "migrant_pct": {
    "value": "31.2",
-   "updated": "2026-08-06T16:57:05.158800+00:00",
+   "updated": "2026-08-07T09:38:13.826195+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-5",
-   "updated": "2026-08-06T16:57:05.158794+00:00",
+   "value": "-0.07735627204653754",
+   "updated": "2026-08-07T09:38:13.826181+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "9194499000",
-   "updated": "2026-08-07T08:54:30.100738+00:00",
+   "updated": "2026-08-07T09:38:13.826138+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "118727.973294368",
+   "updated": "2026-08-07T09:38:13.826151+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "64636",
-   "updated": "2026-08-07T08:54:30.100719+00:00",
+   "updated": "2026-08-07T09:38:13.826125+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "142250.433195123",
-   "updated": "2026-08-06T16:57:05.158787+00:00",
+   "updated": "2026-08-07T09:38:13.826165+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

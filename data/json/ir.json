@@ -1,6 +1,6 @@
 {
  "country": "ir",
- "generated": "2026-08-07T08:54:30.189084+00:00",
+ "generated": "2026-08-07T09:38:13.918842+00:00",
  "geo": {
   "name": "Iran, Islamic Rep.",
   "lat": 35.6878,
@@ -8,47 +8,71 @@
   "iso2": "ir"
  },
  "indicators": {
+  "alfabetizacion": {
+   "value": "88.9168161136597",
+   "updated": "2026-08-07T09:38:13.840562+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "desempleo": {
    "value": "8.146",
-   "updated": "2026-08-07T08:54:30.112990+00:00",
+   "updated": "2026-08-07T09:38:13.840546+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "77.854",
+   "updated": "2026-08-07T09:38:13.840631+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "inflacion": {
    "value": "32.455871402917",
-   "updated": "2026-08-06T16:57:05.166798+00:00",
+   "updated": "2026-08-07T09:38:13.840529+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "85.3404007",
+   "updated": "2026-08-07T09:38:13.840648+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "4.2",
-   "updated": "2026-08-06T16:57:05.166847+00:00",
+   "updated": "2026-08-07T09:38:13.840593+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "190156",
-   "updated": "2026-08-06T16:57:05.166833+00:00",
+   "value": "2.0766702787831233",
+   "updated": "2026-08-07T09:38:13.840577+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "475252089215.416",
-   "updated": "2026-08-07T08:54:30.112976+00:00",
+   "updated": "2026-08-07T09:38:13.840476+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "19902.7484779621",
+   "updated": "2026-08-07T09:38:13.840493+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "91567738",
-   "updated": "2026-08-07T08:54:30.112963+00:00",
+   "updated": "2026-08-07T09:38:13.840462+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "5190.16959024821",
-   "updated": "2026-08-06T16:57:05.166820+00:00",
+   "updated": "2026-08-07T09:38:13.840510+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

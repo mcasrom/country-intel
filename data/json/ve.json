@@ -1,6 +1,6 @@
 {
  "country": "ve",
- "generated": "2026-08-07T08:54:30.238547+00:00",
+ "generated": "2026-08-07T09:38:13.971232+00:00",
  "geo": {
   "name": "Venezuela, RB",
   "lat": 9.08165,
@@ -10,33 +10,51 @@
  "indicators": {
   "desempleo": {
    "value": "5.321",
-   "updated": "2026-08-07T08:54:30.122610+00:00",
+   "updated": "2026-08-07T09:38:13.858291+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "72.673",
+   "updated": "2026-08-07T09:38:13.858357+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "76.67890167",
+   "updated": "2026-08-07T09:38:13.858372+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "4.4",
+   "updated": "2026-08-07T09:38:13.858342+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
-   "value": "-105297",
-   "updated": "2026-08-06T16:57:05.178097+00:00",
+   "value": "-3.706917343562135",
+   "updated": "2026-08-07T09:38:13.858307+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "120566112397.063",
-   "updated": "2026-08-07T08:54:30.122599+00:00",
+   "updated": "2026-08-07T09:38:13.858259+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "28405543",
-   "updated": "2026-08-07T08:54:30.122588+00:00",
+   "updated": "2026-08-07T09:38:13.858243+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "4244.45723136019",
-   "updated": "2026-08-06T16:57:05.178080+00:00",
+   "updated": "2026-08-07T09:38:13.858275+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

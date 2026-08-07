@@ -1,6 +1,6 @@
 {
  "country": "sv",
- "generated": "2026-08-07T08:54:30.229654+00:00",
+ "generated": "2026-08-07T09:38:13.959508+00:00",
  "geo": {
   "name": "El Salvador",
   "lat": 13.7034,
@@ -10,51 +10,69 @@
  "indicators": {
   "alfabetizacion": {
    "value": "89.7699966430664",
-   "updated": "2026-08-06T16:57:05.176173+00:00",
+   "updated": "2026-08-07T09:38:13.855081+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "desempleo": {
    "value": "3.261",
-   "updated": "2026-08-07T08:54:30.121091+00:00",
+   "updated": "2026-08-07T09:38:13.855061+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "72.302",
+   "updated": "2026-08-07T09:38:13.855131+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "inflacion": {
    "value": "0.853782292567288",
-   "updated": "2026-08-06T16:57:05.176136+00:00",
+   "updated": "2026-08-07T09:38:13.855038+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "66.47769928",
+   "updated": "2026-08-07T09:38:13.855146+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "0.7",
-   "updated": "2026-08-06T16:57:05.176197+00:00",
+   "updated": "2026-08-07T09:38:13.855114+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-23102",
-   "updated": "2026-08-06T16:57:05.176185+00:00",
+   "value": "-3.6448874308497703",
+   "updated": "2026-08-07T09:38:13.855098+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "34879730000",
-   "updated": "2026-08-07T08:54:30.121081+00:00",
+   "updated": "2026-08-07T09:38:13.854924+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "13258.1805042704",
+   "updated": "2026-08-07T09:38:13.854943+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "6338193",
-   "updated": "2026-08-07T08:54:30.121070+00:00",
+   "updated": "2026-08-07T09:38:13.854899+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "5503.10317151907",
-   "updated": "2026-08-06T16:57:05.176160+00:00",
+   "updated": "2026-08-07T09:38:13.854992+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

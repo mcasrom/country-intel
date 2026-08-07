@@ -1,6 +1,6 @@
 {
  "country": "cu",
- "generated": "2026-08-07T08:54:30.166590+00:00",
+ "generated": "2026-08-07T09:38:13.895820+00:00",
  "geo": {
   "name": "Cuba",
   "lat": 23.1333,
@@ -10,25 +10,37 @@
  "indicators": {
   "desempleo": {
    "value": "1.755",
-   "updated": "2026-08-06T16:57:05.161167+00:00",
+   "updated": "2026-08-07T09:38:13.830959+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "78.264",
+   "updated": "2026-08-07T09:38:13.831001+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "70.47699738",
+   "updated": "2026-08-07T09:38:13.831014+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "0",
-   "updated": "2026-08-06T16:57:05.161200+00:00",
+   "updated": "2026-08-07T09:38:13.830988+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-22356",
-   "updated": "2026-08-06T16:57:05.161186+00:00",
+   "value": "-2.036105813748778",
+   "updated": "2026-08-07T09:38:13.830973+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "poblacion": {
    "value": "10979783",
-   "updated": "2026-08-07T08:54:30.104362+00:00",
+   "updated": "2026-08-07T09:38:13.830945+00:00",
    "source": "worldbank",
    "year": "2024"
   }

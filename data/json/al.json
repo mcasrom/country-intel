@@ -1,6 +1,6 @@
 {
  "country": "al",
- "generated": "2026-08-07T08:54:30.139713+00:00",
+ "generated": "2026-08-07T09:38:13.872127+00:00",
  "geo": {
   "name": "Albania",
   "lat": 41.3317,
@@ -10,67 +10,103 @@
  "indicators": {
   "alfabetizacion": {
    "value": "97.6800003051758",
-   "updated": "2026-08-07T08:54:30.096044+00:00",
+   "updated": "2026-08-07T09:38:13.821672+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "desempleo": {
    "value": "10.689",
-   "updated": "2026-08-07T08:54:30.096004+00:00",
+   "updated": "2026-08-07T09:38:13.821659+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "deuda_pib": {
+   "value": "49.9643490499689",
+   "updated": "2026-08-07T09:38:13.822117+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "79.776",
-   "updated": "2026-08-07T08:54:30.096612+00:00",
+   "updated": "2026-08-07T09:38:13.822088+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "fertilidad": {
+   "value": "1.341",
+   "updated": "2026-08-07T09:38:13.822189+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "gasto_educacion": {
+   "value": "3.09153008460998",
+   "updated": "2026-08-07T09:38:13.822146+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "gasto_salud": {
+   "value": "7.05240345",
+   "updated": "2026-08-07T09:38:13.822131+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "homicidios": {
+   "value": "1.38708340817063",
+   "updated": "2026-08-07T09:38:13.822103+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "inflacion": {
    "value": "2.21587375089992",
-   "updated": "2026-08-07T08:54:30.095962+00:00",
+   "updated": "2026-08-07T09:38:13.821638+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "85.86389923",
-   "updated": "2026-08-07T08:54:30.096735+00:00",
+   "updated": "2026-08-07T09:38:13.822160+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "1.7",
-   "updated": "2026-08-07T08:54:30.096099+00:00",
+   "updated": "2026-08-07T09:38:13.822063+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
-   "value": "-24472",
-   "updated": "2026-08-06T16:57:05.157211+00:00",
+   "value": "-10.294775880810793",
+   "updated": "2026-08-07T09:38:13.821689+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "27037474263.2977",
-   "updated": "2026-08-07T08:54:30.095835+00:00",
+   "updated": "2026-08-07T09:38:13.821589+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "26701.7649330157",
-   "updated": "2026-08-07T08:54:30.095875+00:00",
+   "updated": "2026-08-07T09:38:13.821603+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "2377128",
-   "updated": "2026-08-07T08:54:30.095795+00:00",
+   "updated": "2026-08-07T09:38:13.821576+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "11374.0085781236",
-   "updated": "2026-08-07T08:54:30.095920+00:00",
+   "updated": "2026-08-07T09:38:13.821623+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "urbanizacion": {
+   "value": "58.5463634043555",
+   "updated": "2026-08-07T09:38:13.822175+00:00",
    "source": "worldbank",
    "year": "2024"
   }

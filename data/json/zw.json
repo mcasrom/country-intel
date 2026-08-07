@@ -1,6 +1,6 @@
 {
  "country": "zw",
- "generated": "2026-08-07T08:54:30.241933+00:00",
+ "generated": "2026-08-07T09:38:13.975640+00:00",
  "geo": {
   "name": "Zimbabwe",
   "lat": -17.8312,
@@ -10,39 +10,57 @@
  "indicators": {
   "desempleo": {
    "value": "9.435",
-   "updated": "2026-08-07T08:54:30.122969+00:00",
+   "updated": "2026-08-07T09:38:13.859695+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "63.064",
+   "updated": "2026-08-07T09:38:13.859718+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "41.64279938",
+   "updated": "2026-08-07T09:38:13.859739+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "2.6",
+   "updated": "2026-08-07T09:38:13.859711+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
-   "value": "-60528",
-   "updated": "2026-08-06T16:57:05.178800+00:00",
+   "value": "-3.6387304769467415",
+   "updated": "2026-08-07T09:38:13.859702+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "41521975830.2351",
-   "updated": "2026-08-07T08:54:30.122947+00:00",
+   "updated": "2026-08-07T09:38:13.859670+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "5932.87021993648",
-   "updated": "2026-08-07T08:54:30.122959+00:00",
+   "updated": "2026-08-07T09:38:13.859679+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "16634373",
-   "updated": "2026-08-07T08:54:30.122937+00:00",
+   "updated": "2026-08-07T09:38:13.859662+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "2496.15514995576",
-   "updated": "2026-08-06T16:57:05.178783+00:00",
+   "updated": "2026-08-07T09:38:13.859687+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

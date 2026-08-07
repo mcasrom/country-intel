@@ -1,6 +1,6 @@
 {
  "country": "ss",
- "generated": "2026-08-07T08:54:30.228893+00:00",
+ "generated": "2026-08-07T09:38:13.958622+00:00",
  "geo": {
   "name": "South Sudan",
   "lat": 4.85,
@@ -10,25 +10,37 @@
  "indicators": {
   "desempleo": {
    "value": "12.374",
-   "updated": "2026-08-07T08:54:30.121017+00:00",
+   "updated": "2026-08-07T09:38:13.854612+00:00",
    "source": "worldbank",
    "year": "2023"
   },
+  "esperanza_vida": {
+   "value": "57.738",
+   "updated": "2026-08-07T09:38:13.854660+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "inflacion": {
    "value": "91.4408220769046",
-   "updated": "2026-08-06T16:57:05.176017+00:00",
+   "updated": "2026-08-07T09:38:13.854596+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "7.7",
+   "updated": "2026-08-07T09:38:13.854644+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "net_mig": {
-   "value": "15374",
-   "updated": "2026-08-06T16:57:05.176030+00:00",
+   "value": "1.2872372776681498",
+   "updated": "2026-08-07T09:38:13.854628+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "poblacion": {
    "value": "11943408",
-   "updated": "2026-08-07T08:54:30.121007+00:00",
+   "updated": "2026-08-07T09:38:13.854581+00:00",
    "source": "worldbank",
    "year": "2024"
   }

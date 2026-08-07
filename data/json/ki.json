@@ -1,6 +1,6 @@
 {
  "country": "ki",
- "generated": "2026-08-07T08:54:30.192285+00:00",
+ "generated": "2026-08-07T09:38:13.921986+00:00",
  "geo": {
   "name": "Kiribati",
   "lat": 1.32905,
@@ -8,47 +8,59 @@
   "iso2": "ki"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "66.6",
+   "updated": "2026-08-07T09:38:13.842396+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "inflacion": {
    "value": "2.45545072159028",
-   "updated": "2026-08-06T16:57:05.168238+00:00",
+   "updated": "2026-08-07T09:38:13.842358+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "89.44029999",
+   "updated": "2026-08-07T09:38:13.842403+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "2.5",
-   "updated": "2026-08-06T16:57:05.168279+00:00",
+   "updated": "2026-08-07T09:38:13.842374+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-471",
-   "updated": "2026-08-06T16:57:05.168268+00:00",
+   "value": "-3.5013901485303083",
+   "updated": "2026-08-07T09:38:13.842366+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "343153235.077124",
-   "updated": "2026-08-07T08:54:30.114031+00:00",
+   "updated": "2026-08-07T09:38:13.842316+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "3728.03970809328",
-   "updated": "2026-08-07T08:54:30.114047+00:00",
+   "updated": "2026-08-07T09:38:13.842341+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "134518",
-   "updated": "2026-08-07T08:54:30.114018+00:00",
+   "updated": "2026-08-07T09:38:13.842308+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "2550.98377226188",
-   "updated": "2026-08-06T16:57:05.168253+00:00",
+   "updated": "2026-08-07T09:38:13.842350+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "vn",
- "generated": "2026-08-07T08:54:30.239500+00:00",
+ "generated": "2026-08-07T09:38:13.972667+00:00",
  "geo": {
   "name": "Viet Nam",
   "lat": 21.0069,
@@ -10,45 +10,63 @@
  "indicators": {
   "desempleo": {
    "value": "1.602",
-   "updated": "2026-08-07T08:54:30.122694+00:00",
+   "updated": "2026-08-07T09:38:13.858626+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "74.736",
+   "updated": "2026-08-07T09:38:13.858673+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "inflacion": {
    "value": "3.62109273885844",
-   "updated": "2026-08-06T16:57:05.178212+00:00",
+   "updated": "2026-08-07T09:38:13.858610+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "84.15",
+   "updated": "2026-08-07T09:38:13.858688+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "0.3",
+   "updated": "2026-08-07T09:38:13.858659+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-59645",
-   "updated": "2026-08-06T16:57:05.178268+00:00",
+   "value": "-0.5906165628946087",
+   "updated": "2026-08-07T09:38:13.858642+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "476324572783.807",
-   "updated": "2026-08-07T08:54:30.122671+00:00",
+   "updated": "2026-08-07T09:38:13.858563+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "16387.9087954113",
-   "updated": "2026-08-07T08:54:30.122682+00:00",
+   "updated": "2026-08-07T09:38:13.858579+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "100987686",
-   "updated": "2026-08-07T08:54:30.122661+00:00",
+   "updated": "2026-08-07T09:38:13.858548+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "4716.6599379632",
-   "updated": "2026-08-06T16:57:05.178255+00:00",
+   "updated": "2026-08-07T09:38:13.858594+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

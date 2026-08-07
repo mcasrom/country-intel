@@ -1,6 +1,6 @@
 {
  "country": "az",
- "generated": "2026-08-07T08:54:30.147590+00:00",
+ "generated": "2026-08-07T09:38:13.877292+00:00",
  "geo": {
   "name": "Azerbaijan",
   "lat": 40.3834,
@@ -8,47 +8,77 @@
   "iso2": "az"
  },
  "indicators": {
+  "alfabetizacion": {
+   "value": "99.7799987792969",
+   "updated": "2026-08-07T09:38:13.824606+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "desempleo": {
    "value": "5.648",
-   "updated": "2026-08-06T16:57:05.157947+00:00",
+   "updated": "2026-08-07T09:38:13.824593+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "74.576",
+   "updated": "2026-08-07T09:38:13.824660+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "2.16122820563689",
+   "updated": "2026-08-07T09:38:13.824672+00:00",
+   "source": "worldbank",
+   "year": "2023"
   },
   "inflacion": {
    "value": "2.21217188919901",
-   "updated": "2026-08-06T16:57:05.157940+00:00",
+   "updated": "2026-08-07T09:38:13.824577+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "90.43979645",
+   "updated": "2026-08-07T09:38:13.824686+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "2.1",
-   "updated": "2026-08-06T16:57:05.158025+00:00",
+   "updated": "2026-08-07T09:38:13.824646+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "10864",
-   "updated": "2026-08-06T16:57:05.158005+00:00",
+   "value": "1.0648026086879816",
+   "updated": "2026-08-07T09:38:13.824631+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "74426000000",
-   "updated": "2026-08-07T08:54:30.100156+00:00",
+   "updated": "2026-08-07T09:38:13.824536+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "25146.3588844273",
+   "updated": "2026-08-07T09:38:13.824550+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10202830",
-   "updated": "2026-08-07T08:54:30.100109+00:00",
+   "updated": "2026-08-07T09:38:13.824524+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "7294.64276088105",
-   "updated": "2026-08-06T16:57:05.157974+00:00",
+   "updated": "2026-08-07T09:38:13.824563+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

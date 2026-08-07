@@ -1,6 +1,6 @@
 {
  "country": "fm",
- "generated": "2026-08-07T08:54:30.174449+00:00",
+ "generated": "2026-08-07T09:38:13.908257+00:00",
  "geo": {
   "name": "Micronesia, Fed. Sts.",
   "lat": 6.91771,
@@ -8,41 +8,53 @@
   "iso2": "fm"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "67.357",
+   "updated": "2026-08-07T09:38:13.836182+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "39.52360153",
+   "updated": "2026-08-07T09:38:13.836195+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "migrant_pct": {
    "value": "2.6",
-   "updated": "2026-08-06T16:57:05.163497+00:00",
+   "updated": "2026-08-07T09:38:13.836168+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-1104",
-   "updated": "2026-08-06T16:57:05.163488+00:00",
+   "value": "-9.75609756097561",
+   "updated": "2026-08-07T09:38:13.836153+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "481121300",
-   "updated": "2026-08-07T08:54:30.109443+00:00",
+   "updated": "2026-08-07T09:38:13.836110+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "4452.31995062055",
-   "updated": "2026-08-07T08:54:30.109462+00:00",
+   "updated": "2026-08-07T09:38:13.836122+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "113160",
-   "updated": "2026-08-07T08:54:30.109423+00:00",
+   "updated": "2026-08-07T09:38:13.836097+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "4251.69052668788",
-   "updated": "2026-08-06T16:57:05.163473+00:00",
+   "updated": "2026-08-07T09:38:13.836137+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

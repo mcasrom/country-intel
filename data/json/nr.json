@@ -1,6 +1,6 @@
 {
  "country": "nr",
- "generated": "2026-08-07T08:54:30.214146+00:00",
+ "generated": "2026-08-07T09:38:13.941362+00:00",
  "geo": {
   "name": "Naoero",
   "lat": -0.5477,
@@ -8,41 +8,59 @@
   "iso2": "nr"
  },
  "indicators": {
+  "alfabetizacion": {
+   "value": "96.5899963378906",
+   "updated": "2026-08-07T09:38:13.848896+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "esperanza_vida": {
+   "value": "62.279",
+   "updated": "2026-08-07T09:38:13.848919+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "83.01170349",
+   "updated": "2026-08-07T09:38:13.848926+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "migrant_pct": {
    "value": "21.3",
-   "updated": "2026-08-06T16:57:05.173129+00:00",
+   "updated": "2026-08-07T09:38:13.848912+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-121",
-   "updated": "2026-08-06T16:57:05.173115+00:00",
+   "value": "-10.128065623168997",
+   "updated": "2026-08-07T09:38:13.848904+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "167833414.846177",
-   "updated": "2026-08-07T08:54:30.118534+00:00",
+   "updated": "2026-08-07T09:38:13.848872+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "13612.0368416276",
-   "updated": "2026-08-07T08:54:30.118556+00:00",
+   "updated": "2026-08-07T09:38:13.848880+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "11947",
-   "updated": "2026-08-07T08:54:30.118515+00:00",
+   "updated": "2026-08-07T09:38:13.848865+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "14048.163961344",
-   "updated": "2026-08-06T16:57:05.173103+00:00",
+   "updated": "2026-08-07T09:38:13.848888+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

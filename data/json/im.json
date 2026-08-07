@@ -1,6 +1,6 @@
 {
  "country": "im",
- "generated": "2026-08-07T08:54:30.187594+00:00",
+ "generated": "2026-08-07T09:38:13.917749+00:00",
  "geo": {
   "name": "Isle of Man",
   "lat": 54.1509,
@@ -8,29 +8,41 @@
   "iso2": "im"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "81.091",
+   "updated": "2026-08-07T09:38:13.839986+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "migrant_pct": {
    "value": "51.9",
-   "updated": "2026-08-06T16:57:05.166240+00:00",
+   "updated": "2026-08-07T09:38:13.839979+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "177",
-   "updated": "2026-08-06T16:57:05.166216+00:00",
+   "value": "2.1031368821292777",
+   "updated": "2026-08-07T09:38:13.839970+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "7576129932.79381",
-   "updated": "2026-08-07T08:54:30.112171+00:00",
+   "updated": "2026-08-07T09:38:13.839955+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "poblacion": {
    "value": "84160",
-   "updated": "2026-08-07T08:54:30.112156+00:00",
+   "updated": "2026-08-07T09:38:13.839948+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "renta_pc": {
+   "value": "90015.2074234398",
+   "updated": "2026-08-07T09:38:13.839963+00:00",
+   "source": "worldbank",
+   "year": "2023"
   }
  }
 }

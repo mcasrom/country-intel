@@ -1,6 +1,6 @@
 {
  "country": "kn",
- "generated": "2026-08-07T08:54:30.192803+00:00",
+ "generated": "2026-08-07T09:38:13.922557+00:00",
  "geo": {
   "name": "St. Kitts and Nevis",
   "lat": 17.3,
@@ -8,35 +8,65 @@
   "iso2": "kn"
  },
  "indicators": {
-  "net_mig": {
-   "value": "-7",
-   "updated": "2026-08-06T16:57:05.168472+00:00",
+  "esperanza_vida": {
+   "value": "72.281",
+   "updated": "2026-08-07T09:38:13.842548+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "64.1601437187219",
+   "updated": "2026-08-07T09:38:13.842555+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "inflacion": {
+   "value": "3.55711230848243",
+   "updated": "2026-08-07T09:38:13.842525+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
+  "internet_pct": {
+   "value": "76.88400269",
+   "updated": "2026-08-07T09:38:13.842562+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "17",
+   "updated": "2026-08-07T09:38:13.842541+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "net_mig": {
+   "value": "-0.14943534786414192",
+   "updated": "2026-08-07T09:38:13.842532+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "pib": {
    "value": "1122388888.88889",
-   "updated": "2026-08-07T08:54:30.114107+00:00",
+   "updated": "2026-08-07T09:38:13.842501+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "34897.2104637487",
-   "updated": "2026-08-07T08:54:30.114122+00:00",
+   "updated": "2026-08-07T09:38:13.842508+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "46843",
-   "updated": "2026-08-07T08:54:30.114094+00:00",
+   "updated": "2026-08-07T09:38:13.842494+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "23960.6534357084",
-   "updated": "2026-08-06T16:57:05.168459+00:00",
+   "updated": "2026-08-07T09:38:13.842516+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

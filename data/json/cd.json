@@ -1,6 +1,6 @@
 {
  "country": "cd",
- "generated": "2026-08-07T08:54:30.160152+00:00",
+ "generated": "2026-08-07T09:38:13.889451+00:00",
  "geo": {
   "name": "Congo, Dem. Rep.",
   "lat": -4.325,
@@ -8,41 +8,65 @@
   "iso2": "cd"
  },
  "indicators": {
+  "alfabetizacion": {
+   "value": "68.5",
+   "updated": "2026-08-07T09:38:13.828869+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "desempleo": {
    "value": "4.421",
-   "updated": "2026-08-06T16:57:05.159821+00:00",
+   "updated": "2026-08-07T09:38:13.828856+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "62.074",
+   "updated": "2026-08-07T09:38:13.828909+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "19.67350006",
+   "updated": "2026-08-07T09:38:13.828923+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "1",
-   "updated": "2026-08-06T16:57:05.159850+00:00",
+   "updated": "2026-08-07T09:38:13.828896+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-26968",
-   "updated": "2026-08-06T16:57:05.159841+00:00",
+   "value": "-0.2467873513063427",
+   "updated": "2026-08-07T09:38:13.828882+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "75716176105.0704",
-   "updated": "2026-08-07T08:54:30.102788+00:00",
+   "updated": "2026-08-07T09:38:13.828814+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "1823.27705135453",
+   "updated": "2026-08-07T09:38:13.828828+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "109276265",
-   "updated": "2026-08-07T08:54:30.102766+00:00",
+   "updated": "2026-08-07T09:38:13.828801+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "692.887665085098",
-   "updated": "2026-08-06T16:57:05.159830+00:00",
+   "updated": "2026-08-07T09:38:13.828841+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

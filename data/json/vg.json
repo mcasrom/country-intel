@@ -1,6 +1,6 @@
 {
  "country": "vg",
- "generated": "2026-08-07T08:54:30.238861+00:00",
+ "generated": "2026-08-07T09:38:13.971707+00:00",
  "geo": {
   "name": "British Virgin Islands",
   "lat": 18.431389,
@@ -8,21 +8,27 @@
   "iso2": "vg"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "77.431",
+   "updated": "2026-08-07T09:38:13.858455+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "migrant_pct": {
    "value": "62.1",
-   "updated": "2026-08-06T16:57:05.178141+00:00",
+   "updated": "2026-08-07T09:38:13.858434+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "212",
-   "updated": "2026-08-06T16:57:05.178129+00:00",
+   "value": "5.371031896835652",
+   "updated": "2026-08-07T09:38:13.858417+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "poblacion": {
    "value": "39471",
-   "updated": "2026-08-07T08:54:30.122627+00:00",
+   "updated": "2026-08-07T09:38:13.858402+00:00",
    "source": "worldbank",
    "year": "2024"
   }

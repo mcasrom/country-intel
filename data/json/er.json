@@ -1,6 +1,6 @@
 {
  "country": "er",
- "generated": "2026-08-07T08:54:30.172472+00:00",
+ "generated": "2026-08-07T09:38:13.904906+00:00",
  "geo": {
   "name": "Eritrea",
   "lat": 15.3315,
@@ -10,25 +10,31 @@
  "indicators": {
   "desempleo": {
    "value": "5.947",
-   "updated": "2026-08-07T08:54:30.108144+00:00",
+   "updated": "2026-08-07T09:38:13.834589+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "68.893",
+   "updated": "2026-08-07T09:38:13.834638+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.4",
-   "updated": "2026-08-06T16:57:05.162732+00:00",
+   "updated": "2026-08-07T09:38:13.834624+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "-12696",
-   "updated": "2026-08-06T16:57:05.162726+00:00",
+   "value": "-3.5909009014869597",
+   "updated": "2026-08-07T09:38:13.834602+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "poblacion": {
    "value": "3535603",
-   "updated": "2026-08-07T08:54:30.108121+00:00",
+   "updated": "2026-08-07T09:38:13.834576+00:00",
    "source": "worldbank",
    "year": "2024"
   }

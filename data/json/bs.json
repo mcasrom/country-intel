@@ -1,6 +1,6 @@
 {
  "country": "bs",
- "generated": "2026-08-07T08:54:30.157860+00:00",
+ "generated": "2026-08-07T09:38:13.885987+00:00",
  "geo": {
   "name": "Bahamas, The",
   "lat": 25.0661,
@@ -10,45 +10,63 @@
  "indicators": {
   "desempleo": {
    "value": "9.049",
-   "updated": "2026-08-06T16:57:05.159189+00:00",
+   "updated": "2026-08-07T09:38:13.827916+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "74.71",
+   "updated": "2026-08-07T09:38:13.827958+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "inflacion": {
    "value": "0.409162489083286",
-   "updated": "2026-08-06T16:57:05.159181+00:00",
+   "updated": "2026-08-07T09:38:13.827901+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "92.47270203",
+   "updated": "2026-08-07T09:38:13.827979+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "16.8",
-   "updated": "2026-08-06T16:57:05.159218+00:00",
+   "updated": "2026-08-07T09:38:13.827945+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "1018",
-   "updated": "2026-08-06T16:57:05.159211+00:00",
+   "value": "2.536863011889365",
+   "updated": "2026-08-07T09:38:13.827930+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "15832800000",
-   "updated": "2026-08-07T08:54:30.102452+00:00",
+   "updated": "2026-08-07T09:38:13.827854+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "41257.7650774105",
+   "updated": "2026-08-07T09:38:13.827868+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "401283",
-   "updated": "2026-08-07T08:54:30.102428+00:00",
+   "updated": "2026-08-07T09:38:13.827841+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "39455.4466548546",
-   "updated": "2026-08-06T16:57:05.159204+00:00",
+   "updated": "2026-08-07T09:38:13.827886+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

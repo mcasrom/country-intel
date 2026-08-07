@@ -1,6 +1,6 @@
 {
  "country": "vi",
- "generated": "2026-08-07T08:54:30.239162+00:00",
+ "generated": "2026-08-07T09:38:13.972132+00:00",
  "geo": {
   "name": "Virgin Islands (U.S.)",
   "lat": 18.3358,
@@ -10,19 +10,31 @@
  "indicators": {
   "desempleo": {
    "value": "11.423",
-   "updated": "2026-08-07T08:54:30.122649+00:00",
+   "updated": "2026-08-07T09:38:13.858485+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "80.7707317073171",
+   "updated": "2026-08-07T09:38:13.858533+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "66.9",
+   "updated": "2026-08-07T09:38:13.858517+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
-   "value": "-420",
-   "updated": "2026-08-06T16:57:05.178177+00:00",
+   "value": "-4.023874991616927",
+   "updated": "2026-08-07T09:38:13.858500+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "poblacion": {
    "value": "104377",
-   "updated": "2026-08-07T08:54:30.122637+00:00",
+   "updated": "2026-08-07T09:38:13.858470+00:00",
    "source": "worldbank",
    "year": "2024"
   }

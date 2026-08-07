@@ -1,6 +1,6 @@
 {
  "country": "et",
- "generated": "2026-08-07T08:54:30.173452+00:00",
+ "generated": "2026-08-07T09:38:13.906606+00:00",
  "geo": {
   "name": "Ethiopia",
   "lat": 9.02274,
@@ -10,45 +10,63 @@
  "indicators": {
   "desempleo": {
    "value": "3.357",
-   "updated": "2026-08-07T08:54:30.109193+00:00",
+   "updated": "2026-08-07T09:38:13.835683+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "67.603",
+   "updated": "2026-08-07T09:38:13.835727+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "inflacion": {
    "value": "21.0377460577711",
-   "updated": "2026-08-06T16:57:05.163110+00:00",
+   "updated": "2026-08-07T09:38:13.835663+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "21.94129944",
+   "updated": "2026-08-07T09:38:13.835741+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "0.9",
-   "updated": "2026-08-06T16:57:05.163170+00:00",
+   "updated": "2026-08-07T09:38:13.835713+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "30069",
-   "updated": "2026-08-06T16:57:05.163155+00:00",
+   "value": "0.2276923599297279",
+   "updated": "2026-08-07T09:38:13.835698+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "149740297952.375",
-   "updated": "2026-08-07T08:54:30.109169+00:00",
+   "updated": "2026-08-07T09:38:13.835262+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "3292.3093336937",
+   "updated": "2026-08-07T09:38:13.835277+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "132059767",
-   "updated": "2026-08-07T08:54:30.109145+00:00",
+   "updated": "2026-08-07T09:38:13.835249+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "1133.88279681256",
-   "updated": "2026-08-06T16:57:05.163139+00:00",
+   "updated": "2026-08-07T09:38:13.835316+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

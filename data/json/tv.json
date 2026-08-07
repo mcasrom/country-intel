@@ -1,6 +1,6 @@
 {
  "country": "tv",
- "generated": "2026-08-07T08:54:30.234949+00:00",
+ "generated": "2026-08-07T09:38:13.966781+00:00",
  "geo": {
   "name": "Tuvalu",
   "lat": -8.6314877,
@@ -8,35 +8,47 @@
   "iso2": "tv"
  },
  "indicators": {
-  "net_mig": {
-   "value": "-280",
-   "updated": "2026-08-06T16:57:05.177214+00:00",
+  "esperanza_vida": {
+   "value": "67.259",
+   "updated": "2026-08-07T09:38:13.856457+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "2.6",
+   "updated": "2026-08-07T09:38:13.856434+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "net_mig": {
+   "value": "-29.027576197387514",
+   "updated": "2026-08-07T09:38:13.856417+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "pib": {
    "value": "56752265.8012166",
-   "updated": "2026-08-07T08:54:30.121806+00:00",
+   "updated": "2026-08-07T09:38:13.856364+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "6365.76616505123",
-   "updated": "2026-08-07T08:54:30.121817+00:00",
+   "updated": "2026-08-07T09:38:13.856373+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "9646",
-   "updated": "2026-08-07T08:54:30.121795+00:00",
+   "updated": "2026-08-07T09:38:13.856357+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "5883.50257114002",
-   "updated": "2026-08-06T16:57:05.177202+00:00",
+   "updated": "2026-08-07T09:38:13.856401+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "sx",
- "generated": "2026-08-07T08:54:30.230036+00:00",
+ "generated": "2026-08-07T09:38:13.959992+00:00",
  "geo": {
   "name": "Sint Maarten (Dutch part)",
   "lat": 0.0,
@@ -8,35 +8,47 @@
   "iso2": "sx"
  },
  "indicators": {
-  "net_mig": {
-   "value": "558",
-   "updated": "2026-08-06T16:57:05.176255+00:00",
+  "esperanza_vida": {
+   "value": "76.528",
+   "updated": "2026-08-07T09:38:13.855256+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "69.5",
+   "updated": "2026-08-07T09:38:13.855241+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "net_mig": {
+   "value": "12.8719723183391",
+   "updated": "2026-08-07T09:38:13.855225+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "pib": {
    "value": "1797836648.04469",
-   "updated": "2026-08-07T08:54:30.121112+00:00",
+   "updated": "2026-08-07T09:38:13.855177+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "53846.7442635227",
-   "updated": "2026-08-07T08:54:30.121123+00:00",
+   "updated": "2026-08-07T09:38:13.855193+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "43350",
-   "updated": "2026-08-07T08:54:30.121102+00:00",
+   "updated": "2026-08-07T09:38:13.855161+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "41472.5870367865",
-   "updated": "2026-08-06T16:57:05.176243+00:00",
+   "updated": "2026-08-07T09:38:13.855209+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

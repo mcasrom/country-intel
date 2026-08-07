@@ -1,6 +1,6 @@
 {
  "country": "cw",
- "generated": "2026-08-07T08:54:30.167297+00:00",
+ "generated": "2026-08-07T09:38:13.896853+00:00",
  "geo": {
   "name": "Curacao",
   "lat": 0.0,
@@ -8,35 +8,47 @@
   "iso2": "cw"
  },
  "indicators": {
+  "esperanza_vida": {
+   "value": "76.989",
+   "updated": "2026-08-07T09:38:13.831263+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "migrant_pct": {
    "value": "43.1",
-   "updated": "2026-08-06T16:57:05.161469+00:00",
+   "updated": "2026-08-07T09:38:13.831249+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "net_mig": {
-   "value": "513",
-   "updated": "2026-08-06T16:57:05.161424+00:00",
+   "value": "3.289157321741137",
+   "updated": "2026-08-07T09:38:13.831235+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "3561178212.2905",
-   "updated": "2026-08-07T08:54:30.104456+00:00",
+   "updated": "2026-08-07T09:38:13.831190+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "32740.7736763943",
+   "updated": "2026-08-07T09:38:13.831204+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "155967",
-   "updated": "2026-08-07T08:54:30.104431+00:00",
+   "updated": "2026-08-07T09:38:13.831177+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "22832.895498987",
-   "updated": "2026-08-06T16:57:05.161409+00:00",
+   "updated": "2026-08-07T09:38:13.831220+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

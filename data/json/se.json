@@ -1,6 +1,6 @@
 {
  "country": "se",
- "generated": "2026-08-07T08:54:30.225083+00:00",
+ "generated": "2026-08-07T09:38:13.953746+00:00",
  "geo": {
   "name": "Sweden",
   "lat": 59.3327,
@@ -10,45 +10,69 @@
  "indicators": {
   "desempleo": {
    "value": "8.4",
-   "updated": "2026-08-07T08:54:30.120540+00:00",
+   "updated": "2026-08-07T09:38:13.853545+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "esperanza_vida": {
+   "value": "84.0634146341463",
+   "updated": "2026-08-07T09:38:13.853573+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "homicidios": {
+   "value": "1.14675703743944",
+   "updated": "2026-08-07T09:38:13.853580+00:00",
+   "source": "worldbank",
+   "year": "2023"
+  },
   "inflacion": {
    "value": "2.83581658224034",
-   "updated": "2026-08-06T16:57:05.175356+00:00",
+   "updated": "2026-08-07T09:38:13.853536+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "internet_pct": {
+   "value": "95.52930428",
+   "updated": "2026-08-07T09:38:13.853588+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "21.4",
+   "updated": "2026-08-07T09:38:13.853566+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "net_mig": {
-   "value": "50115",
-   "updated": "2026-08-06T16:57:05.175410+00:00",
+   "value": "4.741379351124992",
+   "updated": "2026-08-07T09:38:13.853557+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "604827393488.582",
-   "updated": "2026-08-07T08:54:30.120516+00:00",
+   "updated": "2026-08-07T09:38:13.853512+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "71221.9379308266",
-   "updated": "2026-08-07T08:54:30.120529+00:00",
+   "updated": "2026-08-07T09:38:13.853520+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10569709",
-   "updated": "2026-08-07T08:54:30.120503+00:00",
+   "updated": "2026-08-07T09:38:13.853505+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "57222.7100565003",
-   "updated": "2026-08-06T16:57:05.175397+00:00",
+   "updated": "2026-08-07T09:38:13.853528+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }

@@ -1,6 +1,6 @@
 {
  "country": "tm",
- "generated": "2026-08-07T08:54:30.233204+00:00",
+ "generated": "2026-08-07T09:38:13.964354+00:00",
  "geo": {
   "name": "Turkmenistan",
   "lat": 37.9509,
@@ -10,39 +10,51 @@
  "indicators": {
   "desempleo": {
    "value": "4.02",
-   "updated": "2026-08-07T08:54:30.121566+00:00",
+   "updated": "2026-08-07T09:38:13.855974+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "esperanza_vida": {
+   "value": "70.201",
+   "updated": "2026-08-07T09:38:13.856001+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "migrant_pct": {
+   "value": "2.6",
+   "updated": "2026-08-07T09:38:13.855990+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
-   "value": "14646",
-   "updated": "2026-08-06T16:57:05.176859+00:00",
+   "value": "1.954233625787878",
+   "updated": "2026-08-07T09:38:13.855982+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "pib": {
    "value": "44249447717.2312",
-   "updated": "2026-08-07T08:54:30.121543+00:00",
+   "updated": "2026-08-07T09:38:13.855946+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "21025.8403822415",
-   "updated": "2026-08-07T08:54:30.121555+00:00",
+   "updated": "2026-08-07T09:38:13.855954+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "7494498",
-   "updated": "2026-08-07T08:54:30.121532+00:00",
+   "updated": "2026-08-07T09:38:13.855939+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "renta_pc": {
    "value": "5904.25772576512",
-   "updated": "2026-08-06T16:57:05.176847+00:00",
+   "updated": "2026-08-07T09:38:13.855962+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   }
  }
 }
