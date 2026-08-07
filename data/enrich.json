@@ -1,0 +1,758 @@
+{
+ "af": {
+  "moneda": "AFN",
+  "idh": 0.478
+ },
+ "al": {
+  "moneda": "ALL",
+  "idh": 0.789
+ },
+ "dz": {
+  "moneda": "DZD",
+  "idh": 0.745
+ },
+ "ao": {
+  "moneda": "AOA",
+  "idh": 0.586
+ },
+ "ar": {
+  "moneda": "ARS",
+  "idh": 0.849
+ },
+ "am": {
+  "moneda": "AMD",
+  "idh": 0.786
+ },
+ "au": {
+  "moneda": "AUD",
+  "idh": 0.946
+ },
+ "at": {
+  "moneda": "EUR",
+  "idh": 0.926
+ },
+ "az": {
+  "moneda": "AZN",
+  "idh": 0.745
+ },
+ "bs": {
+  "moneda": "BSD",
+  "idh": 0.812
+ },
+ "bh": {
+  "moneda": "BHD",
+  "idh": 0.875
+ },
+ "bd": {
+  "moneda": "BDT",
+  "idh": 0.67
+ },
+ "bb": {
+  "moneda": "BBD",
+  "idh": 0.809
+ },
+ "by": {
+  "moneda": "BYN",
+  "idh": 0.801
+ },
+ "be": {
+  "moneda": "EUR",
+  "idh": 0.942
+ },
+ "bz": {
+  "moneda": "BZD",
+  "idh": 0.7
+ },
+ "bj": {
+  "moneda": "XOF",
+  "idh": 0.504
+ },
+ "bt": {
+  "moneda": "BTN",
+  "idh": 0.666
+ },
+ "bo": {
+  "moneda": "BOB",
+  "idh": 0.692
+ },
+ "ba": {
+  "moneda": "BAM",
+  "idh": 0.779
+ },
+ "bw": {
+  "moneda": "BWP",
+  "idh": 0.708
+ },
+ "br": {
+  "moneda": "BRL",
+  "idh": 0.754
+ },
+ "bn": {
+  "moneda": "BND",
+  "idh": 0.829
+ },
+ "bg": {
+  "moneda": "BGN",
+  "idh": 0.795
+ },
+ "bf": {
+  "moneda": "XOF",
+  "idh": 0.438
+ },
+ "bi": {
+  "moneda": "BIF",
+  "idh": 0.426
+ },
+ "kh": {
+  "moneda": "KHR",
+  "idh": 0.6
+ },
+ "cm": {
+  "moneda": "XAF",
+  "idh": 0.576
+ },
+ "ca": {
+  "moneda": "CAD",
+  "idh": 0.935
+ },
+ "cv": {
+  "moneda": "CVE",
+  "idh": 0.661
+ },
+ "cf": {
+  "moneda": "XAF",
+  "idh": 0.404
+ },
+ "td": {
+  "moneda": "XAF",
+  "idh": 0.394
+ },
+ "cl": {
+  "moneda": "CLP",
+  "idh": 0.855
+ },
+ "cn": {
+  "moneda": "CNY",
+  "idh": 0.788
+ },
+ "co": {
+  "moneda": "COP",
+  "idh": 0.758
+ },
+ "km": {
+  "moneda": "KMF",
+  "idh": 0.558
+ },
+ "cg": {
+  "moneda": "XAF",
+  "idh": 0.593
+ },
+ "cd": {
+  "moneda": "CDF",
+  "idh": 0.481
+ },
+ "cr": {
+  "moneda": "CRC",
+  "idh": 0.806
+ },
+ "ci": {
+  "moneda": "XOF",
+  "idh": 0.534
+ },
+ "hr": {
+  "moneda": "EUR",
+  "idh": 0.878
+ },
+ "cu": {
+  "moneda": "CUP",
+  "idh": 0.764
+ },
+ "cy": {
+  "moneda": "EUR",
+  "idh": 0.907
+ },
+ "cz": {
+  "moneda": "CZK",
+  "idh": 0.889
+ },
+ "dk": {
+  "moneda": "DKK",
+  "idh": 0.94
+ },
+ "dj": {
+  "moneda": "DJF",
+  "idh": 0.515
+ },
+ "do": {
+  "moneda": "DOP",
+  "idh": 0.766
+ },
+ "ec": {
+  "moneda": "USD",
+  "idh": 0.765
+ },
+ "eg": {
+  "moneda": "EGP",
+  "idh": 0.728
+ },
+ "sv": {
+  "moneda": "USD",
+  "idh": 0.674
+ },
+ "gq": {
+  "moneda": "XAF",
+  "idh": 0.596
+ },
+ "er": {
+  "moneda": "ERN",
+  "idh": 0.492
+ },
+ "ee": {
+  "moneda": "EUR",
+  "idh": 0.89
+ },
+ "sz": {
+  "moneda": "SZL",
+  "idh": 0.61
+ },
+ "et": {
+  "moneda": "ETB",
+  "idh": 0.492
+ },
+ "fj": {
+  "moneda": "FJD",
+  "idh": 0.73
+ },
+ "fi": {
+  "moneda": "EUR",
+  "idh": 0.94
+ },
+ "fr": {
+  "moneda": "EUR",
+  "idh": 0.91
+ },
+ "ga": {
+  "moneda": "XAF",
+  "idh": 0.706
+ },
+ "gm": {
+  "moneda": "GMD",
+  "idh": 0.5
+ },
+ "ge": {
+  "moneda": "GEL",
+  "idh": 0.802
+ },
+ "de": {
+  "moneda": "EUR",
+  "idh": 0.95
+ },
+ "gh": {
+  "moneda": "GHS",
+  "idh": 0.632
+ },
+ "gr": {
+  "moneda": "EUR",
+  "idh": 0.887
+ },
+ "gd": {
+  "moneda": "XCD",
+  "idh": 0.793
+ },
+ "gt": {
+  "moneda": "GTQ",
+  "idh": 0.629
+ },
+ "gn": {
+  "moneda": "GNF",
+  "idh": 0.471
+ },
+ "gw": {
+  "moneda": "XOF",
+  "idh": 0.483
+ },
+ "gy": {
+  "moneda": "GYD",
+  "idh": 0.742
+ },
+ "ht": {
+  "moneda": "HTG",
+  "idh": 0.552
+ },
+ "hn": {
+  "moneda": "HNL",
+  "idh": 0.621
+ },
+ "hu": {
+  "moneda": "HUF",
+  "idh": 0.846
+ },
+ "is": {
+  "moneda": "ISK",
+  "idh": 0.959
+ },
+ "in": {
+  "moneda": "INR",
+  "idh": 0.644
+ },
+ "id": {
+  "moneda": "IDR",
+  "idh": 0.713
+ },
+ "ir": {
+  "moneda": "IRR",
+  "idh": 0.78
+ },
+ "iq": {
+  "moneda": "IQD",
+  "idh": 0.673
+ },
+ "ie": {
+  "moneda": "EUR",
+  "idh": 0.945
+ },
+ "il": {
+  "moneda": "ILS",
+  "idh": 0.919
+ },
+ "it": {
+  "moneda": "EUR",
+  "idh": 0.906
+ },
+ "jm": {
+  "moneda": "JMD",
+  "idh": 0.706
+ },
+ "jp": {
+  "moneda": "JPY",
+  "idh": 0.925
+ },
+ "jo": {
+  "moneda": "JOD",
+  "idh": 0.736
+ },
+ "kz": {
+  "moneda": "KZT",
+  "idh": 0.802
+ },
+ "ke": {
+  "moneda": "KES",
+  "idh": 0.575
+ },
+ "ki": {
+  "moneda": "AUD",
+  "idh": 0.624
+ },
+ "kp": {
+  "moneda": "KPW",
+  "idh": 0.712
+ },
+ "kr": {
+  "moneda": "KRW",
+  "idh": 0.929
+ },
+ "kw": {
+  "moneda": "KWD",
+  "idh": 0.847
+ },
+ "kg": {
+  "moneda": "KGS",
+  "idh": 0.701
+ },
+ "la": {
+  "moneda": "LAK",
+  "idh": 0.601
+ },
+ "lv": {
+  "moneda": "EUR",
+  "idh": 0.879
+ },
+ "lb": {
+  "moneda": "LBP",
+  "idh": 0.723
+ },
+ "ls": {
+  "moneda": "LSL",
+  "idh": 0.514
+ },
+ "lr": {
+  "moneda": "LRD",
+  "idh": 0.483
+ },
+ "ly": {
+  "moneda": "LYD",
+  "idh": 0.718
+ },
+ "lt": {
+  "moneda": "EUR",
+  "idh": 0.879
+ },
+ "lu": {
+  "moneda": "EUR",
+  "idh": 0.93
+ },
+ "mg": {
+  "moneda": "MGA",
+  "idh": 0.501
+ },
+ "mw": {
+  "moneda": "MWK",
+  "idh": 0.508
+ },
+ "my": {
+  "moneda": "MYR",
+  "idh": 0.807
+ },
+ "mv": {
+  "moneda": "MVR",
+  "idh": 0.762
+ },
+ "ml": {
+  "moneda": "XOF",
+  "idh": 0.428
+ },
+ "mt": {
+  "moneda": "EUR",
+  "idh": 0.918
+ },
+ "mh": {
+  "moneda": "USD",
+  "idh": 0.639
+ },
+ "mr": {
+  "moneda": "MRU",
+  "idh": 0.54
+ },
+ "mu": {
+  "moneda": "MUR",
+  "idh": 0.802
+ },
+ "mx": {
+  "moneda": "MXN",
+  "idh": 0.781
+ },
+ "fm": {
+  "moneda": "USD",
+  "idh": 0.628
+ },
+ "md": {
+  "moneda": "MDL",
+  "idh": 0.767
+ },
+ "mn": {
+  "moneda": "MNT",
+  "idh": 0.741
+ },
+ "me": {
+  "moneda": "EUR",
+  "idh": 0.832
+ },
+ "ma": {
+  "moneda": "MAD",
+  "idh": 0.698
+ },
+ "mz": {
+  "moneda": "MZN",
+  "idh": 0.461
+ },
+ "mm": {
+  "moneda": "MMK",
+  "idh": 0.608
+ },
+ "na": {
+  "moneda": "NAD",
+  "idh": 0.61
+ },
+ "nr": {
+  "moneda": "AUD",
+  "idh": 0.635
+ },
+ "np": {
+  "moneda": "NPR",
+  "idh": 0.601
+ },
+ "nl": {
+  "moneda": "EUR",
+  "idh": 0.941
+ },
+ "nz": {
+  "moneda": "NZD",
+  "idh": 0.939
+ },
+ "ni": {
+  "moneda": "NIO",
+  "idh": 0.667
+ },
+ "ne": {
+  "moneda": "XOF",
+  "idh": 0.394
+ },
+ "ng": {
+  "moneda": "NGN",
+  "idh": 0.535
+ },
+ "mk": {
+  "moneda": "MKD",
+  "idh": 0.77
+ },
+ "no": {
+  "moneda": "NOK",
+  "idh": 0.961
+ },
+ "om": {
+  "moneda": "OMR",
+  "idh": 0.816
+ },
+ "pk": {
+  "moneda": "PKR",
+  "idh": 0.54
+ },
+ "pw": {
+  "moneda": "USD",
+  "idh": 0.77
+ },
+ "pa": {
+  "moneda": "USD",
+  "idh": 0.805
+ },
+ "pg": {
+  "moneda": "PGK",
+  "idh": 0.568
+ },
+ "py": {
+  "moneda": "PYG",
+  "idh": 0.717
+ },
+ "pe": {
+  "moneda": "PEN",
+  "idh": 0.762
+ },
+ "ph": {
+  "moneda": "PHP",
+  "idh": 0.71
+ },
+ "pl": {
+  "moneda": "PLN",
+  "idh": 0.876
+ },
+ "pt": {
+  "moneda": "EUR",
+  "idh": 0.874
+ },
+ "qa": {
+  "moneda": "QAR",
+  "idh": 0.855
+ },
+ "ro": {
+  "moneda": "RON",
+  "idh": 0.827
+ },
+ "ru": {
+  "moneda": "RUB",
+  "idh": 0.821
+ },
+ "rw": {
+  "moneda": "RWF",
+  "idh": 0.548
+ },
+ "kn": {
+  "moneda": "XCD",
+  "idh": 0.777
+ },
+ "lc": {
+  "moneda": "XCD",
+  "idh": 0.715
+ },
+ "vc": {
+  "moneda": "XCD",
+  "idh": 0.751
+ },
+ "ws": {
+  "moneda": "WST",
+  "idh": 0.707
+ },
+ "sm": {
+  "moneda": "EUR",
+  "idh": 0.867
+ },
+ "st": {
+  "moneda": "STN",
+  "idh": 0.613
+ },
+ "sa": {
+  "moneda": "SAR",
+  "idh": 0.875
+ },
+ "sn": {
+  "moneda": "XOF",
+  "idh": 0.517
+ },
+ "rs": {
+  "moneda": "RSD",
+  "idh": 0.805
+ },
+ "sc": {
+  "moneda": "SCR",
+  "idh": 0.802
+ },
+ "sl": {
+  "moneda": "SLE",
+  "idh": 0.477
+ },
+ "sg": {
+  "moneda": "SGD",
+  "idh": 0.939
+ },
+ "sk": {
+  "moneda": "EUR",
+  "idh": 0.848
+ },
+ "si": {
+  "moneda": "EUR",
+  "idh": 0.926
+ },
+ "sb": {
+  "moneda": "SBD",
+  "idh": 0.562
+ },
+ "so": {
+  "moneda": "SOS",
+  "idh": 0.38
+ },
+ "za": {
+  "moneda": "ZAR",
+  "idh": 0.713
+ },
+ "ss": {
+  "moneda": "SSP",
+  "idh": 0.381
+ },
+ "es": {
+  "moneda": "EUR",
+  "idh": 0.911
+ },
+ "lk": {
+  "moneda": "LKR",
+  "idh": 0.78
+ },
+ "sd": {
+  "moneda": "SDG",
+  "idh": 0.508
+ },
+ "sr": {
+  "moneda": "SRD",
+  "idh": 0.69
+ },
+ "se": {
+  "moneda": "SEK",
+  "idh": 0.952
+ },
+ "ch": {
+  "moneda": "CHF",
+  "idh": 0.967
+ },
+ "sy": {
+  "moneda": "SYP",
+  "idh": 0.577
+ },
+ "tw": {
+  "moneda": "TWD",
+  "idh": 0.926
+ },
+ "tj": {
+  "moneda": "TJS",
+  "idh": 0.685
+ },
+ "tz": {
+  "moneda": "TZS",
+  "idh": 0.549
+ },
+ "th": {
+  "moneda": "THB",
+  "idh": 0.803
+ },
+ "tl": {
+  "moneda": "USD",
+  "idh": 0.607
+ },
+ "tg": {
+  "moneda": "XOF",
+  "idh": 0.547
+ },
+ "to": {
+  "moneda": "TOP",
+  "idh": 0.739
+ },
+ "tt": {
+  "moneda": "TTD",
+  "idh": 0.814
+ },
+ "tn": {
+  "moneda": "TND",
+  "idh": 0.732
+ },
+ "tr": {
+  "moneda": "TRY",
+  "idh": 0.838
+ },
+ "tm": {
+  "moneda": "TMT",
+  "idh": 0.745
+ },
+ "tv": {
+  "moneda": "AUD",
+  "idh": 0.641
+ },
+ "ug": {
+  "moneda": "UGX",
+  "idh": 0.525
+ },
+ "ua": {
+  "moneda": "UAH",
+  "idh": 0.773
+ },
+ "ae": {
+  "moneda": "AED",
+  "idh": 0.911
+ },
+ "gb": {
+  "moneda": "GBP",
+  "idh": 0.94
+ },
+ "us": {
+  "moneda": "USD",
+  "idh": 0.927
+ },
+ "uy": {
+  "moneda": "UYU",
+  "idh": 0.83
+ },
+ "uz": {
+  "moneda": "UZS",
+  "idh": 0.727
+ },
+ "vu": {
+  "moneda": "VUV",
+  "idh": 0.607
+ },
+ "ve": {
+  "moneda": "VES",
+  "idh": 0.699
+ },
+ "vn": {
+  "moneda": "VND",
+  "idh": 0.726
+ },
+ "ye": {
+  "moneda": "YER",
+  "idh": 0.424
+ },
+ "zm": {
+  "moneda": "ZMW",
+  "idh": 0.569
+ },
+ "zw": {
+  "moneda": "ZWL",
+  "idh": 0.593
+ }
+}

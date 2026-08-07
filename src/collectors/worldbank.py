@@ -103,7 +103,8 @@ def build_geo():
                 lon = float(c.get("longitude") or 0)
             except (TypeError, ValueError):
                 continue
-            geo[c["iso2Code"].lower()] = {"name": c.get("name", ""), "lat": lat, "lon": lon, "iso3": c.get("id", "")}
+            geo[c["iso2Code"].lower()] = {"name": c.get("name", ""), "lat": lat, "lon": lon, "iso3": c.get("id", ""),
+                                          "region": c.get("region", {}).get("value", "")}
     geo_path.write_text(json.dumps(geo, ensure_ascii=False, indent=1))
     return geo
 
@@ -114,6 +115,11 @@ class WorldBank(BaseCollector):
     def __init__(self):
         self.geo = {}
         self.errors = []
+        self.enrich = {}
+        try:
+            self.enrich = json.loads((BASE_DIR / "data" / "enrich.json").read_text(encoding="utf-8"))
+        except Exception:
+            pass
 
     def fetch(self):
         self.geo = build_geo()
@@ -167,6 +173,14 @@ class WorldBank(BaseCollector):
             for label, value in seed_ind.items():
                 if label not in INDICATORS:
                     out.append({"country": cc, "indicator": label, "value": value, "source": STATIC_SOURCE.get(label, "seed")})
+            en = self.enrich.get(cc, {})
+            if en.get("moneda") and "moneda" not in seed_ind:
+                out.append({"country": cc, "indicator": "moneda", "value": en["moneda"], "source": "static"})
+            if en.get("idh") and "idh" not in seed_ind:
+                out.append({"country": cc, "indicator": "idh", "value": en["idh"], "source": "PNUD 2022"})
+            reg = self.geo.get(cc, {}).get("region")
+            if reg and "region" not in seed_ind:
+                out.append({"country": cc, "indicator": "region", "value": reg, "source": "Banco Mundial"})
             if not got and not seed_ind:
                 self.errors.append(cc)
         return out

@@ -13,7 +13,7 @@ from fastapi.staticfiles import StaticFiles
 
 from src.config import JSON_DIR, BASE_DIR, CFG
 
-app = FastAPI(title="Country Intelligence", version="0.7.0")
+app = FastAPI(title="Country Intelligence", version="0.8.0")
 
 TRAVEL_DIR = BASE_DIR / "data" / "travel"
 NEWS_DIR = BASE_DIR / "data" / "news"
