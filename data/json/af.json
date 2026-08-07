@@ -1,6 +1,6 @@
 {
  "country": "af",
- "generated": "2026-08-06T17:23:39.340181+00:00",
+ "generated": "2026-08-07T03:14:03.479844+00:00",
  "geo": {
   "name": "Afghanistan",
   "lat": 34.5228,
@@ -10,15 +10,21 @@
  "indicators": {
   "desempleo": {
    "value": "13.687",
-   "updated": "2026-08-06T16:57:05.157063+00:00",
+   "updated": "2026-08-07T03:14:03.458182+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "inflacion": {
    "value": "-6.60118564073726",
    "updated": "2026-08-06T16:57:05.157056+00:00",
    "source": "worldbank",
    "year": ""
+  },
+  "internet_pct": {
+   "value": "16.09499931",
+   "updated": "2026-08-07T03:14:03.458204+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "migrant_pct": {
    "value": "0.2",
@@ -34,15 +40,21 @@
   },
   "pib": {
    "value": "17778508875.7396",
-   "updated": "2026-08-06T16:57:05.157049+00:00",
+   "updated": "2026-08-07T03:14:03.457849+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
+  },
+  "pib_ppa_pc": {
+   "value": "2236.19907311431",
+   "updated": "2026-08-07T03:14:03.457867+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "poblacion": {
    "value": "42647492",
-   "updated": "2026-08-06T16:57:05.157043+00:00",
+   "updated": "2026-08-07T03:14:03.457808+00:00",
    "source": "worldbank",
-   "year": ""
+   "year": "2024"
   },
   "renta_pc": {
    "value": "416.871146273728",
