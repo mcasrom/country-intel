@@ -7,13 +7,54 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from src.config import JSON_DIR, BASE_DIR, CFG
 
 app = FastAPI(title="Country Intelligence", version="0.8.0")
+
+# ---------------------------------------------------------------------------
+# Rate limit simple por IP (en memoria, sin dependencias). Protege los
+# endpoints que los bots martillean (scraping /api/country) sin añadir carga.
+# ---------------------------------------------------------------------------
+from collections import defaultdict, deque
+import time as _time
+
+class _RateLimiter:
+    def __init__(self, limit=30, window=60):
+        self.limit = limit
+        self.window = window
+        self.hits = defaultdict(deque)
+
+    def allow(self, key):
+        now = _time.monotonic()
+        q = self.hits[key]
+        while q and now - q[0] > self.window:
+            q.popleft()
+        if len(q) >= self.limit:
+            return False
+        q.append(now)
+        return True
+
+
+LIMITER = _RateLimiter(limit=60, window=60)
+
+def _client_ip(request):
+    # respeta el X-Forwarded-For que pone nginx
+    xff = request.headers.get("x-forwarded-for", "")
+    if xff:
+        return xff.split(",")[0].strip()
+    return request.client.host if request.client else "unknown"
+
+
+def rate_limited(request):
+    return not LIMITER.allow(_client_ip(request))
+
+
+def rate_limit_response():
+    return Response(content=json.dumps({"ok": False, "reason": "too many requests"}), status_code=429, media_type="application/json")
 
 TRAVEL_DIR = BASE_DIR / "data" / "travel"
 NEWS_DIR = BASE_DIR / "data" / "news"
@@ -100,7 +141,9 @@ def countries():
 
 
 @app.get("/api/country/{code}")
-def country(code: str):
+def country(code: str, request: Request):
+    if rate_limited(request):
+        return rate_limit_response()
     fp = JSON_DIR / f"{code.lower()}.json"
     if not fp.exists():
         raise HTTPException(404, "Pais no encontrado o sin datos")
@@ -171,7 +214,9 @@ def _gnews_rss(q: str):
 
 
 @app.get("/api/news/{code}")
-def news(code: str):
+def news(code: str, request: Request):
+    if rate_limited(request):
+        return rate_limit_response()
     q = NEWS_QUERY.get(code.lower(), code.upper())
     cache = NEWS_DIR / f"{code.lower()}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < NEWS_TTL:
@@ -239,7 +284,9 @@ def trending_all():
 
 
 @app.get("/api/trending/{code}")
-def trending(code: str):
+def trending(code: str, request: Request):
+    if rate_limited(request):
+        return rate_limit_response()
     return _refresh_trending(code.lower())
 
 
@@ -272,9 +319,20 @@ def trend_view(code: str):
     return {"code": cc, "views": t[cc]}
 
 
+def _country_name(cc):
+    """Nombre real del país: NAMES curado (15) o geo.json (217), nunca el código."""
+    if cc in NAMES:
+        return NAMES[cc]
+    try:
+        geo = json.loads((BASE_DIR / "data" / "geo.json").read_text())
+        return (geo.get(cc, {}) or {}).get("name", cc.upper())
+    except Exception:
+        return cc.upper()
+
+
 def _seo_page(code: str) -> str:
     cc = code.lower()
-    name = NAMES.get(cc, cc.upper())
+    name = _country_name(cc)
     fp = JSON_DIR / f"{cc}.json"
     data = {}
     if fp.exists():
@@ -288,11 +346,30 @@ def _seo_page(code: str) -> str:
             return float(v)
         except (TypeError, ValueError):
             return v
+    def fmt_num(v, dec=1):
+        if v is None:
+            return "n/d"
+        if isinstance(v, float) and abs(v) >= 1e12:
+            return f"{v / 1e12:.2f} billones de USD"
+        if isinstance(v, float) and abs(v) >= 1e9:
+            return f"{v / 1e9:.1f} mil millones de USD"
+        if isinstance(v, float) and abs(v) >= 1e6:
+            return f"{v / 1e6:.1f} millones"
+        return f"{v:.{dec}f}" if isinstance(v, float) else str(v)
     pobl = gv("poblacion")
     pib = gv("pib")
-    pobl_txt = f"{(pobl / 1e6):.1f} millones" if isinstance(pobl, float) else "n/d"
-    pib_txt = f"{pib / 1e12:.2f} billones de USD" if isinstance(pib, float) and pib >= 1e12 else (f"{pib / 1e9:.1f} mil millones de USD" if isinstance(pib, float) else "n/d")
-    desc = f"Ficha de inteligencia OSINT de {name}: población {pobl_txt}, PIB {pib_txt}, inflación, desempleo, defensa, estructura etaria, riesgo de visita, avisos de viaje, noticias y alertas."
+    idh = gv("idh")
+    infl = gv("inflacion")
+    des = gv("desempleo")
+    internet = gv("internet_pct")
+    esp = gv("esperanza_vida")
+    urban = gv("urbanizacion")
+    region = gv("region")
+    moneda = ind.get("moneda", {}).get("value") if ind.get("moneda") else None
+    region_txt = f", en {region}" if region else ""
+    desc = (f"Datos OSINT de {name}{region_txt}: población {fmt_num(pobl)}, PIB {fmt_num(pib)}, "
+            f"IDH {fmt_num(idh, 3)}, inflación {fmt_num(infl)}%, desempleo {fmt_num(des)}%, "
+            f"internet {fmt_num(internet)}%, esperanza de vida {fmt_num(esp)} años, urbanización {fmt_num(urban)}%.")
     url = f"https://country.viajeinteligencia.com/pais/{cc}"
     ld = {
         "@context": "https://schema.org",
@@ -301,17 +378,29 @@ def _seo_page(code: str) -> str:
         "description": desc,
         "url": url,
     }
-    region = gv("region")
     if region:
         ld["containedInPlace"] = {"@type": "Continent", "name": region}
     if pobl:
         ld["population"] = {"@type": "QuantitativeValue", "value": int(pobl)}
+    ind_rows = ""
+    facts = [
+        ("Población", fmt_num(pobl)),
+        ("PIB (nominal)", fmt_num(pib)),
+        ("IDH", fmt_num(idh, 3)),
+        ("Inflación anual", f"{fmt_num(infl)}%"),
+        ("Desempleo", f"{fmt_num(des)}%"),
+        ("Internet (% población)", f"{fmt_num(internet)}%"),
+        ("Esperanza de vida", f"{fmt_num(esp)} años"),
+        ("Urbanización", f"{fmt_num(urban)}%"),
+        ("Moneda", str(moneda) if moneda else "n/d"),
+    ]
+    ind_rows = "\n".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in facts)
     return f"""<!doctype html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{name} · Inteligencia OSINT | Country Intelligence</title>
+<title>{name} · Población, PIB, IDH e indicadores | Country Intelligence OSINT</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{url}">
@@ -333,7 +422,13 @@ def _seo_page(code: str) -> str:
 <body>
 <h1>{name}</h1>
 <p>{desc}</p>
-<p>Información orientativa para investigación. Ver el dashboard interactivo:</p>
+<table>
+<thead><tr><th>Indicador</th><th>Valor</th></tr></thead>
+<tbody>
+{ind_rows}
+</tbody>
+</table>
+<p>Datos orientativos para investigación (fuentes: World Bank y organismos abiertos).</p>
 <p><a href="https://country.viajeinteligencia.com/?c={cc}">Abrir ficha interactiva de {name}</a> · <a href="https://country.viajeinteligencia.com/">Inicio</a></p>
 </body>
 </html>"""
@@ -342,15 +437,16 @@ def _seo_page(code: str) -> str:
 @app.get("/pais/{code}")
 def pais(code: str):
     cc = code.lower()
-    if cc not in NAMES:
+    if cc not in NAMES and not (JSON_DIR / f"{cc}.json").exists():
         raise HTTPException(404, "Pais no encontrado")
     return HTMLResponse(_seo_page(cc))
 
 
 @app.get("/sitemap.xml")
 def sitemap():
+    codes = sorted(c.stem for c in JSON_DIR.glob("*.json")) if JSON_DIR.exists() else []
     urls = ["https://country.viajeinteligencia.com/"]
-    urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in sorted(NAMES)]
+    urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in codes]
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     return Response(content=f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
