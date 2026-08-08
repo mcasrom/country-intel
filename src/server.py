@@ -39,7 +39,12 @@ class _RateLimiter:
         return True
 
 
-LIMITER = _RateLimiter(limit=60, window=60)
+# 3000 req/min por IP: deja pasar SIEMPRE la carga legitima del frontend
+# (217 paises en rafaga al cargar mapa/comparador/heatmap/rank; varios usuarios
+# comparten la IP de Cloudflare y la rafaga inicial puede superar los cientos).
+# Solo frena a un bot/scraper martilleando en bucle (los ~4.240 bots hacian
+# cientos de miles de peticiones en 15 dias, no miles por minuto).
+LIMITER = _RateLimiter(limit=3000, window=60)
 
 def _client_ip(request):
     # respeta el X-Forwarded-For que pone nginx
