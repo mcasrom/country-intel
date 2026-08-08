@@ -26,3 +26,10 @@
 - [ ] Comparador + informes PDF + API publica (PRO).
 - [ ] Enviar sitemap a Google Search Console.
 - [ ] Cobertura: co₂ pc y esperanza vida saludable siguen 0 (escasos/throttle, reintenta el cron).
+
+## Fix — Rate-limit rompía comparador/popups (8 Ago 2026)
+
+- **Síntoma**: tras añadir el rate-limit anti-bots, el **comparador y el heatmap no mostraban datos**, y los **popups del mapa** (ej. Italia) salían "Población: — PIB: — Renta pc: —".
+- **Causa raíz**: el frontend carga los **217 países en ráfaga** (`load()` y `ensureAll()` hacen `fetch('/api/country/{cc}')` en paralelo). El rate-limit a **60 req/min** (luego 500) cortaba la ráfaga → peticiones 61+ devolvían **429** → `ALL` incompleto → comparador/heatmap/popups sin datos. Además, Cloudflare agrupa a todos los usuarios tras pocas IPs, así que varios visitantes comparten cuota y agotan el límite.
+- **Fix**: **3000 req/min por IP** en `/api/country`, `/api/news`, `/api/trending`. Suficiente para frenar a un bot martilleando en bucle (los ~4.240 bots hacían cientos de miles en 15 días, no miles por minuto) pero SIEMPRE deja pasar la carga legítima (217 países × N usuarios).
+- **Verificado**: 2 cargas completas seguidas (434 requests) → 0 errores. Italia: población 59.0M · PIB 2.38T · renta $40.430. Commit `cf6bbf9`.
