@@ -169,7 +169,13 @@
   </div>
 </div>
 <div id="layout">
-  <div id="map"></div>
+  <div id="map">
+    <div style="position:absolute;bottom:12px;left:12px;z-index:1000;background:rgba(10,14,23,.85);border:1px solid #1e293b;border-radius:8px;padding:8px 12px;font-size:11px;color:#94a3b8;display:flex;gap:12px;">
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#22c55e;margin-right:4px;"></span>Riesgo bajo</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#f59e0b;margin-right:4px;"></span>Medio</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#ef4444;margin-right:4px;"></span>Alto</span>
+    </div>
+  </div>
   <div id="dash"></div>
 </div>
 <section id="aboutSec">
@@ -710,13 +716,16 @@ function load(){
   fetch('/api/countries').then(r=>r.json()).then(function(d){
     document.getElementById('ccount').textContent = d.countries.length;
     d.countries.forEach(function(cc){
-      fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
-        var meta = cmeta(cc, c);
-        if (meta[2] == null || meta[3] == null) return;
-        var popup = '<b>'+meta[1]+' '+meta[0]+'</b><br>Población: '+fmt(gv(c,'poblacion'),'poblacion')+'<br>PIB: '+fmt(gv(c,'pib'),'pib')+'<br>Renta pc: '+fmt(gv(c,'renta_pc'),'renta_pc');
-        L.circleMarker([meta[2],meta[3]], { radius: 9, color:'#00d4ff', weight:1.5, fillColor:'#00d4ff', fillOpacity:0.35 })
-          .bindPopup(popup).on('click', function(){ loadCountry(cc); }).addTo(map);
-      });
+       fetch('/api/country/'+cc).then(r=>r.json()).then(function(c){
+         var meta = cmeta(cc, c);
+         if (meta[2] == null || meta[3] == null) return;
+         // Nivel de riesgo de visita (heuristica transparente) -> color del marker
+         var rv = riesgoVisita(c);
+         var rvColor = rv[0] === 'alta' ? '#ef4444' : rv[0] === 'media' ? '#f59e0b' : '#22c55e';
+         var popup = '<b>'+meta[1]+' '+meta[0]+'</b><br>Población: '+fmt(gv(c,'poblacion'),'poblacion')+'<br>PIB: '+fmt(gv(c,'pib'),'pib')+'<br>Renta pc: '+fmt(gv(c,'renta_pc'),'renta_pc')+'<br><b style="color:'+rvColor+'">Riesgo: '+rv[1]+'</b>';
+         L.circleMarker([meta[2],meta[3]], { radius: 9, color: rvColor, weight: 1.5, fillColor: rvColor, fillOpacity: 0.55 })
+           .bindPopup(popup).on('click', function(){ loadCountry(cc); }).addTo(map);
+       });
     });
   });
 }
