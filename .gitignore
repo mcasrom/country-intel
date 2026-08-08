@@ -10,3 +10,9 @@ data/cache/
 __pycache__/
 node_modules/
 data/wb_cache/
+# Caches runtime regenerables (cron)
+data/news/
+data/trending/
+data/travel/
+data/trends.json
+data/last_run.json
