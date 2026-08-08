@@ -346,12 +346,21 @@ function riesgo(c){
   if (out.length === 0) out.push(['Estabilidad económica relativa','baja']);
   return out;
 }
-function riesgoVisita(c){
+function riesgoVisitaScore(c){
   var s = 1;
   var idh = gv(c,'idh'), inf = gv(c,'inflacion'), de = gv(c,'desempleo');
   if (idh != null) { if (idh < RISK.visita.idh[0]) s += RISK.visita.puntos_idh[0]; else if (idh < RISK.visita.idh[1]) s += RISK.visita.puntos_idh[1]; else if (idh < RISK.visita.idh[2]) s += RISK.visita.puntos_idh[2]; }
   if (inf != null) { if (inf > RISK.visita.inf[0]) s += RISK.visita.puntos_inf[0]; else if (inf > RISK.visita.inf[1]) s += RISK.visita.puntos_inf[1]; }
   if (de != null) { if (de > RISK.visita.de[0]) s += RISK.visita.puntos_de[0]; else if (de > RISK.visita.de[1]) s += RISK.visita.puntos_de[1]; }
+  return s;
+}
+function riesgoVisitaNivel(c){
+  var s = riesgoVisitaScore(c);
+  return s <= RISK.visita.baja ? 'baja' : s <= RISK.visita.media ? 'media' : 'alta';
+}
+function riesgoVisita(c){
+  var s = riesgoVisitaScore(c);
+  var idh = gv(c,'idh'), inf = gv(c,'inflacion'), de = gv(c,'desempleo');
   var nivel = s <= RISK.visita.baja ? ['baja','Baja · 👍'] : s <= RISK.visita.media ? ['media','Media · ⚠️'] : ['alta','Alta · 🔴'];
   var consejos = [];
   if (inf != null && inf > RISK.visita.inf[0]) consejos.push('Inflación elevada: prevé precios al alza y presupuesto flexible.');
@@ -720,9 +729,10 @@ function load(){
          var meta = cmeta(cc, c);
          if (meta[2] == null || meta[3] == null) return;
          // Nivel de riesgo de visita (heuristica transparente) -> color del marker
-         var rv = riesgoVisita(c);
-         var rvColor = rv[0] === 'alta' ? '#ef4444' : rv[0] === 'media' ? '#f59e0b' : '#22c55e';
-         var popup = '<b>'+meta[1]+' '+meta[0]+'</b><br>Población: '+fmt(gv(c,'poblacion'),'poblacion')+'<br>PIB: '+fmt(gv(c,'pib'),'pib')+'<br>Renta pc: '+fmt(gv(c,'renta_pc'),'renta_pc')+'<br><b style="color:'+rvColor+'">Riesgo: '+rv[1]+'</b>';
+         var rvNivel = riesgoVisitaNivel(c);
+         var rvColor = rvNivel === 'alta' ? '#ef4444' : rvNivel === 'media' ? '#f59e0b' : '#22c55e';
+         var rvLabel = rvNivel === 'alta' ? 'Alto 🔴' : rvNivel === 'media' ? 'Medio ⚠️' : 'Bajo 👍';
+         var popup = '<b>'+meta[1]+' '+meta[0]+'</b><br>Población: '+fmt(gv(c,'poblacion'),'poblacion')+'<br>PIB: '+fmt(gv(c,'pib'),'pib')+'<br>Renta pc: '+fmt(gv(c,'renta_pc'),'renta_pc')+'<br><b style="color:'+rvColor+'">Riesgo de visita: '+rvLabel+'</b>';
          L.circleMarker([meta[2],meta[3]], { radius: 9, color: rvColor, weight: 1.5, fillColor: rvColor, fillOpacity: 0.55 })
            .bindPopup(popup).on('click', function(){ loadCountry(cc); }).addTo(map);
        });
