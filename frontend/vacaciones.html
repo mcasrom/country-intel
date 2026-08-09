@@ -80,7 +80,11 @@
       }));
     });
   }
-  function nameOf(cc){ return (META.meta && META.meta[cc]) ? (META.meta[cc][1] + ' ' + META.meta[cc][0]) : (cc||'').toUpperCase(); }
+  function nameOf(cc){
+    if (META.meta && META.meta[cc]) return META.meta[cc][0]; // nombre en español (15 curados)
+    var g = IND[cc] && IND[cc].geo || {};
+    return g.name || (cc || '').toUpperCase(); // nombre real de geo.json (217)
+  }
   function flagOf(cc){ try { return String.fromCodePoint.apply(null, cc.toUpperCase().split('').map(function(c){ return 127397 + c.charCodeAt(0); })); } catch(e){ return ''; } }
   function gv(cc, k){ var i = IND[cc] && IND[cc].indicators || {}; return (i[k] && i[k].value != null) ? Number(i[k].value) : null; }
   function fmt(v){ return v == null ? '—' : (Math.abs(v) >= 1e9 ? (v/1e9).toFixed(1)+'k M' : Math.round(v).toLocaleString()); }

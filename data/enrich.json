@@ -29,7 +29,8 @@
  },
  "at": {
   "moneda": "EUR",
-  "idh": 0.926
+  "idh": 0.926,
+  "gini": 30.8
  },
  "az": {
   "moneda": "AZN",
@@ -57,7 +58,8 @@
  },
  "be": {
   "moneda": "EUR",
-  "idh": 0.942
+  "idh": 0.942,
+  "gini": 26.6
  },
  "bz": {
   "moneda": "BZD",
@@ -93,7 +95,8 @@
  },
  "bg": {
   "moneda": "BGN",
-  "idh": 0.795
+  "idh": 0.795,
+  "gini": 40.4
  },
  "bf": {
   "moneda": "XOF",
@@ -113,7 +116,8 @@
  },
  "ca": {
   "moneda": "CAD",
-  "idh": 0.935
+  "idh": 0.935,
+  "gini": 33.3
  },
  "cv": {
   "moneda": "CVE",
@@ -161,7 +165,8 @@
  },
  "hr": {
   "moneda": "EUR",
-  "idh": 0.878
+  "idh": 0.878,
+  "gini": 30.4
  },
  "cu": {
   "moneda": "CUP",
@@ -173,11 +178,13 @@
  },
  "cz": {
   "moneda": "CZK",
-  "idh": 0.889
+  "idh": 0.889,
+  "gini": 25.0
  },
  "dk": {
   "moneda": "DKK",
-  "idh": 0.94
+  "idh": 0.94,
+  "gini": 28.7
  },
  "dj": {
   "moneda": "DJF",
@@ -225,7 +232,8 @@
  },
  "fi": {
   "moneda": "EUR",
-  "idh": 0.94
+  "idh": 0.94,
+  "gini": 28.3
  },
  "fr": {
   "moneda": "EUR",
@@ -253,7 +261,8 @@
  },
  "gr": {
   "moneda": "EUR",
-  "idh": 0.887
+  "idh": 0.887,
+  "gini": 32.4
  },
  "gd": {
   "moneda": "XCD",
@@ -285,7 +294,8 @@
  },
  "hu": {
   "moneda": "HUF",
-  "idh": 0.846
+  "idh": 0.846,
+  "gini": 29.2
  },
  "is": {
   "moneda": "ISK",
@@ -309,11 +319,13 @@
  },
  "ie": {
   "moneda": "EUR",
-  "idh": 0.945
+  "idh": 0.945,
+  "gini": 30.0
  },
  "il": {
   "moneda": "ILS",
-  "idh": 0.919
+  "idh": 0.919,
+  "gini": 37.9
  },
  "it": {
   "moneda": "EUR",
@@ -325,7 +337,8 @@
  },
  "jp": {
   "moneda": "JPY",
-  "idh": 0.925
+  "idh": 0.925,
+  "gini": 32.9
  },
  "jo": {
   "moneda": "JOD",
@@ -349,7 +362,8 @@
  },
  "kr": {
   "moneda": "KRW",
-  "idh": 0.929
+  "idh": 0.929,
+  "gini": 31.4
  },
  "kw": {
   "moneda": "KWD",
@@ -473,7 +487,8 @@
  },
  "nl": {
   "moneda": "EUR",
-  "idh": 0.941
+  "idh": 0.941,
+  "gini": 26.4
  },
  "nz": {
   "moneda": "NZD",
@@ -497,7 +512,8 @@
  },
  "no": {
   "moneda": "NOK",
-  "idh": 0.961
+  "idh": 0.961,
+  "gini": 27.7
  },
  "om": {
   "moneda": "OMR",
@@ -533,11 +549,13 @@
  },
  "pl": {
   "moneda": "PLN",
-  "idh": 0.876
+  "idh": 0.876,
+  "gini": 30.2
  },
  "pt": {
   "moneda": "EUR",
-  "idh": 0.874
+  "idh": 0.874,
+  "gini": 33.4
  },
  "qa": {
   "moneda": "QAR",
@@ -545,7 +563,8 @@
  },
  "ro": {
   "moneda": "RON",
-  "idh": 0.827
+  "idh": 0.827,
+  "gini": 34.6
  },
  "ru": {
   "moneda": "RUB",
@@ -601,7 +620,8 @@
  },
  "sg": {
   "moneda": "SGD",
-  "idh": 0.939
+  "idh": 0.939,
+  "gini": 37.5
  },
  "sk": {
   "moneda": "EUR",
@@ -645,11 +665,13 @@
  },
  "se": {
   "moneda": "SEK",
-  "idh": 0.952
+  "idh": 0.952,
+  "gini": 29.6
  },
  "ch": {
   "moneda": "CHF",
-  "idh": 0.967
+  "idh": 0.967,
+  "gini": 32.3
  },
  "sy": {
   "moneda": "SYP",
@@ -713,7 +735,8 @@
  },
  "ae": {
   "moneda": "AED",
-  "idh": 0.911
+  "idh": 0.911,
+  "gini": 26.0
  },
  "gb": {
   "moneda": "GBP",
@@ -754,5 +777,8 @@
  "zw": {
   "moneda": "ZWL",
   "idh": 0.593
+ },
+ "hk": {
+  "gini": 53.9
  }
 }
