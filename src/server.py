@@ -447,10 +447,19 @@ def pais(code: str):
     return HTMLResponse(_seo_page(cc))
 
 
+@app.get("/vacaciones")
+def vacaciones():
+    page = BASE_DIR / "frontend" / "vacaciones.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
+
+
 @app.get("/sitemap.xml")
 def sitemap():
     codes = sorted(c.stem for c in JSON_DIR.glob("*.json")) if JSON_DIR.exists() else []
     urls = ["https://country.viajeinteligencia.com/"]
+    urls += ["https://country.viajeinteligencia.com/vacaciones"]
     urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in codes]
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     return Response(content=f"""<?xml version="1.0" encoding="UTF-8"?>

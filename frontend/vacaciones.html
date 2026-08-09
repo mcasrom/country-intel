@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>¿Dónde ir de vacaciones? Compara países por precio, IDH y seguridad | Country OSINT</title>
+<meta name="description" content="Compara países para tus vacaciones: renta per cápita, coste estimado, IDH, internet, moneda e inflación. Datos World Bank, gratis y sin registro. Elige el mejor destino según tu presupuesto.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://country.viajeinteligencia.com/vacaciones">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¿Dónde ir de vacaciones? Compara países">
+<meta property="og:description" content="Compara destinos por precio, IDH, internet y seguridad. Datos World Bank.">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{--bg:#0B0F17;--panel:#121826;--panel2:#171F30;--line:#232B3D;--text:#E7EBF3;--dim:#8993A8;--amber:#FFB454;--green:#34D399;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,system-ui,sans-serif;line-height:1.5;}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:#0d1322;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .brand{font-family:ui-monospace,monospace;font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;}
+  .wrap{max-width:820px;margin:0 auto;padding:28px 24px;}
+  h1{font-size:28px;font-weight:800;letter-spacing:-0.02em;margin-bottom:6px;}
+  .sub{font-family:ui-monospace,monospace;font-size:13px;color:var(--dim);margin-bottom:20px;}
+  .selects{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;margin-bottom:20px;}
+  @media(max-width:600px){.selects{grid-template-columns:1fr;}}
+  .field label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;display:block;margin-bottom:4px;}
+  .field select{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px;color:var(--text);font-size:14px;}
+  .vs{font-family:ui-monospace,monospace;font-size:16px;color:var(--amber);text-align:center;padding-bottom:8px;}
+  .cmp{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;}
+  .card .c-name{font-size:18px;font-weight:800;margin-bottom:12px;display:flex;justify-content:space-between;gap:8px;}
+  .card .c-name .flag{font-size:20px;}
+  table{width:100%;border-collapse:collapse;font-size:13px;}
+  th,td{padding:7px 8px;text-align:left;border-bottom:1px solid #1a2a4a;}
+  th{color:var(--dim);font-size:10px;text-transform:uppercase;letter-spacing:.05em;}
+  td:last-child{text-align:right;font-weight:600;color:var(--amber);font-family:ui-monospace,monospace;}
+  .good{color:var(--green);}
+  .bad{color:#F87171;}
+  .resumen{margin-top:16px;font-size:14px;color:var(--dim);line-height:1.6;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+  .resumen b{color:var(--text);}
+  footer{padding:20px;border-top:1px solid var(--line);font-family:ui-monospace,monospace;font-size:11px;color:var(--faint,#576076);text-align:center;}
+  footer a{color:var(--amber);}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="brand">🌍 ¿Dónde ir de vacaciones?</div>
+  <span style="font-family:ui-monospace,monospace;font-size:11px;color:var(--dim);"><a href="/" style="color:var(--dim);">← Country OSINT</a></span>
+</div>
+<div class="wrap">
+  <h1>Compara destinos de vacaciones</h1>
+  <div class="sub">Renta, coste estimado, IDH, internet, moneda e inflación · datos World Bank</div>
+  <div class="selects">
+    <div class="field"><label>Destino A</label><select id="a"></select></div>
+    <div class="vs">VS</div>
+    <div class="field"><label>Destino B</label><select id="b"></select></div>
+  </div>
+  <div class="cmp">
+    <div class="card" id="cardA"><div class="c-name">Selecciona un país</div></div>
+    <div class="card" id="cardB"><div class="c-name">Selecciona un país</div></div>
+  </div>
+  <div class="resumen" id="resumen"></div>
+</div>
+<footer>
+  Fuente: World Bank vía <a href="/">Country Intelligence</a> · <a href="https://viajeinteligencia.com">ecosistema →</a>
+</footer>
+<script>
+  var META = {};
+  var COUNTRIES = [];
+  var NAMES = {};
+  var IND = {};
+  function loadMeta(){
+    return fetch('/api/config').then(function(r){ return r.json(); }).then(function(cfg){
+      META = cfg.frontend || {};
+      return fetch('/api/countries').then(function(r){ return r.json(); });
+    }).then(function(d){
+      COUNTRIES = d.countries;
+      return Promise.all(COUNTRIES.map(function(cc){
+        return fetch('/api/country/' + cc).then(function(r){ return r.json(); }).then(function(c){ IND[cc] = c; });
+      }));
+    });
+  }
+  function nameOf(cc){ return (META.meta && META.meta[cc]) ? (META.meta[cc][1] + ' ' + META.meta[cc][0]) : (cc||'').toUpperCase(); }
+  function flagOf(cc){ try { return String.fromCodePoint.apply(null, cc.toUpperCase().split('').map(function(c){ return 127397 + c.charCodeAt(0); })); } catch(e){ return ''; } }
+  function gv(cc, k){ var i = IND[cc] && IND[cc].indicators || {}; return (i[k] && i[k].value != null) ? Number(i[k].value) : null; }
+  function fmt(v){ return v == null ? '—' : (Math.abs(v) >= 1e9 ? (v/1e9).toFixed(1)+'k M' : Math.round(v).toLocaleString()); }
+  function fmtMoney(v){ return v == null ? '—' : (v >= 1e12 ? '$'+(v/1e12).toFixed(1)+'T' : v >= 1e9 ? '$'+(v/1e9).toFixed(1)+'B' : '$'+Math.round(v).toLocaleString()); }
+  function flagFromGeo(cc){ var g = IND[cc] && IND[cc].geo || {}; try { return String.fromCodePoint.apply(null, (g.iso2||cc).toUpperCase().split('').map(function(c){ return 127397 + c.charCodeAt(0); })); } catch(e){ return ''; } }
+  function renderCard(cc, el){
+    if (!cc || !IND[cc]) { el.innerHTML = '<div class="c-name">Selecciona un país</div><div style="color:var(--dim);font-size:12px;">Elige un destino arriba.</div>'; return; }
+    var g = IND[cc].geo || {};
+    var flag = flagFromGeo(cc);
+    var rows = [
+      ['Renta per cápita', fmtMoney(gv(cc,'renta_pc'))],
+      ['PIB', fmtMoney(gv(cc,'pib'))],
+      ['IDH', gv(cc,'idh') == null ? '—' : gv(cc,'idh').toFixed(3)],
+      ['Internet (% pob.)', gv(cc,'internet_pct') == null ? '—' : gv(cc,'internet_pct').toFixed(0)+'%'],
+      ['Inflación', gv(cc,'inflacion') == null ? '—' : gv(cc,'inflacion').toFixed(1)+'%'],
+      ['Esperanza de vida', gv(cc,'esperanza_vida') == null ? '—' : gv(cc,'esperanza_vida').toFixed(0)+' años'],
+      ['Gini (desigualdad)', gv(cc,'gini') == null ? '—' : gv(cc,'gini').toFixed(0)],
+    ];
+    el.innerHTML = '<div class="c-name"><span>'+flag+' '+nameOf(cc)+'</span></div>' +
+      '<table>' + rows.map(function(r){ return '<tr><th>'+r[0]+'</th><td>'+r[1]+'</td></tr>'; }).join('') + '</table>';
+  }
+  function renderResumen(){
+    var a = document.getElementById('a').value, b = document.getElementById('b').value;
+    if (!a || !b || !IND[a] || !IND[b] || a === b) { document.getElementById('resumen').innerHTML = ''; return; }
+    var parts = [];
+    var ra = gv(a,'renta_pc'), rb = gv(b,'renta_pc');
+    var idha = gv(a,'idh'), idhb = gv(b,'idh');
+    if (ra != null && rb != null) parts.push((ra > rb ? '<b>'+nameOf(a)+'</b>' : '<b>'+nameOf(b)+'</b>') + ' tiene mayor renta per cápita.');
+    if (idha != null && idhb != null) parts.push((idha > idhb ? '<b>'+nameOf(a)+'</b>' : '<b>'+nameOf(b)+'</b>') + ' tiene mayor IDH (mejor calidad de vida).');
+    var monA = (IND[a].indicators.moneda || {}).value, monB = (IND[b].indicators.moneda || {}).value;
+    if (monA && monB && monA !== monB) parts.push('Monedas distintas: <b>'+monA+'</b> vs <b>'+monB+'</b> — revisa el cambio.');
+    document.getElementById('resumen').innerHTML = '💡 <b>Resumen:</b> ' + (parts.join(' ') || 'Elige dos países distintos para comparar.');
+  }
+  loadMeta().then(function(){
+    var sa = document.getElementById('a'), sb = document.getElementById('b');
+    var opts = COUNTRIES.map(function(cc){ return '<option value="'+cc+'">'+flagOf(cc)+' '+nameOf(cc)+'</option>'; }).join('');
+    sa.innerHTML = opts; sb.innerHTML = opts;
+    sa.value = 'es'; sb.value = 'mx';
+    sa.onchange = function(){ renderCard(sa.value, document.getElementById('cardA')); renderResumen(); };
+    sb.onchange = function(){ renderCard(sb.value, document.getElementById('cardB')); renderResumen(); };
+    renderCard(sa.value, document.getElementById('cardA'));
+    renderCard(sb.value, document.getElementById('cardB'));
+    renderResumen();
+  }).catch(function(e){ document.getElementById('resumen').textContent = 'Error cargando datos: ' + e.message; });
+</script>
+</body>
+</html>
