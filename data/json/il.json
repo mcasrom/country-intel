@@ -1,6 +1,6 @@
 {
  "country": "il",
- "generated": "2026-08-09T03:09:50.241392+00:00",
+ "generated": "2026-08-10T03:15:49.262674+00:00",
  "geo": {
   "name": "Israel",
   "lat": 31.7717,
@@ -10,105 +10,99 @@
  "indicators": {
   "desempleo": {
    "value": "3.595",
-   "updated": "2026-08-08T03:15:03.659812+00:00",
+   "updated": "2026-08-10T03:15:49.164907+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "83.1975609756098",
-   "updated": "2026-08-08T03:15:03.659832+00:00",
+   "updated": "2026-08-10T03:15:49.164944+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "2.87",
-   "updated": "2026-08-08T03:15:03.659861+00:00",
+   "updated": "2026-08-10T03:15:49.164994+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "7.09822369",
-   "updated": "2026-08-08T03:15:03.659838+00:00",
+   "updated": "2026-08-10T03:15:49.164957+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.919",
-   "updated": "2026-08-09T03:09:50.170787+00:00",
+   "updated": "2026-08-10T03:15:49.165016+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "3.07480889805025",
-   "updated": "2026-08-08T03:15:03.659805+00:00",
+   "updated": "2026-08-10T03:15:49.164893+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "88.18242225",
-   "updated": "2026-08-08T03:15:03.659845+00:00",
+   "updated": "2026-08-10T03:15:49.164969+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "22.3",
-   "updated": "2026-08-08T03:15:03.659826+00:00",
+   "updated": "2026-08-10T03:15:49.164932+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "ILS",
-   "updated": "2026-08-09T03:09:50.170777+00:00",
+   "updated": "2026-08-10T03:15:49.165005+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "1.0609665873507828",
-   "updated": "2026-08-08T03:15:03.659819+00:00",
+   "updated": "2026-08-10T03:15:49.164919+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "542284494490.778",
-   "updated": "2026-08-08T03:15:03.659785+00:00",
+   "updated": "2026-08-10T03:15:49.164841+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "57277.8631217651",
-   "updated": "2026-08-08T03:15:03.659792+00:00",
+   "updated": "2026-08-10T03:15:49.164854+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10002200",
-   "updated": "2026-08-08T03:15:03.659779+00:00",
+   "updated": "2026-08-10T03:15:49.164829+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Middle East, North Africa, Afghanistan & Pakistan",
-   "updated": "2026-08-09T03:09:50.170796+00:00",
+   "updated": "2026-08-10T03:15:49.165028+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "54216.5218142787",
-   "updated": "2026-08-08T03:15:03.659799+00:00",
+   "updated": "2026-08-10T03:15:49.164866+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "91.536188843818",
-   "updated": "2026-08-08T03:15:03.659851+00:00",
+   "updated": "2026-08-10T03:15:49.164981+00:00",
    "source": "worldbank",
    "year": "2024"
-  },
-  "gini": {
-   "value": 37.9,
-   "source": "enrich (Banco Mundial/nacional)",
-   "updated": "2026-08-09T00:00:00+00:00",
-   "year": ""
   }
  }
 }

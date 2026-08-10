@@ -1,6 +1,6 @@
 {
  "country": "sg",
- "generated": "2026-08-09T03:09:50.283490+00:00",
+ "generated": "2026-08-10T03:15:49.313245+00:00",
  "geo": {
   "name": "Singapore",
   "lat": 1.28941,
@@ -10,123 +10,117 @@
  "indicators": {
   "desempleo": {
    "value": "2.737",
-   "updated": "2026-08-08T03:15:03.722544+00:00",
+   "updated": "2026-08-10T03:15:49.186915+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "deuda_pib": {
    "value": "167.799832036767",
-   "updated": "2026-08-08T03:15:03.722579+00:00",
+   "updated": "2026-08-10T03:15:49.186975+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "83.3463414634146",
-   "updated": "2026-08-08T03:15:03.722565+00:00",
+   "updated": "2026-08-10T03:15:49.186950+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "0.97",
-   "updated": "2026-08-08T03:15:03.722620+00:00",
+   "updated": "2026-08-10T03:15:49.187042+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "2.19099857819757",
-   "updated": "2026-08-08T03:15:03.722593+00:00",
+   "updated": "2026-08-10T03:15:49.186998+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "4.49163246",
-   "updated": "2026-08-08T03:15:03.722586+00:00",
+   "updated": "2026-08-10T03:15:49.186987+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "0.0690954942050905",
-   "updated": "2026-08-08T03:15:03.722572+00:00",
+   "updated": "2026-08-10T03:15:49.186962+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.939",
-   "updated": "2026-08-09T03:09:50.179124+00:00",
+   "updated": "2026-08-10T03:15:49.187065+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "2.38951123595017",
-   "updated": "2026-08-08T03:15:03.722537+00:00",
+   "updated": "2026-08-10T03:15:49.186902+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "94.37757178",
-   "updated": "2026-08-08T03:15:03.722599+00:00",
+   "updated": "2026-08-10T03:15:49.187010+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "48.7",
-   "updated": "2026-08-08T03:15:03.722558+00:00",
+   "updated": "2026-08-10T03:15:49.186939+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "SGD",
-   "updated": "2026-08-09T03:09:50.178793+00:00",
+   "updated": "2026-08-10T03:15:49.187054+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "3.3148027285708133",
-   "updated": "2026-08-08T03:15:03.722551+00:00",
+   "updated": "2026-08-10T03:15:49.186926+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "572877260178.427",
-   "updated": "2026-08-08T03:15:03.722502+00:00",
+   "updated": "2026-08-10T03:15:49.186842+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "153161.175431382",
-   "updated": "2026-08-08T03:15:03.722512+00:00",
+   "updated": "2026-08-10T03:15:49.186864+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "6036860",
-   "updated": "2026-08-08T03:15:03.722464+00:00",
+   "updated": "2026-08-10T03:15:49.186816+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-08-09T03:09:50.179177+00:00",
+   "updated": "2026-08-10T03:15:49.187077+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "94896.5621495988",
-   "updated": "2026-08-08T03:15:03.722530+00:00",
+   "updated": "2026-08-10T03:15:49.186888+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-08T03:15:03.722606+00:00",
+   "updated": "2026-08-10T03:15:49.187021+00:00",
    "source": "worldbank",
    "year": "2024"
-  },
-  "gini": {
-   "value": 37.5,
-   "source": "enrich (Banco Mundial/nacional)",
-   "updated": "2026-08-09T00:00:00+00:00",
-   "year": ""
   }
  }
 }

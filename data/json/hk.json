@@ -1,6 +1,6 @@
 {
  "country": "hk",
- "generated": "2026-08-09T03:09:50.237638+00:00",
+ "generated": "2026-08-10T03:15:49.257316+00:00",
  "geo": {
   "name": "Hong Kong SAR, China",
   "lat": 22.3964,
@@ -10,99 +10,93 @@
  "indicators": {
   "desempleo": {
    "value": "2.988",
-   "updated": "2026-08-08T03:15:03.658904+00:00",
+   "updated": "2026-08-10T03:15:49.163263+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "85.3926829268293",
-   "updated": "2026-08-08T03:15:03.658923+00:00",
+   "updated": "2026-08-10T03:15:49.163299+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "0.841",
-   "updated": "2026-08-08T03:15:03.658956+00:00",
+   "updated": "2026-08-10T03:15:49.163377+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "3.80552005767822",
-   "updated": "2026-08-08T03:15:03.658936+00:00",
+   "updated": "2026-08-10T03:15:49.163341+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "homicidios": {
    "value": "0.376205815214825",
-   "updated": "2026-08-08T03:15:03.658930+00:00",
+   "updated": "2026-08-10T03:15:49.163310+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "inflacion": {
    "value": "1.72972119105914",
-   "updated": "2026-08-08T03:15:03.658897+00:00",
+   "updated": "2026-08-10T03:15:49.163251+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "95.75536971",
-   "updated": "2026-08-08T03:15:03.658943+00:00",
+   "updated": "2026-08-10T03:15:49.163354+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "41.3",
-   "updated": "2026-08-08T03:15:03.658917+00:00",
+   "updated": "2026-08-10T03:15:49.163287+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "-2.5613694661155484",
-   "updated": "2026-08-08T03:15:03.658910+00:00",
+   "updated": "2026-08-10T03:15:49.163275+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "408368682415.423",
-   "updated": "2026-08-08T03:15:03.658876+00:00",
+   "updated": "2026-08-10T03:15:49.163214+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "75341.6985534061",
-   "updated": "2026-08-08T03:15:03.658883+00:00",
+   "updated": "2026-08-10T03:15:49.163226+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "7524100",
-   "updated": "2026-08-08T03:15:03.658870+00:00",
+   "updated": "2026-08-10T03:15:49.163201+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-08-09T03:09:50.170529+00:00",
+   "updated": "2026-08-10T03:15:49.163390+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "54274.7547767073",
-   "updated": "2026-08-08T03:15:03.658890+00:00",
+   "updated": "2026-08-10T03:15:49.163239+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-08T03:15:03.658949+00:00",
+   "updated": "2026-08-10T03:15:49.163366+00:00",
    "source": "worldbank",
    "year": "2024"
-  },
-  "gini": {
-   "value": 53.9,
-   "source": "enrich (Banco Mundial/nacional)",
-   "updated": "2026-08-09T00:00:00+00:00",
-   "year": ""
   }
  }
 }

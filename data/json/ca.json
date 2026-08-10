@@ -1,6 +1,6 @@
 {
  "country": "ca",
- "generated": "2026-08-09T03:09:50.215799+00:00",
+ "generated": "2026-08-10T03:15:49.223076+00:00",
  "geo": {
   "name": "Canada",
   "lat": 45.4215,
@@ -10,117 +10,111 @@
  "indicators": {
   "desempleo": {
    "value": "6.351",
-   "updated": "2026-08-08T03:15:03.622891+00:00",
+   "updated": "2026-08-10T03:15:49.150289+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "deuda_pib": {
    "value": "64.1314232901439",
-   "updated": "2026-08-08T03:15:03.622962+00:00",
+   "updated": "2026-08-10T03:15:49.150370+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "82.1080487804878",
-   "updated": "2026-08-08T03:15:03.622921+00:00",
+   "updated": "2026-08-10T03:15:49.150344+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.25",
-   "updated": "2026-08-08T03:15:03.623005+00:00",
+   "updated": "2026-08-10T03:15:49.150418+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "11.3095665",
-   "updated": "2026-08-08T03:15:03.622975+00:00",
+   "updated": "2026-08-10T03:15:49.150383+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "homicidios": {
    "value": "1.97968887560784",
-   "updated": "2026-08-08T03:15:03.622933+00:00",
+   "updated": "2026-08-10T03:15:49.150358+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.935",
-   "updated": "2026-08-09T03:09:50.158228+00:00",
+   "updated": "2026-08-10T03:15:49.150440+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "2.38158383281173",
-   "updated": "2026-08-08T03:15:03.622880+00:00",
+   "updated": "2026-08-10T03:15:49.150277+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "94.353302",
-   "updated": "2026-08-08T03:15:03.622985+00:00",
+   "updated": "2026-08-10T03:15:49.150395+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "22.2",
-   "updated": "2026-08-08T03:15:03.622911+00:00",
+   "updated": "2026-08-10T03:15:49.150313+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "CAD",
-   "updated": "2026-08-09T03:09:50.158215+00:00",
+   "updated": "2026-08-10T03:15:49.150429+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "8.93306337603968",
-   "updated": "2026-08-08T03:15:03.622901+00:00",
+   "updated": "2026-08-10T03:15:49.150301+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "2270076189683.46",
-   "updated": "2026-08-08T03:15:03.622847+00:00",
+   "updated": "2026-08-10T03:15:49.150239+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "65482.9454728344",
-   "updated": "2026-08-08T03:15:03.622857+00:00",
+   "updated": "2026-08-10T03:15:49.150252+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "41262329",
-   "updated": "2026-08-08T03:15:03.622836+00:00",
+   "updated": "2026-08-10T03:15:49.150227+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "North America",
-   "updated": "2026-08-09T03:09:50.158241+00:00",
+   "updated": "2026-08-10T03:15:49.150453+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "55015.7066917734",
-   "updated": "2026-08-08T03:15:03.622870+00:00",
+   "updated": "2026-08-10T03:15:49.150264+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "82.7002565766633",
-   "updated": "2026-08-08T03:15:03.622994+00:00",
+   "updated": "2026-08-10T03:15:49.150406+00:00",
    "source": "worldbank",
    "year": "2024"
-  },
-  "gini": {
-   "value": 33.3,
-   "source": "enrich (Banco Mundial/nacional)",
-   "updated": "2026-08-09T00:00:00+00:00",
-   "year": ""
   }
  }
 }

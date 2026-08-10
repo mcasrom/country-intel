@@ -1,6 +1,6 @@
 {
  "country": "jp",
- "generated": "2026-08-09T03:09:50.247184+00:00",
+ "generated": "2026-08-10T03:15:49.273924+00:00",
  "geo": {
   "name": "Japan",
   "lat": 35.67,
@@ -10,111 +10,105 @@
  "indicators": {
   "desempleo": {
    "value": "2.5",
-   "updated": "2026-08-08T03:15:03.665425+00:00",
+   "updated": "2026-08-10T03:15:49.167739+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "84.0363414634146",
-   "updated": "2026-08-08T03:15:03.665444+00:00",
+   "updated": "2026-08-10T03:15:49.167776+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.15",
-   "updated": "2026-08-08T03:15:03.665481+00:00",
+   "updated": "2026-08-10T03:15:49.167838+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "10.73979473",
-   "updated": "2026-08-08T03:15:03.665462+00:00",
+   "updated": "2026-08-10T03:15:49.167801+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "0.229153196964695",
-   "updated": "2026-08-08T03:15:03.665455+00:00",
+   "updated": "2026-08-10T03:15:49.167788+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.925",
-   "updated": "2026-08-09T03:09:50.172680+00:00",
+   "updated": "2026-08-10T03:15:49.167860+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "2.73853681635241",
-   "updated": "2026-08-08T03:15:03.665418+00:00",
+   "updated": "2026-08-10T03:15:49.167728+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "85.54153081",
-   "updated": "2026-08-08T03:15:03.665468+00:00",
+   "updated": "2026-08-10T03:15:49.167814+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.8",
-   "updated": "2026-08-08T03:15:03.665438+00:00",
+   "updated": "2026-08-10T03:15:49.167764+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "JPY",
-   "updated": "2026-08-09T03:09:50.172671+00:00",
+   "updated": "2026-08-10T03:15:49.167850+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "1.2369956932816921",
-   "updated": "2026-08-08T03:15:03.665431+00:00",
+   "updated": "2026-08-10T03:15:49.167751+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "4190008188358.57",
-   "updated": "2026-08-08T03:15:03.665398+00:00",
+   "updated": "2026-08-10T03:15:49.167691+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "54156.2687689605",
-   "updated": "2026-08-08T03:15:03.665405+00:00",
+   "updated": "2026-08-10T03:15:49.167703+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "123975371",
-   "updated": "2026-08-08T03:15:03.665392+00:00",
+   "updated": "2026-08-10T03:15:49.167679+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-08-09T03:09:50.172690+00:00",
+   "updated": "2026-08-10T03:15:49.167872+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "33797.1014287876",
-   "updated": "2026-08-08T03:15:03.665412+00:00",
+   "updated": "2026-08-10T03:15:49.167715+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "92.1901718034531",
-   "updated": "2026-08-08T03:15:03.665475+00:00",
+   "updated": "2026-08-10T03:15:49.167826+00:00",
    "source": "worldbank",
    "year": "2024"
-  },
-  "gini": {
-   "value": 32.9,
-   "source": "enrich (Banco Mundial/nacional)",
-   "updated": "2026-08-09T00:00:00+00:00",
-   "year": ""
   }
  }
 }
