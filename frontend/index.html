@@ -114,12 +114,17 @@
     <b style="color:#00d4ff;">⚖️ Comparador de países</b>
     <button class="ci" onclick="toggleOv('cmp')">✕ Cerrar</button>
   </div>
-  <div style="display:flex;gap:10px;justify-content:center;align-items:center;max-width:760px;margin:0 auto 14px;flex-wrap:wrap;">
+  <div style="display:flex;gap:10px;justify-content:center;align-items:center;max-width:900px;margin:0 auto 14px;flex-wrap:wrap;">
     <select class="ci" id="cmpA" onchange="buildCmp()"></select>
-    <span style="color:#64748b;">vs</span>
+    <span style="color:#64748b;">+</span>
     <select class="ci" id="cmpB" onchange="buildCmp()"></select>
+    <span style="color:#64748b;">+</span>
+    <select class="ci" id="cmpC" onchange="buildCmp()"></select>
+    <span style="color:#64748b;">+</span>
+    <select class="ci" id="cmpD" onchange="buildCmp()"></select>
+    <span style="color:#334155;font-size:.78em;" title="Puedes comparar hasta 4 países. Si dos quedan iguales, se ignoran.">(hasta 4)</span>
   </div>
-  <div id="cmptable" style="max-width:760px;margin:0 auto;"></div>
+  <div id="cmptable" style="max-width:900px;margin:0 auto;"></div>
 </div>
 <div class="ov" id="rank" style="display:none">
   <div style="display:flex;justify-content:space-between;align-items:center;max-width:620px;margin:0 auto 12px;gap:8px;flex-wrap:wrap;">
@@ -676,26 +681,33 @@ function openCmp(){
   ensureHeatLoaded().then(function(){
     var codes = Object.keys(ALL).sort();
     var opts = codes.map(function(cc){ return '<option value="'+cc+'">'+dispName(cc)+'</option>'; }).join('');
-    document.getElementById('cmpA').innerHTML = opts;
-    document.getElementById('cmpB').innerHTML = opts;
+    ['cmpA','cmpB','cmpC','cmpD'].forEach(function(id){
+      var el = document.getElementById(id);
+      if (el) el.innerHTML = opts;
+    });
     document.getElementById('cmpA').value = 'es';
     document.getElementById('cmpB').value = codes.indexOf('ma')!==-1 ? 'ma' : codes[1];
+    document.getElementById('cmpC').value = codes.indexOf('fr')!==-1 ? 'fr' : codes[2];
+    document.getElementById('cmpD').value = codes.indexOf('pt')!==-1 ? 'pt' : codes[3];
     buildCmp();
   });
 }
 function buildCmp(){
   if (!ALL_LOADED) return;
-  var a = document.getElementById('cmpA').value, b = document.getElementById('cmpB').value;
+  var ids = ['cmpA','cmpB','cmpC','cmpD'];
+  var codes = [];
+  ids.forEach(function(id){
+    var el = document.getElementById(id);
+    if (el && el.value && codes.indexOf(el.value) === -1) codes.push(el.value);
+  });
+  if (codes.length < 2) return;
   var rows = CMP.map(function(k){
-    var va = gv(ALL[a],k), vb = gv(ALL[b],k);
-    return '<tr><td style="padding:5px 8px;border:1px solid #1e293b;color:#94a3b8;font-size:.8em;">'+ILABEL[k]+'</td>' +
-      '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(va,k)+'</td>' +
-      '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(vb,k)+'</td></tr>';
+    var tds = codes.map(function(cc){ return '<td style="padding:5px 8px;border:1px solid #1e293b;text-align:right;font-weight:700;">'+fmt(gv(ALL[cc],k),k)+'</td>'; }).join('');
+    return '<tr><td style="padding:5px 8px;border:1px solid #1e293b;color:#94a3b8;font-size:.8em;">'+ILABEL[k]+'</td>' + tds + '</tr>';
   }).join('');
+  var ths = codes.map(function(cc){ return '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[cc]?META[cc][1]+' '+META[cc][0]:cc)+'</th>'; }).join('');
   document.getElementById('cmptable').innerHTML = footNotes(CMP) +
-    '<table style="border-collapse:collapse;width:100%;"><tr><th style="text-align:left;border:1px solid #1e293b;"></th>' +
-    '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[a]?META[a][1]+' '+META[a][0]:a)+'</th>' +
-    '<th style="border:1px solid #1e293b;color:#00d4ff;">'+(META[b]?META[b][1]+' '+META[b][0]:b)+'</th></tr>'+rows+'</table>';
+    '<div style="overflow-x:auto;"><table style="border-collapse:collapse;width:100%;"><tr><th style="text-align:left;border:1px solid #1e293b;"></th>' + ths + '</tr>'+rows+'</table></div>';
 }
 var RANK_OPTS = ['poblacion','renta_pc','pib','inflacion','desempleo','idh','alfabetizacion','titulados','defensa_usd','defensa_pct','personal','aviones','barcos','tanques','edad_mediana','menores','adultos','mayores'];
 function openRank(){
