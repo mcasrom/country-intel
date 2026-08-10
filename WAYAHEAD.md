@@ -33,3 +33,15 @@
 - **Causa raíz**: el frontend carga los **217 países en ráfaga** (`load()` y `ensureAll()` hacen `fetch('/api/country/{cc}')` en paralelo). El rate-limit a **60 req/min** (luego 500) cortaba la ráfaga → peticiones 61+ devolvían **429** → `ALL` incompleto → comparador/heatmap/popups sin datos. Además, Cloudflare agrupa a todos los usuarios tras pocas IPs, así que varios visitantes comparten cuota y agotan el límite.
 - **Fix**: **3000 req/min por IP** en `/api/country`, `/api/news`, `/api/trending`. Suficiente para frenar a un bot martilleando en bucle (los ~4.240 bots hacían cientos de miles en 15 días, no miles por minuto) pero SIEMPRE deja pasar la carga legítima (217 países × N usuarios).
 - **Verificado**: 2 cargas completas seguidas (434 requests) → 0 errores. Italia: población 59.0M · PIB 2.38T · renta $40.430. Commit `cf6bbf9`.
+## Sprint SEO — Country: posicionamiento para usuarios reales (10 Ago 2026)
+
+- **Objetivo**: atacar el problema de cero usuarios con SEO + distribución (plan 30 días, prioridad: Country por tener 219 URLs ya indexables).
+- **Copy sin "OSINT"**: títulos de home y de las 217 fichas país pasan de "Country Intelligence OSINT" a "Datos e indicadores de X | Viaje Inteligencia" (público masivo, no técnico).
+- **3 artículos comparativos SEO** (con datos reales del Banco Mundial):
+  - `/comparativa-espana-marruecos-portugal` — población, PIB, IDH, inflación de los 3.
+  - `/top-10-paises-mas-seguros-2026` — ranking por tasa de homicidios (Singapur 0.07 → Italia 0.57).
+  - `/paises-mas-baratos-viajar-2026` — renta per cápita (Burundi 216$ → Liechtenstein 220k$).
+- **Sitemap**: 219 → 222 URLs (3 posts añadidos). IndexNow enviado (HTTP 202).
+- **Verificado**: home 200, fichas 200 sin OSINT, posts 200 en URLs limpias, vacaciones intacto, resto del ecosistema intacto.
+- **Commit**: `7f3f321`. Coste ~0.
+
