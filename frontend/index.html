@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Country Intelligence OSINT · Inteligencia geopolítica por país</title>
-<meta name="description" content="Dashboard OSINT de inteligencia geopolítica por país: indicadores, defensa, fichas de viaje oficiales, noticias, alertas, comparador y riesgo.">
+<title>Datos e indicadores de 217 países · Población, PIB, IDH y seguridad | Viaje Inteligencia</title>
+<meta name="description" content="Datos e indicadores de 217 países: población, PIB, IDH, inflación, internet, seguridad y riesgo de viaje. Comparador y fichas por país con datos de fuentes oficiales. Gratis, sin cuenta.">
 <link rel="canonical" href="https://country.viajeinteligencia.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Country Intelligence OSINT · Inteligencia geopolítica por país">
-<meta property="og:description" content="Indicadores, defensa, fichas de viaje oficiales, noticias, alertas, comparador y riesgo para 15 países. Datos abiertos, sin tracking.">
+<meta property="og:title" content="Datos e indicadores de 217 países · Viaje Inteligencia">
+<meta property="og:description" content="Población, PIB, IDH, inflación, internet, seguridad y riesgo de viaje de 217 países. Fuentes oficiales, gratis y sin cuenta.">
 <meta property="og:url" content="https://country.viajeinteligencia.com/">
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:image" content="https://country.viajeinteligencia.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Country Intelligence OSINT · Inteligencia geopolítica por país">
+<meta property="og:image:alt" content="Datos e indicadores de 217 países · Viaje Inteligencia">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"Country Intelligence OSINT","url":"https://country.viajeinteligencia.com/","description":"Dashboard OSINT de inteligencia geopolítica por país con datos abiertos."}
+{"@context":"https://schema.org","@type":"WebSite","name":"Viaje Inteligencia · Datos por país","url":"https://country.viajeinteligencia.com/","description":"Datos e indicadores de 217 países con fuentes abiertas."}
 </script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9/dist/leaflet.js"></script>
@@ -88,7 +88,7 @@
 </head>
 <body>
 <header>
-  <h1>🌍 Country Intelligence OSINT</h1>
+  <h1>🌍 Datos e indicadores de 217 países</h1>
   <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
     <span style="color:#64748b;font-size:.82em;"><span id="ccount">…</span> países · indicadores · defensa · viaje</span>
     <button class="ci" onclick="toggleHeat()">🔍 Comparativa</button>
@@ -200,14 +200,14 @@
     </ul>
   </div>
   <div class="tabbody" id="t-about">
-    <p style="margin:0 0 8px;"><b>Country Intelligence OSINT</b> es un dashboard independiente de inteligencia geopolitica de <b>datos abiertos</b>, sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal de investigación. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
+    <p style="margin:0 0 8px;"><b>Viaje Inteligencia · Datos por país</b> es un dashboard independiente de <b>datos abiertos</b> sobre 217 países: población, PIB, IDH, inflación, internet, seguridad y avisos de viaje. Sin tracking ni cuentas, integrado en el ecosistema <b>viajeinteligencia.com</b>. Es un proyecto personal. Contacto: <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a>. Código abierto en <a href="https://github.com/mcasrom/country-intel" target="_blank" rel="noopener" style="color:#00d4ff;">GitHub</a>.</p>
     <p style="margin:0;">☕ Si te resulta útil, invítame a un café: <a class="ci" style="text-decoration:none;display:inline-block;" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener">Apóyame en Ko-fi</a></p>
   </div>
   <div class="tabbody" id="t-aviso">
     <p style="margin:0;color:#64748b;">Los datos son <b>orientativos para investigación</b>: no constituyen recomendaciones de inversión ni información oficial de seguridad. Los avisos de viaje se muestran como referencia del Gobierno del Reino Unido (FCDO); para viajes verifica siempre las recomendaciones oficiales de tu país (p. ej. MITECO, Department of State, FCDO). No nos hacemos responsables de decisiones tomadas con estos datos.</p>
   </div>
 </section>
-<footer>Country Intelligence OSINT · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · <b style="color:#94a3b8;">v0.8.0</b> · datos abiertos · económicos: Banco Mundial (datos vivos) · defensa: GFP/SIPRI 2025 · viaje: UK FCDO</footer>
+<footer>Datos e indicadores de 217 países · <a href="mailto:country@viajeinteligencia.com" style="color:#00d4ff;">country@viajeinteligencia.com</a> · <b style="color:#94a3b8;">v0.8.0</b> · datos abiertos · económicos: Banco Mundial (datos vivos) · defensa: GFP/SIPRI 2025 · viaje: UK FCDO</footer>
 <script>
 var META = {
   es:["España","🇪🇸",40.4,-3.7], fr:["Francia","🇫🇷",48.8,2.3], de:["Alemania","🇩🇪",52.5,13.4],
@@ -612,8 +612,8 @@ function buildIcons(){
 }
 function shareCountry(cc){
   var meta = cmeta(cc, ALL[cc]);
-  var text = meta[1]+' '+meta[0]+' · Ficha de inteligencia OSINT (indicadores, defensa, riesgo de visita, avisos de viaje) — https://country.viajeinteligencia.com/?c='+cc;
-  if (navigator.share) { navigator.share({ title: meta[1]+' '+meta[0]+' · Country Intelligence', text: text }).catch(function(){}); }
+  var text = meta[1]+' '+meta[0]+' · Datos e indicadores (población, PIB, IDH, seguridad, avisos de viaje) — https://country.viajeinteligencia.com/?c='+cc;
+  if (navigator.share) { navigator.share({ title: meta[1]+' '+meta[0]+' · Viaje Inteligencia', text: text }).catch(function(){}); }
   else if (navigator.clipboard) { navigator.clipboard.writeText(text).then(function(){ alert('Enlace y texto copiados: '+text); }).catch(function(){}); }
   else { alert(text); }
 }

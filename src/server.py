@@ -372,7 +372,7 @@ def _seo_page(code: str) -> str:
     region = gv("region")
     moneda = ind.get("moneda", {}).get("value") if ind.get("moneda") else None
     region_txt = f", en {region}" if region else ""
-    desc = (f"Datos OSINT de {name}{region_txt}: población {fmt_num(pobl)}, PIB {fmt_num(pib)}, "
+    desc = (f"Datos e indicadores de {name}{region_txt}: población {fmt_num(pobl)}, PIB {fmt_num(pib)}, "
             f"IDH {fmt_num(idh, 3)}, inflación {fmt_num(infl)}%, desempleo {fmt_num(des)}%, "
             f"internet {fmt_num(internet)}%, esperanza de vida {fmt_num(esp)} años, urbanización {fmt_num(urban)}%.")
     url = f"https://country.viajeinteligencia.com/pais/{cc}"
@@ -405,12 +405,12 @@ def _seo_page(code: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{name} · Población, PIB, IDH e indicadores | Country Intelligence OSINT</title>
+<title>{name} · Población, PIB, IDH e indicadores | Viaje Inteligencia</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{name} · Inteligencia OSINT">
+<meta property="og:title" content="{name} · Datos e indicadores">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="es_ES">
@@ -418,7 +418,7 @@ def _seo_page(code: str) -> str:
 <meta property="og:image" content="https://country.viajeinteligencia.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{name} · Country Intelligence OSINT">
+<meta property="og:image:alt" content="{name} · Viaje Inteligencia">
 <link rel="alternate" hreflang="es" href="{url}">
 <script type="application/ld+json">
 {json.dumps(ld, ensure_ascii=False, indent=1)}
@@ -460,6 +460,9 @@ def sitemap():
     codes = sorted(c.stem for c in JSON_DIR.glob("*.json")) if JSON_DIR.exists() else []
     urls = ["https://country.viajeinteligencia.com/"]
     urls += ["https://country.viajeinteligencia.com/vacaciones"]
+    urls += ["https://country.viajeinteligencia.com/comparativa-espana-marruecos-portugal"]
+    urls += ["https://country.viajeinteligencia.com/top-10-paises-mas-seguros-2026"]
+    urls += ["https://country.viajeinteligencia.com/paises-mas-baratos-viajar-2026"]
     urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in codes]
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     return Response(content=f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -471,6 +474,31 @@ def sitemap():
 @app.get("/robots.txt")
 def robots():
     return Response(content="User-agent: *\nAllow: /\nSitemap: https://country.viajeinteligencia.com/sitemap.xml", media_type="text/plain")
+
+
+
+@app.get("/comparativa-espana-marruecos-portugal")
+def post_espana_ma_pt():
+    page = BASE_DIR / "frontend" / "comparativa-espana-marruecos-portugal.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
+
+
+@app.get("/top-10-paises-mas-seguros-2026")
+def post_top_seguros():
+    page = BASE_DIR / "frontend" / "top-10-paises-mas-seguros-2026.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
+
+
+@app.get("/paises-mas-baratos-viajar-2026")
+def post_baratos():
+    page = BASE_DIR / "frontend" / "paises-mas-baratos-viajar-2026.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
 
 
 FRONTEND = BASE_DIR / "frontend"
