@@ -45,3 +45,12 @@
 - **Verificado**: home 200, fichas 200 sin OSINT, posts 200 en URLs limpias, vacaciones intacto, resto del ecosistema intacto.
 - **Commit**: `7f3f321`. Coste ~0.
 
+## Sprint — Fichas país: +9 IDH PNUD + snippet SEO + nota territorios (11 Ago 2026)
+
+- **Problema**: 29 países/territorios mostraban "IDH n/d, inflación n/d, internet n/d, moneda n/d" en Google (site:country.viajeinteligencia.com), quedando las fichas pobres.
+- **Fix 1 — +9 IDH reales del PNUD (HDR 2022)** en enrich.json: Mónaco 0.956, Hong Kong 0.956, Liechtenstein 0.942, Andorra 0.884, Antigua 0.826, Sint Maarten 0.812, Kosovo 0.762, Dominica 0.740, Palestina 0.716. Los 19 territorios dependientes (French Polynesia, Guam...) no tienen IDH del PNUD — no se inventan.
+- **Fix 2 — description SEO reordenada**: ahora pone PRIMERO los datos disponibles (población, PIB, desempleo, esperanza de vida, urbanización) y al final la nota "Datos de IDH, internet, moneda no publicados por los organismos para territorios dependientes" → mejor snippet en Google.
+- **Fix 3 — nota visible en la ficha** para los que tienen n/d.
+- **Verificado**: 9 fichas con IDH real, French Polynesia con snippet mejorado, ecosistema intacto.
+- **Commit**: `fc2780f`. Coste ~0.
+
