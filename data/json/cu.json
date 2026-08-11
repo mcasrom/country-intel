@@ -1,6 +1,6 @@
 {
  "country": "cu",
- "generated": "2026-08-11T09:17:25.350782+00:00",
+ "generated": "2026-08-11T09:34:59.197999+00:00",
  "geo": {
   "name": "Cuba",
   "lat": 23.1333,
@@ -10,7 +10,7 @@
  "indicators": {
   "desempleo": {
    "value": "1.755",
-   "updated": "2026-08-11T09:17:25.269596+00:00",
+   "updated": "2026-08-11T09:34:59.128114+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -22,7 +22,7 @@
   },
   "fertilidad": {
    "value": "1.445",
-   "updated": "2026-08-11T03:15:06.528942+00:00",
+   "updated": "2026-08-11T09:34:59.128152+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -34,7 +34,7 @@
   },
   "idh": {
    "value": "0.764",
-   "updated": "2026-08-11T09:17:25.269668+00:00",
+   "updated": "2026-08-11T09:34:59.128170+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
@@ -46,37 +46,37 @@
   },
   "migrant_pct": {
    "value": "0",
-   "updated": "2026-08-11T09:17:25.269633+00:00",
+   "updated": "2026-08-11T09:34:59.128133+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "CUP",
-   "updated": "2026-08-11T09:17:25.269651+00:00",
+   "updated": "2026-08-11T09:34:59.128161+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-2.036105813748778",
-   "updated": "2026-08-11T09:17:25.269615+00:00",
+   "updated": "2026-08-11T09:34:59.128123+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10979783",
-   "updated": "2026-08-11T09:17:25.269563+00:00",
+   "updated": "2026-08-11T09:34:59.128105+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-11T09:17:25.269687+00:00",
+   "updated": "2026-08-11T09:34:59.128186+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "77.1664929228275",
-   "updated": "2026-08-11T03:15:06.528930+00:00",
+   "updated": "2026-08-11T09:34:59.128142+00:00",
    "source": "worldbank",
    "year": "2024"
   }

@@ -1,6 +1,6 @@
 {
  "country": "cn",
- "generated": "2026-08-11T09:17:25.348486+00:00",
+ "generated": "2026-08-11T09:34:59.196735+00:00",
  "geo": {
   "name": "China",
   "lat": 40.0495,
@@ -10,267 +10,267 @@
  "indicators": {
   "adolescentes": {
    "value": "12.5",
-   "updated": "2026-08-11T09:17:25.268809+00:00",
+   "updated": "2026-08-11T09:34:59.127630+00:00",
    "source": "seed",
    "year": ""
   },
   "adultos": {
    "value": "61.5",
-   "updated": "2026-08-11T09:17:25.268827+00:00",
+   "updated": "2026-08-11T09:34:59.127640+00:00",
    "source": "seed",
    "year": ""
   },
   "alfabetizacion": {
    "value": "99.8",
-   "updated": "2026-08-11T09:17:25.268253+00:00",
+   "updated": "2026-08-11T09:34:59.127385+00:00",
    "source": "seed",
    "year": ""
   },
   "aviones": {
    "value": "3283",
-   "updated": "2026-08-11T09:17:25.268739+00:00",
+   "updated": "2026-08-11T09:34:59.127594+00:00",
    "source": "seed",
    "year": ""
   },
   "barcos": {
    "value": "547",
-   "updated": "2026-08-11T09:17:25.268757+00:00",
+   "updated": "2026-08-11T09:34:59.127603+00:00",
    "source": "seed",
    "year": ""
   },
   "cazas": {
    "value": "1800",
-   "updated": "2026-08-11T09:17:25.268978+00:00",
+   "updated": "2026-08-11T09:34:59.127780+00:00",
    "source": "seed",
    "year": ""
   },
   "co2_pc": {
    "value": "8.0",
-   "updated": "2026-08-11T09:17:25.268521+00:00",
+   "updated": "2026-08-11T09:34:59.127490+00:00",
    "source": "seed",
    "year": ""
   },
   "corrupcion": {
    "value": "42",
-   "updated": "2026-08-11T09:17:25.268880+00:00",
+   "updated": "2026-08-11T09:34:59.127667+00:00",
    "source": "Transparency Intl 2024",
    "year": ""
   },
   "defensa_pct": {
    "value": "1.7",
-   "updated": "2026-08-11T09:17:25.268704+00:00",
+   "updated": "2026-08-11T09:34:59.127576+00:00",
    "source": "seed",
    "year": ""
   },
   "defensa_usd": {
    "value": "250000000000.0",
-   "updated": "2026-08-11T09:17:25.268686+00:00",
+   "updated": "2026-08-11T09:34:59.127566+00:00",
    "source": "seed",
    "year": ""
   },
   "democracia": {
    "value": "2.12",
-   "updated": "2026-08-11T09:17:25.268951+00:00",
+   "updated": "2026-08-11T09:34:59.127740+00:00",
    "source": "EIU 2024",
    "year": ""
   },
   "desempleo": {
    "value": "4.59",
-   "updated": "2026-08-11T09:17:25.268229+00:00",
+   "updated": "2026-08-11T09:34:59.127375+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "deuda_pib": {
    "value": "84",
-   "updated": "2026-08-11T09:17:25.268464+00:00",
+   "updated": "2026-08-11T09:34:59.127463+00:00",
    "source": "seed",
    "year": ""
   },
   "edad_mediana": {
    "value": "39",
-   "updated": "2026-08-11T09:17:25.268863+00:00",
+   "updated": "2026-08-11T09:34:59.127658+00:00",
    "source": "seed",
    "year": ""
   },
   "entrenadores": {
    "value": "400",
-   "updated": "2026-08-11T09:17:25.269018+00:00",
+   "updated": "2026-08-11T09:34:59.127814+00:00",
    "source": "seed",
    "year": ""
   },
   "esperanza_saludable": {
    "value": "68",
-   "updated": "2026-08-11T09:17:25.268394+00:00",
+   "updated": "2026-08-11T09:34:59.127435+00:00",
    "source": "seed",
    "year": ""
   },
   "esperanza_vida": {
    "value": "78",
-   "updated": "2026-08-11T09:17:25.268370+00:00",
+   "updated": "2026-08-11T09:34:59.127425+00:00",
    "source": "seed",
    "year": ""
   },
   "fertilidad": {
-   "value": "1.2",
-   "updated": "2026-08-11T09:17:25.268595+00:00",
-   "source": "seed",
-   "year": ""
+   "value": "1.013",
+   "updated": "2026-08-11T09:34:59.127519+00:00",
+   "source": "worldbank",
+   "year": "2024"
   },
   "gasto_educacion": {
    "value": "4.1",
-   "updated": "2026-08-11T09:17:25.268502+00:00",
+   "updated": "2026-08-11T09:34:59.127480+00:00",
    "source": "seed",
    "year": ""
   },
   "gasto_salud": {
    "value": "5.4",
-   "updated": "2026-08-11T09:17:25.268482+00:00",
+   "updated": "2026-08-11T09:34:59.127471+00:00",
    "source": "seed",
    "year": ""
   },
   "gini": {
    "value": "37",
-   "updated": "2026-08-11T09:17:25.268446+00:00",
+   "updated": "2026-08-11T09:34:59.127454+00:00",
    "source": "seed",
    "year": ""
   },
   "helicopteros": {
    "value": "900",
-   "updated": "2026-08-11T09:17:25.269035+00:00",
+   "updated": "2026-08-11T09:34:59.127822+00:00",
    "source": "seed",
    "year": ""
   },
   "homicidios": {
    "value": "0.5",
-   "updated": "2026-08-11T09:17:25.268428+00:00",
+   "updated": "2026-08-11T09:34:59.127444+00:00",
    "source": "seed",
    "year": ""
   },
   "idh": {
    "value": "0.788",
-   "updated": "2026-08-11T09:17:25.268614+00:00",
+   "updated": "2026-08-11T09:34:59.127529+00:00",
    "source": "seed",
    "year": ""
   },
   "inflacion": {
    "value": "0.218128938439177",
-   "updated": "2026-08-11T09:17:25.268205+00:00",
+   "updated": "2026-08-11T09:34:59.127365+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "76",
-   "updated": "2026-08-11T09:17:25.268540+00:00",
+   "updated": "2026-08-11T09:34:59.127499+00:00",
    "source": "seed",
    "year": ""
   },
   "libertad_prensa": {
    "value": "7",
-   "updated": "2026-08-11T09:17:25.268930+00:00",
+   "updated": "2026-08-11T09:34:59.127715+00:00",
    "source": "RSF 2024",
    "year": ""
   },
   "mayores": {
    "value": "9.8",
-   "updated": "2026-08-11T09:17:25.268845+00:00",
+   "updated": "2026-08-11T09:34:59.127649+00:00",
    "source": "seed",
    "year": ""
   },
   "menores": {
    "value": "16.2",
-   "updated": "2026-08-11T09:17:25.268791+00:00",
+   "updated": "2026-08-11T09:34:59.127621+00:00",
    "source": "seed",
    "year": ""
   },
   "migrant_pct": {
    "value": "0.1",
-   "updated": "2026-08-11T09:17:25.268346+00:00",
+   "updated": "2026-08-11T09:34:59.127415+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "CNY",
-   "updated": "2026-08-11T09:17:25.268633+00:00",
+   "updated": "2026-08-11T09:34:59.127540+00:00",
    "source": "seed",
    "year": ""
   },
   "net_mig": {
    "value": "-0.22640004258414806",
-   "updated": "2026-08-11T09:17:25.268300+00:00",
+   "updated": "2026-08-11T09:34:59.127404+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "personal": {
    "value": "2000000",
-   "updated": "2026-08-11T09:17:25.268722+00:00",
+   "updated": "2026-08-11T09:34:59.127585+00:00",
    "source": "seed",
    "year": ""
   },
   "pib": {
    "value": "18729668435848",
-   "updated": "2026-08-11T09:17:25.268120+00:00",
+   "updated": "2026-08-11T09:34:59.127314+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "27139.5181633767",
-   "updated": "2026-08-11T09:17:25.268153+00:00",
+   "updated": "2026-08-11T09:34:59.127324+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "1408975000",
-   "updated": "2026-08-11T09:17:25.268085+00:00",
+   "updated": "2026-08-11T09:34:59.127298+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Asia",
-   "updated": "2026-08-11T09:17:25.268650+00:00",
+   "updated": "2026-08-11T09:34:59.127549+00:00",
    "source": "seed",
    "year": ""
   },
   "renta_pc": {
    "value": "13293.1162269366",
-   "updated": "2026-08-11T09:17:25.268180+00:00",
+   "updated": "2026-08-11T09:34:59.127352+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "seguridad_social": {
    "value": "7.0",
-   "updated": "2026-08-11T09:17:25.268667+00:00",
+   "updated": "2026-08-11T09:34:59.127557+00:00",
    "source": "seed",
    "year": ""
   },
   "submarinos": {
    "value": "72",
-   "updated": "2026-08-11T09:17:25.269052+00:00",
+   "updated": "2026-08-11T09:34:59.127831+00:00",
    "source": "seed",
    "year": ""
   },
   "tanques": {
    "value": "4950",
-   "updated": "2026-08-11T09:17:25.268774+00:00",
+   "updated": "2026-08-11T09:34:59.127612+00:00",
    "source": "seed",
    "year": ""
   },
   "titulados": {
    "value": "26.0",
-   "updated": "2026-08-11T09:17:25.268276+00:00",
+   "updated": "2026-08-11T09:34:59.127394+00:00",
    "source": "seed",
    "year": ""
   },
   "transporte_aereo": {
    "value": "250",
-   "updated": "2026-08-11T09:17:25.269000+00:00",
+   "updated": "2026-08-11T09:34:59.127803+00:00",
    "source": "seed",
    "year": ""
   },
   "urbanizacion": {
-   "value": "64",
-   "updated": "2026-08-11T09:17:25.268559+00:00",
-   "source": "seed",
-   "year": ""
+   "value": "65.8946980998325",
+   "updated": "2026-08-11T09:34:59.127507+00:00",
+   "source": "worldbank",
+   "year": "2024"
   }
  }
 }
