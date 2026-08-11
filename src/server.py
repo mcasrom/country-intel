@@ -372,9 +372,26 @@ def _seo_page(code: str) -> str:
     region = gv("region")
     moneda = ind.get("moneda", {}).get("value") if ind.get("moneda") else None
     region_txt = f", en {region}" if region else ""
-    desc = (f"Datos e indicadores de {name}{region_txt}: población {fmt_num(pobl)}, PIB {fmt_num(pib)}, "
-            f"IDH {fmt_num(idh, 3)}, inflación {fmt_num(infl)}%, desempleo {fmt_num(des)}%, "
-            f"internet {fmt_num(internet)}%, esperanza de vida {fmt_num(esp)} años, urbanización {fmt_num(urban)}%.")
+    # Description orientada a SEO: primero los datos disponibles, luego los n/d
+    desc_parts = []
+    if pobl is not None: desc_parts.append(f"población {fmt_num(pobl)}")
+    if pib is not None: desc_parts.append(f"PIB {fmt_num(pib)}")
+    if idh is not None: desc_parts.append(f"IDH {fmt_num(idh, 3)}")
+    if infl is not None: desc_parts.append(f"inflación {fmt_num(infl)}%")
+    if des is not None: desc_parts.append(f"desempleo {fmt_num(des)}%")
+    if internet is not None: desc_parts.append(f"internet {fmt_num(internet)}%")
+    if esp is not None: desc_parts.append(f"esperanza de vida {fmt_num(esp)} años")
+    if urban is not None: desc_parts.append(f"urbanización {fmt_num(urban)}%")
+    desc = f"Datos e indicadores de {name}{region_txt}: " + ", ".join(desc_parts) + "."
+    # Nota para territorios sin datos de organismos (IDH/internet/moneda)
+    falta = []
+    if idh is None: falta.append("IDH")
+    if internet is None: falta.append("internet")
+    if moneda is None: falta.append("moneda")
+    nota_nd = ""
+    if falta:
+        nota_nd = " Datos de " + ", ".join(falta) + " no publicados por los organismos para territorios dependientes."
+    desc += nota_nd
     url = f"https://country.viajeinteligencia.com/pais/{cc}"
     ld = {
         "@context": "https://schema.org",
@@ -400,6 +417,10 @@ def _seo_page(code: str) -> str:
         ("Moneda", str(moneda) if moneda else "n/d"),
     ]
     ind_rows = "\n".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in facts)
+    nota_html = ""
+    if falta:
+        nota_html = ('<p style="font-size:.75em;color:#64748b;margin-top:8px;">' +
+                     'Nota: ' + ", ".join(falta) + ' no están publicados por los organismos (PNUD, UIT, FMI) para territorios dependientes. Los datos disponibles provienen del Banco Mundial.</p>')
     return f"""<!doctype html>
 <html lang="es">
 <head>
@@ -431,9 +452,10 @@ def _seo_page(code: str) -> str:
 <thead><tr><th>Indicador</th><th>Valor</th></tr></thead>
 <tbody>
 {ind_rows}
-</tbody>
-</table>
-<p>Datos orientativos para investigación (fuentes: World Bank y organismos abiertos).</p>
+ </tbody>
+ </table>
+ {nota_html}
+ <p>Datos orientativos para investigación (fuentes: World Bank y organismos abiertos).</p>
 <p><a href="https://country.viajeinteligencia.com/?c={cc}">Abrir ficha interactiva de {name}</a> · <a href="https://country.viajeinteligencia.com/">Inicio</a></p>
 </body>
 </html>"""
