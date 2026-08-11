@@ -485,6 +485,9 @@ def sitemap():
     urls += ["https://country.viajeinteligencia.com/comparativa-espana-marruecos-portugal"]
     urls += ["https://country.viajeinteligencia.com/top-10-paises-mas-seguros-2026"]
     urls += ["https://country.viajeinteligencia.com/paises-mas-baratos-viajar-2026"]
+    urls += ["https://country.viajeinteligencia.com/paises-mejor-calidad-vida-2026"]
+    urls += ["https://country.viajeinteligencia.com/paises-mas-internet-2026"]
+    urls += ["https://country.viajeinteligencia.com/paises-mas-caros-vivir-2026"]
     urls += [f"https://country.viajeinteligencia.com/pais/{cc}" for cc in codes]
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     return Response(content=f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -518,6 +521,31 @@ def post_top_seguros():
 @app.get("/paises-mas-baratos-viajar-2026")
 def post_baratos():
     page = BASE_DIR / "frontend" / "paises-mas-baratos-viajar-2026.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
+
+
+
+@app.get("/paises-mejor-calidad-vida-2026")
+def post_calidad_vida():
+    page = BASE_DIR / "frontend" / "paises-mejor-calidad-vida-2026.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
+
+
+@app.get("/paises-mas-internet-2026")
+def post_internet():
+    page = BASE_DIR / "frontend" / "paises-mas-internet-2026.html"
+    if page.exists():
+        return HTMLResponse(page.read_text(encoding="utf-8"))
+    return {"error": "Page not found"}
+
+
+@app.get("/paises-mas-caros-vivir-2026")
+def post_caros():
+    page = BASE_DIR / "frontend" / "paises-mas-caros-vivir-2026.html"
     if page.exists():
         return HTMLResponse(page.read_text(encoding="utf-8"))
     return {"error": "Page not found"}
