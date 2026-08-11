@@ -1,6 +1,6 @@
 {
  "country": "ps",
- "generated": "2026-08-11T03:15:06.663056+00:00",
+ "generated": "2026-08-11T09:17:25.413487+00:00",
  "geo": {
   "name": "West Bank and Gaza",
   "lat": 0.0,
@@ -10,7 +10,7 @@
  "indicators": {
   "alfabetizacion": {
    "value": "97.9389541214558",
-   "updated": "2026-08-11T03:15:06.561302+00:00",
+   "updated": "2026-08-11T09:17:25.288541+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -38,9 +38,15 @@
    "source": "worldbank",
    "year": "2023"
   },
+  "idh": {
+   "value": "0.716",
+   "updated": "2026-08-11T09:17:25.288594+00:00",
+   "source": "PNUD 2022",
+   "year": ""
+  },
   "inflacion": {
    "value": "53.6691458303782",
-   "updated": "2026-08-11T03:15:06.561291+00:00",
+   "updated": "2026-08-11T09:17:25.288527+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -52,43 +58,43 @@
   },
   "migrant_pct": {
    "value": "5",
-   "updated": "2026-08-11T03:15:06.561334+00:00",
+   "updated": "2026-08-11T09:17:25.288579+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "net_mig": {
    "value": "-4.375937768474039",
-   "updated": "2026-08-11T03:15:06.561308+00:00",
+   "updated": "2026-08-11T09:17:25.288555+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "16016900000",
-   "updated": "2026-08-11T03:15:06.561271+00:00",
+   "updated": "2026-08-11T09:17:25.288482+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "4770.6463157404",
-   "updated": "2026-08-11T03:15:06.561277+00:00",
+   "updated": "2026-08-11T09:17:25.288499+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "5289152",
-   "updated": "2026-08-11T03:15:06.561265+00:00",
+   "updated": "2026-08-11T09:17:25.288469+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Middle East, North Africa, Afghanistan & Pakistan",
-   "updated": "2026-08-11T03:15:06.561403+00:00",
+   "updated": "2026-08-11T09:17:25.288626+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "3028.25481286981",
-   "updated": "2026-08-11T03:15:06.561283+00:00",
+   "updated": "2026-08-11T09:17:25.288513+00:00",
    "source": "worldbank",
    "year": "2024"
   },
