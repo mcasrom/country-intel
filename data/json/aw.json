@@ -1,6 +1,6 @@
 {
  "country": "aw",
- "generated": "2026-08-12T06:38:39.318800+00:00",
+ "generated": "2026-08-12T06:41:14.356543+00:00",
  "geo": {
   "name": "Aruba",
   "lat": 12.5167,
@@ -10,13 +10,13 @@
  "indicators": {
   "esperanza_vida": {
    "value": "76.5",
-   "updated": "2026-08-12T03:15:03.379273+00:00",
+   "updated": "2026-08-12T06:41:14.275814+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.606",
-   "updated": "2026-08-12T03:15:03.379293+00:00",
+   "updated": "2026-08-12T06:41:14.275850+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -28,7 +28,7 @@
   },
   "moneda": {
    "value": "AWG",
-   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "updated": "2026-08-12T06:41:14.275866+00:00",
    "source": "static",
    "year": ""
   },
@@ -46,7 +46,7 @@
   },
   "pib_ppa_pc": {
    "value": "51712.1531358934",
-   "updated": "2026-08-12T03:15:03.379220+00:00",
+   "updated": "2026-08-12T06:41:14.275770+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -58,19 +58,19 @@
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-12T03:15:03.379302+00:00",
+   "updated": "2026-08-12T06:41:14.275884+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "38590.5650288641",
-   "updated": "2026-08-12T03:15:03.379232+00:00",
+   "updated": "2026-08-12T06:41:14.275795+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "61.7909396819594",
-   "updated": "2026-08-12T03:15:03.379282+00:00",
+   "updated": "2026-08-12T06:41:14.275832+00:00",
    "source": "worldbank",
    "year": "2024"
   }

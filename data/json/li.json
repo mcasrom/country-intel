@@ -1,6 +1,6 @@
 {
  "country": "li",
- "generated": "2026-08-12T06:38:39.383973+00:00",
+ "generated": "2026-08-12T06:41:14.415804+00:00",
  "geo": {
   "name": "Liechtenstein",
   "lat": 47.1411,
@@ -10,31 +10,31 @@
  "indicators": {
   "esperanza_vida": {
    "value": "84.2",
-   "updated": "2026-08-12T03:15:03.510961+00:00",
+   "updated": "2026-08-12T06:41:14.302598+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.37",
-   "updated": "2026-08-12T03:15:03.510987+00:00",
+   "updated": "2026-08-12T06:41:14.302663+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "5.71460724",
-   "updated": "2026-08-12T03:15:03.510968+00:00",
+   "updated": "2026-08-12T06:41:14.302612+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.942",
-   "updated": "2026-08-12T03:15:03.510993+00:00",
+   "updated": "2026-08-12T06:41:14.302695+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "internet_pct": {
    "value": "98.2641983",
-   "updated": "2026-08-12T03:15:03.510974+00:00",
+   "updated": "2026-08-12T06:41:14.302628+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -46,7 +46,7 @@
   },
   "moneda": {
    "value": "CHF",
-   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "updated": "2026-08-12T06:41:14.302680+00:00",
    "source": "static",
    "year": ""
   },
@@ -64,13 +64,13 @@
   },
   "poblacion": {
    "value": "40450",
-   "updated": "2026-08-12T03:15:03.510928+00:00",
+   "updated": "2026-08-12T06:41:14.302579+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-08-12T03:15:03.511000+00:00",
+   "updated": "2026-08-12T06:41:14.302712+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -82,7 +82,7 @@
   },
   "urbanizacion": {
    "value": "14.657584904886",
-   "updated": "2026-08-12T03:15:03.510981+00:00",
+   "updated": "2026-08-12T06:41:14.302646+00:00",
    "source": "worldbank",
    "year": "2024"
   }

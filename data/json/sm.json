@@ -1,6 +1,6 @@
 {
  "country": "sm",
- "generated": "2026-08-12T06:38:39.437487+00:00",
+ "generated": "2026-08-12T06:41:14.441570+00:00",
  "geo": {
   "name": "San Marino",
   "lat": 43.9322,
@@ -10,31 +10,31 @@
  "indicators": {
   "deuda_pib": {
    "value": "99.8703825579645",
-   "updated": "2026-08-12T03:15:03.658852+00:00",
+   "updated": "2026-08-12T06:41:14.323054+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "85.817",
-   "updated": "2026-08-12T03:15:03.658842+00:00",
+   "updated": "2026-08-12T06:41:14.323044+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.158",
-   "updated": "2026-08-12T03:15:03.658888+00:00",
+   "updated": "2026-08-12T06:41:14.323143+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "6.60829115",
-   "updated": "2026-08-12T03:15:03.658861+00:00",
+   "updated": "2026-08-12T06:41:14.323064+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.867",
-   "updated": "2026-08-12T03:15:03.658905+00:00",
+   "updated": "2026-08-12T06:41:14.323191+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
@@ -46,7 +46,7 @@
   },
   "internet_pct": {
    "value": "97.35220337",
-   "updated": "2026-08-12T03:15:03.658869+00:00",
+   "updated": "2026-08-12T06:41:14.323100+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -58,7 +58,7 @@
   },
   "moneda": {
    "value": "EUR",
-   "updated": "2026-08-12T03:15:03.658897+00:00",
+   "updated": "2026-08-12T06:41:14.323164+00:00",
    "source": "static",
    "year": ""
   },
@@ -88,19 +88,19 @@
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-08-12T03:15:03.658915+00:00",
+   "updated": "2026-08-12T06:41:14.323212+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "59871.3288101478",
-   "updated": "2026-08-12T03:15:03.658802+00:00",
+   "updated": "2026-08-12T06:41:14.323034+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "urbanizacion": {
    "value": "97.1560555881096",
-   "updated": "2026-08-12T03:15:03.658879+00:00",
+   "updated": "2026-08-12T06:41:14.323122+00:00",
    "source": "worldbank",
    "year": "2024"
   }

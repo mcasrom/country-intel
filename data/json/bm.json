@@ -1,6 +1,6 @@
 {
  "country": "bm",
- "generated": "2026-08-12T06:38:39.326838+00:00",
+ "generated": "2026-08-12T06:41:14.365205+00:00",
  "geo": {
   "name": "Bermuda",
   "lat": 32.3293,
@@ -10,25 +10,25 @@
  "indicators": {
   "esperanza_vida": {
    "value": "82.49",
-   "updated": "2026-08-12T03:15:03.401908+00:00",
+   "updated": "2026-08-12T06:41:14.278285+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.405",
-   "updated": "2026-08-12T03:15:03.401957+00:00",
+   "updated": "2026-08-12T06:41:14.278376+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "1.86510440752276",
-   "updated": "2026-08-12T03:15:03.401927+00:00",
+   "updated": "2026-08-12T06:41:14.278337+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "6.18257133141674",
-   "updated": "2026-08-12T03:15:03.401917+00:00",
+   "updated": "2026-08-12T06:41:14.278302+00:00",
    "source": "worldbank",
    "year": "2023"
   },
@@ -40,7 +40,7 @@
   },
   "moneda": {
    "value": "BMD",
-   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "updated": "2026-08-12T06:41:14.278392+00:00",
    "source": "static",
    "year": ""
   },
@@ -58,7 +58,7 @@
   },
   "pib_ppa_pc": {
    "value": "118727.973294368",
-   "updated": "2026-08-12T03:15:03.401867+00:00",
+   "updated": "2026-08-12T06:41:14.278244+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -70,19 +70,19 @@
   },
   "region": {
    "value": "North America",
-   "updated": "2026-08-12T03:15:03.401975+00:00",
+   "updated": "2026-08-12T06:41:14.278408+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "142250.433195123",
-   "updated": "2026-08-12T03:15:03.401877+00:00",
+   "updated": "2026-08-12T06:41:14.278265+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-12T03:15:03.401941+00:00",
+   "updated": "2026-08-12T06:41:14.278360+00:00",
    "source": "worldbank",
    "year": "2024"
   }

@@ -1,6 +1,6 @@
 {
  "country": "mc",
- "generated": "2026-08-12T06:38:39.393414+00:00",
+ "generated": "2026-08-12T06:41:14.419093+00:00",
  "geo": {
   "name": "Monaco",
   "lat": 43.7325,
@@ -10,37 +10,37 @@
  "indicators": {
   "esperanza_vida": {
    "value": "86.497",
-   "updated": "2026-08-12T03:15:03.524251+00:00",
+   "updated": "2026-08-12T06:41:14.306140+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "2.102",
-   "updated": "2026-08-12T03:15:03.524324+00:00",
+   "updated": "2026-08-12T06:41:14.306396+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "1.73223996162415",
-   "updated": "2026-08-12T03:15:03.524280+00:00",
+   "updated": "2026-08-12T06:41:14.306241+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "3.11959291",
-   "updated": "2026-08-12T03:15:03.524266+00:00",
+   "updated": "2026-08-12T06:41:14.306194+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.956",
-   "updated": "2026-08-12T03:15:03.540490+00:00",
+   "updated": "2026-08-12T06:41:14.306472+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "internet_pct": {
    "value": "99.04489899",
-   "updated": "2026-08-12T03:15:03.524294+00:00",
+   "updated": "2026-08-12T06:41:14.306280+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -52,7 +52,7 @@
   },
   "moneda": {
    "value": "EUR",
-   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "updated": "2026-08-12T06:41:14.306435+00:00",
    "source": "static",
    "year": ""
   },
@@ -70,13 +70,13 @@
   },
   "poblacion": {
    "value": "38631",
-   "updated": "2026-08-12T03:15:03.524132+00:00",
+   "updated": "2026-08-12T06:41:14.306107+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-08-12T03:15:03.540528+00:00",
+   "updated": "2026-08-12T06:41:14.306510+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -88,7 +88,7 @@
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-12T03:15:03.524307+00:00",
+   "updated": "2026-08-12T06:41:14.306318+00:00",
    "source": "worldbank",
    "year": "2024"
   }
