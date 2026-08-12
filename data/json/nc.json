@@ -1,6 +1,6 @@
 {
  "country": "nc",
- "generated": "2026-08-12T03:15:04.263008+00:00",
+ "generated": "2026-08-12T06:38:39.410498+00:00",
  "geo": {
   "name": "New Caledonia",
   "lat": -22.2677,
@@ -31,6 +31,12 @@
    "updated": "2026-08-12T03:15:03.584217+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "XPF",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "1.554816685404201",

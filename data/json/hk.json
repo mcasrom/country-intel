@@ -1,6 +1,6 @@
 {
  "country": "hk",
- "generated": "2026-08-12T03:15:04.157747+00:00",
+ "generated": "2026-08-12T06:38:39.369375+00:00",
  "geo": {
   "name": "Hong Kong SAR, China",
   "lat": 22.3964,
@@ -61,6 +61,12 @@
    "updated": "2026-08-12T03:15:03.445743+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "HKD",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-2.5613694661155484",

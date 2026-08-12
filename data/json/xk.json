@@ -1,6 +1,6 @@
 {
  "country": "xk",
- "generated": "2026-08-12T03:15:04.398688+00:00",
+ "generated": "2026-08-12T06:38:39.455768+00:00",
  "geo": {
   "name": "Kosovo",
   "lat": 42.565,
@@ -31,6 +31,12 @@
    "updated": "2026-08-12T03:15:03.770044+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "EUR",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-13.910344823260594",

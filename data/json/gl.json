@@ -1,6 +1,6 @@
 {
  "country": "gl",
- "generated": "2026-08-12T03:15:04.131271+00:00",
+ "generated": "2026-08-12T06:38:39.366075+00:00",
  "geo": {
   "name": "Greenland",
   "lat": 64.1836,
@@ -25,6 +25,12 @@
    "updated": "2026-08-12T03:15:03.438768+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "DKK",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-4.996832993173341",

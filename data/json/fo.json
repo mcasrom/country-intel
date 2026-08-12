@@ -1,6 +1,6 @@
 {
  "country": "fo",
- "generated": "2026-08-12T03:15:04.079256+00:00",
+ "generated": "2026-08-12T06:38:39.360436+00:00",
  "geo": {
   "name": "Faroe Islands",
   "lat": 61.8926,
@@ -25,6 +25,12 @@
    "updated": "2026-08-12T03:15:03.433978+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "DKK",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "8.931185944363104",

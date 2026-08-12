@@ -1,6 +1,6 @@
 {
  "country": "ag",
- "generated": "2026-08-12T03:15:03.814169+00:00",
+ "generated": "2026-08-12T06:38:39.311141+00:00",
  "geo": {
   "name": "Antigua and Barbuda",
   "lat": 17.1175,
@@ -61,6 +61,12 @@
    "updated": "2026-08-12T03:15:03.359274+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "XCD",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "0.09597747728533038",

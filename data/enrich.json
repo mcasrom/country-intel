@@ -780,30 +780,99 @@
  },
  "hk": {
   "gini": 53.9,
-  "idh": 0.956
+  "idh": 0.956,
+  "moneda": "HKD"
  },
  "mc": {
-  "idh": 0.956
+  "idh": 0.956,
+  "moneda": "EUR"
  },
  "li": {
-  "idh": 0.942
+  "idh": 0.942,
+  "moneda": "CHF"
  },
  "ad": {
-  "idh": 0.884
+  "idh": 0.884,
+  "moneda": "EUR"
  },
  "ag": {
-  "idh": 0.826
+  "idh": 0.826,
+  "moneda": "XCD"
  },
  "sx": {
-  "idh": 0.812
+  "idh": 0.812,
+  "moneda": "ANG"
  },
  "xk": {
-  "idh": 0.762
+  "idh": 0.762,
+  "moneda": "EUR"
  },
  "dm": {
-  "idh": 0.74
+  "idh": 0.74,
+  "moneda": "XCD"
  },
  "ps": {
-  "idh": 0.716
+  "idh": 0.716,
+  "moneda": "ILS"
+ },
+ "as": {
+  "moneda": "USD"
+ },
+ "aw": {
+  "moneda": "AWG"
+ },
+ "bm": {
+  "moneda": "BMD"
+ },
+ "cw": {
+  "moneda": "ANG"
+ },
+ "fo": {
+  "moneda": "DKK"
+ },
+ "gi": {
+  "moneda": "GIP"
+ },
+ "gl": {
+  "moneda": "DKK"
+ },
+ "gu": {
+  "moneda": "USD"
+ },
+ "im": {
+  "moneda": "GBP"
+ },
+ "jg": {
+  "moneda": "GBP"
+ },
+ "ky": {
+  "moneda": "KYD"
+ },
+ "mf": {
+  "moneda": "EUR"
+ },
+ "mo": {
+  "moneda": "MOP"
+ },
+ "mp": {
+  "moneda": "USD"
+ },
+ "nc": {
+  "moneda": "XPF"
+ },
+ "pf": {
+  "moneda": "XPF"
+ },
+ "pr": {
+  "moneda": "USD"
+ },
+ "tc": {
+  "moneda": "USD"
+ },
+ "vg": {
+  "moneda": "USD"
+ },
+ "vi": {
+  "moneda": "USD"
  }
 }

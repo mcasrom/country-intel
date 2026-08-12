@@ -1,6 +1,6 @@
 {
  "country": "bm",
- "generated": "2026-08-12T03:15:03.905166+00:00",
+ "generated": "2026-08-12T06:38:39.326838+00:00",
  "geo": {
   "name": "Bermuda",
   "lat": 32.3293,
@@ -37,6 +37,12 @@
    "updated": "2026-08-12T03:15:03.401898+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "BMD",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-0.07735627204653754",

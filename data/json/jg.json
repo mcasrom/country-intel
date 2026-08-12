@@ -1,6 +1,6 @@
 {
  "country": "jg",
- "generated": "2026-08-12T03:15:04.196664+00:00",
+ "generated": "2026-08-12T06:38:39.374668+00:00",
  "geo": {
   "name": "Channel Islands",
   "lat": 0.0,
@@ -31,6 +31,12 @@
    "updated": "2026-08-12T03:15:03.473541+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "GBP",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "4.44309624924164",

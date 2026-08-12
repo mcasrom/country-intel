@@ -1,6 +1,6 @@
 {
  "country": "mf",
- "generated": "2026-08-12T03:15:04.249087+00:00",
+ "generated": "2026-08-12T06:38:39.396897+00:00",
  "geo": {
   "name": "St. Martin (French part)",
   "lat": 0.0,
@@ -25,6 +25,12 @@
    "updated": "2026-08-12T03:15:03.541315+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "EUR",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-54.498832714608284",

@@ -1,6 +1,6 @@
 {
  "country": "mp",
- "generated": "2026-08-12T03:15:04.253772+00:00",
+ "generated": "2026-08-12T06:38:39.402632+00:00",
  "geo": {
   "name": "Northern Mariana Islands",
   "lat": 15.1935,
@@ -25,6 +25,12 @@
    "updated": "2026-08-12T03:15:03.555687+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "USD",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-24.77528343646958",

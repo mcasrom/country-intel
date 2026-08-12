@@ -1,6 +1,6 @@
 {
  "country": "tc",
- "generated": "2026-08-12T03:15:04.355163+00:00",
+ "generated": "2026-08-12T06:38:39.444346+00:00",
  "geo": {
   "name": "Turks and Caicos Islands",
   "lat": 21.4602778,
@@ -31,6 +31,12 @@
    "updated": "2026-08-12T03:15:03.674782+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "USD",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "3.7820994950037607",

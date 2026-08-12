@@ -1,6 +1,6 @@
 {
  "country": "dm",
- "generated": "2026-08-12T03:15:04.017217+00:00",
+ "generated": "2026-08-12T06:38:39.350301+00:00",
  "geo": {
   "name": "Dominica",
   "lat": 15.2976,
@@ -61,6 +61,12 @@
    "updated": "2026-08-12T03:15:03.425187+00:00",
    "source": "worldbank",
    "year": "2024"
+  },
+  "moneda": {
+   "value": "XCD",
+   "updated": "2026-08-12T06:38:30.731244+00:00",
+   "source": "static",
+   "year": ""
   },
   "net_mig": {
    "value": "-3.0209198701004456",
