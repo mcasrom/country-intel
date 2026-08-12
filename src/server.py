@@ -222,7 +222,7 @@ def _gnews_rss(q: str):
 def news(code: str, request: Request):
     if rate_limited(request):
         return rate_limit_response()
-    q = NEWS_QUERY.get(code.lower(), code.upper())
+    q = NEWS_QUERY.get(code.lower()) or (json.loads((BASE_DIR / "data" / "geo.json").read_text()).get(code.lower(), {}) or {}).get("name", "") or code.upper()
     cache = NEWS_DIR / f"{code.lower()}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < NEWS_TTL:
         return json.loads(cache.read_text())
