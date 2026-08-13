@@ -54,3 +54,21 @@
 - **Verificado**: 9 fichas con IDH real, French Polynesia con snippet mejorado, ecosistema intacto.
 - **Commit**: `fc2780f`. Coste ~0.
 
+
+## Sprint — Semáforo coste de vida (13 Ago 2026) — commit `a80fcc2`
+
+- **Feature**: nuevo indicador `coste_vida` (price level relativo a EE.UU., US=1) + semáforo 🟢/🟡/🟠/🔴 en `/vacaciones` y en todas las fichas `/pais/{code}`.
+- **Fuente real**: `PA.NUS.PPPC.RF` del Banco Mundial está **archivado** (API: "indicator not found") → se usó el equivalente de **Our World in Data** (`gdp-price-levels-relative-to-the-us`, datos WB rebasados a US=1). CSV fuente en `data/static/price_level_owid.csv`; refresco con `scripts/refresh_coste_vida.py`.
+- **Umbrales** (los pedidos): <0.5 🟢 Muy barato · 0.5–0.8 🟡 Moderado · 0.8–1.1 🟠 Similar a España · >1.1 🔴 Caro.
+- **Datos reales (2024)**: India 0.24 🟢 · México 0.54 🟡 · Portugal 0.56 🟡 · España 0.61 🟡 · Japón 0.62 🟡 · EE.UU. 1.0 🟠 · Suiza 1.08 🟠. (Las cifras "de memoria" iniciales estaban desviadas; la fuente oficial manda.)
+- **Cobertura**: 202 países (203 con dato en el CSV).
+- **Incidente reparado**: el venv de country-intel estaba corrupto (sin `bin/`, fastapi/uvicorn incompletos) → el API quedó en 502 al reiniciar. Reconstruido desde cero (`python3 -m venv venv` + `venv/bin/pip install -r requirements.txt`). API online, `/api/health` 200, RAM ~46MB.
+- **Verificado**: `/api/country/es` → coste_vida 0.608414, `/vacaciones` (JS válido), `/pais/es` → "🟡 Moderado (0.6)". Diff de datos puramente aditivo (6 líneas por país).
+- **Commit**: `a80fcc2`. Coste ~0.
+
+## Backlog pendiente (sin cambios)
+- Resumen IA por país (LLM 1/día) + monitor uptime-kuma sobre `/api/health`.
+- Alertas (FIRMS, EMSC, ReliefWeb) por país.
+- Timeline + mapa + Chart.js.
+- Comparador + informes PDF + API pública (PRO).
+- Enviar sitemap a Google Search Console.
