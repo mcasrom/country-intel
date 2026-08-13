@@ -1,6 +1,6 @@
 {
  "country": "kn",
- "generated": "2026-08-13T03:16:15.859559+00:00",
+ "generated": "2026-08-13T13:24:17.453810+00:00",
  "geo": {
   "name": "St. Kitts and Nevis",
   "lat": 17.3,
@@ -8,105 +8,135 @@
   "iso2": "kn"
  },
  "indicators": {
+  "adultos": {
+   "value": "70.5847191682855",
+   "updated": "2026-08-13T13:24:17.332540+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "co2_pc": {
+   "value": "5.542",
+   "updated": "2026-08-13T13:24:17.373285+00:00",
+   "source": "Global Carbon Project (OWID) 2024",
+   "year": "2024"
+  },
+  "edad_mediana": {
+   "value": "35.3",
+   "updated": "2026-08-13T13:24:17.375031+00:00",
+   "source": "UN WPP 2024 (OWID)",
+   "year": "2023"
+  },
   "esperanza_vida": {
    "value": "72.281",
-   "updated": "2026-08-13T03:16:15.740617+00:00",
+   "updated": "2026-08-13T13:24:17.332466+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.526",
-   "updated": "2026-08-13T03:16:15.740686+00:00",
+   "updated": "2026-08-13T13:24:17.332525+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "3.49726171629099",
-   "updated": "2026-08-13T03:16:15.740641+00:00",
+   "updated": "2026-08-13T13:24:17.332486+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "5.73595428",
-   "updated": "2026-08-13T03:16:15.740633+00:00",
+   "updated": "2026-08-13T13:24:17.332479+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "64.1601437187219",
-   "updated": "2026-08-13T03:16:15.740625+00:00",
+   "updated": "2026-08-13T13:24:17.332473+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.777",
-   "updated": "2026-08-13T03:16:15.740702+00:00",
+   "updated": "2026-08-13T13:24:17.332559+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "3.55711230848243",
-   "updated": "2026-08-13T03:16:15.740593+00:00",
+   "updated": "2026-08-13T13:24:17.332445+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "internet_pct": {
    "value": "76.88400269",
-   "updated": "2026-08-13T03:16:15.740648+00:00",
+   "updated": "2026-08-13T13:24:17.332493+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "mayores": {
+   "value": "11.2257968106227",
+   "updated": "2026-08-13T13:24:17.332547+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "menores": {
+   "value": "18.1894840210917",
+   "updated": "2026-08-13T13:24:17.332534+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "17",
-   "updated": "2026-08-13T03:16:15.740610+00:00",
+   "updated": "2026-08-13T13:24:17.332459+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "XCD",
-   "updated": "2026-08-13T03:16:15.740695+00:00",
+   "updated": "2026-08-13T13:24:17.332553+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-0.14943534786414192",
-   "updated": "2026-08-13T03:16:15.740601+00:00",
+   "updated": "2026-08-13T13:24:17.332452+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "1122388888.88889",
-   "updated": "2026-08-13T03:16:15.740569+00:00",
+   "updated": "2026-08-13T13:24:17.332425+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "34897.2104637487",
-   "updated": "2026-08-13T03:16:15.740577+00:00",
+   "updated": "2026-08-13T13:24:17.332432+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "46843",
-   "updated": "2026-08-13T03:16:15.740553+00:00",
+   "updated": "2026-08-13T13:24:17.332419+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-13T03:16:15.740710+00:00",
+   "updated": "2026-08-13T13:24:17.332566+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "23960.6534357084",
-   "updated": "2026-08-13T03:16:15.740585+00:00",
+   "updated": "2026-08-13T13:24:17.332439+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "31.795061903951",
-   "updated": "2026-08-13T03:16:15.740656+00:00",
+   "updated": "2026-08-13T13:24:17.332499+00:00",
    "source": "worldbank",
    "year": "2024"
   }

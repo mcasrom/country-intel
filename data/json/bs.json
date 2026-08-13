@@ -1,6 +1,6 @@
 {
  "country": "bs",
- "generated": "2026-08-13T03:16:15.797391+00:00",
+ "generated": "2026-08-13T13:24:17.401965+00:00",
  "geo": {
   "name": "Bahamas, The",
   "lat": 25.0661,
@@ -8,111 +8,153 @@
   "iso2": "bs"
  },
  "indicators": {
+  "adultos": {
+   "value": "70.3113513405751",
+   "updated": "2026-08-13T13:24:17.318728+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "co2_pc": {
+   "value": "7.650",
+   "updated": "2026-08-13T13:24:17.372487+00:00",
+   "source": "Global Carbon Project (OWID) 2024",
+   "year": "2024"
+  },
+  "corrupcion": {
+   "value": "65.0",
+   "updated": "2026-08-13T13:24:17.375927+00:00",
+   "source": "Transparency Intl CPI 2024",
+   "year": "2024"
+  },
   "desempleo": {
    "value": "9.049",
-   "updated": "2026-08-13T03:16:15.721908+00:00",
+   "updated": "2026-08-13T13:24:17.318634+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "deuda_pib": {
    "value": "71.4578214596313",
-   "updated": "2026-08-13T03:16:15.721956+00:00",
+   "updated": "2026-08-13T13:24:17.318668+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "edad_mediana": {
+   "value": "34.6",
+   "updated": "2026-08-13T13:24:17.374513+00:00",
+   "source": "UN WPP 2024 (OWID)",
+   "year": "2023"
+  },
   "esperanza_vida": {
    "value": "74.71",
-   "updated": "2026-08-13T03:16:15.721944+00:00",
+   "updated": "2026-08-13T13:24:17.318659+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.374",
-   "updated": "2026-08-13T03:16:15.722017+00:00",
+   "updated": "2026-08-13T13:24:17.318711+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "2.74191570247934",
-   "updated": "2026-08-13T03:16:15.721981+00:00",
+   "updated": "2026-08-13T13:24:17.318685+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "6.30260801",
-   "updated": "2026-08-13T03:16:15.721969+00:00",
+   "updated": "2026-08-13T13:24:17.318677+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.812",
-   "updated": "2026-08-13T03:16:15.722040+00:00",
+   "updated": "2026-08-13T13:24:17.318753+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "0.409162489083286",
-   "updated": "2026-08-13T03:16:15.721895+00:00",
+   "updated": "2026-08-13T13:24:17.318625+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "92.47270203",
-   "updated": "2026-08-13T03:16:15.721993+00:00",
+   "updated": "2026-08-13T13:24:17.318694+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "mayores": {
+   "value": "11.7758539484603",
+   "updated": "2026-08-13T13:24:17.318737+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "menores": {
+   "value": "17.9127947109646",
+   "updated": "2026-08-13T13:24:17.318719+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "16.8",
-   "updated": "2026-08-13T03:16:15.721932+00:00",
+   "updated": "2026-08-13T13:24:17.318651+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "BSD",
-   "updated": "2026-08-13T03:16:15.722029+00:00",
+   "updated": "2026-08-13T13:24:17.318745+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "2.536863011889365",
-   "updated": "2026-08-13T03:16:15.721920+00:00",
+   "updated": "2026-08-13T13:24:17.318642+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "15832800000",
-   "updated": "2026-08-13T03:16:15.721855+00:00",
+   "updated": "2026-08-13T13:24:17.318599+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "41257.7650774105",
-   "updated": "2026-08-13T03:16:15.721868+00:00",
+   "updated": "2026-08-13T13:24:17.318608+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "401283",
-   "updated": "2026-08-13T03:16:15.721841+00:00",
+   "updated": "2026-08-13T13:24:17.318590+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-13T03:16:15.722052+00:00",
+   "updated": "2026-08-13T13:24:17.318761+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "39455.4466548546",
-   "updated": "2026-08-13T03:16:15.721882+00:00",
+   "updated": "2026-08-13T13:24:17.318617+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "titulados": {
+   "value": "27.9",
+   "updated": "2026-08-13T13:24:17.379354+00:00",
+   "source": "UNESCO UIS (Banco Mundial) 2023",
+   "year": "2023"
+  },
   "urbanizacion": {
    "value": "81.3249262966481",
-   "updated": "2026-08-13T03:16:15.722005+00:00",
+   "updated": "2026-08-13T13:24:17.318703+00:00",
    "source": "worldbank",
    "year": "2024"
   }

@@ -1,6 +1,6 @@
 {
  "country": "nc",
- "generated": "2026-08-13T03:16:15.889471+00:00",
+ "generated": "2026-08-13T13:24:17.482171+00:00",
  "geo": {
   "name": "New Caledonia",
   "lat": -22.2677,
@@ -8,69 +8,99 @@
   "iso2": "nc"
  },
  "indicators": {
-  "desempleo": {
-   "value": "10.991",
-   "updated": "2026-08-13T03:16:15.746585+00:00",
+  "adultos": {
+   "value": "67.2677475187048",
+   "updated": "2026-08-13T13:24:17.339205+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "co2_pc": {
+   "value": "18.064",
+   "updated": "2026-08-13T13:24:17.373585+00:00",
+   "source": "Global Carbon Project (OWID) 2024",
+   "year": "2024"
+  },
+  "desempleo": {
+   "value": "10.991",
+   "updated": "2026-08-13T13:24:17.339152+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "edad_mediana": {
+   "value": "33.9",
+   "updated": "2026-08-13T13:24:17.375288+00:00",
+   "source": "UN WPP 2024 (OWID)",
+   "year": "2023"
+  },
   "esperanza_vida": {
    "value": "78.921",
-   "updated": "2026-08-13T03:16:15.746603+00:00",
+   "updated": "2026-08-13T13:24:17.339179+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.964",
-   "updated": "2026-08-13T03:16:15.746616+00:00",
+   "updated": "2026-08-13T13:24:17.339192+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "mayores": {
+   "value": "11.4260036666274",
+   "updated": "2026-08-13T13:24:17.339212+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "menores": {
+   "value": "21.3062488146679",
+   "updated": "2026-08-13T13:24:17.339199+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "26.2",
-   "updated": "2026-08-13T03:16:15.746597+00:00",
+   "updated": "2026-08-13T13:24:17.339173+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "XPF",
-   "updated": "2026-08-13T03:16:15.746622+00:00",
+   "updated": "2026-08-13T13:24:17.339219+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "1.554816685404201",
-   "updated": "2026-08-13T03:16:15.746591+00:00",
+   "updated": "2026-08-13T13:24:17.339165+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "8548919387.12607",
-   "updated": "2026-08-13T03:16:15.746567+00:00",
+   "updated": "2026-08-13T13:24:17.339133+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "292639",
-   "updated": "2026-08-13T03:16:15.746562+00:00",
+   "updated": "2026-08-13T13:24:17.339127+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-08-13T03:16:15.746628+00:00",
+   "updated": "2026-08-13T13:24:17.339225+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "29213.1923192946",
-   "updated": "2026-08-13T03:16:15.746578+00:00",
+   "updated": "2026-08-13T13:24:17.339140+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "67.9514695585577",
-   "updated": "2026-08-13T03:16:15.746609+00:00",
+   "updated": "2026-08-13T13:24:17.339185+00:00",
    "source": "worldbank",
    "year": "2024"
   }

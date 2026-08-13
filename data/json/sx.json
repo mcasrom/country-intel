@@ -1,6 +1,6 @@
 {
  "country": "sx",
- "generated": "2026-08-13T03:16:15.919546+00:00",
+ "generated": "2026-08-13T13:24:17.511657+00:00",
  "geo": {
   "name": "Sint Maarten (Dutch part)",
   "lat": 0.0,
@@ -8,81 +8,111 @@
   "iso2": "sx"
  },
  "indicators": {
+  "adultos": {
+   "value": "70.9219040149479",
+   "updated": "2026-08-13T13:24:17.348417+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "co2_pc": {
+   "value": "16.546",
+   "updated": "2026-08-13T13:24:17.373910+00:00",
+   "source": "Global Carbon Project (OWID) 2024",
+   "year": "2024"
+  },
+  "edad_mediana": {
+   "value": "41.6",
+   "updated": "2026-08-13T13:24:17.375585+00:00",
+   "source": "UN WPP 2024 (OWID)",
+   "year": "2023"
+  },
   "esperanza_vida": {
    "value": "76.528",
-   "updated": "2026-08-13T03:16:15.752897+00:00",
+   "updated": "2026-08-13T13:24:17.348379+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.44",
-   "updated": "2026-08-13T03:16:15.752915+00:00",
+   "updated": "2026-08-13T13:24:17.348404+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "3.92363832601723",
-   "updated": "2026-08-13T03:16:15.752903+00:00",
+   "updated": "2026-08-13T13:24:17.348386+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.812",
-   "updated": "2026-08-13T03:16:15.752927+00:00",
+   "updated": "2026-08-13T13:24:17.348441+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
+  "mayores": {
+   "value": "13.942169063794",
+   "updated": "2026-08-13T13:24:17.348423+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
+  "menores": {
+   "value": "15.1359269212581",
+   "updated": "2026-08-13T13:24:17.348410+00:00",
+   "source": "worldbank",
+   "year": "2024"
+  },
   "migrant_pct": {
    "value": "69.5",
-   "updated": "2026-08-13T03:16:15.752891+00:00",
+   "updated": "2026-08-13T13:24:17.348373+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "ANG",
-   "updated": "2026-08-13T03:16:15.752921+00:00",
+   "updated": "2026-08-13T13:24:17.348434+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "12.8719723183391",
-   "updated": "2026-08-13T03:16:15.752884+00:00",
+   "updated": "2026-08-13T13:24:17.348366+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "1797836648.04469",
-   "updated": "2026-08-13T03:16:15.752865+00:00",
+   "updated": "2026-08-13T13:24:17.348345+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "53846.7442635227",
-   "updated": "2026-08-13T03:16:15.752871+00:00",
+   "updated": "2026-08-13T13:24:17.348352+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "43350",
-   "updated": "2026-08-13T03:16:15.752859+00:00",
+   "updated": "2026-08-13T13:24:17.348316+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-13T03:16:15.752933+00:00",
+   "updated": "2026-08-13T13:24:17.348447+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "41472.5870367865",
-   "updated": "2026-08-13T03:16:15.752878+00:00",
+   "updated": "2026-08-13T13:24:17.348359+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-13T03:16:15.752909+00:00",
+   "updated": "2026-08-13T13:24:17.348398+00:00",
    "source": "worldbank",
    "year": "2024"
   }
