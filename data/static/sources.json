@@ -1,0 +1,38 @@
+{
+ "co2_pc": {
+  "source": "Global Carbon Project (OWID) 2024",
+  "url": "https://raw.githubusercontent.com/owid/co2-data/master/owid-co2-data.csv",
+  "year": "",
+  "countries": 204
+ },
+ "edad_mediana": {
+  "source": "UN WPP 2024 (OWID)",
+  "url": "https://ourworldindata.org/grapher/median-age.csv",
+  "year": "",
+  "countries": 215
+ },
+ "corrupcion": {
+  "source": "Transparency Intl CPI 2024",
+  "url": "https://ourworldindata.org/grapher/ti-corruption-perception-index.csv",
+  "year": "",
+  "countries": 180
+ },
+ "libertad_prensa": {
+  "source": "RSF Press Freedom 2024",
+  "url": "https://raw.githubusercontent.com/dw-data/world-press-freedom-2026/main/csvs/rsf-files/2024.csv",
+  "year": 2024,
+  "countries": 177
+ },
+ "democracia": {
+  "source": "EIU Democracy Index 2024",
+  "url": "https://data360files.worldbank.org/data360-data/data/EIU_DI/EIU_DI_INDEX_WIDEF.csv",
+  "year": 2024,
+  "countries": 166
+ },
+ "titulados": {
+  "source": "UNESCO UIS (Banco Mundial) 2023",
+  "url": "https://api.worldbank.org/v2/country/all/indicator/SE.TER.CUAT.ST.ZS?downloadformat=csv",
+  "year": "",
+  "countries": 184
+ }
+}

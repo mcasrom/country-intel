@@ -13,6 +13,7 @@ from src.config import DB_PATH, JSON_DIR, BASE_DIR
 
 COLLECTORS = [
     __import__("src.collectors.worldbank", fromlist=["WorldBank"]).WorldBank(),
+    __import__("src.collectors.static_official", fromlist=["StaticOfficial"]).StaticOfficial(),
 ]
 
 

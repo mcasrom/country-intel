@@ -1,6 +1,7 @@
 """Collector Banco Mundial VIVO: all-countries por indicador, periodo 2023-2024
 (ultimo año disponible por pais, persistido), geo de todos los paises,
 retry/backoff/throttle, fallback al seed, conserva valores previos si falla."""
+import hashlib
 import json
 import time
 from urllib.error import HTTPError, URLError
@@ -21,26 +22,31 @@ INDICATORS = {
     "inflacion": "FP.CPI.TOTL.ZG",
     "desempleo": "SL.UEM.TOTL.ZS",
     "alfabetizacion": "SE.ADT.LITR.ZS",
-    "titulados": "SE.TER.CUAT.TL.ZS",
     "net_mig": "SM.POP.NETM",
     "migrant_pct": "SM.POP.TOTL.ZS",
     "esperanza_vida": "SP.DYN.LE00.IN",
-    "esperanza_saludable": "SP.DYN.HALE.IN",
     "homicidios": "VC.IHR.PSRC.P5",
     "gini": "SI.POV.GINI",
     "deuda_pib": "GC.DOD.TOTL.GD.ZS",
     "gasto_salud": "SH.XPD.CHEX.GD.ZS",
     "gasto_educacion": "SE.XPD.TOTL.GD.ZS",
-    "co2_pc": "EN.ATM.CO2E.PC",
     "internet_pct": "IT.NET.USER.ZS",
     "urbanizacion": "SP.URB.TOTL.IN.ZS",
     "fertilidad": "SP.DYN.TFRT.IN",
+    "menores": "SP.POP.0014.TO.ZS",
+    "adultos": "SP.POP.1564.TO.ZS",
+    "mayores": "SP.POP.65UP.TO.ZS",
+    "defensa_pct": "MS.MIL.XPND.GD.ZS",
 }
 STATIC_SOURCE = {
     "corrupcion": "Transparency Intl 2024",
     "libertad_prensa": "RSF 2024",
     "democracia": "EIU 2024",
 }
+# Indicadores que NUNCA emite este collector: los cubre el collector estatico
+# oficial (static_official) con datos de fuente primaria para todos los paises.
+STATIC_LIVE = {"co2_pc", "titulados", "edad_mediana",
+               "corrupcion", "libertad_prensa", "democracia"}
 FALLBACK_GEO = {
     "es": ["España", 40.4, -3.7], "fr": ["Francia", 48.8, 2.3], "de": ["Alemania", 52.5, 13.4],
     "it": ["Italia", 41.9, 12.5], "gb": ["Reino Unido", 51.5, -0.1], "us": ["EE.UU.", 39.8, -98.6],
@@ -65,7 +71,7 @@ def _get_json(url, retries=1):
 
 def _all_rows(url):
     WB_CACHE.mkdir(parents=True, exist_ok=True)
-    cache = WB_CACHE / f"{hash(url) & 0xffffffff:x}.json"
+    cache = WB_CACHE / f"{hashlib.md5(url.encode()).hexdigest()[:16]}.json"
     if cache.exists() and (time.time() - cache.stat().st_mtime) < WB_CACHE_TTL:
         try:
             return json.loads(cache.read_text())
@@ -171,7 +177,7 @@ class WorldBank(BaseCollector):
                     out.append({"country": cc, "indicator": label, "value": seed_ind[label], "source": "seed"})
                     got = True
             for label, value in seed_ind.items():
-                if label not in INDICATORS:
+                if label not in INDICATORS and label not in STATIC_LIVE:
                     out.append({"country": cc, "indicator": label, "value": value, "source": STATIC_SOURCE.get(label, "seed")})
             en = self.enrich.get(cc, {})
             if en.get("moneda") and "moneda" not in seed_ind:
