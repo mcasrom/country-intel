@@ -11,12 +11,17 @@
 <meta property="og:title" content="¿Dónde ir de vacaciones? Compara hasta 4 países">
 <meta property="og:description" content="Compara hasta 4 destinos por precio, IDH, internet y seguridad. Datos World Bank.">
 <meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://country.viajeinteligencia.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Comparador de destinos de vacaciones · Country">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f6f7fb">
 <style>
-  :root{--bg:#0B0F17;--panel:#121826;--panel2:#171F30;--line:#232B3D;--text:#E7EBF3;--dim:#8993A8;--faint:#576076;--amber:#FFB454;--green:#34D399;--red:#F87171;--cyan:#67E8F9;}
+  :root{--bg:#f6f7fb;--panel:#ffffff;--panel2:#eef1f7;--line:#e2e8f0;--text:#0f172a;--dim:#64748b;--faint:#94a3b8;--amber:#d97706;--green:#059669;--red:#dc2626;--cyan:#0891b2;}
   *{box-sizing:border-box;margin:0;padding:0;}
   body{background:var(--bg);color:var(--text);font-family:-apple-system,system-ui,sans-serif;line-height:1.5;}
-  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:#0d1322;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px;background:#ffffff;border-bottom:1px solid var(--line);flex-wrap:wrap;}
   .brand{font-family:ui-monospace,monospace;font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px;}
   .top a{color:var(--dim);text-decoration:none;font-family:ui-monospace,monospace;font-size:11px;}
   .top a:hover{color:var(--amber);}
@@ -43,7 +48,7 @@
   .card .c-name{font-size:17px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px;padding-bottom:10px;border-bottom:1px solid var(--line);}
   .card .c-name .flag{font-size:22px;line-height:1;}
   table{width:100%;border-collapse:collapse;font-size:12.5px;}
-  th,td{padding:7px 6px;text-align:left;border-bottom:1px solid #1a2a4a;}
+  th,td{padding:7px 6px;text-align:left;border-bottom:1px solid var(--line);}
   th{color:var(--faint);font-size:10px;text-transform:uppercase;letter-spacing:.05em;font-weight:500;}
   td{font-weight:600;font-family:ui-monospace,monospace;font-size:12.5px;color:var(--text);}
   td.win{color:var(--green);}
@@ -52,8 +57,9 @@
   .resumen b{color:var(--text);}
   .resumen .hl{color:var(--amber);font-weight:700;}
   .hint{font-size:12px;color:var(--faint);margin-top:10px;font-family:ui-monospace,monospace;}
-  footer{padding:20px;border-top:1px solid var(--line);font-family:ui-monospace,monospace;font-size:11px;color:var(--faint);text-align:center;}
+  footer{padding:24px 20px;border-top:1px solid var(--line);font-family:ui-monospace,monospace;font-size:11px;color:var(--faint);text-align:center;background:#ffffff;}
   footer a{color:var(--amber);text-decoration:none;}
+  footer .kofi{margin-top:12px;display:block;}
 </style>
 </head>
 <body>
@@ -63,7 +69,7 @@
 </div>
 <div class="wrap">
   <h1>Compara hasta 4 destinos de vacaciones</h1>
-  <div class="sub">Renta, coste estimado, IDH, internet, moneda e inflación · datos World Bank</div>
+  <div class="sub">Renta, IDH, internet, inflación, esperanza de vida, desigualdad, edad de la población, CO₂, corrupción, democracia y educación · fuentes oficiales (World Bank, PNUD, EIU, UNESCO)</div>
   <div class="controls">
     <button id="addBtn" title="Añadir otro destino a la comparación">+ Añadir destino</button>
     <button id="resetBtn" title="Volver al ejemplo España · México · Japón · Portugal">↺ Reiniciar</button>
@@ -75,6 +81,7 @@
 </div>
 <footer>
   Fuente: World Bank vía <a href="/">Country</a> · <a href="https://viajeinteligencia.com">🌐 ecosistema →</a>
+  <a class="kofi" href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener"><img height="36" style="border:0px;height:36px;" src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" border="0" alt="Apóyanos en Ko-fi"></a>
 </footer>
 <script>
   var META = {};
@@ -110,7 +117,14 @@
       ['Internet (% pob.)', gv(cc,'internet_pct') == null ? '—' : gv(cc,'internet_pct').toFixed(0)+'%', gv(cc,'internet_pct')],
       ['Inflación', gv(cc,'inflacion') == null ? '—' : gv(cc,'inflacion').toFixed(1)+'%', gv(cc,'inflacion')],
       ['Esperanza de vida', gv(cc,'esperanza_vida') == null ? '—' : gv(cc,'esperanza_vida').toFixed(0)+' años', gv(cc,'esperanza_vida')],
-      ['Gini (desigualdad)', gv(cc,'gini') == null ? '—' : gv(cc,'gini').toFixed(0), gv(cc,'gini')]
+      ['Gini (desigualdad)', gv(cc,'gini') == null ? '—' : gv(cc,'gini').toFixed(0), gv(cc,'gini')],
+      ['Edad mediana', gv(cc,'edad_mediana') == null ? '—' : gv(cc,'edad_mediana').toFixed(1)+' años', gv(cc,'edad_mediana')],
+      ['Menores de 15 (% pob.)', gv(cc,'menores') == null ? '—' : gv(cc,'menores').toFixed(0)+'%', gv(cc,'menores')],
+      ['Mayores de 65 (% pob.)', gv(cc,'mayores') == null ? '—' : gv(cc,'mayores').toFixed(0)+'%', gv(cc,'mayores')],
+      ['CO₂ per cápita (t)', gv(cc,'co2_pc') == null ? '—' : gv(cc,'co2_pc').toFixed(2)+' t', gv(cc,'co2_pc')],
+      ['Corrupción (CPI)', gv(cc,'corrupcion') == null ? '—' : gv(cc,'corrupcion').toFixed(0), gv(cc,'corrupcion')],
+      ['Democracia (EIU)', gv(cc,'democracia') == null ? '—' : gv(cc,'democracia').toFixed(2), gv(cc,'democracia')],
+      ['Titulados universitarios (%)', gv(cc,'titulados') == null ? '—' : gv(cc,'titulados').toFixed(0)+'%', gv(cc,'titulados')]
     ];
   }
   function render(){
@@ -127,13 +141,14 @@
       var sel = selectsEl.querySelector('select[data-i="'+i+'"]');
       sel.value = cc;
     });
-    // "mejor" = mayor para renta, PIB, IDH, internet, esperanza; menor para inflación y Gini
-    var higherBetter = {0:true,1:true,2:true,3:true,4:false,5:true,6:false};
-    var bestVal = [null,null,null,null,null,null,null];
+    // "mejor" = mayor para renta, PIB, IDH, internet, esperanza, CPI, democracia y titulados;
+    // menor para inflación y Gini; null = neutral (no se resalta)
+    var higherBetter = {0:true,1:true,2:true,3:true,4:false,5:true,6:false,7:null,8:null,9:null,10:null,11:true,12:true,13:true};
+    var bestVal = [null,null,null,null,null,null,null,null,null,null,null,null,null,null];
     slots.forEach(function(cc){
       var rows = rowsOf(cc);
       rows.forEach(function(r, idx){
-        if (r[2] != null && (bestVal[idx] == null || (higherBetter[idx] ? r[2] > bestVal[idx] : r[2] < bestVal[idx]))) {
+        if (r[2] != null && higherBetter[idx] != null && (bestVal[idx] == null || (higherBetter[idx] ? r[2] > bestVal[idx] : r[2] < bestVal[idx]))) {
           bestVal[idx] = r[2];
         }
       });
