@@ -14,7 +14,7 @@
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="robots" content="index, follow">
-<style>  :root{--bg:#F4F6FB;--panel:#FFFFFF;--line:#D6DDEA;--text:#16202E;--text2:#33415C;--dim:#5B6B84;--faint:#8A97AC;--amber:#D9820A;--on-amber:#FFFFFF;--cyan:#0E9FAE;--code-bg:#E9EEF7;--code-line:#CBD5E1;}
+<style>  :root{--bg:#F4F6FB;--panel:#FFFFFF;--line:#D6DDEA;--text:#16202E;--text2:#33415C;--dim:#5B6B84;--faint:#8A97AC;--amber:#D9820A;--on-amber:#FFFFFF;--cyan:#0E9FAE;--code-bg:#E9EEF7;--code-line:var(--text2);}
   html[data-theme="dark"]{--bg:#0B0F17;--panel:#121826;--line:#232B3D;--text:#E7EBF3;--text2:#C9D2E0;--dim:#8993A8;--faint:#576076;--amber:#FFB454;--on-amber:#1A1200;--cyan:#67E8F9;--code-bg:#1a2233;--code-line:#1e293b;}
   .theme-row{display:flex;justify-content:flex-end;margin-bottom:8px;}
   .theme-btn{font-family:ui-monospace,monospace;font-size:12px;background:var(--panel);border:1px solid var(--line);color:var(--dim);border-radius:999px;padding:6px 12px;cursor:pointer;}
@@ -23,22 +23,22 @@
   .kofi-guide:hover{opacity:.92;}
 
   *{box-sizing:border-box;margin:0;padding:0;}
-  body{background:#0B0F17;color:#E7EBF3;font-family:-apple-system,system-ui,sans-serif;line-height:1.65;}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,system-ui,sans-serif;line-height:1.65;}
   .wrap{max-width:800px;margin:0 auto;padding:32px 24px 60px;}
   h1{font-size:28px;font-weight:800;letter-spacing:-0.02em;line-height:1.2;margin-bottom:10px;}
-  .meta{font-family:ui-monospace,monospace;font-size:12px;color:#8993A8;margin-bottom:26px;}
-  h2{font-size:20px;font-weight:700;margin:28px 0 10px;color:#FFB454;}
-  p{font-size:15px;margin-bottom:14px;color:#CBD5E1;}
+  .meta{font-family:ui-monospace,monospace;font-size:12px;color:var(--dim);margin-bottom:26px;}
+  h2{font-size:20px;font-weight:700;margin:28px 0 10px;color:var(--amber);}
+  p{font-size:15px;margin-bottom:14px;color:var(--text2);}
   table{width:100%;border-collapse:collapse;margin:14px 0 24px;font-size:14px;}
-  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #232B3D;}
-  th{color:#67E8F9;font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.04em;}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);}
+  th{color:var(--cyan);font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.04em;}
   td:first-child{font-weight:600;}
-  .cta{margin-top:28px;background:#121826;border:1px solid #232B3D;border-radius:12px;padding:20px;text-align:center;}
-  .cta a{display:inline-block;background:#FFB454;color:#0B0F17;font-weight:700;padding:11px 22px;border-radius:9px;text-decoration:none;font-family:ui-monospace,monospace;font-size:13px;}
+  .cta{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center;}
+  .cta a{display:inline-block;background:var(--amber);color:var(--bg);font-weight:700;padding:11px 22px;border-radius:9px;text-decoration:none;font-family:ui-monospace,monospace;font-size:13px;}
   .cta a:hover{opacity:.9;}
   .back{margin-top:30px;font-size:13px;}
-  .back a{color:#FFB454;text-decoration:none;}
-  .note{font-size:11px;color:#576076;margin-top:20px;line-height:1.6;}
+  .back a{color:var(--amber);text-decoration:none;}
+  .note{font-size:11px;color:var(--faint);margin-top:20px;line-height:1.6;}
 </style>
 </head>
 <body>
@@ -78,7 +78,7 @@
   <div class="back"><a href="/">← Volver al mapa de países</a></div>
   <div class="note">Fuentes: UIT (Unión Internacional de Telecomunicaciones), % de población que usa internet. Datos de dominio público citados con su origen.</div>
 </div>
-<footer style="padding:22px 20px;text-align:center;border-top:1px solid #1e293b;background:#0d1322;font-family:ui-monospace,monospace;font-size:11px;color:#64748b;"><a href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener" style="display:inline-block;"><img height="36" style="border:0px;height:36px;" src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" border="0" alt="Apóyanos en Ko-fi"></a></footer>
+<footer style="padding:22px 20px;text-align:center;border-top:1px solid var(--code-line);background:#0d1322;font-family:ui-monospace,monospace;font-size:11px;color:#64748b;"><a href="https://ko-fi.com/m_castillo" target="_blank" rel="noopener" style="display:inline-block;"><img height="36" style="border:0px;height:36px;" src="https://storage.ko-fi.com/cdn/kofi3.png?v=6" border="0" alt="Apóyanos en Ko-fi"></a></footer>
 
 <script>
   var root = document.documentElement, btn = document.getElementById('themeBtn');
