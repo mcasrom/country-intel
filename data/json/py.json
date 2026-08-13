@@ -1,6 +1,6 @@
 {
  "country": "py",
- "generated": "2026-08-12T06:41:14.436058+00:00",
+ "generated": "2026-08-13T03:16:15.904646+00:00",
  "geo": {
   "name": "Paraguay",
   "lat": -25.3005,
@@ -10,121 +10,121 @@
  "indicators": {
   "alfabetizacion": {
    "value": "94.8600006103516",
-   "updated": "2026-08-12T03:15:03.625537+00:00",
+   "updated": "2026-08-13T03:16:15.750092+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "desempleo": {
    "value": "5.686",
-   "updated": "2026-08-12T03:15:03.625522+00:00",
+   "updated": "2026-08-13T03:16:15.750086+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "esperanza_vida": {
    "value": "73.982",
-   "updated": "2026-08-12T06:41:14.319778+00:00",
+   "updated": "2026-08-13T03:16:15.750111+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "2.416",
-   "updated": "2026-08-12T06:41:14.319884+00:00",
+   "updated": "2026-08-13T03:16:15.750160+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "3.53410005569458",
-   "updated": "2026-08-12T06:41:14.319838+00:00",
+   "updated": "2026-08-13T03:16:15.750140+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "8.35731316",
-   "updated": "2026-08-12T06:41:14.319823+00:00",
+   "updated": "2026-08-13T03:16:15.750134+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gini": {
    "value": "44.2",
-   "updated": "2026-08-12T06:41:14.319808+00:00",
+   "updated": "2026-08-13T03:16:15.750128+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "homicidios": {
    "value": "6.7795163925492",
-   "updated": "2026-08-12T06:41:14.319793+00:00",
+   "updated": "2026-08-13T03:16:15.750121+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.717",
-   "updated": "2026-08-12T06:41:14.319912+00:00",
+   "updated": "2026-08-13T03:16:15.750172+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "3.83540271728533",
-   "updated": "2026-08-12T03:15:03.625512+00:00",
+   "updated": "2026-08-13T03:16:15.750079+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "81.57806793",
-   "updated": "2026-08-12T06:41:14.319854+00:00",
+   "updated": "2026-08-13T03:16:15.750147+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.6",
-   "updated": "2026-08-12T03:15:03.625557+00:00",
+   "updated": "2026-08-13T03:16:15.750105+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "PYG",
-   "updated": "2026-08-12T06:41:14.319898+00:00",
+   "updated": "2026-08-13T03:16:15.750166+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-1.7969007178799485",
-   "updated": "2026-08-12T03:15:03.625548+00:00",
+   "updated": "2026-08-13T03:16:15.750098+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "44738819362.3269",
-   "updated": "2026-08-12T03:15:03.625478+00:00",
+   "updated": "2026-08-13T03:16:15.750059+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "18631.6436164051",
-   "updated": "2026-08-12T03:15:03.625492+00:00",
+   "updated": "2026-08-13T03:16:15.750066+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "6929153",
-   "updated": "2026-08-12T03:15:03.625456+00:00",
+   "updated": "2026-08-13T03:16:15.750051+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-12T06:41:14.319926+00:00",
+   "updated": "2026-08-13T03:16:15.750178+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "6456.60723068562",
-   "updated": "2026-08-12T06:41:14.319759+00:00",
+   "updated": "2026-08-13T03:16:15.750073+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "69.8622585886961",
-   "updated": "2026-08-12T06:41:14.319869+00:00",
+   "updated": "2026-08-13T03:16:15.750153+00:00",
    "source": "worldbank",
    "year": "2024"
   }
