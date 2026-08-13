@@ -37,6 +37,7 @@ INDICATORS = {
     "adultos": "SP.POP.1564.TO.ZS",
     "mayores": "SP.POP.65UP.TO.ZS",
     "defensa_pct": "MS.MIL.XPND.GD.ZS",
+    "coste_vida": "PA.NUS.PPPC.RF",
 }
 STATIC_SOURCE = {
     "corrupcion": "Transparency Intl 2024",

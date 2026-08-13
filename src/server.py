@@ -369,6 +369,17 @@ def _seo_page(code: str) -> str:
     internet = gv("internet_pct")
     esp = gv("esperanza_vida")
     urban = gv("urbanizacion")
+    coste = gv("coste_vida")
+    def semaforo_vida(v):
+        if v is None:
+            return "n/d"
+        if v < 0.5:
+            return "🟢 Muy barato"
+        if v < 0.8:
+            return "🟡 Moderado"
+        if v < 1.1:
+            return "🟠 Similar a España"
+        return "🔴 Caro"
     region = gv("region")
     moneda = ind.get("moneda", {}).get("value") if ind.get("moneda") else None
     region_txt = f", en {region}" if region else ""
@@ -415,6 +426,7 @@ def _seo_page(code: str) -> str:
         ("Esperanza de vida", f"{fmt_num(esp)} años"),
         ("Urbanización", f"{fmt_num(urban)}%"),
         ("Moneda", str(moneda) if moneda else "n/d"),
+        ("Coste de vida (EE.UU.=1)", semaforo_vida(coste) if coste is None else f"{semaforo_vida(coste)} ({fmt_num(coste)})"),
     ]
     ind_rows = "\n".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in facts)
     nota_html = ""

@@ -69,7 +69,7 @@
 </div>
 <div class="wrap">
   <h1>Compara hasta 4 destinos de vacaciones</h1>
-  <div class="sub">Renta, IDH, internet, inflación, esperanza de vida, desigualdad, edad de la población, CO₂, corrupción, democracia y educación · fuentes oficiales (World Bank, PNUD, EIU, UNESCO)</div>
+  <div class="sub">Renta, coste de vida (semáforo), IDH, internet, inflación, esperanza de vida, desigualdad, edad de la población, CO₂, corrupción, democracia y educación · fuentes oficiales (World Bank, PNUD, EIU, UNESCO)</div>
   <div class="controls">
     <button id="addBtn" title="Añadir otro destino a la comparación">+ Añadir destino</button>
     <button id="resetBtn" title="Volver al ejemplo España · México · Japón · Portugal">↺ Reiniciar</button>
@@ -77,7 +77,7 @@
   <div class="selects" id="selects"></div>
   <div class="cmp" id="cmp"></div>
   <div class="resumen" id="resumen"></div>
-  <div class="hint">Haz clic en <b>+ Añadir destino</b> para comparar hasta 4 países. El mejor valor de cada indicador se marca en verde.</div>
+  <div class="hint">Haz clic en <b>+ Añadir destino</b> para comparar hasta 4 países. El mejor valor de cada indicador se marca en verde. <b>Coste de vida</b>: ratio de precios relativo a EE.UU. — 🟢 &lt;0.5 muy barato · 🟡 0.5-0.8 moderado · 🟠 0.8-1.1 similar · 🔴 &gt;1.1 caro.</div>
 </div>
 <footer>
   Fuente: World Bank vía <a href="/">Country</a> · <a href="https://viajeinteligencia.com">🌐 ecosistema →</a>
@@ -109,6 +109,7 @@
   function flagFromGeo(cc){ var g = IND[cc] && IND[cc].geo || {}; try { return String.fromCodePoint.apply(null, (g.iso2||cc).toUpperCase().split('').map(function(c){ return 127397 + c.charCodeAt(0); })); } catch(e){ return ''; } }
   function gv(cc, k){ var i = IND[cc] && IND[cc].indicators || {}; return (i[k] && i[k].value != null) ? Number(i[k].value) : null; }
   function fmtMoney(v){ return v == null ? '—' : (v >= 1e12 ? '$'+(v/1e12).toFixed(1)+'T' : v >= 1e9 ? '$'+(v/1e9).toFixed(1)+'B' : '$'+Math.round(v).toLocaleString()); }
+  function semaforoVida(v){ if (v == null) return '—'; if (v < 0.5) return '🟢 Muy barato'; if (v < 0.8) return '🟡 Moderado'; if (v < 1.1) return '🟠 Similar a España'; return '🔴 Caro'; }
   function rowsOf(cc){
     return [
       ['Renta per cápita', fmtMoney(gv(cc,'renta_pc')), gv(cc,'renta_pc')],
@@ -124,7 +125,8 @@
       ['CO₂ per cápita (t)', gv(cc,'co2_pc') == null ? '—' : gv(cc,'co2_pc').toFixed(2)+' t', gv(cc,'co2_pc')],
       ['Corrupción (CPI)', gv(cc,'corrupcion') == null ? '—' : gv(cc,'corrupcion').toFixed(0), gv(cc,'corrupcion')],
       ['Democracia (EIU)', gv(cc,'democracia') == null ? '—' : gv(cc,'democracia').toFixed(2), gv(cc,'democracia')],
-      ['Titulados universitarios (%)', gv(cc,'titulados') == null ? '—' : gv(cc,'titulados').toFixed(0)+'%', gv(cc,'titulados')]
+      ['Titulados universitarios (%)', gv(cc,'titulados') == null ? '—' : gv(cc,'titulados').toFixed(0)+'%', gv(cc,'titulados')],
+      ['Coste de vida (EE.UU.=1)', semaforoVida(gv(cc,'coste_vida')), gv(cc,'coste_vida')]
     ];
   }
   function render(){
@@ -143,8 +145,8 @@
     });
     // "mejor" = mayor para renta, PIB, IDH, internet, esperanza, CPI, democracia y titulados;
     // menor para inflación y Gini; null = neutral (no se resalta)
-    var higherBetter = {0:true,1:true,2:true,3:true,4:false,5:true,6:false,7:null,8:null,9:null,10:null,11:true,12:true,13:true};
-    var bestVal = [null,null,null,null,null,null,null,null,null,null,null,null,null,null];
+    var higherBetter = {0:true,1:true,2:true,3:true,4:false,5:true,6:false,7:null,8:null,9:null,10:null,11:true,12:true,13:true,14:false};
+    var bestVal = [null,null,null,null,null,null,null,null,null,null,null,null,null,null,null];
     slots.forEach(function(cc){
       var rows = rowsOf(cc);
       rows.forEach(function(r, idx){
