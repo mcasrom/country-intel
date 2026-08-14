@@ -40,6 +40,9 @@ SOURCES = {
     "titulados": {
         "url": "https://api.worldbank.org/v2/country/all/indicator/SE.TER.CUAT.ST.ZS?downloadformat=csv",
         "source": "UNESCO UIS (Banco Mundial) 2023", "decimals": 1},
+    "coste_vida": {
+        "url": "https://ourworldindata.org/grapher/gdp-price-levels-relative-to-the-us.csv",
+        "source": "World Bank via OWID (EE.UU.=1)", "decimals": 4},
 }
 YEAR_FIX = {"libertad_prensa": 2024, "democracia": 2024}
 
@@ -178,6 +181,8 @@ def main():
             rows = parse_democracy(raw, iso3_to_iso2)
         elif label == "titulados":
             rows = parse_tertiary(raw, iso3_to_iso2)
+        elif label == "coste_vida":
+            rows = parse_owid_latest(raw, iso3_to_iso2, "GDP price levels relative to the US")
         else:
             rows = parse_owid_latest(raw, iso3_to_iso2, "Corruption Perceptions Index")
         n = _write_csv(label, rows, meta["decimals"])

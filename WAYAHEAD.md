@@ -72,3 +72,11 @@
 - Timeline + mapa + Chart.js.
 - Comparador + informes PDF + API pública (PRO).
 - Enviar sitemap a Google Search Console.
+
+## Fix coste_vida desaparecía (14/Ago)
+- **Problema**: el semáforo de coste de vida salía "—". La inyección inicial solo tocaba
+  data/json, y el pipeline nocturno (03:00) regenera esos JSON desde la BD → lo borraba.
+- **Fix robusto**: `coste_vida` integrado como indicador ESTÁTICO oficial (OWID/WB):
+  `scripts/import_static.py` genera `data/static/coste_vida.csv` + `sources.json`;
+  `static_official.py` lo emite (202 países). El pipeline diario ya lo incluye SIEMPRE.
+- Verificado: /api/country/* devuelve coste_vida, /vacaciones muestra el semáforo.

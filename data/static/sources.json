@@ -34,5 +34,11 @@
   "url": "https://api.worldbank.org/v2/country/all/indicator/SE.TER.CUAT.ST.ZS?downloadformat=csv",
   "year": "",
   "countries": 184
+ },
+ "coste_vida": {
+  "source": "World Bank via OWID (EE.UU.=1)",
+  "url": "https://ourworldindata.org/grapher/gdp-price-levels-relative-to-the-us.csv",
+  "year": "",
+  "countries": 202
  }
 }

@@ -10,7 +10,8 @@ from src.core.collector import BaseCollector
 
 STATIC = BASE_DIR / "data" / "static"
 DECIMALS = {"co2_pc": 3, "edad_mediana": 1, "corrupcion": 1,
-            "libertad_prensa": 1, "democracia": 2, "titulados": 1}
+            "libertad_prensa": 1, "democracia": 2, "titulados": 1,
+            "coste_vida": 4}
 
 
 class StaticOfficial(BaseCollector):
