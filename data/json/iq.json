@@ -1,6 +1,6 @@
 {
  "country": "iq",
- "generated": "2026-08-13T13:24:17.443705+00:00",
+ "generated": "2026-08-14T03:18:28.058564+00:00",
  "geo": {
   "name": "Iraq",
   "lat": 33.3302,
@@ -10,170 +10,164 @@
  "indicators": {
   "adultos": {
    "value": "60.0042634971558",
-   "updated": "2026-08-13T13:24:17.330424+00:00",
+   "updated": "2026-08-14T03:18:27.928861+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "5.074",
-   "updated": "2026-08-13T13:24:17.373177+00:00",
+   "updated": "2026-08-14T03:18:27.969271+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "26.0",
-   "updated": "2026-08-13T13:24:17.376290+00:00",
+   "updated": "2026-08-14T03:18:27.972118+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "defensa_pct": {
    "value": "2.35714058035714",
-   "updated": "2026-08-13T13:24:17.330441+00:00",
+   "updated": "2026-08-14T03:18:27.928889+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "democracia": {
    "value": "2.80",
-   "updated": "2026-08-13T13:24:17.378609+00:00",
+   "updated": "2026-08-14T03:18:27.974680+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
   "desempleo": {
    "value": "15.293",
-   "updated": "2026-08-13T13:24:17.330357+00:00",
+   "updated": "2026-08-14T03:18:27.928700+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "20.3",
-   "updated": "2026-08-13T13:24:17.374956+00:00",
+   "updated": "2026-08-14T03:18:27.970647+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "72.424",
-   "updated": "2026-08-13T13:24:17.330377+00:00",
+   "updated": "2026-08-14T03:18:27.928741+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "3.221",
-   "updated": "2026-08-13T13:24:17.330411+00:00",
+   "updated": "2026-08-14T03:18:27.928830+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "5.53275251",
-   "updated": "2026-08-13T13:24:17.330390+00:00",
+   "updated": "2026-08-14T03:18:27.928770+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gini": {
    "value": "29.8",
-   "updated": "2026-08-13T13:24:17.330383+00:00",
+   "updated": "2026-08-14T03:18:27.928755+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.673",
-   "updated": "2026-08-13T13:24:17.330453+00:00",
+   "updated": "2026-08-14T03:18:27.928916+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "2.6116961151764",
-   "updated": "2026-08-13T13:24:17.330350+00:00",
+   "updated": "2026-08-14T03:18:27.928687+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "81.47450256",
-   "updated": "2026-08-13T13:24:17.330397+00:00",
+   "updated": "2026-08-14T03:18:27.928794+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "libertad_prensa": {
    "value": "25.5",
-   "updated": "2026-08-13T13:24:17.377546+00:00",
+   "updated": "2026-08-14T03:18:27.973287+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "3.41438792372575",
-   "updated": "2026-08-13T13:24:17.330434+00:00",
+   "updated": "2026-08-14T03:18:27.928875+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "36.5813485791184",
-   "updated": "2026-08-13T13:24:17.330417+00:00",
+   "updated": "2026-08-14T03:18:27.928847+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.8",
-   "updated": "2026-08-13T13:24:17.330370+00:00",
+   "updated": "2026-08-14T03:18:27.928728+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "IQD",
-   "updated": "2026-08-13T13:24:17.330447+00:00",
+   "updated": "2026-08-14T03:18:27.928903+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-0.3851916559255715",
-   "updated": "2026-08-13T13:24:17.330363+00:00",
+   "updated": "2026-08-14T03:18:27.928714+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "279641257615.385",
-   "updated": "2026-08-13T13:24:17.330316+00:00",
+   "updated": "2026-08-14T03:18:27.928644+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "14485.3248937523",
-   "updated": "2026-08-13T13:24:17.330335+00:00",
+   "updated": "2026-08-14T03:18:27.928658+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "46042015",
-   "updated": "2026-08-13T13:24:17.330309+00:00",
+   "updated": "2026-08-14T03:18:27.928631+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Middle East, North Africa, Afghanistan & Pakistan",
-   "updated": "2026-08-13T13:24:17.330460+00:00",
+   "updated": "2026-08-14T03:18:27.928929+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "6073.61032342708",
-   "updated": "2026-08-13T13:24:17.330342+00:00",
+   "updated": "2026-08-14T03:18:27.928673+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "16.6",
-   "updated": "2026-08-13T13:24:17.379700+00:00",
+   "updated": "2026-08-14T03:18:27.976572+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2021"
   },
   "urbanizacion": {
    "value": "69.8861494108913",
-   "updated": "2026-08-13T13:24:17.330404+00:00",
+   "updated": "2026-08-14T03:18:27.928811+00:00",
    "source": "worldbank",
-   "year": "2024"
-  },
-  "coste_vida": {
-   "value": "0.419903",
-   "updated": "2026-08-13T18:55:14.375595+00:00",
-   "source": "World Bank via OWID",
    "year": "2024"
   }
  }

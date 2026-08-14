@@ -1,6 +1,6 @@
 {
  "country": "ky",
- "generated": "2026-08-13T13:24:17.456156+00:00",
+ "generated": "2026-08-14T03:18:28.068196+00:00",
  "geo": {
   "name": "Cayman Islands",
   "lat": 19.3022,
@@ -10,111 +10,105 @@
  "indicators": {
   "adultos": {
    "value": "74.814491488433",
-   "updated": "2026-08-13T13:24:17.333250+00:00",
+   "updated": "2026-08-14T03:18:27.932095+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "37.9",
-   "updated": "2026-08-13T13:24:17.375054+00:00",
+   "updated": "2026-08-14T03:18:27.970752+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "80.54",
-   "updated": "2026-08-13T13:24:17.333216+00:00",
+   "updated": "2026-08-14T03:18:27.932059+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.525",
-   "updated": "2026-08-13T13:24:17.333237+00:00",
+   "updated": "2026-08-14T03:18:27.932078+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "1.57024002075195",
-   "updated": "2026-08-13T13:24:17.333223+00:00",
+   "updated": "2026-08-14T03:18:27.932065+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "mayores": {
    "value": "8.99775039452036",
-   "updated": "2026-08-13T13:24:17.333257+00:00",
+   "updated": "2026-08-14T03:18:27.932101+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "16.1877581170466",
-   "updated": "2026-08-13T13:24:17.333243+00:00",
+   "updated": "2026-08-14T03:18:27.932084+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "42.9",
-   "updated": "2026-08-13T13:24:17.333210+00:00",
+   "updated": "2026-08-14T03:18:27.932053+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "KYD",
-   "updated": "2026-08-13T13:24:17.333264+00:00",
+   "updated": "2026-08-14T03:18:27.932108+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "12.033791315793009",
-   "updated": "2026-08-13T13:24:17.333203+00:00",
+   "updated": "2026-08-14T03:18:27.932046+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "7765336505.34319",
-   "updated": "2026-08-13T13:24:17.333181+00:00",
+   "updated": "2026-08-14T03:18:27.932025+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "92201.086358256",
-   "updated": "2026-08-13T13:24:17.333188+00:00",
+   "updated": "2026-08-14T03:18:27.932032+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "74457",
-   "updated": "2026-08-13T13:24:17.333175+00:00",
+   "updated": "2026-08-14T03:18:27.932019+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-13T13:24:17.333270+00:00",
+   "updated": "2026-08-14T03:18:27.932114+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "104292.900672109",
-   "updated": "2026-08-13T13:24:17.333196+00:00",
+   "updated": "2026-08-14T03:18:27.932039+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "38.2",
-   "updated": "2026-08-13T13:24:17.379781+00:00",
+   "updated": "2026-08-14T03:18:27.976652+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2015"
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-13T13:24:17.333230+00:00",
+   "updated": "2026-08-14T03:18:27.932072+00:00",
    "source": "worldbank",
    "year": "2024"
-  },
-  "coste_vida": {
-   "value": "1.121180",
-   "updated": "2026-08-13T18:55:14.375595+00:00",
-   "source": "World Bank via OWID",
-   "year": "2023"
   }
  }
 }
