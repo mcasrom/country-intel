@@ -1,6 +1,6 @@
 {
  "country": "cw",
- "generated": "2026-08-14T03:18:28.031431+00:00",
+ "generated": "2026-08-14T15:19:41.103873+00:00",
  "geo": {
   "name": "Curacao",
   "lat": 0.0,
@@ -10,103 +10,109 @@
  "indicators": {
   "adultos": {
    "value": "68.2903685812332",
-   "updated": "2026-08-14T03:18:27.917443+00:00",
+   "updated": "2026-08-14T15:19:40.971664+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "12.344",
-   "updated": "2026-08-14T03:18:27.968943+00:00",
+   "updated": "2026-08-14T15:19:41.040565+00:00",
    "source": "Global Carbon Project (OWID) 2024",
+   "year": "2024"
+  },
+  "coste_vida": {
+   "value": "0.6984",
+   "updated": "2026-08-14T15:19:41.051384+00:00",
+   "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "38.2",
-   "updated": "2026-08-14T03:18:27.970386+00:00",
+   "updated": "2026-08-14T15:19:41.042158+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "76.989",
-   "updated": "2026-08-14T03:18:27.917409+00:00",
+   "updated": "2026-08-14T15:19:40.971582+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.4",
-   "updated": "2026-08-14T03:18:27.917430+00:00",
+   "updated": "2026-08-14T15:19:40.971623+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "5.44313725490196",
-   "updated": "2026-08-14T03:18:27.917416+00:00",
+   "updated": "2026-08-14T15:19:40.971596+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "16.7817275577349",
-   "updated": "2026-08-14T03:18:27.917450+00:00",
+   "updated": "2026-08-14T15:19:40.971675+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "14.927903861032",
-   "updated": "2026-08-14T03:18:27.917437+00:00",
+   "updated": "2026-08-14T15:19:40.971646+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "43.1",
-   "updated": "2026-08-14T03:18:27.917403+00:00",
+   "updated": "2026-08-14T15:19:40.971569+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "ANG",
-   "updated": "2026-08-14T03:18:27.917457+00:00",
+   "updated": "2026-08-14T15:19:40.971690+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "3.289157321741137",
-   "updated": "2026-08-14T03:18:27.917395+00:00",
+   "updated": "2026-08-14T15:19:40.971555+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "3561178212.2905",
-   "updated": "2026-08-14T03:18:27.917344+00:00",
+   "updated": "2026-08-14T15:19:40.971462+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "32740.7736763943",
-   "updated": "2026-08-14T03:18:27.917379+00:00",
+   "updated": "2026-08-14T15:19:40.971516+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "155967",
-   "updated": "2026-08-14T03:18:27.917337+00:00",
+   "updated": "2026-08-14T15:19:40.971432+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-14T03:18:27.917464+00:00",
+   "updated": "2026-08-14T15:19:40.971708+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "22832.895498987",
-   "updated": "2026-08-14T03:18:27.917388+00:00",
+   "updated": "2026-08-14T15:19:40.971538+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "91.4321812441765",
-   "updated": "2026-08-14T03:18:27.917423+00:00",
+   "updated": "2026-08-14T15:19:40.971610+00:00",
    "source": "worldbank",
    "year": "2024"
   }

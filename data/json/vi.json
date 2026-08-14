@@ -1,6 +1,6 @@
 {
  "country": "vi",
- "generated": "2026-08-14T03:18:28.124420+00:00",
+ "generated": "2026-08-14T15:19:41.211886+00:00",
  "geo": {
   "name": "Virgin Islands (U.S.)",
   "lat": 18.3358,
@@ -10,79 +10,85 @@
  "indicators": {
   "adultos": {
    "value": "60.8132618809257",
-   "updated": "2026-08-14T03:18:27.954963+00:00",
+   "updated": "2026-08-14T15:19:41.020615+00:00",
    "source": "worldbank",
    "year": "2024"
   },
+  "coste_vida": {
+   "value": "0.8901",
+   "updated": "2026-08-14T15:19:41.053811+00:00",
+   "source": "World Bank via OWID (EE.UU.=1)",
+   "year": "2022"
+  },
   "desempleo": {
    "value": "11.423",
-   "updated": "2026-08-14T03:18:27.954900+00:00",
+   "updated": "2026-08-14T15:19:41.020488+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "44.7",
-   "updated": "2026-08-14T03:18:27.971523+00:00",
+   "updated": "2026-08-14T15:19:41.043249+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "80.7707317073171",
-   "updated": "2026-08-14T03:18:27.954936+00:00",
+   "updated": "2026-08-14T15:19:41.020561+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.97",
-   "updated": "2026-08-14T03:18:27.954950+00:00",
+   "updated": "2026-08-14T15:19:41.020589+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "22.6900653671751",
-   "updated": "2026-08-14T03:18:27.954970+00:00",
+   "updated": "2026-08-14T15:19:41.020629+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "16.4966727518992",
-   "updated": "2026-08-14T03:18:27.954956+00:00",
+   "updated": "2026-08-14T15:19:41.020602+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "66.9",
-   "updated": "2026-08-14T03:18:27.954929+00:00",
+   "updated": "2026-08-14T15:19:41.020546+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-08-14T03:18:27.954976+00:00",
+   "updated": "2026-08-14T15:19:41.020643+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-4.023874991616927",
-   "updated": "2026-08-14T03:18:27.954906+00:00",
+   "updated": "2026-08-14T15:19:41.020502+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "104377",
-   "updated": "2026-08-14T03:18:27.954893+00:00",
+   "updated": "2026-08-14T15:19:41.020474+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-14T03:18:27.954982+00:00",
+   "updated": "2026-08-14T15:19:41.020656+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "95.3312197036061",
-   "updated": "2026-08-14T03:18:27.954943+00:00",
+   "updated": "2026-08-14T15:19:41.020575+00:00",
    "source": "worldbank",
    "year": "2024"
   }
