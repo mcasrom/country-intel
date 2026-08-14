@@ -80,3 +80,9 @@
   `scripts/import_static.py` genera `data/static/coste_vida.csv` + `sources.json`;
   `static_official.py` lo emite (202 países). El pipeline diario ya lo incluye SIEMPRE.
 - Verificado: /api/country/* devuelve coste_vida, /vacaciones muestra el semáforo.
+
+## Salvaguarda coste_vida (14/Ago)
+- `scripts/check_coste_vida.py` + cron 03:35 UTC (tras pipeline 03:00): verifica cobertura
+  de coste_vida en los JSON y alerta si cae. Baseline esperado: ~6% países sin dato
+  (cobertura OWID 202/217); si el fallo volviera (pipeline borrando el indicador) subiría
+  a ~100% y saltaría la alerta.
