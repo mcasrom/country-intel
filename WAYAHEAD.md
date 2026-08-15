@@ -90,3 +90,9 @@
 ## Botones de compartir en /vacaciones (15/Ago)
 - WhatsApp/Telegram/X con mensaje dinámico según países comparados + mejor valor
   (renta/IDH/coste de vida) + enlace. frontend/vacaciones.html.
+
+## Fichas /pais alineadas a queries GSC (15/Ago)
+- Queries reales: "población/PIB/IDH de X". Título y H1 ahora lo incluyen:
+  "Población de {name}, PIB, IDH y datos" / "{name}: población, PIB, IDH y datos".
+  Descripción empieza por "Población de {name}".
+- Pendiente: enlaces (autoridad) para subir de pos 60-94 a página 1.

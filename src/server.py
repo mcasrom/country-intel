@@ -393,7 +393,7 @@ def _seo_page(code: str) -> str:
     if internet is not None: desc_parts.append(f"internet {fmt_num(internet)}%")
     if esp is not None: desc_parts.append(f"esperanza de vida {fmt_num(esp)} años")
     if urban is not None: desc_parts.append(f"urbanización {fmt_num(urban)}%")
-    desc = f"Datos e indicadores de {name}{region_txt}: " + ", ".join(desc_parts) + "."
+    desc = f"Población de {name}{region_txt}: " + ", ".join(desc_parts) + "."
     # Nota para territorios sin datos de organismos (IDH/internet/moneda)
     falta = []
     if idh is None: falta.append("IDH")
@@ -438,7 +438,7 @@ def _seo_page(code: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{name} · Población, PIB, IDH e indicadores | Viaje Inteligencia</title>
+<title>Población de {name}, PIB, IDH y datos | Viaje Inteligencia</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{url}">
@@ -458,7 +458,7 @@ def _seo_page(code: str) -> str:
 </script>
 </head>
 <body>
-<h1>{name}</h1>
+<h1>{name}: población, PIB, IDH y datos</h1>
 <p>{desc}</p>
 <table>
 <thead><tr><th>Indicador</th><th>Valor</th></tr></thead>
