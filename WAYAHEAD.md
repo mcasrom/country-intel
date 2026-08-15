@@ -86,3 +86,7 @@
   de coste_vida en los JSON y alerta si cae. Baseline esperado: ~6% países sin dato
   (cobertura OWID 202/217); si el fallo volviera (pipeline borrando el indicador) subiría
   a ~100% y saltaría la alerta.
+
+## Botones de compartir en /vacaciones (15/Ago)
+- WhatsApp/Telegram/X con mensaje dinámico según países comparados + mejor valor
+  (renta/IDH/coste de vida) + enlace. frontend/vacaciones.html.

@@ -32,6 +32,8 @@
   .controls button{background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:999px;padding:8px 16px;font-size:12.5px;cursor:pointer;font-weight:600;font-family:ui-monospace,monospace;transition:all .15s;}
   .controls button:hover{border-color:var(--amber);color:var(--amber);}
   .controls button:disabled{opacity:.4;cursor:not-allowed;}
+  .controls .share-btn{background:var(--panel);}
+  .controls .share-btn:hover{border-color:var(--green);color:var(--green);}
   .selects{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:end;margin-bottom:20px;}
   @media(max-width:900px){.selects{grid-template-columns:1fr 1fr;}}
   @media(max-width:520px){.selects{grid-template-columns:1fr;}}
@@ -73,6 +75,10 @@
   <div class="controls">
     <button id="addBtn" title="Añadir otro destino a la comparación">+ Añadir destino</button>
     <button id="resetBtn" title="Volver al ejemplo España · México · Japón · Portugal">↺ Reiniciar</button>
+    <span style="align-self:center;color:var(--faint);font-family:ui-monospace,monospace;font-size:11px;margin-left:6px;">Compartir:</span>
+    <button class="share-btn" onclick="shareTo('wa')" title="Compartir por WhatsApp">💬 WhatsApp</button>
+    <button class="share-btn" onclick="shareTo('tg')" title="Compartir por Telegram">✈️ Telegram</button>
+    <button class="share-btn" onclick="shareTo('x')" title="Compartir en X">𝕏</button>
   </div>
   <div class="selects" id="selects"></div>
   <div class="cmp" id="cmp"></div>
@@ -209,6 +215,35 @@
     });
     var unique = parts.filter(function(v, i, a){ return a.indexOf(v) === i; });
     document.getElementById('resumen').innerHTML = '💡 <b>Resumen:</b> ' + (unique.join('. ') + '.' || 'Sin datos suficientes.');
+  }
+  function buildMessage(){
+    var valid = slots.filter(function(cc){ return cc && IND[cc]; });
+    if (!valid.length) return '';
+    var names = valid.map(nameOf);
+    var txt = '¿' + names.join(' o ') + ' para tus vacaciones?';
+    var bestRenta=null, bestIdh=null, bestCv=null;
+    valid.forEach(function(cc){
+      var r=gv(cc,'renta_pc'), idh=gv(cc,'idh'), cv=gv(cc,'coste_vida');
+      if (r != null && (bestRenta==null || r>bestRenta)) bestRenta=r;
+      if (idh != null && (bestIdh==null || idh>bestIdh)) bestIdh=idh;
+      if (cv != null && (bestCv==null || cv<bestCv)) bestCv=cv;
+    });
+    valid.forEach(function(cc){
+      if (bestRenta!=null && gv(cc,'renta_pc')===bestRenta) txt += '\n💰 ' + nameOf(cc) + ' tiene la mayor renta';
+      if (bestIdh!=null && gv(cc,'idh')===bestIdh) txt += '\n📈 ' + nameOf(cc) + ' tiene el mayor IDH';
+      if (bestCv!=null && gv(cc,'coste_vida')===bestCv) txt += '\n🟢 ' + nameOf(cc) + ' es el más barato (coste de vida)';
+    });
+    txt += '\n\nCompara con datos oficiales → https://country.viajeinteligencia.com/vacaciones';
+    return txt;
+  }
+  function shareTo(which){
+    var txt = encodeURIComponent(buildMessage());
+    var url = 'https://country.viajeinteligencia.com/vacaciones';
+    var href = '';
+    if (which === 'wa') href = 'https://wa.me/?text=' + txt;
+    else if (which === 'tg') href = 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + txt;
+    else if (which === 'x') href = 'https://twitter.com/intent/tweet?text=' + txt;
+    if (href) window.open(href, '_blank', 'noopener,width=600,height=520');
   }
   loadMeta().then(function(){
     slots = DEFAULTS.slice();
