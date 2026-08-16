@@ -383,6 +383,7 @@ def _seo_page(code: str) -> str:
     region = gv("region")
     moneda = ind.get("moneda", {}).get("value") if ind.get("moneda") else None
     region_txt = f", en {region}" if region else ""
+    año = datetime.now().year
     # Description orientada a SEO: primero los datos disponibles, luego los n/d
     desc_parts = []
     if pobl is not None: desc_parts.append(f"población {fmt_num(pobl)}")
@@ -393,7 +394,7 @@ def _seo_page(code: str) -> str:
     if internet is not None: desc_parts.append(f"internet {fmt_num(internet)}%")
     if esp is not None: desc_parts.append(f"esperanza de vida {fmt_num(esp)} años")
     if urban is not None: desc_parts.append(f"urbanización {fmt_num(urban)}%")
-    desc = f"Población de {name}{region_txt}: " + ", ".join(desc_parts) + "."
+    desc = f"Población de {name} en {año}{region_txt}: " + ", ".join(desc_parts) + "."
     # Nota para territorios sin datos de organismos (IDH/internet/moneda)
     falta = []
     if idh is None: falta.append("IDH")
@@ -404,6 +405,14 @@ def _seo_page(code: str) -> str:
         nota_nd = " Datos de " + ", ".join(falta) + " no publicados por los organismos para territorios dependientes."
     desc += nota_nd
     url = f"https://country.viajeinteligencia.com/pais/{cc}"
+    KPI_PIB = {"ad", "bo", "br", "fr", "ve"}
+    KPI_IDH = {"be"}
+    if cc in KPI_PIB:
+        seo_title = f"{name}: PIB, Población e IDH {año} | Viaje Inteligencia"
+    elif cc in KPI_IDH:
+        seo_title = f"{name}: IDH, Población y PIB {año} | Viaje Inteligencia"
+    else:
+        seo_title = f"{name}: Población, PIB e IDH {año} | Viaje Inteligencia"
     ld = {
         "@context": "https://schema.org",
         "@type": "Country",
@@ -438,12 +447,12 @@ def _seo_page(code: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Población de {name}, PIB, IDH y datos | Viaje Inteligencia</title>
+<title>{seo_title}</title>
 <meta name="description" content="{desc}">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{name} · Datos e indicadores">
+<meta property="og:title" content="{seo_title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="es_ES">
