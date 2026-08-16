@@ -96,3 +96,8 @@
   "Población de {name}, PIB, IDH y datos" / "{name}: población, PIB, IDH y datos".
   Descripción empieza por "Población de {name}".
 - Pendiente: enlaces (autoridad) para subir de pos 60-94 a página 1.
+
+## Hito: SEO query-aware (16/Ago)
+- Títulos dinámicos por país: PIB-first (br/fr/ve/bo/ad), IDH-first (be), población por defecto.
+- Año dinámico en title y meta desc. Commits: dcca8a0.
+- Notas: nombres en inglés del WB (Belgium, Venezuela, RB) pendientes de traducir.
