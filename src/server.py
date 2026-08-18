@@ -467,8 +467,16 @@ def _seo_page(code: str) -> str:
 </script>
 </head>
 <body>
-<h1>{name}: población, PIB, IDH y datos</h1>
+<h1>{name} para viajeros: población, PIB y seguridad</h1>
 <p>{desc}</p>
+<div style="margin:14px 0;padding:12px 14px;background:#0e1322;border:1px solid #232b3d;border-radius:8px;">
+  <strong style="color:#FFB454;">¿Viajas a {name}?</strong> Revisa el riesgo, las alertas y la situación actual antes de decidir.
+  <ul style="margin:8px 0 0;padding-left:20px;">
+    <li><a href="https://radar.viajeinteligencia.com/" rel="noopener">🚨 Riesgo y alertas</a></li>
+    <li><a href="https://nearme.viajeinteligencia.com/" rel="noopener">📍 Incidentes en tiempo real cerca de ti</a></li>
+    <li><a href="https://news.viajeinteligencia.com/" rel="noopener">📰 Análisis de prensa internacional</a></li>
+  </ul>
+</div>
 <table>
 <thead><tr><th>Indicador</th><th>Valor</th></tr></thead>
 <tbody>
