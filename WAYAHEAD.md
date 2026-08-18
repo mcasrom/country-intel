@@ -101,3 +101,10 @@
 - Títulos dinámicos por país: PIB-first (br/fr/ve/bo/ad), IDH-first (be), población por defecto.
 - Año dinámico en title y meta desc. Commits: dcca8a0.
 - Notas: nombres en inglés del WB (Belgium, Venezuela, RB) pendientes de traducir.
+
+## Hito: Country Intelligence (18/Ago)
+- Plantilla con marco viajero: H1 "{País} para viajeros: población, PIB y seguridad"
+  (mantiene términos de datos = match de queries) + CTA "¿Viajas a {País}?" con
+  cross-links radar/nearme/news. Cubre los 217 países con 1 cambio. Commit 2a20306.
+- Criterio: el label "Country Intelligence" vale por el framing, no por el nombre.
+  No sube ranking por sí solo (cuello de autoridad); mejora intención/CTR/interconexión.
