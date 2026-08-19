@@ -12,6 +12,7 @@ from fastapi.responses import FileResponse, HTMLResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from src.config import JSON_DIR, BASE_DIR, CFG
+from src.wikidata_map import WIKIDATA
 
 app = FastAPI(title="Country Intelligence", version="0.8.0")
 
@@ -414,16 +415,14 @@ def _seo_page(code: str) -> str:
     else:
         seo_title = f"{name}: Población, PIB e IDH {año} | Viaje Inteligencia"
     ld = {
-        "@context": "https://schema.org",
-        "@type": "Country",
+        "@type": "Place",
         "name": name,
         "description": desc,
         "url": url,
     }
-    if region:
-        ld["containedInPlace"] = {"@type": "Continent", "name": region}
-    if pobl:
-        ld["population"] = {"@type": "QuantitativeValue", "value": int(pobl)}
+    qid = WIKIDATA.get(cc)
+    if qid:
+        ld["additionalType"] = f"https://www.wikidata.org/wiki/{qid}"
     ind_rows = ""
     facts = [
         ("Población", fmt_num(pobl)),
@@ -437,6 +436,26 @@ def _seo_page(code: str) -> str:
         ("Moneda", str(moneda) if moneda else "n/d"),
         ("Coste de vida (EE.UU.=1)", semaforo_vida(coste) if coste is None else f"{semaforo_vida(coste)} ({fmt_num(coste)})"),
     ]
+    faq_items = []
+    if pobl is not None:
+        faq_items.append(("¿Cuál es la población de {name}?", f"La población de {name} es de {fmt_num(pobl)} habitantes."))
+    if pib is not None:
+        faq_items.append(("¿Cuál es el PIB de {name}?", f"El PIB nominal de {name} es de {fmt_num(pib)}."))
+    if idh is not None:
+        faq_items.append(("¿Cuál es el IDH de {name}?", f"El Índice de Desarrollo Humano (IDH) de {name} es {fmt_num(idh, 3)}."))
+    if infl is not None:
+        faq_items.append(("¿Cuál es la inflación de {name}?", f"La inflación anual de {name} es del {fmt_num(infl)}%."))
+    if des is not None:
+        faq_items.append(("¿Cuál es el desempleo de {name}?", f"La tasa de desempleo de {name} es del {fmt_num(des)}%."))
+    faq_ld = {
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": q.format(name=name),
+             "acceptedAnswer": {"@type": "Answer", "text": a.format(name=name)}}
+            for q, a in faq_items
+        ],
+    }
+    ld_graph = {"@context": "https://schema.org", "@graph": [ld, faq_ld]}
     ind_rows = "\n".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in facts)
     nota_html = ""
     if falta:
@@ -463,7 +482,7 @@ def _seo_page(code: str) -> str:
 <meta property="og:image:alt" content="{name} · Viaje Inteligencia">
 <link rel="alternate" hreflang="es" href="{url}">
 <script type="application/ld+json">
-{json.dumps(ld, ensure_ascii=False, indent=1)}
+{json.dumps(ld_graph, ensure_ascii=False, indent=1)}
 </script>
 </head>
 <body>
