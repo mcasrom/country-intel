@@ -1,6 +1,6 @@
 {
  "country": "sm",
- "generated": "2026-08-20T03:03:08.359784+00:00",
+ "generated": "2026-08-21T03:03:08.729391+00:00",
  "geo": {
   "name": "San Marino",
   "lat": 43.9322,
@@ -10,133 +10,133 @@
  "indicators": {
   "adultos": {
    "value": "65.3330752508859",
-   "updated": "2026-08-20T03:03:08.150868+00:00",
+   "updated": "2026-08-21T03:03:08.550214+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.7604",
-   "updated": "2026-08-20T03:03:08.219632+00:00",
+   "updated": "2026-08-21T03:03:08.608847+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2023"
   },
   "deuda_pib": {
    "value": "99.8703825579645",
-   "updated": "2026-08-20T03:03:08.150820+00:00",
+   "updated": "2026-08-21T03:03:08.550126+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "edad_mediana": {
    "value": "47.4",
-   "updated": "2026-08-20T03:03:08.204177+00:00",
+   "updated": "2026-08-21T03:03:08.596434+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "85.817",
-   "updated": "2026-08-20T03:03:08.150808+00:00",
+   "updated": "2026-08-21T03:03:08.550107+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.158",
-   "updated": "2026-08-20T03:03:08.150855+00:00",
+   "updated": "2026-08-21T03:03:08.550186+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "6.60829115",
-   "updated": "2026-08-20T03:03:08.150827+00:00",
+   "updated": "2026-08-21T03:03:08.550140+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.867",
-   "updated": "2026-08-20T03:03:08.150908+00:00",
+   "updated": "2026-08-21T03:03:08.550272+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "1.24216507945569",
-   "updated": "2026-08-20T03:03:08.150788+00:00",
+   "updated": "2026-08-21T03:03:08.550066+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "97.35220337",
-   "updated": "2026-08-20T03:03:08.150834+00:00",
+   "updated": "2026-08-21T03:03:08.550154+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "22.4099937464638",
-   "updated": "2026-08-20T03:03:08.150875+00:00",
+   "updated": "2026-08-21T03:03:08.550238+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "12.2569310026503",
-   "updated": "2026-08-20T03:03:08.150861+00:00",
+   "updated": "2026-08-21T03:03:08.550200+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "17.4",
-   "updated": "2026-08-20T03:03:08.150802+00:00",
+   "updated": "2026-08-21T03:03:08.550094+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "EUR",
-   "updated": "2026-08-20T03:03:08.150900+00:00",
+   "updated": "2026-08-21T03:03:08.550264+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "1.0889719516143275",
-   "updated": "2026-08-20T03:03:08.150795+00:00",
+   "updated": "2026-08-21T03:03:08.550080+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "2027243193.5116",
-   "updated": "2026-08-20T03:03:08.150768+00:00",
+   "updated": "2026-08-21T03:03:08.550025+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "pib_ppa_pc": {
    "value": "78810.3378046111",
-   "updated": "2026-08-20T03:03:08.150775+00:00",
+   "updated": "2026-08-21T03:03:08.550039+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "poblacion": {
    "value": "33977",
-   "updated": "2026-08-20T03:03:08.150762+00:00",
+   "updated": "2026-08-21T03:03:08.550012+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-08-20T03:03:08.150914+00:00",
+   "updated": "2026-08-21T03:03:08.550278+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "59871.3288101478",
-   "updated": "2026-08-20T03:03:08.150782+00:00",
+   "updated": "2026-08-21T03:03:08.550053+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "titulados": {
    "value": "18.4",
-   "updated": "2026-08-20T03:03:08.216619+00:00",
+   "updated": "2026-08-21T03:03:08.607217+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2022"
   },
   "urbanizacion": {
    "value": "97.1560555881096",
-   "updated": "2026-08-20T03:03:08.150840+00:00",
+   "updated": "2026-08-21T03:03:08.550168+00:00",
    "source": "worldbank",
    "year": "2024"
   }
