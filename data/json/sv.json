@@ -1,6 +1,6 @@
 {
  "country": "sv",
- "generated": "2026-08-23T03:04:32.557511+00:00",
+ "generated": "2026-08-24T03:03:08.543004+00:00",
  "geo": {
   "name": "El Salvador",
   "lat": 13.7034,
@@ -10,61 +10,61 @@
  "indicators": {
   "adultos": {
    "value": "67.0452603762618",
-   "updated": "2026-08-23T03:04:32.367198+00:00",
+   "updated": "2026-08-24T03:03:08.354244+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "alfabetizacion": {
    "value": "89.7699966430664",
-   "updated": "2026-08-23T03:04:32.367058+00:00",
+   "updated": "2026-08-24T03:03:08.354103+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "1.416",
-   "updated": "2026-08-23T03:04:32.404463+00:00",
+   "updated": "2026-08-24T03:03:08.385027+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "30.0",
-   "updated": "2026-08-23T03:04:32.409007+00:00",
+   "updated": "2026-08-24T03:03:08.389653+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.4207",
-   "updated": "2026-08-23T03:04:32.417296+00:00",
+   "updated": "2026-08-24T03:03:08.396532+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "defensa_pct": {
    "value": "1.18611916982816",
-   "updated": "2026-08-23T03:04:32.367230+00:00",
+   "updated": "2026-08-24T03:03:08.354272+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "democracia": {
    "value": "4.61",
-   "updated": "2026-08-23T03:04:32.413085+00:00",
+   "updated": "2026-08-24T03:03:08.393767+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
   "desempleo": {
    "value": "3.261",
-   "updated": "2026-08-23T03:04:32.367049+00:00",
+   "updated": "2026-08-24T03:03:08.354093+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "deuda_pib": {
    "value": "107.276633162011",
-   "updated": "2026-08-23T03:04:32.367124+00:00",
+   "updated": "2026-08-24T03:03:08.354160+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "27.0",
-   "updated": "2026-08-23T03:04:32.406895+00:00",
+   "updated": "2026-08-24T03:03:08.386930+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -76,19 +76,19 @@
   },
   "fertilidad": {
    "value": "1.768",
-   "updated": "2026-08-23T03:04:32.367177+00:00",
+   "updated": "2026-08-24T03:03:08.354220+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "3.31666994094849",
-   "updated": "2026-08-23T03:04:32.367145+00:00",
+   "updated": "2026-08-24T03:03:08.354184+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "9.28738594",
-   "updated": "2026-08-23T03:04:32.367135+00:00",
+   "updated": "2026-08-24T03:03:08.354173+00:00",
    "source": "worldbank",
    "year": "2023"
   },
@@ -100,67 +100,67 @@
   },
   "idh": {
    "value": "0.674",
-   "updated": "2026-08-23T03:04:32.367282+00:00",
+   "updated": "2026-08-24T03:03:08.354316+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "0.853782292567288",
-   "updated": "2026-08-23T03:04:32.367038+00:00",
+   "updated": "2026-08-24T03:03:08.354081+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "66.47769928",
-   "updated": "2026-08-23T03:04:32.367155+00:00",
+   "updated": "2026-08-24T03:03:08.354196+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "libertad_prensa": {
    "value": "44.0",
-   "updated": "2026-08-23T03:04:32.411039+00:00",
+   "updated": "2026-08-24T03:03:08.391291+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "8.14861585944133",
-   "updated": "2026-08-23T03:04:32.367209+00:00",
+   "updated": "2026-08-24T03:03:08.354256+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "24.8061237642969",
-   "updated": "2026-08-23T03:04:32.367187+00:00",
+   "updated": "2026-08-24T03:03:08.354232+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "0.7",
-   "updated": "2026-08-23T03:04:32.367114+00:00",
+   "updated": "2026-08-24T03:03:08.354149+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-08-23T03:04:32.367241+00:00",
+   "updated": "2026-08-24T03:03:08.354284+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-23102",
-   "updated": "2026-08-23T03:04:32.367102+00:00",
+   "updated": "2026-08-24T03:03:08.354137+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "34879730000",
-   "updated": "2026-08-23T03:04:32.367006+00:00",
+   "updated": "2026-08-24T03:03:08.354046+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "13258.1805042704",
-   "updated": "2026-08-23T03:04:32.367016+00:00",
+   "updated": "2026-08-24T03:03:08.354057+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -172,25 +172,25 @@
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-08-23T03:04:32.367294+00:00",
+   "updated": "2026-08-24T03:03:08.354345+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "5503.10317151907",
-   "updated": "2026-08-23T03:04:32.367027+00:00",
+   "updated": "2026-08-24T03:03:08.354069+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "8.5",
-   "updated": "2026-08-23T03:04:32.415121+00:00",
+   "updated": "2026-08-24T03:03:08.394971+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2023"
   },
   "urbanizacion": {
    "value": "75.0674905102199",
-   "updated": "2026-08-23T03:04:32.367166+00:00",
+   "updated": "2026-08-24T03:03:08.354208+00:00",
    "source": "worldbank",
    "year": "2024"
   }
