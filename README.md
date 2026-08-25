@@ -60,3 +60,7 @@ pm2 start ecosystem.config.cjs           # uvicorn :8710
 
 - Email: country@viajeinteligencia.com
 - Repo: https://github.com/mcasrom/country-intel
+
+## Navegación cruzada
+En el footer: enlace directo a NearMe (mapa de eventos en vivo) además del
+ecosistema completo. Sigue los journeys reales de los usuarios.
