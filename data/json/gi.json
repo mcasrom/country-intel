@@ -1,6 +1,6 @@
 {
  "country": "gi",
- "generated": "2026-08-24T03:03:08.465257+00:00",
+ "generated": "2026-08-25T03:03:08.950720+00:00",
  "geo": {
   "name": "Gibraltar",
   "lat": 0.0,
@@ -10,13 +10,13 @@
  "indicators": {
   "adultos": {
    "value": "64.7372168120217",
-   "updated": "2026-08-24T03:03:08.325440+00:00",
+   "updated": "2026-08-25T03:03:08.818582+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "38.9",
-   "updated": "2026-08-24T03:03:08.385805+00:00",
+   "updated": "2026-08-25T03:03:08.885268+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -28,37 +28,37 @@
   },
   "fertilidad": {
    "value": "1.885",
-   "updated": "2026-08-24T03:03:08.325426+00:00",
+   "updated": "2026-08-25T03:03:08.818554+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "17.6155000127133",
-   "updated": "2026-08-24T03:03:08.325447+00:00",
+   "updated": "2026-08-25T03:03:08.818596+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "17.6472831752651",
-   "updated": "2026-08-24T03:03:08.325433+00:00",
+   "updated": "2026-08-25T03:03:08.818568+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "28.7",
-   "updated": "2026-08-24T03:03:08.325414+00:00",
+   "updated": "2026-08-25T03:03:08.818528+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "GIP",
-   "updated": "2026-08-24T03:03:08.325453+00:00",
+   "updated": "2026-08-25T03:03:08.818609+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "598",
-   "updated": "2026-08-24T03:03:08.325407+00:00",
+   "updated": "2026-08-25T03:03:08.818515+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -70,13 +70,13 @@
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-08-24T03:03:08.325459+00:00",
+   "updated": "2026-08-25T03:03:08.818622+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-24T03:03:08.325420+00:00",
+   "updated": "2026-08-25T03:03:08.818542+00:00",
    "source": "worldbank",
    "year": "2024"
   }
