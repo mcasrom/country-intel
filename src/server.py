@@ -546,7 +546,7 @@ def sitemap():
 
 @app.get("/robots.txt")
 def robots():
-    return Response(content="User-agent: *\nAllow: /\nSitemap: https://country.viajeinteligencia.com/sitemap.xml", media_type="text/plain")
+    return Response(content="User-agent: YandexBot\nDisallow: /\nUser-agent: Bytespider\nDisallow: /\nUser-agent: *\nAllow: /\nSitemap: https://country.viajeinteligencia.com/sitemap.xml", media_type="text/plain")
 
 
 
