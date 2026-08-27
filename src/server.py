@@ -81,6 +81,63 @@ NEWS_QUERY = CFG.get("news_query", {})
 FCDO_URL = "https://www.gov.uk/api/content/foreign-travel-advice/{slug}"
 AC_URL = "https://suggestqueries.google.com/complete/search?client=firefox&hl=es&q={q}"
 
+# Fuente principal para viajeros españoles: Ministerio de Asuntos Exteriores de España.
+# Recomendaciones de viaje por país (documentación/visados, seguridad, sanidad, divisas...).
+EXTERIORES_URL = ("https://www.exteriores.gob.es/es/ServiciosAlCiudadano/Paginas/"
+                  "Detalle-recomendaciones-de-viaje.aspx?trc={name}")
+EXTERIORES_DIR = BASE_DIR / "data" / "exteriores"
+EXTERIORES_TTL = CFG.get("ttl", {}).get("exteriores", 86400)
+# Nombres en español (los que usa el Ministerio en ?trc=) para países sin nombre curado en NAMES.
+EXTERIORES_NAMES = {
+    "jp": "Japón", "tr": "Turquía", "th": "Tailandia", "ca": "Canadá", "gb": "Reino Unido",
+    "us": "Estados Unidos", "ar": "Argentina", "cl": "Chile", "co": "Colombia", "pe": "Perú",
+    "uy": "Uruguay", "py": "Paraguay", "bo": "Bolivia", "ve": "Venezuela", "ec": "Ecuador",
+    "do": "República Dominicana", "cu": "Cuba", "mx": "México", "br": "Brasil", "cn": "China",
+    "in": "India", "id": "Indonesia", "vn": "Vietnam", "kr": "Corea del Sur", "jp": "Japón",
+}
+EXTERIORES_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                 "(KHTML, like Gecko) Chrome/120 Safari/537.36")
+
+
+def _exteriores_name(cc: str) -> str:
+    """Nombre en español que usa el Ministerio en ?trc= (para el viajero español)."""
+    cc = cc.lower()
+    if cc in NAMES:
+        return NAMES[cc]
+    return EXTERIORES_NAMES.get(cc, _country_name(cc))
+
+
+def _fetch_exteriores(cc: str) -> dict:
+    """Descarga la recomendación de viaje del Ministerio de Exteriores de España.
+
+    Devuelve las secciones del acordeón: Notas importantes, Documentación y visados,
+    Seguridad, Sanidad, Divisas, Otros, Direcciones y teléfonos de interés.
+    """
+    cc = cc.lower()
+    name = _exteriores_name(cc)
+    url = EXTERIORES_URL.format(name=urllib.parse.quote(name.replace(" ", "+")))
+    req = urllib.request.Request(url, headers={"User-Agent": EXTERIORES_UA})
+    with urllib.request.urlopen(req, timeout=25) as r:
+        html = r.read().decode("utf-8", errors="replace")
+    if "accordion__main" not in html:
+        return {"country": cc, "error": "no_content"}
+    # Secciones del acordeón: <h3 class=accordion__main>Título</h3> <div class="single__text panel">
+    pat = re.compile(
+        r"<h3[^>]*accordion__main[^>]*>(.*?)</h3>\s*<div[^>]*class=\"single__text panel[^>]*>(.*?)</div>\s*</div>",
+        re.S,
+    )
+    sections = []
+    for m in pat.finditer(html):
+        title = re.sub(r"<[^>]+>", " ", m.group(1))
+        title = re.sub(r"\s+", " ", title).strip()
+        body = re.sub(r"<[^>]+>", " ", m.group(2))
+        body = re.sub(r"\s+", " ", body).strip()
+        if title and body:
+            sections.append({"title": title, "body": body})
+    if not sections:
+        return {"country": cc, "error": "no_sections"}
+    return {"country": cc, "name": name, "url": url, "sections": sections}
+
 
 def _clean(html: str, limit: int = LIMITS.get("body_part", 600)):
     text = re.sub(r"<[^>]+>", " ", html or "")
@@ -156,6 +213,25 @@ def country(code: str, request: Request):
     return json.loads(fp.read_text())
 
 
+@app.get("/api/travel/es/{code}")
+def travel_es(code: str):
+    """Recomendación de viaje del Ministerio de Asuntos Exteriores de España (fuente principal).
+
+    Documentación y visados, seguridad, sanidad, divisas, otros, contactos. Cacheada 24h.
+    """
+    cc = code.lower()
+    EXTERIORES_DIR.mkdir(parents=True, exist_ok=True)
+    cache = EXTERIORES_DIR / f"{cc}.json"
+    if cache.exists() and (time.time() - cache.stat().st_mtime) < EXTERIORES_TTL:
+        return json.loads(cache.read_text())
+    try:
+        out = _fetch_exteriores(cc)
+        cache.write_text(json.dumps(out, ensure_ascii=False))
+        return out
+    except Exception as e:
+        return {"country": cc, "error": str(e)}
+
+
 @app.get("/api/travel/{code}")
 def travel(code: str):
     slug = TRAVEL_SLUGS.get(code.lower())
@@ -175,7 +251,10 @@ def travel(code: str):
         for pt in (data.get("details", {}).get("parts", []) or []):
             slug_pt = (pt.get("slug") or "").lower()
             if slug_pt in FCDO_PARTS or slug_pt.startswith("summary"):
-                parts.append({"title": pt.get("title", ""), "slug": slug_pt, "body": _clean(pt.get("body") or "")})
+                # entry-requirements (visados/requisitos de entrada) necesita el texto
+                # completo (hasta ~5.000 car): el resto (safety/health) basta con 600.
+                limit = LIMITS.get("entry_requirements", 5000) if slug_pt == "entry-requirements" else LIMITS.get("body_part", 600)
+                parts.append({"title": pt.get("title", ""), "slug": slug_pt, "body": _clean(pt.get("body") or "", limit)})
         out = {
             "country": code.lower(),
             "slug": slug,
@@ -337,31 +416,55 @@ def _country_name(cc):
 
 
 def _entry_requirements(cc: str) -> str:
-    """Requisitos de entrada y visado (entry-requirements de FCDO/GOV.UK) para la página /pais/{cc}.
+    """Requisitos de entrada y visado para la página /pais/{cc}.
 
-    Reutiliza la lógica /api/travel (cacheada en data/travel/{cc}.json, TTL 24h con refresh
-    automático) para mostrar siempre datos frescos en la página SEO sin duplicar scraping.
+    Fuente PRINCIPAL (viajero español): Ministerio de Asuntos Exteriores de España
+    (sección 'Documentación y visados' de sus recomendaciones de viaje).
+    Colateral: aviso del Reino Unido (FCDO/GOV.UK, orientado a británicos).
     """
+    name = _country_name(cc)
+    # --- Fuente principal: Exteriores España ---
+    try:
+        es = travel_es(cc.lower())
+    except Exception:
+        es = {}
+    sec_doc = ""
+    if es.get("sections"):
+        for s in es["sections"]:
+            if "visado" in s.get("title", "").lower() or "documentación" in s.get("title", "").lower():
+                sec_doc = s.get("body", "")
+                break
+        if not sec_doc and es.get("sections"):
+            sec_doc = es["sections"][0].get("body", "")
+    main_html = ""
+    if sec_doc:
+        main_html = ('<h2 style="margin-top:28px;">Requisitos de entrada y visado para viajar a {name} '
+                     '(España)</h2>'
+                     '<div style="padding:14px 16px;background:#0e1322;border:1px solid #232b3d;border-radius:8px;'
+                     'font-size:.92em;line-height:1.55;">{body}'
+                     '<p style="margin:10px 0 0;font-size:.8em;color:#64748b;">Fuente: Ministerio de Asuntos '
+                     'Exteriores de España (recomendaciones de viaje oficiales). Actualizado por el Ministerio.</p>'
+                     '</div>').format(name=name, body=sec_doc)
+    # --- Colateral: FCDO/UK ---
+    uk_html = ""
     try:
         data = travel(cc.lower())
+        for pt in (data.get("parts") or []):
+            if pt.get("slug") == "entry-requirements":
+                body = (pt.get("body") or "").strip()
+                if body:
+                    uk_html = ('<h3 style="margin-top:22px;font-size:1.05em;color:#FFB454;">ℹ️ Aviso del Reino '
+                               'Unido (FCDO/GOV.UK) — colateral</h3>'
+                               '<div style="padding:12px 14px;background:#0e1322;border:1px solid #232b3d;'
+                               'border-radius:8px;font-size:.85em;line-height:1.5;">{body}'
+                               '<p style="margin:8px 0 0;font-size:.78em;color:#64748b;">Contenido orientado a '
+                               'ciudadanos británicos, solo como referencia. La fuente oficial para ti como '
+                               'viajero español es el Ministerio de Asuntos Exteriores de España (sección '
+                               'principal de arriba).</p></div>').format(body=body)
+                break
     except Exception:
-        return ""
-    if not data:
-        return ""
-    for pt in (data.get("parts") or []):
-        if pt.get("slug") == "entry-requirements":
-            body = (pt.get("body") or "").strip()
-            if not body:
-                return ""
-            name = _country_name(cc)
-            return ('<h2 style="margin-top:28px;">Requisitos de entrada y visado para viajar a {name}</h2>'
-                    '<div style="padding:14px 16px;background:#0e1322;border:1px solid #232b3d;border-radius:8px;'
-                    'font-size:.92em;line-height:1.55;">{body}'
-                    '<p style="margin:10px 0 0;font-size:.8em;color:#64748b;">Fuente: Gobierno del Reino Unido '
-                    '(GOV.UK / Foreign, Commonwealth &amp; Development Office), contenido orientado a ciudadanos '
-                    'británicos. Para verificar tus requisitos como viajero desde España consulta siempre la fuente '
-                    'oficial o el Ministerio de Asuntos Exteriores de España.</p></div>').format(name=name, body=body)
-    return ""
+        pass
+    return main_html + uk_html
 
 
 def _seo_page(code: str) -> str:

@@ -420,26 +420,52 @@ function cellsOf(c, keys){
   }).join('');
 }
 function travelSec(cc){
-  return '<div class="sec"><h3>🛂 Ficha de viaje (UK FCDO)</h3><div id="travel">Cargando aviso oficial...</div></div>';
+  return '<div class="sec"><h3>🛂 Visados y requisitos de viaje (Exteriores España)</h3><div id="travel">Cargando recomendación oficial...</div></div>';
 }
 function loadTravel(cc){
   var el = document.getElementById('travel');
-  fetch('/api/travel/'+cc).then(r=>r.json()).then(function(d){
+  // Fuente principal: Ministerio de Asuntos Exteriores de España
+  fetch('/api/travel/es/'+cc).then(r=>r.json()).then(function(es){
     var h = '';
-    if (d.error) { el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Aviso FCDO no disponible ('+d.error.slice(0,60)+')</div>'; return; }
-    if (d.note) { el.innerHTML = '<div style="color:#64748b;font-size:.8em;">'+d.note+'</div>'; return; }
-    if (d.updated) h += '<div style="color:#64748b;font-size:.72em;margin-bottom:6px;">Actualizado: '+d.updated.replace('T',' ').slice(0,16)+' UTC</div>';
-    if (d.change) h += '<div style="color:#fbbf24;font-size:.75em;margin-bottom:6px;">🔄 '+d.change+'</div>';
-    var typeLab = { terrorism:'Terrorismo', 'safety':'Seguridad', nat:'Natural', entry:'Entrada' };
-    (d.alerts||[]).forEach(function(a){
-      h += '<div class="alerta" style="border:1px solid #f87171;border-radius:6px;padding:6px 8px;margin-bottom:6px;">⚠️ <b>'+a.title+'</b><br><span style="color:#94a3b8;font-size:.78em;">'+(a.body||'').slice(0,180)+'</span></div>';
-    });
-    if (!(d.alerts||[]).length) h += '<div style="color:#34d399;font-size:.78em;margin-bottom:6px;">✓ Sin alertas activas en el aviso oficial.</div>';
-    (d.parts||[]).forEach(function(pt){
-      h += '<div class="part"><b>'+pt.title+'</b><br>'+pt.body.slice(0,220)+'...</div>';
-    });
-    el.innerHTML = h;
-  }).catch(function(){ el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Aviso FCDO no disponible ahora.</div>'; });
+    if (es.error) {
+      h += '<div style="color:#64748b;font-size:.8em;">Exteriores España no disponible ('+(es.error||'').slice(0,60)+')</div>';
+    } else if (es.sections) {
+      es.sections.forEach(function(s){
+        var t = s.title || '';
+        var b = s.body || '';
+        if (/visad|documentación/i.test(t)) {
+          h += '<div class="part"><b>🛂 '+t+'</b><br>'+b+'</div>';
+        } else if (/seguridad/i.test(t)) {
+          h += '<div class="part"><b>🛡️ '+t+'</b><br>'+b.slice(0,220)+'...</div>';
+        } else if (/sanidad|vacun/i.test(t)) {
+          h += '<div class="part"><b>🏥 '+t+'</b><br>'+b.slice(0,220)+'...</div>';
+        } else {
+          h += '<div class="part"><b>'+t+'</b><br>'+b.slice(0,160)+'...</div>';
+        }
+      });
+      h += '<div style="color:#64748b;font-size:.72em;margin-top:6px;">Fuente: Ministerio de Asuntos Exteriores de España · <a href="'+es.url+'" target="_blank" rel="noopener" style="color:#00d4ff;">ver original</a></div>';
+    }
+    // Fuente colateral: FCDO/UK
+    fetch('/api/travel/'+cc).then(r=>r.json()).then(function(d){
+      if (!d || d.error || d.note) return;
+      var uk = '<div style="margin-top:10px;border-top:1px solid #232b3d;padding-top:8px;"><div style="color:#64748b;font-size:.72em;margin-bottom:4px;">ℹ️ Aviso colateral del Reino Unido (FCDO/GOV.UK, orientado a británicos):</div>';
+      if (d.updated) uk += '<div style="color:#64748b;font-size:.7em;">Actualizado: '+d.updated.replace('T',' ').slice(0,16)+'</div>';
+      if (d.change) uk += '<div style="color:#fbbf24;font-size:.75em;margin-bottom:4px;">🔄 '+d.change+'</div>';
+      if (!(d.alerts||[]).length) uk += '<div style="color:#34d399;font-size:.75em;">✓ Sin alertas activas.</div>';
+      (d.parts||[]).forEach(function(pt){
+        var pbody = pt.body || '';
+        if (pt.slug === 'entry-requirements') {
+          uk += '<div class="part"><b>'+pt.title+'</b><br>'+pbody.slice(0,300)+'...</div>';
+        } else {
+          uk += '<div class="part"><b>'+pt.title+'</b><br>'+pbody.slice(0,160)+'...</div>';
+        }
+      });
+      uk += '</div>';
+      el.innerHTML = h + uk;
+    }).catch(function(){ el.innerHTML = h; });
+  }).catch(function(){
+    el.innerHTML = '<div style="color:#64748b;font-size:.8em;">Exteriores España no disponible ahora.</div>';
+  });
 }
 function trendingSec(cc){
   return '<div class="sec"><h3>🔍 Qué se busca sobre este país</h3><div id="trending">Cargando búsquedas reales...</div></div>';
