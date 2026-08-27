@@ -108,3 +108,33 @@
   cross-links radar/nearme/news. Cubre los 217 países con 1 cambio. Commit 2a20306.
 - Criterio: el label "Country Intelligence" vale por el framing, no por el nombre.
   No sube ranking por sí solo (cuello de autoridad); mejora intención/CTR/interconexión.
+
+## Hito: Visados y requisitos de entrada — fuente oficial Exteriores España (27/Ago)
+- **Objetivo**: la tarjeta "países y visados" (acordada 26/Ago). Fuente correcta para público
+  español = **Ministerio de Asuntos Exteriores de España** (no GOV.UK, que es para británicos).
+- **Nueva fuente**: `exteriores.gob.es` → `Detalle-recomendaciones-de-viaje.aspx?trc={Nombre}`.
+  Parser de las 7 secciones del acordeón (`h3.accordion__main` + `div.single__text panel`):
+  Notas importantes, **Documentación y visados**, Seguridad, Sanidad, Divisas, Otros,
+  Direcciones y teléfonos de interés. El Ministerio cubre **197 países** (techo).
+- **Endpoint**: `/api/travel/es/{code}` con caché `data/exteriores/{cc}.json` (TTL 24h,
+  ignorado en git como `data/travel/`).
+- **Páginas `/pais/{cc}`** (SEO) y **ficha interactiva `/?c={cc}`**: sección principal
+  "Requisitos de entrada y visado para viajar a {País} (España)" con texto íntegro del
+  Ministerio + enlace al original. **FCDO/UK queda como colateral** ("ℹ️ Aviso del Reino
+  Unido — orientado a británicos"), porque GOV.UK redacta para británicos.
+- **28 destinos activos** (14 originales + 14 top de españoles): au br cn de dz eg es fr in
+  it ma mx pt us + tr th jp ca do cu co ar cl pe ch id vn ad. Solo Corea del Sur tiene página
+  vacía en el Ministerio. Verificado: /pais/jp → "Japón (España)" con eVisitor/visado; AU →
+  eVisitor subclass 651; US → Documentación y visados (ESTA) 11.350 car.
+- **Fix límite**: `entry_requirements` 600→5000 car (antes se perdía el 88% del texto).
+- **Fix nombres ES**: `_exteriores_name()` (Japón/Turquía/Suiza, no Japan/Turkiye).
+- **Precarga 28 cachés** con reintentos (el sitio del Ministerio es lento/intermitente).
+- Commits: `3aa90bc` (FCDO), `1b63b00` (Exteriores principal + colateral), `88d93de` (+14
+  destinos + nombres ES), landing `a5f31c6`/`585295d`/`c823b04`. Coste ~0.
+
+## Backlog (visados, pendiente condicionado a demanda)
+- [ ] Ampliar más allá de 28 destinos (hasta 197 del Ministerio) SOLO cuando las páginas de
+      visados muestren tráfico humano real (KPI 180826_kpi_total.py, producto country).
+      Sin demanda, sin ampliar.
+- [ ] Fecha de actualización del contenido del Ministerio no expuesta de forma fiable
+      (SharePoint sin metadato público de revisión).
