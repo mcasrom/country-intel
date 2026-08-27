@@ -336,6 +336,34 @@ def _country_name(cc):
         return cc.upper()
 
 
+def _entry_requirements(cc: str) -> str:
+    """Requisitos de entrada y visado (entry-requirements de FCDO/GOV.UK) para la página /pais/{cc}.
+
+    Reutiliza la lógica /api/travel (cacheada en data/travel/{cc}.json, TTL 24h con refresh
+    automático) para mostrar siempre datos frescos en la página SEO sin duplicar scraping.
+    """
+    try:
+        data = travel(cc.lower())
+    except Exception:
+        return ""
+    if not data:
+        return ""
+    for pt in (data.get("parts") or []):
+        if pt.get("slug") == "entry-requirements":
+            body = (pt.get("body") or "").strip()
+            if not body:
+                return ""
+            name = _country_name(cc)
+            return ('<h2 style="margin-top:28px;">Requisitos de entrada y visado para viajar a {name}</h2>'
+                    '<div style="padding:14px 16px;background:#0e1322;border:1px solid #232b3d;border-radius:8px;'
+                    'font-size:.92em;line-height:1.55;">{body}'
+                    '<p style="margin:10px 0 0;font-size:.8em;color:#64748b;">Fuente: Gobierno del Reino Unido '
+                    '(GOV.UK / Foreign, Commonwealth &amp; Development Office), contenido orientado a ciudadanos '
+                    'británicos. Para verificar tus requisitos como viajero desde España consulta siempre la fuente '
+                    'oficial o el Ministerio de Asuntos Exteriores de España.</p></div>').format(name=name, body=body)
+    return ""
+
+
 def _seo_page(code: str) -> str:
     cc = code.lower()
     name = _country_name(cc)
@@ -457,6 +485,7 @@ def _seo_page(code: str) -> str:
     }
     ld_graph = {"@context": "https://schema.org", "@graph": [ld, faq_ld]}
     ind_rows = "\n".join(f"<tr><th>{k}</th><td>{v}</td></tr>" for k, v in facts)
+    visa_html = _entry_requirements(cc)
     nota_html = ""
     if falta:
         nota_html = ('<p style="font-size:.75em;color:#64748b;margin-top:8px;">' +
@@ -496,6 +525,7 @@ def _seo_page(code: str) -> str:
     <li><a href="https://news.viajeinteligencia.com/" rel="noopener">📰 Análisis de prensa internacional</a></li>
   </ul>
 </div>
+{visa_html}
 <table>
 <thead><tr><th>Indicador</th><th>Valor</th></tr></thead>
 <tbody>
