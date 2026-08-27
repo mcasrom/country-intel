@@ -84,6 +84,7 @@
   body.light .welcome{background:rgba(241,245,249,.92)}
   body.light .leaflet-container{background:#dbeafe}
   body.light .leaflet-popup-content-wrapper,body.light .leaflet-popup-tip{background:#ffffff;color:#0f172a}
+.osm-dark .leaflet-tile { filter: invert(1) hue-rotate(180deg) brightness(0.8) contrast(1.1) saturate(0.5); }
 </style>
 </head>
 <body>
@@ -253,7 +254,7 @@ function fmt(v, ind){
 var map = null;
 function initMap(){
   map = L.map('map').setView([ZOOM[0], ZOOM[1]], ZOOM[2]);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { attribution:'© OSM © CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>', subdomains:'abc', maxZoom:19 , className: 'osm-dark'}).addTo(map);
 }
 
 function gv(c, k){ var i = c.indicators || {}; return (i[k] && i[k].value != null) ? i[k].value : null; }
