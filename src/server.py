@@ -93,7 +93,8 @@ EXTERIORES_NAMES = {
     "us": "Estados Unidos", "ar": "Argentina", "cl": "Chile", "co": "Colombia", "pe": "Perú",
     "uy": "Uruguay", "py": "Paraguay", "bo": "Bolivia", "ve": "Venezuela", "ec": "Ecuador",
     "do": "República Dominicana", "cu": "Cuba", "mx": "México", "br": "Brasil", "cn": "China",
-    "in": "India", "id": "Indonesia", "vn": "Vietnam", "kr": "Corea del Sur", "jp": "Japón",
+    "in": "India", "id": "Indonesia", "vn": "Vietnam", "kr": "Corea del Sur",
+    "ch": "Suiza", "ad": "Andorra",
 }
 EXTERIORES_UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
                  "(KHTML, like Gecko) Chrome/120 Safari/537.36")
@@ -422,7 +423,7 @@ def _entry_requirements(cc: str) -> str:
     (sección 'Documentación y visados' de sus recomendaciones de viaje).
     Colateral: aviso del Reino Unido (FCDO/GOV.UK, orientado a británicos).
     """
-    name = _country_name(cc)
+    name = _exteriores_name(cc)
     # --- Fuente principal: Exteriores España ---
     try:
         es = travel_es(cc.lower())
