@@ -1,6 +1,6 @@
 {
  "country": "gi",
- "generated": "2026-08-29T03:03:08.773592+00:00",
+ "generated": "2026-08-30T03:20:42.185345+00:00",
  "geo": {
   "name": "Gibraltar",
   "lat": 0.0,
@@ -10,73 +10,73 @@
  "indicators": {
   "adultos": {
    "value": "64.7372168120217",
-   "updated": "2026-08-29T03:03:08.552896+00:00",
+   "updated": "2026-08-30T03:20:42.002532+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "38.9",
-   "updated": "2026-08-29T03:03:08.661989+00:00",
+   "updated": "2026-08-30T03:20:42.085901+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "83.63",
-   "updated": "2026-08-21T03:03:08.522490+00:00",
+   "updated": "2026-08-30T03:20:42.002470+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.885",
-   "updated": "2026-08-29T03:03:08.552813+00:00",
+   "updated": "2026-08-30T03:20:42.002504+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "17.6155000127133",
-   "updated": "2026-08-29T03:03:08.552912+00:00",
+   "updated": "2026-08-30T03:20:42.002551+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "17.6472831752651",
-   "updated": "2026-08-29T03:03:08.552824+00:00",
+   "updated": "2026-08-30T03:20:42.002517+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "28.7",
-   "updated": "2026-08-29T03:03:08.552769+00:00",
+   "updated": "2026-08-30T03:20:42.002454+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "GIP",
-   "updated": "2026-08-29T03:03:08.552923+00:00",
+   "updated": "2026-08-30T03:20:42.002570+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
-   "value": "598",
-   "updated": "2026-08-29T03:03:08.552675+00:00",
+   "value": "15.205064964784256",
+   "updated": "2026-08-30T03:20:42.002428+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "39329",
-   "updated": "2026-08-21T03:03:08.522430+00:00",
+   "updated": "2026-08-30T03:20:42.002415+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-08-29T03:03:08.552967+00:00",
+   "updated": "2026-08-30T03:20:42.002586+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-08-29T03:03:08.552801+00:00",
+   "updated": "2026-08-30T03:20:42.002489+00:00",
    "source": "worldbank",
    "year": "2024"
   }
