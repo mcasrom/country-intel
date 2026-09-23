@@ -1,6 +1,6 @@
 {
  "country": "nr",
- "generated": "2026-09-22T03:03:09.113542+00:00",
+ "generated": "2026-09-23T03:27:45.581668+00:00",
  "geo": {
   "name": "Naoero",
   "lat": -0.5477,
@@ -10,61 +10,61 @@
  "indicators": {
   "adultos": {
    "value": "59.3730381283221",
-   "updated": "2026-09-22T03:03:08.907188+00:00",
+   "updated": "2026-09-23T03:27:45.368674+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "alfabetizacion": {
    "value": "96.5899963378906",
-   "updated": "2026-09-22T03:03:08.907115+00:00",
+   "updated": "2026-09-23T03:27:45.368514+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "co2_pc": {
    "value": "5.130",
-   "updated": "2026-09-22T03:03:08.961791+00:00",
+   "updated": "2026-09-23T03:27:45.417957+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.9602",
-   "updated": "2026-09-22T03:03:08.973138+00:00",
+   "updated": "2026-09-23T03:27:45.430589+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "20.4",
-   "updated": "2026-09-22T03:03:08.965440+00:00",
+   "updated": "2026-09-23T03:27:45.421583+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "62.279",
-   "updated": "2026-09-22T03:03:08.907143+00:00",
+   "updated": "2026-09-23T03:27:45.368580+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "3.29",
-   "updated": "2026-09-22T03:03:08.907175+00:00",
+   "updated": "2026-09-23T03:27:45.368641+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "5.77715015411377",
-   "updated": "2026-09-22T03:03:08.907156+00:00",
+   "updated": "2026-09-23T03:27:45.368613+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "18.21076012",
-   "updated": "2026-09-22T03:03:08.907149+00:00",
+   "updated": "2026-09-23T03:27:45.368599+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.635",
-   "updated": "2026-09-22T03:03:08.907207+00:00",
+   "updated": "2026-09-23T03:27:45.368739+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
@@ -76,67 +76,67 @@
   },
   "mayores": {
    "value": "2.85020717364919",
-   "updated": "2026-09-22T03:03:08.907194+00:00",
+   "updated": "2026-09-23T03:27:45.368706+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "37.7767546980287",
-   "updated": "2026-09-22T03:03:08.907181+00:00",
+   "updated": "2026-09-23T03:27:45.368660+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "21.3",
-   "updated": "2026-09-22T03:03:08.907128+00:00",
+   "updated": "2026-09-23T03:27:45.368566+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "AUD",
-   "updated": "2026-09-22T03:03:08.907201+00:00",
+   "updated": "2026-09-23T03:27:45.368720+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-10.128065623168997",
-   "updated": "2026-09-22T03:03:08.907122+00:00",
+   "updated": "2026-09-23T03:27:45.368552+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "167833414.846177",
-   "updated": "2026-09-22T03:03:08.907094+00:00",
+   "updated": "2026-09-23T03:27:45.368467+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "13612.0368416276",
-   "updated": "2026-09-22T03:03:08.907101+00:00",
+   "updated": "2026-09-23T03:27:45.368486+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "11947",
-   "updated": "2026-09-22T03:03:08.907088+00:00",
+   "updated": "2026-09-23T03:27:45.368449+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-09-22T03:03:08.907213+00:00",
+   "updated": "2026-09-23T03:27:45.368757+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "14048.163961344",
-   "updated": "2026-09-22T03:03:08.907108+00:00",
+   "updated": "2026-09-23T03:27:45.368501+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-09-22T03:03:08.907169+00:00",
+   "updated": "2026-09-23T03:27:45.368626+00:00",
    "source": "worldbank",
    "year": "2024"
   }
