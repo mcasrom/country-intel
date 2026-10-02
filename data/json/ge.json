@@ -1,6 +1,6 @@
 {
  "country": "ge",
- "generated": "2026-10-01T03:25:49.303842+00:00",
+ "generated": "2026-10-02T03:04:13.711366+00:00",
  "geo": {
   "name": "Georgia",
   "lat": 41.71,
@@ -10,7 +10,7 @@
  "indicators": {
   "adultos": {
    "value": "63.5635441096524",
-   "updated": "2026-10-01T03:25:49.141941+00:00",
+   "updated": "2026-10-02T03:04:13.415472+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -22,73 +22,73 @@
   },
   "co2_pc": {
    "value": "3.095",
-   "updated": "2026-10-01T03:25:49.208231+00:00",
+   "updated": "2026-10-02T03:04:13.527379+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "53.0",
-   "updated": "2026-10-01T03:25:49.213010+00:00",
+   "updated": "2026-10-02T03:04:13.539151+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.3267",
-   "updated": "2026-10-01T03:25:49.221399+00:00",
+   "updated": "2026-10-02T03:04:13.560727+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "defensa_pct": {
    "value": "1.86402941794564",
-   "updated": "2026-10-01T03:25:49.141954+00:00",
+   "updated": "2026-10-02T03:04:13.415504+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "democracia": {
    "value": "4.70",
-   "updated": "2026-10-01T03:25:49.216826+00:00",
+   "updated": "2026-10-02T03:04:13.550839+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
   "desempleo": {
    "value": "11.557",
-   "updated": "2026-10-01T03:25:49.141852+00:00",
+   "updated": "2026-10-02T03:04:13.414998+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "deuda_pib": {
    "value": "40.0993201678867",
-   "updated": "2026-10-01T03:25:49.141883+00:00",
+   "updated": "2026-10-02T03:04:13.415062+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "36.8",
-   "updated": "2026-10-01T03:25:49.210354+00:00",
+   "updated": "2026-10-02T03:04:13.534179+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "74.657",
-   "updated": "2026-10-01T03:25:49.141877+00:00",
+   "updated": "2026-10-02T03:04:13.415046+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.802",
-   "updated": "2026-10-01T03:25:49.141910+00:00",
+   "updated": "2026-10-02T03:04:13.415370+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "3.98011682083814",
-   "updated": "2026-10-01T03:25:49.141890+00:00",
+   "updated": "2026-10-02T03:04:13.415292+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "6.85758877",
-   "updated": "2026-09-30T03:03:08.149849+00:00",
+   "updated": "2026-10-02T03:04:13.415078+00:00",
    "source": "worldbank",
    "year": "2023"
   },
@@ -100,97 +100,97 @@
   },
   "idh": {
    "value": "0.802",
-   "updated": "2026-10-01T03:25:49.141967+00:00",
+   "updated": "2026-10-02T03:04:13.415536+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "1.10971758022096",
-   "updated": "2026-10-01T03:25:49.141845+00:00",
+   "updated": "2026-10-02T03:04:13.414976+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "83.79855689",
-   "updated": "2026-10-01T03:25:49.141897+00:00",
+   "updated": "2026-10-02T03:04:13.415323+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "libertad_prensa": {
    "value": "53.0",
-   "updated": "2026-10-01T03:25:49.214867+00:00",
+   "updated": "2026-10-02T03:04:13.543897+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "15.6376865642243",
-   "updated": "2026-10-01T03:25:49.141948+00:00",
+   "updated": "2026-10-02T03:04:13.415488+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "20.7987693261233",
-   "updated": "2026-10-01T03:25:49.141932+00:00",
+   "updated": "2026-10-02T03:04:13.415450+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "2.1",
-   "updated": "2026-10-01T03:25:49.141865+00:00",
+   "updated": "2026-10-02T03:04:13.415031+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "GEL",
-   "updated": "2026-10-01T03:25:49.141961+00:00",
+   "updated": "2026-10-02T03:04:13.415521+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "0.45770275707550756",
-   "updated": "2026-10-01T03:25:49.141858+00:00",
+   "updated": "2026-10-02T03:04:13.415014+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "34189423333.141",
-   "updated": "2026-10-01T03:25:49.141824+00:00",
+   "updated": "2026-10-02T03:04:13.414928+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "27486.8762116648",
-   "updated": "2026-10-01T03:25:49.141831+00:00",
+   "updated": "2026-10-02T03:04:13.414944+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "3812518",
-   "updated": "2026-10-01T03:25:49.141818+00:00",
+   "updated": "2026-10-02T03:04:13.414913+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-10-01T03:25:49.141973+00:00",
+   "updated": "2026-10-02T03:04:13.415552+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "8967.67525638987",
-   "updated": "2026-10-01T03:25:49.141838+00:00",
+   "updated": "2026-10-02T03:04:13.414960+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "33.7",
-   "updated": "2026-10-01T03:25:49.218975+00:00",
+   "updated": "2026-10-02T03:04:13.555841+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "61.0789605093733",
-   "updated": "2026-10-01T03:25:49.141903+00:00",
+   "updated": "2026-10-02T03:04:13.415347+00:00",
    "source": "worldbank",
    "year": "2024"
   }
