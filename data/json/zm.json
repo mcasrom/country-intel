@@ -1,6 +1,6 @@
 {
  "country": "zm",
- "generated": "2026-10-08T03:03:08.511550+00:00",
+ "generated": "2026-10-09T03:26:57.141569+00:00",
  "geo": {
   "name": "Zambia",
   "lat": -15.3982,
@@ -10,91 +10,91 @@
  "indicators": {
   "adultos": {
    "value": "56.5959028157483",
-   "updated": "2026-10-08T03:03:08.287549+00:00",
+   "updated": "2026-10-09T03:26:56.912261+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "alfabetizacion": {
    "value": "71.7699966430664",
-   "updated": "2026-10-08T03:03:08.287423+00:00",
+   "updated": "2026-10-09T03:26:56.912211+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "0.565",
-   "updated": "2026-10-08T03:03:08.327219+00:00",
+   "updated": "2026-10-09T03:26:56.938961+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "39.0",
-   "updated": "2026-10-08T03:03:08.331783+00:00",
+   "updated": "2026-10-09T03:26:56.945121+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.2816",
-   "updated": "2026-10-08T03:03:08.349859+00:00",
+   "updated": "2026-10-09T03:26:56.954454+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "defensa_pct": {
-   "value": "1.33268361976463",
-   "updated": "2026-10-08T03:03:08.287564+00:00",
+   "value": "1.3256709362",
+   "updated": "2026-10-09T03:26:56.912268+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "democracia": {
    "value": "5.73",
-   "updated": "2026-10-08T03:03:08.336693+00:00",
+   "updated": "2026-10-09T03:26:56.950000+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
   "desempleo": {
    "value": "5.898",
-   "updated": "2026-10-08T03:03:08.287409+00:00",
+   "updated": "2026-10-09T03:26:56.912205+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "17.5",
-   "updated": "2026-10-08T03:03:08.329477+00:00",
+   "updated": "2026-10-09T03:26:56.942525+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "66.528",
-   "updated": "2026-10-08T03:03:08.287482+00:00",
+   "updated": "2026-10-09T03:26:56.912224+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "4.036",
-   "updated": "2026-10-08T03:03:08.287528+00:00",
+   "updated": "2026-10-09T03:26:56.912244+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "4.07374933049157",
-   "updated": "2026-10-08T03:03:08.287508+00:00",
+   "updated": "2026-10-09T03:26:56.912237+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "5.97841072",
-   "updated": "2026-10-08T03:03:08.287500+00:00",
+   "updated": "2026-10-09T03:26:56.912231+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.569",
-   "updated": "2026-10-08T03:03:08.287577+00:00",
+   "updated": "2026-10-09T03:26:56.912281+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "14.9856262747939",
-   "updated": "2026-10-08T03:03:08.287395+00:00",
+   "updated": "2026-10-09T03:26:56.912198+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -106,7 +106,7 @@
   },
   "libertad_prensa": {
    "value": "55.4",
-   "updated": "2026-10-08T03:03:08.333054+00:00",
+   "updated": "2026-10-09T03:26:56.947719+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
@@ -118,19 +118,19 @@
   },
   "menores": {
    "value": "41.4573443514813",
-   "updated": "2026-10-08T03:03:08.287535+00:00",
+   "updated": "2026-10-09T03:26:56.912250+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "1.2",
-   "updated": "2026-10-08T03:03:08.287456+00:00",
+   "updated": "2026-10-09T03:26:56.912218+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "ZMW",
-   "updated": "2026-10-08T03:03:08.287570+00:00",
+   "updated": "2026-10-09T03:26:56.912275+00:00",
    "source": "static",
    "year": ""
   },
@@ -142,7 +142,7 @@
   },
   "pib": {
    "value": "25303185342.2511",
-   "updated": "2026-10-08T03:03:08.287349+00:00",
+   "updated": "2026-10-09T03:26:56.912183+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -154,25 +154,25 @@
   },
   "poblacion": {
    "value": "21314956",
-   "updated": "2026-10-08T03:03:08.287331+00:00",
+   "updated": "2026-10-09T03:26:56.912156+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Sub-Saharan Africa ",
-   "updated": "2026-10-08T03:03:08.287583+00:00",
+   "updated": "2026-10-09T03:26:56.912287+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "1187.10943350064",
-   "updated": "2026-10-08T03:03:08.287381+00:00",
+   "updated": "2026-10-09T03:26:56.912191+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "10.1",
-   "updated": "2026-10-08T03:03:08.343598+00:00",
+   "updated": "2026-10-09T03:26:56.951651+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2023"
   },
