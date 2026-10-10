@@ -1,6 +1,6 @@
 {
  "country": "mf",
- "generated": "2026-10-09T03:26:57.073651+00:00",
+ "generated": "2026-10-10T03:05:13.885069+00:00",
  "geo": {
   "name": "St. Martin (French part)",
   "lat": 0.0,
@@ -10,31 +10,31 @@
  "indicators": {
   "adultos": {
    "value": "60.2568027861763",
-   "updated": "2026-10-09T03:26:56.900553+00:00",
+   "updated": "2026-10-10T03:05:13.763472+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "39.4",
-   "updated": "2026-10-09T03:26:56.941041+00:00",
+   "updated": "2026-10-10T03:05:13.799019+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "80.438",
-   "updated": "2026-10-09T03:26:56.900540+00:00",
+   "updated": "2026-10-10T03:05:13.763453+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "2.673",
-   "updated": "2026-10-09T03:26:56.900547+00:00",
+   "updated": "2026-10-10T03:05:13.763466+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "18.4067511194458",
-   "updated": "2026-10-08T03:03:08.269987+00:00",
+   "updated": "2026-10-10T03:05:13.763478+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -46,37 +46,37 @@
   },
   "migrant_pct": {
    "value": "0",
-   "updated": "2026-10-09T03:26:56.900534+00:00",
+   "updated": "2026-10-10T03:05:13.763448+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "EUR",
-   "updated": "2026-10-09T03:26:56.900560+00:00",
+   "updated": "2026-10-10T03:05:13.763490+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-54.498832714608284",
-   "updated": "2026-10-09T03:26:56.900521+00:00",
+   "updated": "2026-10-10T03:05:13.763440+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "26129",
-   "updated": "2026-10-09T03:26:56.900514+00:00",
+   "updated": "2026-10-10T03:05:13.763435+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-10-09T03:26:56.900566+00:00",
+   "updated": "2026-10-10T03:05:13.763496+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "100",
-   "updated": "2026-10-08T03:03:08.269960+00:00",
+   "updated": "2026-10-10T03:05:13.763460+00:00",
    "source": "worldbank",
    "year": "2024"
   }
