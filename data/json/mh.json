@@ -1,6 +1,6 @@
 {
  "country": "mh",
- "generated": "2026-10-11T03:03:09.716477+00:00",
+ "generated": "2026-10-12T03:03:09.025989+00:00",
  "geo": {
   "name": "Marshall Islands",
   "lat": 7.11046,
@@ -10,25 +10,25 @@
  "indicators": {
   "adultos": {
    "value": "60.8847342068819",
-   "updated": "2026-10-11T03:03:09.578232+00:00",
+   "updated": "2026-10-12T03:03:08.877019+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "4.112",
-   "updated": "2026-10-11T03:03:09.614216+00:00",
+   "updated": "2026-10-12T03:03:08.924061+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.9429",
-   "updated": "2026-10-11T03:03:09.624890+00:00",
+   "updated": "2026-10-12T03:03:08.936464+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "20.7",
-   "updated": "2026-10-11T03:03:09.616450+00:00",
+   "updated": "2026-10-12T03:03:08.926665+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -40,31 +40,31 @@
   },
   "fertilidad": {
    "value": "2.864",
-   "updated": "2026-10-11T03:03:09.578219+00:00",
+   "updated": "2026-10-12T03:03:08.877006+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "13.40528965",
-   "updated": "2026-10-11T03:03:09.578177+00:00",
+   "updated": "2026-10-12T03:03:08.876974+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.639",
-   "updated": "2026-10-11T03:03:09.578273+00:00",
+   "updated": "2026-10-12T03:03:08.877048+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "internet_pct": {
    "value": "65.915802",
-   "updated": "2026-10-11T03:03:09.578191+00:00",
+   "updated": "2026-10-12T03:03:08.876984+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "4.64072653669969",
-   "updated": "2026-10-11T03:03:09.578246+00:00",
+   "updated": "2026-10-12T03:03:08.877029+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -76,61 +76,61 @@
   },
   "migrant_pct": {
    "value": "8.8",
-   "updated": "2026-10-11T03:03:09.578150+00:00",
+   "updated": "2026-10-12T03:03:08.876964+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-10-11T03:03:09.578260+00:00",
+   "updated": "2026-10-12T03:03:08.877039+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-47.00649834878023",
-   "updated": "2026-10-11T03:03:09.578128+00:00",
+   "updated": "2026-10-12T03:03:08.876944+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "285000000",
-   "updated": "2026-10-11T03:03:09.578085+00:00",
+   "updated": "2026-10-12T03:03:08.876913+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "8237.95897993999",
-   "updated": "2026-10-11T03:03:09.578099+00:00",
+   "updated": "2026-10-12T03:03:08.876923+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "37548",
-   "updated": "2026-10-11T03:03:09.578068+00:00",
+   "updated": "2026-10-12T03:03:08.876903+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-10-11T03:03:09.578286+00:00",
+   "updated": "2026-10-12T03:03:08.877058+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "7590.28443592202",
-   "updated": "2026-10-11T03:03:09.578114+00:00",
+   "updated": "2026-10-12T03:03:08.876934+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "17.3",
-   "updated": "2026-10-11T03:03:09.623556+00:00",
+   "updated": "2026-10-12T03:03:08.934575+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2019"
   },
   "urbanizacion": {
    "value": "78.7325660244112",
-   "updated": "2026-10-11T03:03:09.578205+00:00",
+   "updated": "2026-10-12T03:03:08.876995+00:00",
    "source": "worldbank",
    "year": "2024"
   }
