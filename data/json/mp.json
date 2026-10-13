@@ -1,6 +1,6 @@
 {
  "country": "mp",
- "generated": "2026-10-12T03:03:09.028917+00:00",
+ "generated": "2026-10-13T03:03:09.466019+00:00",
  "geo": {
   "name": "Northern Mariana Islands",
   "lat": 15.1935,
@@ -10,13 +10,13 @@
  "indicators": {
   "adultos": {
    "value": "68.2457229970075",
-   "updated": "2026-10-12T03:03:08.878242+00:00",
+   "updated": "2026-10-13T03:03:09.312191+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "36.1",
-   "updated": "2026-10-12T03:03:08.926720+00:00",
+   "updated": "2026-10-13T03:03:09.374452+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -28,13 +28,13 @@
   },
   "fertilidad": {
    "value": "2.324",
-   "updated": "2026-10-12T03:03:08.878231+00:00",
+   "updated": "2026-10-13T03:03:09.312185+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "9.75213144373553",
-   "updated": "2026-10-12T03:03:08.878255+00:00",
+   "updated": "2026-10-13T03:03:09.312197+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -46,37 +46,37 @@
   },
   "migrant_pct": {
    "value": "49.7",
-   "updated": "2026-10-12T03:03:08.878207+00:00",
+   "updated": "2026-10-13T03:03:09.312160+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-10-12T03:03:08.878268+00:00",
+   "updated": "2026-10-13T03:03:09.312204+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-24.77528343646958",
-   "updated": "2026-10-12T03:03:08.878196+00:00",
+   "updated": "2026-10-13T03:03:09.312153+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "44278",
-   "updated": "2026-10-12T03:03:08.878185+00:00",
+   "updated": "2026-10-13T03:03:09.312147+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-10-12T03:03:08.878279+00:00",
+   "updated": "2026-10-13T03:03:09.312209+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "92.0747260922394",
-   "updated": "2026-10-12T03:03:08.878218+00:00",
+   "updated": "2026-10-13T03:03:09.312178+00:00",
    "source": "worldbank",
    "year": "2024"
   }
