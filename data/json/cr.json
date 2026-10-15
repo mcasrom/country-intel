@@ -1,6 +1,6 @@
 {
  "country": "cr",
- "generated": "2026-10-14T03:03:08.867941+00:00",
+ "generated": "2026-10-15T03:03:09.233890+00:00",
  "geo": {
   "name": "Costa Rica",
   "lat": 9.63701,
@@ -10,73 +10,73 @@
  "indicators": {
   "adultos": {
    "value": "68.9755668228098",
-   "updated": "2026-10-14T03:03:08.736225+00:00",
+   "updated": "2026-10-15T03:03:09.100566+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "1.708",
-   "updated": "2026-10-14T03:03:08.819063+00:00",
+   "updated": "2026-10-15T03:03:09.167995+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "58.0",
-   "updated": "2026-10-14T03:03:08.822620+00:00",
+   "updated": "2026-10-15T03:03:09.173883+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.5975",
-   "updated": "2026-10-14T03:03:08.827474+00:00",
+   "updated": "2026-10-15T03:03:09.184794+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "defensa_pct": {
    "value": "0",
-   "updated": "2026-10-14T03:03:08.736307+00:00",
+   "updated": "2026-10-15T03:03:09.100595+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "democracia": {
    "value": "8.29",
-   "updated": "2026-10-14T03:03:08.824997+00:00",
+   "updated": "2026-10-15T03:03:09.178853+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
   "desempleo": {
    "value": "6.936",
-   "updated": "2026-10-14T03:03:08.735687+00:00",
+   "updated": "2026-10-15T03:03:09.100414+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "34.1",
-   "updated": "2026-10-14T03:03:08.821050+00:00",
+   "updated": "2026-10-15T03:03:09.170954+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "80.996",
-   "updated": "2026-10-14T03:03:08.735850+00:00",
+   "updated": "2026-10-15T03:03:09.100467+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.318",
-   "updated": "2026-10-14T03:03:08.736074+00:00",
+   "updated": "2026-10-15T03:03:09.100536+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "5.31208992004395",
-   "updated": "2026-10-14T03:03:08.735980+00:00",
+   "updated": "2026-10-15T03:03:09.100500+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "6.8663702",
-   "updated": "2026-10-14T03:03:08.735951+00:00",
+   "updated": "2026-10-15T03:03:09.100488+00:00",
    "source": "worldbank",
    "year": "2023"
   },
@@ -88,103 +88,103 @@
   },
   "homicidios": {
    "value": "17.7454798727379",
-   "updated": "2026-10-14T03:03:08.735902+00:00",
+   "updated": "2026-10-15T03:03:09.100478+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.806",
-   "updated": "2026-10-14T03:03:08.736426+00:00",
+   "updated": "2026-10-15T03:03:09.100624+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "-0.412853001047069",
-   "updated": "2026-10-14T03:03:08.735647+00:00",
+   "updated": "2026-10-15T03:03:09.100396+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "internet_pct": {
    "value": "87.17019653",
-   "updated": "2026-10-14T03:03:08.736014+00:00",
+   "updated": "2026-10-15T03:03:09.100511+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "libertad_prensa": {
    "value": "76.1",
-   "updated": "2026-10-14T03:03:08.823825+00:00",
+   "updated": "2026-10-15T03:03:09.176290+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "12.2251559968888",
-   "updated": "2026-10-14T03:03:08.736266+00:00",
+   "updated": "2026-10-15T03:03:09.100581+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "18.7992771803014",
-   "updated": "2026-10-14T03:03:08.736118+00:00",
+   "updated": "2026-10-15T03:03:09.100547+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "12.2",
-   "updated": "2026-10-14T03:03:08.735804+00:00",
+   "updated": "2026-10-15T03:03:09.100444+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "CRC",
-   "updated": "2026-10-14T03:03:08.736367+00:00",
+   "updated": "2026-10-15T03:03:09.100610+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "0.18850233239959377",
-   "updated": "2026-10-14T03:03:08.735731+00:00",
+   "updated": "2026-10-15T03:03:09.100430+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "96715644330.6612",
-   "updated": "2026-10-14T03:03:08.735533+00:00",
+   "updated": "2026-10-15T03:03:09.100352+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "31552.1489834288",
-   "updated": "2026-10-14T03:03:08.735552+00:00",
+   "updated": "2026-10-15T03:03:09.100364+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "5129910",
-   "updated": "2026-10-14T03:03:08.735514+00:00",
+   "updated": "2026-10-15T03:03:09.100336+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-10-14T03:03:08.736505+00:00",
+   "updated": "2026-10-15T03:03:09.100639+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "18853.2828705886",
-   "updated": "2026-10-14T03:03:08.735606+00:00",
+   "updated": "2026-10-15T03:03:09.100377+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "20.4",
-   "updated": "2026-10-14T03:03:08.826202+00:00",
+   "updated": "2026-10-15T03:03:09.181528+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2024"
   },
   "urbanizacion": {
    "value": "79.3107672397967",
-   "updated": "2026-10-14T03:03:08.736043+00:00",
+   "updated": "2026-10-15T03:03:09.100523+00:00",
    "source": "worldbank",
    "year": "2024"
   }
