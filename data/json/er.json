@@ -1,6 +1,6 @@
 {
  "country": "er",
- "generated": "2026-11-01T03:03:08.689540+00:00",
+ "generated": "2026-11-02T03:17:23.549791+00:00",
  "geo": {
   "name": "Eritrea",
   "lat": 15.3315,
@@ -10,31 +10,31 @@
  "indicators": {
   "adultos": {
    "value": "57.6601077666243",
-   "updated": "2026-10-24T03:03:08.926373+00:00",
+   "updated": "2026-11-02T03:17:23.407479+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "0.210",
-   "updated": "2026-11-01T03:03:08.623823+00:00",
+   "updated": "2026-11-02T03:17:23.481985+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "13.0",
-   "updated": "2026-11-01T03:03:08.627324+00:00",
+   "updated": "2026-11-02T03:17:23.488418+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.3276",
-   "updated": "2026-11-01T03:03:08.632648+00:00",
+   "updated": "2026-11-02T03:17:23.495879+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2021"
   },
   "democracia": {
    "value": "1.97",
-   "updated": "2026-11-01T03:03:08.629895+00:00",
+   "updated": "2026-11-02T03:17:23.492329+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
@@ -46,7 +46,7 @@
   },
   "edad_mediana": {
    "value": "18.7",
-   "updated": "2026-11-01T03:03:08.625705+00:00",
+   "updated": "2026-11-02T03:17:23.485115+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -58,7 +58,7 @@
   },
   "fertilidad": {
    "value": "3.68",
-   "updated": "2026-11-01T03:03:08.565344+00:00",
+   "updated": "2026-11-02T03:17:23.407358+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -70,25 +70,25 @@
   },
   "idh": {
    "value": "0.492",
-   "updated": "2026-11-01T03:03:08.565392+00:00",
+   "updated": "2026-11-02T03:17:23.407533+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "libertad_prensa": {
    "value": "16.6",
-   "updated": "2026-11-01T03:03:08.628600+00:00",
+   "updated": "2026-11-02T03:17:23.490956+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "4.20287571879535",
-   "updated": "2026-11-01T03:03:08.565377+00:00",
+   "updated": "2026-11-02T03:17:23.407498+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "38.1370165145804",
-   "updated": "2026-11-01T03:03:08.565367+00:00",
+   "updated": "2026-11-02T03:17:23.407453+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -100,7 +100,7 @@
   },
   "moneda": {
    "value": "ERN",
-   "updated": "2026-11-01T03:03:08.565385+00:00",
+   "updated": "2026-11-02T03:17:23.407516+00:00",
    "source": "static",
    "year": ""
   },
@@ -112,19 +112,19 @@
   },
   "poblacion": {
    "value": "3535603",
-   "updated": "2026-11-01T03:03:08.565289+00:00",
+   "updated": "2026-11-02T03:17:23.407319+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Sub-Saharan Africa ",
-   "updated": "2026-11-01T03:03:08.565400+00:00",
+   "updated": "2026-11-02T03:17:23.407551+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "34.5365524291992",
-   "updated": "2026-11-01T03:03:08.565336+00:00",
+   "updated": "2026-11-02T03:17:23.407337+00:00",
    "source": "worldbank",
    "year": "2024"
   }

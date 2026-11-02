@@ -1,6 +1,6 @@
 {
  "country": "vi",
- "generated": "2026-11-01T03:03:08.788838+00:00",
+ "generated": "2026-11-02T03:17:23.675979+00:00",
  "geo": {
   "name": "Virgin Islands (U.S.)",
   "lat": 18.3358,
@@ -10,25 +10,25 @@
  "indicators": {
   "adultos": {
    "value": "60.8132618809257",
-   "updated": "2026-11-01T03:03:08.602952+00:00",
+   "updated": "2026-11-02T03:17:23.447515+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.8901",
-   "updated": "2026-11-01T03:03:08.634290+00:00",
+   "updated": "2026-11-02T03:17:23.497330+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2022"
   },
   "desempleo": {
    "value": "11.423",
-   "updated": "2026-11-01T03:03:08.602630+00:00",
+   "updated": "2026-11-02T03:17:23.447490+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "44.7",
-   "updated": "2026-11-01T03:03:08.626907+00:00",
+   "updated": "2026-11-02T03:17:23.487645+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -40,19 +40,19 @@
   },
   "fertilidad": {
    "value": "1.97",
-   "updated": "2026-11-01T03:03:08.602915+00:00",
+   "updated": "2026-11-02T03:17:23.447503+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "22.6900653671751",
-   "updated": "2026-11-01T03:03:08.602968+00:00",
+   "updated": "2026-11-02T03:17:23.447522+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "16.4966727518992",
-   "updated": "2026-11-01T03:03:08.602936+00:00",
+   "updated": "2026-11-02T03:17:23.447509+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -64,7 +64,7 @@
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-11-01T03:03:08.602984+00:00",
+   "updated": "2026-11-02T03:17:23.447533+00:00",
    "source": "static",
    "year": ""
   },
@@ -76,19 +76,19 @@
   },
   "poblacion": {
    "value": "104377",
-   "updated": "2026-11-01T03:03:08.602618+00:00",
+   "updated": "2026-11-02T03:17:23.447482+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-11-01T03:03:08.602999+00:00",
+   "updated": "2026-11-02T03:17:23.447539+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "urbanizacion": {
    "value": "95.3312197036061",
-   "updated": "2026-11-01T03:03:08.602891+00:00",
+   "updated": "2026-11-02T03:17:23.447496+00:00",
    "source": "worldbank",
    "year": "2024"
   }

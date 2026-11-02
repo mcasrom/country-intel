@@ -1,6 +1,6 @@
 {
  "country": "pr",
- "generated": "2026-11-01T03:03:08.754078+00:00",
+ "generated": "2026-11-02T03:17:23.639227+00:00",
  "geo": {
   "name": "Puerto Rico (US)",
   "lat": 18.23,
@@ -10,31 +10,31 @@
  "indicators": {
   "adultos": {
    "value": "63.6526418448685",
-   "updated": "2026-11-01T03:03:08.591438+00:00",
+   "updated": "2026-11-02T03:17:23.439210+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "corrupcion": {
    "value": "63.0",
-   "updated": "2026-11-01T03:03:08.627914+00:00",
+   "updated": "2026-11-02T03:17:23.489361+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2014"
   },
   "coste_vida": {
    "value": "0.7830",
-   "updated": "2026-11-01T03:03:08.633514+00:00",
+   "updated": "2026-11-02T03:17:23.496633+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "desempleo": {
    "value": "5.639",
-   "updated": "2026-11-01T03:03:08.591315+00:00",
+   "updated": "2026-11-02T03:17:23.439183+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "45.3",
-   "updated": "2026-11-01T03:03:08.626448+00:00",
+   "updated": "2026-11-02T03:17:23.487146+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
@@ -46,7 +46,7 @@
   },
   "fertilidad": {
    "value": "0.92",
-   "updated": "2026-11-01T03:03:08.591397+00:00",
+   "updated": "2026-11-02T03:17:23.439197+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -70,7 +70,7 @@
   },
   "menores": {
    "value": "11.6286791330835",
-   "updated": "2026-11-01T03:03:08.591423+00:00",
+   "updated": "2026-11-02T03:17:23.439203+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -82,7 +82,7 @@
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-11-01T03:03:08.591465+00:00",
+   "updated": "2026-11-02T03:17:23.439217+00:00",
    "source": "static",
    "year": ""
   },
@@ -94,43 +94,43 @@
   },
   "pib": {
    "value": "126029527033.705",
-   "updated": "2026-11-01T03:03:08.591273+00:00",
+   "updated": "2026-11-02T03:17:23.439161+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "50332.9848222477",
-   "updated": "2026-11-01T03:03:08.591288+00:00",
+   "updated": "2026-11-02T03:17:23.439170+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "3202521",
-   "updated": "2026-11-01T03:03:08.591249+00:00",
+   "updated": "2026-11-02T03:17:23.439129+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-11-01T03:03:08.591481+00:00",
+   "updated": "2026-11-02T03:17:23.439223+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
   "renta_pc": {
    "value": "39353.2242360643",
-   "updated": "2026-11-01T03:03:08.591301+00:00",
+   "updated": "2026-11-02T03:17:23.439177+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "titulados": {
    "value": "38.6",
-   "updated": "2026-11-01T03:03:08.631903+00:00",
+   "updated": "2026-11-02T03:17:23.494759+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2020"
   },
   "urbanizacion": {
    "value": "94.2539505199436",
-   "updated": "2026-11-01T03:03:08.591383+00:00",
+   "updated": "2026-11-02T03:17:23.439190+00:00",
    "source": "worldbank",
    "year": "2024"
   }
