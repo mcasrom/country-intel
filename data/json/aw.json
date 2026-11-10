@@ -1,6 +1,6 @@
 {
  "country": "aw",
- "generated": "2026-11-09T03:03:08.619756+00:00",
+ "generated": "2026-11-10T03:18:18.725649+00:00",
  "geo": {
   "name": "Aruba",
   "lat": 12.5167,
@@ -10,91 +10,91 @@
  "indicators": {
   "adultos": {
    "value": "66.098801190019",
-   "updated": "2026-11-09T03:03:08.506712+00:00",
+   "updated": "2026-11-10T03:18:18.594417+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "8.518",
-   "updated": "2026-11-09T03:03:08.589984+00:00",
+   "updated": "2026-11-10T03:18:18.688151+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.7798",
-   "updated": "2026-11-09T03:03:08.603221+00:00",
+   "updated": "2026-11-10T03:18:18.700778+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "41.0",
-   "updated": "2026-11-09T03:03:08.591997+00:00",
+   "updated": "2026-11-10T03:18:18.692356+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "76.5",
-   "updated": "2026-11-09T03:03:08.506633+00:00",
+   "updated": "2026-11-10T03:18:18.594260+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.606",
-   "updated": "2026-11-09T03:03:08.506661+00:00",
+   "updated": "2026-11-10T03:18:18.594327+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "17.0563223230356",
-   "updated": "2026-11-09T03:03:08.506727+00:00",
+   "updated": "2026-11-10T03:18:18.594451+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "16.8448764869454",
-   "updated": "2026-11-09T03:03:08.506696+00:00",
+   "updated": "2026-11-10T03:18:18.594372+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "68",
-   "updated": "2026-11-09T03:03:08.506620+00:00",
+   "updated": "2026-11-10T03:18:18.594230+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "AWG",
-   "updated": "2026-11-09T03:03:08.506742+00:00",
+   "updated": "2026-11-10T03:18:18.594483+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "1.3056160007407749",
-   "updated": "2026-11-09T03:03:08.506605+00:00",
+   "updated": "2026-11-10T03:18:18.594196+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "4167588070.29217",
-   "updated": "2026-11-09T03:03:08.506560+00:00",
+   "updated": "2026-11-10T03:18:18.594098+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "51712.1531358934",
-   "updated": "2026-11-09T03:03:08.506574+00:00",
+   "updated": "2026-11-10T03:18:18.594145+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "107995",
-   "updated": "2026-11-09T03:03:08.506545+00:00",
+   "updated": "2026-11-10T03:18:18.594053+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-11-09T03:03:08.506755+00:00",
+   "updated": "2026-11-10T03:18:18.594514+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -106,13 +106,13 @@
   },
   "titulados": {
    "value": "12.8",
-   "updated": "2026-11-09T03:03:08.600553+00:00",
+   "updated": "2026-11-10T03:18:18.699367+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2010"
   },
   "urbanizacion": {
    "value": "61.7909396819594",
-   "updated": "2026-11-09T03:03:08.506647+00:00",
+   "updated": "2026-11-10T03:18:18.594294+00:00",
    "source": "worldbank",
    "year": "2024"
   }
