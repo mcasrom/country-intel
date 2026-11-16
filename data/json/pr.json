@@ -1,6 +1,6 @@
 {
  "country": "pr",
- "generated": "2026-11-15T03:03:10.371249+00:00",
+ "generated": "2026-11-16T03:03:18.718860+00:00",
  "geo": {
   "name": "Puerto Rico (US)",
   "lat": 18.23,
@@ -10,19 +10,19 @@
  "indicators": {
   "adultos": {
    "value": "63.6526418448685",
-   "updated": "2026-11-15T03:03:10.177654+00:00",
+   "updated": "2026-11-16T03:03:18.555107+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "corrupcion": {
    "value": "63.0",
-   "updated": "2026-11-15T03:03:10.219223+00:00",
+   "updated": "2026-11-16T03:03:18.608239+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2014"
   },
   "coste_vida": {
    "value": "0.7830",
-   "updated": "2026-11-15T03:03:10.230703+00:00",
+   "updated": "2026-11-16T03:03:18.618463+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
@@ -34,85 +34,85 @@
   },
   "edad_mediana": {
    "value": "45.3",
-   "updated": "2026-11-15T03:03:10.216098+00:00",
+   "updated": "2026-11-16T03:03:18.605565+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "81.902",
-   "updated": "2026-11-15T03:03:10.177578+00:00",
+   "updated": "2026-11-16T03:03:18.555014+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "0.92",
-   "updated": "2026-11-15T03:03:10.177634+00:00",
+   "updated": "2026-11-16T03:03:18.555080+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "4.27101949674789",
-   "updated": "2026-11-15T03:03:10.177602+00:00",
+   "updated": "2026-11-16T03:03:18.555052+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "homicidios": {
    "value": "14.5896581532053",
-   "updated": "2026-11-15T03:03:10.177590+00:00",
+   "updated": "2026-11-16T03:03:18.555038+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "mayores": {
    "value": "24.718679022048",
-   "updated": "2026-11-15T03:03:10.177664+00:00",
+   "updated": "2026-11-16T03:03:18.555121+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "11.6286791330835",
-   "updated": "2026-11-15T03:03:10.177643+00:00",
+   "updated": "2026-11-16T03:03:18.555094+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "6.9",
-   "updated": "2026-11-15T03:03:10.177551+00:00",
+   "updated": "2026-11-16T03:03:18.555001+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "USD",
-   "updated": "2026-11-15T03:03:10.177694+00:00",
+   "updated": "2026-11-16T03:03:18.555134+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "3.6099685216740185",
-   "updated": "2026-11-15T03:03:10.177543+00:00",
+   "updated": "2026-11-16T03:03:18.554987+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "126029527033.705",
-   "updated": "2026-11-15T03:03:10.177529+00:00",
+   "updated": "2026-11-16T03:03:18.554959+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "50332.9848222477",
-   "updated": "2026-11-15T03:03:10.177537+00:00",
+   "updated": "2026-11-16T03:03:18.554974+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "3202521",
-   "updated": "2026-11-15T03:03:10.177514+00:00",
+   "updated": "2026-11-16T03:03:18.554939+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-11-15T03:03:10.177706+00:00",
+   "updated": "2026-11-16T03:03:18.555147+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -124,13 +124,13 @@
   },
   "titulados": {
    "value": "38.6",
-   "updated": "2026-11-15T03:03:10.227665+00:00",
+   "updated": "2026-11-16T03:03:18.615907+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2020"
   },
   "urbanizacion": {
    "value": "94.2539505199436",
-   "updated": "2026-11-15T03:03:10.177621+00:00",
+   "updated": "2026-11-16T03:03:18.555066+00:00",
    "source": "worldbank",
    "year": "2024"
   }

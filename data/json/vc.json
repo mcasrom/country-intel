@@ -1,6 +1,6 @@
 {
  "country": "vc",
- "generated": "2026-11-15T03:03:10.409029+00:00",
+ "generated": "2026-11-16T03:03:18.740903+00:00",
  "geo": {
   "name": "St. Vincent and the Grenadines",
   "lat": 13.2035,
@@ -10,25 +10,25 @@
  "indicators": {
   "adultos": {
    "value": "66.8174047865151",
-   "updated": "2026-11-15T03:03:10.184944+00:00",
+   "updated": "2026-11-16T03:03:18.565567+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "2.541",
-   "updated": "2026-11-15T03:03:10.213805+00:00",
+   "updated": "2026-11-16T03:03:18.602401+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "63.0",
-   "updated": "2026-11-15T03:03:10.219919+00:00",
+   "updated": "2026-11-16T03:03:18.609090+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.5407",
-   "updated": "2026-11-15T03:03:10.231388+00:00",
+   "updated": "2026-11-16T03:03:18.618762+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
@@ -40,43 +40,43 @@
   },
   "edad_mediana": {
    "value": "33.9",
-   "updated": "2026-11-15T03:03:10.216856+00:00",
+   "updated": "2026-11-16T03:03:18.606373+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "71.382",
-   "updated": "2026-11-15T03:03:10.184884+00:00",
+   "updated": "2026-11-16T03:03:18.565513+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.761",
-   "updated": "2026-11-15T03:03:10.184931+00:00",
+   "updated": "2026-11-16T03:03:18.565555+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_educacion": {
    "value": "6.4582691706334",
-   "updated": "2026-11-15T03:03:10.184910+00:00",
+   "updated": "2026-11-16T03:03:18.565536+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "4.43696308",
-   "updated": "2026-11-15T03:03:10.184903+00:00",
+   "updated": "2026-11-16T03:03:18.565530+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "51.3212761232698",
-   "updated": "2026-11-15T03:03:10.184896+00:00",
+   "updated": "2026-11-16T03:03:18.565523+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.751",
-   "updated": "2026-11-15T03:03:10.185000+00:00",
+   "updated": "2026-11-16T03:03:18.565614+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
@@ -88,61 +88,61 @@
   },
   "internet_pct": {
    "value": "76.19010162",
-   "updated": "2026-11-15T03:03:10.184917+00:00",
+   "updated": "2026-11-16T03:03:18.565542+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "mayores": {
    "value": "11.8912499006122",
-   "updated": "2026-11-15T03:03:10.184952+00:00",
+   "updated": "2026-11-16T03:03:18.565574+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "21.2913453128727",
-   "updated": "2026-11-15T03:03:10.184937+00:00",
+   "updated": "2026-11-16T03:03:18.565561+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "4.8",
-   "updated": "2026-11-15T03:03:10.184878+00:00",
+   "updated": "2026-11-16T03:03:18.565507+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "XCD",
-   "updated": "2026-11-15T03:03:10.184987+00:00",
+   "updated": "2026-11-16T03:03:18.565599+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-7.324878746918979",
-   "updated": "2026-11-15T03:03:10.184871+00:00",
+   "updated": "2026-11-16T03:03:18.565501+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "1157207407.40741",
-   "updated": "2026-11-15T03:03:10.184856+00:00",
+   "updated": "2026-11-16T03:03:18.565487+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "21302.9730252553",
-   "updated": "2026-11-15T03:03:10.184863+00:00",
+   "updated": "2026-11-16T03:03:18.565494+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "100616",
-   "updated": "2026-11-15T03:03:10.184849+00:00",
+   "updated": "2026-11-16T03:03:18.565481+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Latin America & Caribbean ",
-   "updated": "2026-11-15T03:03:10.185007+00:00",
+   "updated": "2026-11-16T03:03:18.565621+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -154,7 +154,7 @@
   },
   "urbanizacion": {
    "value": "47.8487050456749",
-   "updated": "2026-11-15T03:03:10.184924+00:00",
+   "updated": "2026-11-16T03:03:18.565548+00:00",
    "source": "worldbank",
    "year": "2024"
   }
