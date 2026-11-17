@@ -1,6 +1,6 @@
 {
  "country": "se",
- "generated": "2026-11-16T03:03:18.724971+00:00",
+ "generated": "2026-11-17T03:03:09.401072+00:00",
  "geo": {
   "name": "Sweden",
   "lat": 59.3327,
@@ -10,37 +10,37 @@
  "indicators": {
   "adultos": {
    "value": "62.2674518966203",
-   "updated": "2026-11-16T03:03:18.559195+00:00",
+   "updated": "2026-11-17T03:03:09.205500+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "co2_pc": {
    "value": "3.592",
-   "updated": "2026-11-16T03:03:18.601818+00:00",
+   "updated": "2026-11-17T03:03:09.240251+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "80.0",
-   "updated": "2026-11-16T03:03:18.608485+00:00",
+   "updated": "2026-11-17T03:03:09.246456+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.8034",
-   "updated": "2026-11-16T03:03:18.618545+00:00",
+   "updated": "2026-11-17T03:03:09.257455+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
   "defensa_pct": {
    "value": "1.9932278351",
-   "updated": "2026-11-16T03:03:18.559222+00:00",
+   "updated": "2026-11-17T03:03:09.205524+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "democracia": {
    "value": "9.39",
-   "updated": "2026-11-16T03:03:18.613566+00:00",
+   "updated": "2026-11-17T03:03:09.251726+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
@@ -52,43 +52,43 @@
   },
   "edad_mediana": {
    "value": "39.9",
-   "updated": "2026-11-16T03:03:18.606056+00:00",
+   "updated": "2026-11-17T03:03:09.243562+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "84.0634146341463",
-   "updated": "2026-11-16T03:03:18.559087+00:00",
+   "updated": "2026-11-17T03:03:09.205386+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "1.43",
-   "updated": "2026-11-16T03:03:18.559168+00:00",
+   "updated": "2026-11-17T03:03:09.205479+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "11.21510124",
-   "updated": "2026-11-16T03:03:18.559128+00:00",
+   "updated": "2026-11-17T03:03:09.205445+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gini": {
    "value": "29.3",
-   "updated": "2026-11-16T03:03:18.559115+00:00",
+   "updated": "2026-11-17T03:03:09.205423+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "1.14675703743944",
-   "updated": "2026-11-16T03:03:18.559101+00:00",
+   "updated": "2026-11-17T03:03:09.205404+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.952",
-   "updated": "2026-11-16T03:03:18.559248+00:00",
+   "updated": "2026-11-17T03:03:09.205547+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
@@ -100,67 +100,67 @@
   },
   "internet_pct": {
    "value": "95.52930428",
-   "updated": "2026-11-16T03:03:18.559141+00:00",
+   "updated": "2026-11-17T03:03:09.205457+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "libertad_prensa": {
    "value": "88.3",
-   "updated": "2026-11-16T03:03:18.611482+00:00",
+   "updated": "2026-11-17T03:03:09.249164+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "20.7467682423653",
-   "updated": "2026-11-16T03:03:18.559208+00:00",
+   "updated": "2026-11-17T03:03:09.205512+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "16.9857798610144",
-   "updated": "2026-11-16T03:03:18.559181+00:00",
+   "updated": "2026-11-17T03:03:09.205489+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "21.4",
-   "updated": "2026-11-16T03:03:18.559074+00:00",
+   "updated": "2026-11-17T03:03:09.205373+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "SEK",
-   "updated": "2026-11-16T03:03:18.559236+00:00",
+   "updated": "2026-11-17T03:03:09.205536+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "4.741379351124992",
-   "updated": "2026-11-16T03:03:18.559056+00:00",
+   "updated": "2026-11-17T03:03:09.205359+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "604827393488.582",
-   "updated": "2026-11-16T03:03:18.559011+00:00",
+   "updated": "2026-11-17T03:03:09.205322+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "71221.9379308266",
-   "updated": "2026-11-16T03:03:18.559041+00:00",
+   "updated": "2026-11-17T03:03:09.205341+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "poblacion": {
    "value": "10569709",
-   "updated": "2026-11-16T03:03:18.558989+00:00",
+   "updated": "2026-11-17T03:03:09.205300+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-11-16T03:03:18.559261+00:00",
+   "updated": "2026-11-17T03:03:09.205559+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -172,13 +172,13 @@
   },
   "titulados": {
    "value": "45.2",
-   "updated": "2026-11-16T03:03:18.616127+00:00",
+   "updated": "2026-11-17T03:03:09.254343+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2023"
   },
   "urbanizacion": {
    "value": "88.8559748346228",
-   "updated": "2026-11-16T03:03:18.559155+00:00",
+   "updated": "2026-11-17T03:03:09.205468+00:00",
    "source": "worldbank",
    "year": "2024"
   }
