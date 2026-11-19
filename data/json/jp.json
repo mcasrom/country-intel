@@ -1,6 +1,6 @@
 {
  "country": "jp",
- "generated": "2026-11-18T03:19:05.121472+00:00",
+ "generated": "2026-11-19T03:20:07.300747+00:00",
  "geo": {
   "name": "Japan",
   "lat": 35.67,
@@ -16,19 +16,19 @@
   },
   "co2_pc": {
    "value": "7.772",
-   "updated": "2026-11-18T03:19:05.049352+00:00",
+   "updated": "2026-11-19T03:20:07.170357+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "71.0",
-   "updated": "2026-11-18T03:19:05.052963+00:00",
+   "updated": "2026-11-19T03:20:07.175648+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.6241",
-   "updated": "2026-11-18T03:19:05.059986+00:00",
+   "updated": "2026-11-19T03:20:07.188528+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
@@ -40,7 +40,7 @@
   },
   "democracia": {
    "value": "8.48",
-   "updated": "2026-11-18T03:19:05.055350+00:00",
+   "updated": "2026-11-19T03:20:07.181276+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
@@ -52,13 +52,13 @@
   },
   "edad_mediana": {
    "value": "49.0",
-   "updated": "2026-11-18T03:19:05.051016+00:00",
+   "updated": "2026-11-19T03:20:07.174329+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "84.0363414634146",
-   "updated": "2026-11-17T03:03:09.185675+00:00",
+   "updated": "2026-11-19T03:20:07.104032+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -70,25 +70,25 @@
   },
   "gasto_salud": {
    "value": "10.73979473",
-   "updated": "2026-11-17T03:03:09.185717+00:00",
+   "updated": "2026-11-19T03:20:07.104056+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "0.229153196964695",
-   "updated": "2026-11-17T03:03:09.185704+00:00",
+   "updated": "2026-11-19T03:20:07.104049+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.925",
-   "updated": "2026-11-18T03:19:05.013881+00:00",
+   "updated": "2026-11-19T03:20:07.104074+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "2.7385368163524",
-   "updated": "2026-11-09T03:03:08.538412+00:00",
+   "updated": "2026-11-19T03:20:07.104013+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -100,7 +100,7 @@
   },
   "libertad_prensa": {
    "value": "62.1",
-   "updated": "2026-11-18T03:19:05.054197+00:00",
+   "updated": "2026-11-19T03:20:07.178966+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
@@ -118,31 +118,31 @@
   },
   "migrant_pct": {
    "value": "2.8",
-   "updated": "2026-11-17T03:03:09.185664+00:00",
+   "updated": "2026-11-19T03:20:07.104026+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "JPY",
-   "updated": "2026-11-18T03:19:05.013845+00:00",
+   "updated": "2026-11-19T03:20:07.104063+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
-   "value": "1.2369956932816921",
-   "updated": "2026-11-17T03:03:09.185652+00:00",
+   "value": "153357",
+   "updated": "2026-11-19T03:20:07.104020+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "4190008188358.57",
-   "updated": "2026-11-17T03:03:09.185624+00:00",
+   "updated": "2026-11-19T03:20:07.103999+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "54156.2687689605",
-   "updated": "2026-11-17T03:03:09.185639+00:00",
+   "updated": "2026-11-19T03:20:07.104006+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -154,7 +154,7 @@
   },
   "region": {
    "value": "East Asia & Pacific",
-   "updated": "2026-11-18T03:19:05.013931+00:00",
+   "updated": "2026-11-19T03:20:07.104103+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -166,7 +166,7 @@
   },
   "titulados": {
    "value": "34.4",
-   "updated": "2026-11-18T03:19:05.057374+00:00",
+   "updated": "2026-11-19T03:20:07.185603+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2010"
   },

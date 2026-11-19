@@ -1,6 +1,6 @@
 {
  "country": "gl",
- "generated": "2026-11-18T03:19:05.106230+00:00",
+ "generated": "2026-11-19T03:20:07.273226+00:00",
  "geo": {
   "name": "Greenland",
   "lat": 64.1836,
@@ -16,25 +16,25 @@
   },
   "co2_pc": {
    "value": "11.080",
-   "updated": "2026-11-18T03:19:05.049195+00:00",
+   "updated": "2026-11-19T03:20:07.170083+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.7420",
-   "updated": "2026-11-18T03:19:05.059650+00:00",
+   "updated": "2026-11-19T03:20:07.188201+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2023"
   },
   "edad_mediana": {
    "value": "34.2",
-   "updated": "2026-11-18T03:19:05.050864+00:00",
+   "updated": "2026-11-19T03:20:07.174180+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "70.2734146341463",
-   "updated": "2026-11-17T03:03:09.174768+00:00",
+   "updated": "2026-11-19T03:20:07.094835+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -58,31 +58,31 @@
   },
   "migrant_pct": {
    "value": "10.4",
-   "updated": "2026-11-17T03:03:09.174741+00:00",
+   "updated": "2026-11-19T03:20:07.094822+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "DKK",
-   "updated": "2026-11-18T03:19:05.004320+00:00",
+   "updated": "2026-11-19T03:20:07.094849+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
-   "value": "-4.996832993173341",
-   "updated": "2026-11-17T03:03:09.174712+00:00",
+   "value": "-284",
+   "updated": "2026-11-19T03:20:07.094808+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "3326543974.39193",
-   "updated": "2026-11-17T03:03:09.174609+00:00",
+   "updated": "2026-11-19T03:20:07.094780+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "pib_ppa_pc": {
    "value": "78905.5801137274",
-   "updated": "2026-11-17T03:03:09.174650+00:00",
+   "updated": "2026-11-19T03:20:07.094794+00:00",
    "source": "worldbank",
    "year": "2023"
   },
@@ -94,7 +94,7 @@
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-11-18T03:19:05.004370+00:00",
+   "updated": "2026-11-19T03:20:07.094862+00:00",
    "source": "Banco Mundial",
    "year": ""
   },

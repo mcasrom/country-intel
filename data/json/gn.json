@@ -1,6 +1,6 @@
 {
  "country": "gn",
- "generated": "2026-11-18T03:19:05.107486+00:00",
+ "generated": "2026-11-19T03:20:07.278790+00:00",
  "geo": {
   "name": "Guinea",
   "lat": 9.51667,
@@ -16,19 +16,19 @@
   },
   "co2_pc": {
    "value": "0.273",
-   "updated": "2026-11-18T03:19:05.049208+00:00",
+   "updated": "2026-11-19T03:20:07.170121+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "28.0",
-   "updated": "2026-11-18T03:19:05.052833+00:00",
+   "updated": "2026-11-19T03:20:07.175524+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.3713",
-   "updated": "2026-11-18T03:19:05.059689+00:00",
+   "updated": "2026-11-19T03:20:07.188228+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
@@ -40,7 +40,7 @@
   },
   "democracia": {
    "value": "2.04",
-   "updated": "2026-11-18T03:19:05.055208+00:00",
+   "updated": "2026-11-19T03:20:07.181078+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
@@ -52,13 +52,13 @@
   },
   "edad_mediana": {
    "value": "18.0",
-   "updated": "2026-11-18T03:19:05.050877+00:00",
+   "updated": "2026-11-19T03:20:07.174192+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "60.904",
-   "updated": "2026-11-17T03:03:09.175591+00:00",
+   "updated": "2026-11-19T03:20:07.095137+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -70,25 +70,25 @@
   },
   "gasto_educacion": {
    "value": "1.72470879088585",
-   "updated": "2026-11-17T03:03:09.175643+00:00",
+   "updated": "2026-11-19T03:20:07.095164+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "gasto_salud": {
    "value": "3.69442987",
-   "updated": "2026-11-17T03:03:09.175620+00:00",
+   "updated": "2026-11-19T03:20:07.095151+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.471",
-   "updated": "2026-11-18T03:19:05.005046+00:00",
+   "updated": "2026-11-19T03:20:07.095192+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "8.12313914948596",
-   "updated": "2026-11-09T03:03:08.532219+00:00",
+   "updated": "2026-11-19T03:20:07.095073+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -100,7 +100,7 @@
   },
   "libertad_prensa": {
    "value": "60.0",
-   "updated": "2026-11-18T03:19:05.054068+00:00",
+   "updated": "2026-11-19T03:20:07.178838+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
@@ -118,31 +118,31 @@
   },
   "migrant_pct": {
    "value": "0.8",
-   "updated": "2026-11-17T03:03:09.175567+00:00",
+   "updated": "2026-11-19T03:20:07.095123+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "GNF",
-   "updated": "2026-11-18T03:19:05.005018+00:00",
+   "updated": "2026-11-19T03:20:07.095179+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
-   "value": "-0.8149220744321249",
-   "updated": "2026-11-17T03:03:09.175548+00:00",
+   "value": "-12024",
+   "updated": "2026-11-19T03:20:07.095109+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "25008678293.4073",
-   "updated": "2026-11-17T03:03:09.175512+00:00",
+   "updated": "2026-11-19T03:20:07.095044+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "4571.93087130821",
-   "updated": "2026-11-17T03:03:09.175530+00:00",
+   "updated": "2026-11-19T03:20:07.095058+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -154,7 +154,7 @@
   },
   "region": {
    "value": "Sub-Saharan Africa ",
-   "updated": "2026-11-18T03:19:05.005077+00:00",
+   "updated": "2026-11-19T03:20:07.095205+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -166,7 +166,7 @@
   },
   "titulados": {
    "value": "1.4",
-   "updated": "2026-11-18T03:19:05.057157+00:00",
+   "updated": "2026-11-19T03:20:07.185482+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2014"
   },

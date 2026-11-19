@@ -1,6 +1,6 @@
 {
  "country": "hu",
- "generated": "2026-11-18T03:19:05.112788+00:00",
+ "generated": "2026-11-19T03:20:07.287841+00:00",
  "geo": {
   "name": "Hungary",
   "lat": 47.4984,
@@ -16,19 +16,19 @@
   },
   "co2_pc": {
    "value": "4.136",
-   "updated": "2026-11-18T03:19:05.049279+00:00",
+   "updated": "2026-11-19T03:20:07.170233+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "41.0",
-   "updated": "2026-11-18T03:19:05.052895+00:00",
+   "updated": "2026-11-19T03:20:07.175582+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.4801",
-   "updated": "2026-11-18T03:19:05.059817+00:00",
+   "updated": "2026-11-19T03:20:07.188356+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
@@ -40,7 +40,7 @@
   },
   "democracia": {
    "value": "6.51",
-   "updated": "2026-11-18T03:19:05.055267+00:00",
+   "updated": "2026-11-19T03:20:07.181153+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
@@ -52,19 +52,19 @@
   },
   "deuda_pib": {
    "value": "81.9885115322258",
-   "updated": "2026-11-17T03:03:09.180193+00:00",
+   "updated": "2026-11-19T03:20:07.098360+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "43.3",
-   "updated": "2026-11-18T03:19:05.050944+00:00",
+   "updated": "2026-11-19T03:20:07.174258+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "76.7243902439025",
-   "updated": "2026-11-17T03:03:09.180156+00:00",
+   "updated": "2026-11-19T03:20:07.098331+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -76,25 +76,25 @@
   },
   "gasto_salud": {
    "value": "6.36868954",
-   "updated": "2026-11-17T03:03:09.180211+00:00",
+   "updated": "2026-11-19T03:20:07.098374+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "homicidios": {
    "value": "0.722657964901225",
-   "updated": "2026-11-17T03:03:09.180175+00:00",
+   "updated": "2026-11-19T03:20:07.098346+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.846",
-   "updated": "2026-11-18T03:19:05.007660+00:00",
+   "updated": "2026-11-19T03:20:07.098406+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "3.70370370370363",
-   "updated": "2026-11-09T03:03:08.534669+00:00",
+   "updated": "2026-11-19T03:20:07.098289+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -106,7 +106,7 @@
   },
   "libertad_prensa": {
    "value": "63.0",
-   "updated": "2026-11-18T03:19:05.054130+00:00",
+   "updated": "2026-11-19T03:20:07.178900+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
@@ -124,31 +124,31 @@
   },
   "migrant_pct": {
    "value": "7.1",
-   "updated": "2026-11-17T03:03:09.180138+00:00",
+   "updated": "2026-11-19T03:20:07.098317+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "HUF",
-   "updated": "2026-11-18T03:19:05.007606+00:00",
+   "updated": "2026-11-19T03:20:07.098393+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
-   "value": "1.6966000544861386",
-   "updated": "2026-11-17T03:03:09.180119+00:00",
+   "value": "16223",
+   "updated": "2026-11-19T03:20:07.098303+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "222848211034.367",
-   "updated": "2026-11-17T03:03:09.180079+00:00",
+   "updated": "2026-11-19T03:20:07.098256+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "48540.1614792293",
-   "updated": "2026-11-17T03:03:09.180101+00:00",
+   "updated": "2026-11-19T03:20:07.098275+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -160,7 +160,7 @@
   },
   "region": {
    "value": "Europe & Central Asia",
-   "updated": "2026-11-18T03:19:05.007753+00:00",
+   "updated": "2026-11-19T03:20:07.098420+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -172,7 +172,7 @@
   },
   "titulados": {
    "value": "27.4",
-   "updated": "2026-11-18T03:19:05.057247+00:00",
+   "updated": "2026-11-19T03:20:07.185537+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2023"
   },
