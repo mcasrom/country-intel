@@ -1,6 +1,6 @@
 {
  "country": "gh",
- "generated": "2026-11-19T03:20:07.272422+00:00",
+ "generated": "2026-11-20T03:09:39.350763+00:00",
  "geo": {
   "name": "Ghana",
   "lat": 5.57045,
@@ -16,19 +16,19 @@
   },
   "co2_pc": {
    "value": "0.611",
-   "updated": "2026-11-19T03:20:07.170071+00:00",
+   "updated": "2026-11-20T03:09:39.276592+00:00",
    "source": "Global Carbon Project (OWID) 2024",
    "year": "2024"
   },
   "corrupcion": {
    "value": "42.0",
-   "updated": "2026-11-19T03:20:07.175513+00:00",
+   "updated": "2026-11-20T03:09:39.281657+00:00",
    "source": "Transparency Intl CPI 2024",
    "year": "2024"
   },
   "coste_vida": {
    "value": "0.2981",
-   "updated": "2026-11-19T03:20:07.188188+00:00",
+   "updated": "2026-11-20T03:09:39.290543+00:00",
    "source": "World Bank via OWID (EE.UU.=1)",
    "year": "2024"
   },
@@ -40,49 +40,49 @@
   },
   "democracia": {
    "value": "6.24",
-   "updated": "2026-11-19T03:20:07.181064+00:00",
+   "updated": "2026-11-20T03:09:39.286673+00:00",
    "source": "EIU Democracy Index 2024",
    "year": "2024"
   },
   "desempleo": {
    "value": "2.82",
-   "updated": "2026-11-01T03:03:08.569478+00:00",
+   "updated": "2026-11-20T03:09:39.218110+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "edad_mediana": {
    "value": "20.9",
-   "updated": "2026-11-19T03:20:07.174168+00:00",
+   "updated": "2026-11-20T03:09:39.279186+00:00",
    "source": "UN WPP 2024 (OWID)",
    "year": "2023"
   },
   "esperanza_vida": {
    "value": "65.695",
-   "updated": "2026-11-19T03:20:07.094589+00:00",
+   "updated": "2026-11-20T03:09:39.218150+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "fertilidad": {
    "value": "3.344",
-   "updated": "2026-11-17T03:03:09.173956+00:00",
+   "updated": "2026-11-20T03:09:39.218177+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "gasto_salud": {
    "value": "2.94686937",
-   "updated": "2026-11-19T03:20:07.094619+00:00",
+   "updated": "2026-11-20T03:09:39.218164+00:00",
    "source": "worldbank",
    "year": "2023"
   },
   "idh": {
    "value": "0.632",
-   "updated": "2026-11-19T03:20:07.094662+00:00",
+   "updated": "2026-11-20T03:09:39.218235+00:00",
    "source": "PNUD 2022",
    "year": ""
   },
   "inflacion": {
    "value": "22.8483281157842",
-   "updated": "2026-11-19T03:20:07.094515+00:00",
+   "updated": "2026-11-20T03:09:39.218097+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -94,49 +94,49 @@
   },
   "libertad_prensa": {
    "value": "67.7",
-   "updated": "2026-11-19T03:20:07.178825+00:00",
+   "updated": "2026-11-20T03:09:39.284388+00:00",
    "source": "RSF Press Freedom 2024",
    "year": "2024"
   },
   "mayores": {
    "value": "3.70833260535242",
-   "updated": "2026-11-17T03:03:09.174066+00:00",
+   "updated": "2026-11-20T03:09:39.218209+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "menores": {
    "value": "35.8181308043952",
-   "updated": "2026-11-17T03:03:09.173983+00:00",
+   "updated": "2026-11-20T03:09:39.218191+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "migrant_pct": {
    "value": "1.5",
-   "updated": "2026-11-19T03:20:07.094564+00:00",
+   "updated": "2026-11-20T03:09:39.218137+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "moneda": {
    "value": "GHS",
-   "updated": "2026-11-19T03:20:07.094646+00:00",
+   "updated": "2026-11-20T03:09:39.218223+00:00",
    "source": "static",
    "year": ""
   },
   "net_mig": {
    "value": "-13114",
-   "updated": "2026-11-19T03:20:07.094546+00:00",
+   "updated": "2026-11-20T03:09:39.218124+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib": {
    "value": "83288585604.0268",
-   "updated": "2026-11-19T03:20:07.094465+00:00",
+   "updated": "2026-11-20T03:09:39.218047+00:00",
    "source": "worldbank",
    "year": "2024"
   },
   "pib_ppa_pc": {
    "value": "8051.19381149848",
-   "updated": "2026-11-19T03:20:07.094497+00:00",
+   "updated": "2026-11-20T03:09:39.218082+00:00",
    "source": "worldbank",
    "year": "2024"
   },
@@ -148,7 +148,7 @@
   },
   "region": {
    "value": "Sub-Saharan Africa ",
-   "updated": "2026-11-19T03:20:07.094697+00:00",
+   "updated": "2026-11-20T03:09:39.218252+00:00",
    "source": "Banco Mundial",
    "year": ""
   },
@@ -160,7 +160,7 @@
   },
   "titulados": {
    "value": "9.1",
-   "updated": "2026-11-19T03:20:07.185469+00:00",
+   "updated": "2026-11-20T03:09:39.288571+00:00",
    "source": "UNESCO UIS (Banco Mundial) 2023",
    "year": "2022"
   },
